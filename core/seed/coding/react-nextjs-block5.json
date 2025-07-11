@@ -1,0 +1,866 @@
+[
+  {
+    "word": "next-firebase-auth",
+    "priority": 145,
+    "definitions": [
+      {
+        "meaning": "A library for integrating Firebase authentication with Next.js.",
+        "partOfSpeech": "library",
+        "example": "Use next-firebase-auth for Google and email login."
+      }
+    ],
+    "syntax": "import { init } from 'next-firebase-auth';",
+    "examples": [
+      "import { init } from 'next-firebase-auth';\ninit({ ...firebaseConfig });"
+    ],
+    "synonyms": ["firebase auth"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "nɛkst ˈfaɪərˌbeɪs ɔːθ",
+    "difficulty": "advanced",
+    "category": "authentication",
+    "bestPractice": "Use next-firebase-auth for secure, scalable authentication.",
+    "relatedConcepts": ["firebase", "authentication"]
+  },
+  {
+    "word": "nextjs-firebase",
+    "priority": 146,
+    "definitions": [
+      {
+        "meaning": "A pattern or starter kit for integrating Firebase services with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use nextjs-firebase for real-time data and hosting."
+      }
+    ],
+    "syntax": "// Use Firebase SDK in Next.js",
+    "examples": [
+      "import { getFirestore } from 'firebase/firestore';\nconst db = getFirestore();"
+    ],
+    "synonyms": ["firebase integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "nɛkst dʒeɪ ɛs ˈfaɪərˌbeɪs",
+    "difficulty": "advanced",
+    "category": "database",
+    "bestPractice": "Keep Firebase config in environment variables.",
+    "relatedConcepts": ["firebase", "next-firebase-auth"]
+  },
+  {
+    "word": "nextjs-mongodb",
+    "priority": 147,
+    "definitions": [
+      {
+        "meaning": "A pattern or starter kit for using MongoDB with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use nextjs-mongodb for serverless database access."
+      }
+    ],
+    "syntax": "import { MongoClient } from 'mongodb';",
+    "examples": [
+      "const client = await MongoClient.connect(process.env.MONGODB_URI);"
+    ],
+    "synonyms": ["mongodb integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "nɛkst dʒeɪ ɛs ˈmɒŋɡoʊˌdiːbiː",
+    "difficulty": "advanced",
+    "category": "database",
+    "bestPractice": "Close MongoDB connections after each API route call.",
+    "relatedConcepts": ["mongodb", "database"]
+  },
+  {
+    "word": "nextjs-prisma",
+    "priority": 148,
+    "definitions": [
+      {
+        "meaning": "A pattern or starter kit for using Prisma ORM with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use nextjs-prisma for type-safe database access."
+      }
+    ],
+    "syntax": "import { PrismaClient } from '@prisma/client';",
+    "examples": [
+      "const prisma = new PrismaClient();\nconst users = await prisma.user.findMany();"
+    ],
+    "synonyms": ["prisma integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "nɛkst dʒeɪ ɛs ˈprɪzmə",
+    "difficulty": "advanced",
+    "category": "database",
+    "bestPractice": "Use Prisma for type-safe, scalable database queries.",
+    "relatedConcepts": ["prisma", "database"]
+  },
+  {
+    "word": "nextjs-graphql",
+    "priority": 149,
+    "definitions": [
+      {
+        "meaning": "A pattern or starter kit for using GraphQL APIs with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use nextjs-graphql for API data fetching."
+      }
+    ],
+    "syntax": "import { ApolloClient } from '@apollo/client';",
+    "examples": [
+      "const client = new ApolloClient({ uri: '/api/graphql' });"
+    ],
+    "synonyms": ["graphql integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "nɛkst dʒeɪ ɛs ˈɡræfˌkjuːˈɛl",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use Apollo or urql for GraphQL queries in Next.js.",
+    "relatedConcepts": ["graphql", "api"]
+  },
+  {
+    "word": "nextjs-apollo",
+    "priority": 150,
+    "definitions": [
+      {
+        "meaning": "A pattern or starter kit for using Apollo Client with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use nextjs-apollo for GraphQL state management."
+      }
+    ],
+    "syntax": "import { ApolloProvider } from '@apollo/client';",
+    "examples": [
+      "<ApolloProvider client={client}><App /></ApolloProvider>"
+    ],
+    "synonyms": ["apollo integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "nɛkst dʒeɪ ɛs əˈpɒloʊ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Wrap your app with ApolloProvider for GraphQL queries.",
+    "relatedConcepts": ["apollo", "graphql"]
+  },
+  {
+    "word": "nextjs-swr",
+    "priority": 151,
+    "definitions": [
+      {
+        "meaning": "A React hook library for remote data fetching, by Vercel.",
+        "partOfSpeech": "library",
+        "example": "Use SWR for client-side data fetching in Next.js."
+      }
+    ],
+    "syntax": "import useSWR from 'swr';",
+    "examples": [
+      "const { data, error } = useSWR('/api/user', fetcher);"
+    ],
+    "synonyms": ["stale while revalidate"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ɛs dʌbəljuː ɑːr",
+    "difficulty": "intermediate",
+    "category": "data fetching",
+    "bestPractice": "Use SWR for client-side caching and revalidation.",
+    "relatedConcepts": ["data fetching", "api"]
+  },
+  {
+    "word": "nextjs-react-query",
+    "priority": 152,
+    "definitions": [
+      {
+        "meaning": "A library for fetching, caching, and updating data in React/Next.js.",
+        "partOfSpeech": "library",
+        "example": "Use React Query for advanced data management."
+      }
+    ],
+    "syntax": "import { useQuery } from '@tanstack/react-query';",
+    "examples": [
+      "const { data, error } = useQuery(['user', id], fetchUser);"
+    ],
+    "synonyms": ["react query"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "riːˈækt ˈkwɛri",
+    "difficulty": "intermediate",
+    "category": "data fetching",
+    "bestPractice": "Use React Query for robust caching and background updates.",
+    "relatedConcepts": ["data fetching", "SWR"]
+  },
+  {
+    "word": "nextjs-axios",
+    "priority": 153,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Axios HTTP client in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Axios for REST API calls."
+      }
+    ],
+    "syntax": "import axios from 'axios';",
+    "examples": [
+      "const res = await axios.get('/api/data');"
+    ],
+    "synonyms": ["axios integration"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ˈæksiɒs",
+    "difficulty": "intermediate",
+    "category": "data fetching",
+    "bestPractice": "Use Axios for HTTP requests and interceptors.",
+    "relatedConcepts": ["fetch", "api"]
+  },
+  {
+    "word": "nextjs-fetch",
+    "priority": 154,
+    "definitions": [
+      {
+        "meaning": "A pattern for using the native fetch API in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use fetch for HTTP requests in getServerSideProps."
+      }
+    ],
+    "syntax": "const res = await fetch(url, options);",
+    "examples": [
+      "const res = await fetch('/api/data');\nconst data = await res.json();"
+    ],
+    "synonyms": ["fetch integration"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "fɛtʃ",
+    "difficulty": "basic",
+    "category": "data fetching",
+    "bestPractice": "Use fetch for simple HTTP requests.",
+    "relatedConcepts": ["axios", "api"]
+  },
+  {
+    "word": "nextjs-redux",
+    "priority": 155,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Redux state management in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Redux for global state in Next.js apps."
+      }
+    ],
+    "syntax": "import { Provider } from 'react-redux';",
+    "examples": [
+      "<Provider store={store}><App /></Provider>"
+    ],
+    "synonyms": ["redux integration"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "riːˈdʌks",
+    "difficulty": "intermediate",
+    "category": "state management",
+    "bestPractice": "Use Redux Toolkit for modern Redux code.",
+    "relatedConcepts": ["redux", "next-redux-wrapper"]
+  },
+  {
+    "word": "nextjs-mobx",
+    "priority": 156,
+    "definitions": [
+      {
+        "meaning": "A pattern for using MobX state management in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use MobX for observable state in Next.js."
+      }
+    ],
+    "syntax": "import { observable } from 'mobx';",
+    "examples": [
+      "class Store { @observable value = 0; }"
+    ],
+    "synonyms": ["mobx integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "mɒb ɛks",
+    "difficulty": "advanced",
+    "category": "state management",
+    "bestPractice": "Use MobX for simple, observable state.",
+    "relatedConcepts": ["mobx", "state management"]
+  },
+  {
+    "word": "nextjs-zustand",
+    "priority": 157,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Zustand state management in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Zustand for lightweight state management."
+      }
+    ],
+    "syntax": "import create from 'zustand';",
+    "examples": [
+      "const useStore = create(set => ({ count: 0, inc: () => set(state => ({ count: state.count + 1 })) }));"
+    ],
+    "synonyms": ["zustand integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈtsuːʃtand",
+    "difficulty": "advanced",
+    "category": "state management",
+    "bestPractice": "Use Zustand for simple, scalable state.",
+    "relatedConcepts": ["zustand", "state management"]
+  },
+  {
+    "word": "nextjs-recoil",
+    "priority": 158,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Recoil state management in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Recoil for atom-based state in Next.js."
+      }
+    ],
+    "syntax": "import { atom, useRecoilState } from 'recoil';",
+    "examples": [
+      "const countState = atom({ key: 'count', default: 0 });\nconst [count, setCount] = useRecoilState(countState);"
+    ],
+    "synonyms": ["recoil integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "rɪˈkɔɪl",
+    "difficulty": "advanced",
+    "category": "state management",
+    "bestPractice": "Use Recoil for fine-grained state control.",
+    "relatedConcepts": ["recoil", "state management"]
+  },
+  {
+    "word": "nextjs-jotai",
+    "priority": 159,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Jotai state management in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Jotai for atomic state in Next.js."
+      }
+    ],
+    "syntax": "import { atom, useAtom } from 'jotai';",
+    "examples": [
+      "const countAtom = atom(0);\nconst [count, setCount] = useAtom(countAtom);"
+    ],
+    "synonyms": ["jotai integration"],
+    "antonyms": [],
+    "frequency": 30,
+    "etymology": "",
+    "pronunciation": "dʒoʊˈtaɪ",
+    "difficulty": "advanced",
+    "category": "state management",
+    "bestPractice": "Use Jotai for atomic, flexible state.",
+    "relatedConcepts": ["jotai", "state management"]
+  },
+  {
+    "word": "nextjs-react-hook-form",
+    "priority": 160,
+    "definitions": [
+      {
+        "meaning": "A pattern for using React Hook Form for forms in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use React Hook Form for performant forms."
+      }
+    ],
+    "syntax": "import { useForm } from 'react-hook-form';",
+    "examples": [
+      "const { register, handleSubmit } = useForm();"
+    ],
+    "synonyms": ["react hook form integration"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "riːˈækt hʊk fɔːrm",
+    "difficulty": "intermediate",
+    "category": "forms",
+    "bestPractice": "Use React Hook Form for scalable, performant forms.",
+    "relatedConcepts": ["forms", "formik"]
+  },
+  {
+    "word": "formik",
+    "priority": 161,
+    "definitions": [
+      {
+        "meaning": "A popular React form library for managing form state and validation.",
+        "partOfSpeech": "library",
+        "example": "Use Formik for forms with validation."
+      }
+    ],
+    "syntax": "import { useFormik } from 'formik';",
+    "examples": [
+      "const formik = useFormik({ initialValues: { name: '' }, onSubmit: values => { ... } });"
+    ],
+    "synonyms": ["form library"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ˈfɔːrmɪk",
+    "difficulty": "intermediate",
+    "category": "forms",
+    "bestPractice": "Use Formik for complex forms and validation.",
+    "relatedConcepts": ["forms", "react-hook-form"]
+  },
+  {
+    "word": "yup",
+    "priority": 162,
+    "definitions": [
+      {
+        "meaning": "A JavaScript schema builder for value parsing and validation.",
+        "partOfSpeech": "library",
+        "example": "Use Yup for form validation schemas."
+      }
+    ],
+    "syntax": "import * as Yup from 'yup';",
+    "examples": [
+      "const schema = Yup.object().shape({ name: Yup.string().required() });"
+    ],
+    "synonyms": ["validation schema"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "jʌp",
+    "difficulty": "intermediate",
+    "category": "validation",
+    "bestPractice": "Use Yup with Formik or React Hook Form for robust validation.",
+    "relatedConcepts": ["validation", "formik", "react-hook-form"]
+  },
+  {
+    "word": "zod",
+    "priority": 163,
+    "definitions": [
+      {
+        "meaning": "A TypeScript-first schema validation library for JavaScript.",
+        "partOfSpeech": "library",
+        "example": "Use Zod for type-safe validation."
+      }
+    ],
+    "syntax": "import { z } from 'zod';",
+    "examples": [
+      "const schema = z.object({ name: z.string() });"
+    ],
+    "synonyms": ["validation schema"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "zɒd",
+    "difficulty": "advanced",
+    "category": "validation",
+    "bestPractice": "Use Zod for type-safe validation with TypeScript.",
+    "relatedConcepts": ["validation", "yup"]
+  },
+  {
+    "word": "nextjs-storybook",
+    "priority": 164,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Storybook to develop and test UI components in isolation.",
+        "partOfSpeech": "pattern",
+        "example": "Use Storybook for component-driven development."
+      }
+    ],
+    "syntax": "npx storybook init",
+    "examples": [
+      "npx storybook init"
+    ],
+    "synonyms": ["storybook integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈstɔːribʊk",
+    "difficulty": "intermediate",
+    "category": "development",
+    "bestPractice": "Use Storybook for isolated UI development and documentation.",
+    "relatedConcepts": ["storybook", "component"]
+  },
+  {
+    "word": "nextjs-plop",
+    "priority": 165,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Plop.js code generators in Next.js projects.",
+        "partOfSpeech": "pattern",
+        "example": "Use Plop for scaffolding components."
+      }
+    ],
+    "syntax": "npx plop",
+    "examples": [
+      "npx plop component"
+    ],
+    "synonyms": ["scaffolding"],
+    "antonyms": [],
+    "frequency": 30,
+    "etymology": "",
+    "pronunciation": "plɒp",
+    "difficulty": "intermediate",
+    "category": "development",
+    "bestPractice": "Use Plop for consistent code generation.",
+    "relatedConcepts": ["scaffolding", "component"]
+  },
+  {
+    "word": "nextjs-eslint",
+    "priority": 166,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating ESLint with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use ESLint for code quality in Next.js."
+      }
+    ],
+    "syntax": "npx eslint .",
+    "examples": [
+      "npx eslint ."
+    ],
+    "synonyms": ["eslint integration"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "iː ɛs lɪnt",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Use ESLint with Next.js for consistent code quality.",
+    "relatedConcepts": ["eslint", "linting"]
+  },
+  {
+    "word": "nextjs-prettier",
+    "priority": 167,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Prettier with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Prettier for code formatting in Next.js."
+      }
+    ],
+    "syntax": "npx prettier --write .",
+    "examples": [
+      "npx prettier --write ."
+    ],
+    "synonyms": ["prettier integration"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "ˈprɛtiər",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Use Prettier for consistent code formatting.",
+    "relatedConcepts": ["prettier", "formatting"]
+  },
+  {
+    "word": "nextjs-jest",
+    "priority": 168,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Jest testing framework with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Jest for unit and integration tests."
+      }
+    ],
+    "syntax": "npx jest",
+    "examples": [
+      "npx jest"
+    ],
+    "synonyms": ["jest integration"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "dʒɛst",
+    "difficulty": "basic",
+    "category": "testing",
+    "bestPractice": "Use Jest for fast, isolated tests in Next.js.",
+    "relatedConcepts": ["jest", "testing"]
+  },
+  {
+    "word": "nextjs-cypress",
+    "priority": 169,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Cypress end-to-end testing with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Cypress for E2E testing."
+      }
+    ],
+    "syntax": "npx cypress open",
+    "examples": [
+      "npx cypress open"
+    ],
+    "synonyms": ["cypress integration"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "ˈsaɪprəs",
+    "difficulty": "intermediate",
+    "category": "testing",
+    "bestPractice": "Use Cypress for end-to-end and integration tests.",
+    "relatedConcepts": ["cypress", "testing"]
+  },
+  {
+    "word": "nextjs-msw",
+    "priority": 170,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Mock Service Worker (MSW) for API mocking in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use MSW for API mocking in tests."
+      }
+    ],
+    "syntax": "import { setupServer } from 'msw/node';",
+    "examples": [
+      "const server = setupServer(...handlers);"
+    ],
+    "synonyms": ["msw integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ɛm ɛs dʌbəljuː",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Use MSW for realistic API mocks in tests.",
+    "relatedConcepts": ["msw", "testing"]
+  },
+  {
+    "word": "nextjs-playwright",
+    "priority": 171,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Playwright for browser automation and testing in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Playwright for cross-browser testing."
+      }
+    ],
+    "syntax": "npx playwright test",
+    "examples": [
+      "npx playwright test"
+    ],
+    "synonyms": ["playwright integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈpleɪˌraɪt",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Use Playwright for comprehensive browser testing.",
+    "relatedConcepts": ["playwright", "testing"]
+  },
+  {
+    "word": "nextjs-sentry",
+    "priority": 172,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Sentry error monitoring in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Sentry for real-time error tracking."
+      }
+    ],
+    "syntax": "import * as Sentry from '@sentry/nextjs';",
+    "examples": [
+      "Sentry.captureException(error);"
+    ],
+    "synonyms": ["sentry integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈsɛntri",
+    "difficulty": "advanced",
+    "category": "error handling",
+    "bestPractice": "Use Sentry for automatic error reporting.",
+    "relatedConcepts": ["error handling", "monitoring"]
+  },
+  {
+    "word": "nextjs-bundle-analyzer",
+    "priority": 173,
+    "definitions": [
+      {
+        "meaning": "A pattern for using @next/bundle-analyzer to analyze bundle size.",
+        "partOfSpeech": "pattern",
+        "example": "Use bundle-analyzer to optimize your app."
+      }
+    ],
+    "syntax": "const withBundleAnalyzer = require('@next/bundle-analyzer');",
+    "examples": [
+      "module.exports = withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });"
+    ],
+    "synonyms": ["bundle analyzer"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈbʌndl əˈnaɪzər",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Analyze your bundle regularly to keep it small.",
+    "relatedConcepts": ["performance", "optimization"]
+  },
+  {
+    "word": "nextjs-dotenv",
+    "priority": 174,
+    "definitions": [
+      {
+        "meaning": "A pattern for using dotenv to manage environment variables in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use dotenv for env variable management."
+      }
+    ],
+    "syntax": "require('dotenv').config();",
+    "examples": [
+      "require('dotenv').config();\nconst secret = process.env.SECRET;"
+    ],
+    "synonyms": ["dotenv integration"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ˈdɒt ɛnv",
+    "difficulty": "basic",
+    "category": "configuration",
+    "bestPractice": "Keep secrets in .env files and out of source control.",
+    "relatedConcepts": ["environment variable", "configuration"]
+  },
+  {
+    "word": "nextjs-pwa",
+    "priority": 175,
+    "definitions": [
+      {
+        "meaning": "A pattern for adding Progressive Web App support to Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use next-pwa for offline caching."
+      }
+    ],
+    "syntax": "const withPWA = require('next-pwa');",
+    "examples": [
+      "module.exports = withPWA({ pwa: { dest: 'public' } });"
+    ],
+    "synonyms": ["pwa integration"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "piː dʌbəljuː eɪ",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use PWA for offline-enabled apps.",
+    "relatedConcepts": ["pwa", "service worker"]
+  },
+  {
+    "word": "nextjs-service-worker",
+    "priority": 176,
+    "definitions": [
+      {
+        "meaning": "A pattern for using service workers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Register a service worker for offline support."
+      }
+    ],
+    "syntax": "navigator.serviceWorker.register('/sw.js');",
+    "examples": [
+      "if ('serviceWorker' in navigator) {\n  navigator.serviceWorker.register('/sw.js');\n}"
+    ],
+    "synonyms": ["service worker"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈsɜːrvɪs ˈwɜːrkər",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Register service workers for offline and PWA features.",
+    "relatedConcepts": ["pwa", "nextjs-pwa"]
+  },
+  {
+    "word": "nextjs-vercel-analytics",
+    "priority": 177,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Vercel Analytics in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Vercel Analytics for performance monitoring."
+      }
+    ],
+    "syntax": "import { Analytics } from '@vercel/analytics/react';",
+    "examples": [
+      "<Analytics />"
+    ],
+    "synonyms": ["vercel analytics"],
+    "antonyms": [],
+    "frequency": 30,
+    "etymology": "",
+    "pronunciation": "ˈvɜːrsəl əˈnælɪtɪks",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Use Vercel Analytics for real user monitoring.",
+    "relatedConcepts": ["analytics", "monitoring"]
+  },
+  {
+    "word": "nextjs-google-analytics",
+    "priority": 178,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Google Analytics with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Google Analytics for traffic analysis."
+      }
+    ],
+    "syntax": "<Script src='https://www.googletagmanager.com/gtag/js?id=UA-XXXX' />",
+    "examples": [
+      "<Script src='https://www.googletagmanager.com/gtag/js?id=UA-XXXX' strategy='afterInteractive' />"
+    ],
+    "synonyms": ["google analytics"],
+    "antonyms": [],
+    "frequency": 40,
+    "etymology": "",
+    "pronunciation": "ˈɡuːɡl əˈnælɪtɪks",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Load Google Analytics with next/script for performance.",
+    "relatedConcepts": ["analytics", "monitoring"]
+  },
+  {
+    "word": "nextjs-segment",
+    "priority": 179,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Segment analytics with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Segment for event tracking."
+      }
+    ],
+    "syntax": "<Script src='https://cdn.segment.com/analytics.js/v1/SEGMENT_KEY/analytics.min.js' />",
+    "examples": [
+      "<Script src='https://cdn.segment.com/analytics.js/v1/SEGMENT_KEY/analytics.min.js' strategy='afterInteractive' />"
+    ],
+    "synonyms": ["segment analytics"],
+    "antonyms": [],
+    "frequency": 30,
+    "etymology": "",
+    "pronunciation": "ˈsɛɡmənt",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Use Segment for unified analytics and event tracking.",
+    "relatedConcepts": ["analytics", "monitoring"]
+  },
+  {
+    "word": "nextjs-mixpanel",
+    "priority": 180,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Mixpanel analytics with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Mixpanel for advanced analytics."
+      }
+    ],
+    "syntax": "import mixpanel from 'mixpanel-browser';",
+    "examples": [
+      "mixpanel.init('TOKEN');\nmixpanel.track('Page View');"
+    ],
+    "synonyms": ["mixpanel analytics"],
+    "antonyms": [],
+    "frequency": 30,
+    "etymology": "",
+    "pronunciation": "ˈmɪksˌpænəl",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Use Mixpanel for event-based analytics.",
+    "relatedConcepts": ["analytics", "monitoring"]
+  }
+]
