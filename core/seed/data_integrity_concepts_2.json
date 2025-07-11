@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 21,
+      "concept": "Third-Party and Supply Chain Data Integrity",
+      "category": "Data Integrity",
+      "definition": "Continuously monitor, validate, and reconcile data exchanged with third-party suppliers, partners, and cloud services.",
+      "syntax": "// AI validates supplier data and flags inconsistencies",
+      "examples": [
+        "Automaker detects mismatched component data from a supplier and triggers reconciliation[1][2][3][4]."
+      ],
+      "explanation": "Supply chain and third-party data are major sources of risk; automated validation and reconciliation are critical as platform standardization and outsourcing increase exposure[1][2][3][4].",
+      "tags": ["supply chain", "third-party", "data integrity"],
+      "related": ["Data Validation and Reconciliation", "Regulatory Compliance"]
+    },
+    {
+      "priority": 22,
+      "concept": "Automated Data Access Control",
+      "category": "Data Integrity",
+      "definition": "Enforce strict, automated access controls for all data flows between vehicles, cloud, and third parties, using least-privilege and Zero-Trust principles.",
+      "syntax": "// AI enforces RBAC and logs all data access events",
+      "examples": [
+        "Only authorized services can access sensitive vehicle data, with every access logged and monitored[3]."
+      ],
+      "explanation": "Zero-Trust and least-privilege access are essential for protecting data in complex, interconnected mobility ecosystems[3].",
+      "tags": ["access control", "zero trust", "data integrity"],
+      "related": ["Secure Data in Transit", "Automated Data Access Auditing"]
+    },
+    {
+      "priority": 23,
+      "concept": "Automated Data Integrity Testing in CI/CD",
+      "category": "Data Integrity",
+      "definition": "Integrate automated data integrity checks into continuous integration and deployment (CI/CD) pipelines for all automotive software and data updates.",
+      "syntax": "// CI/CD pipeline runs data validation and consistency checks",
+      "examples": [
+        "OTA updates are tested for data integrity before deployment to vehicles[3][4]."
+      ],
+      "explanation": "Automated testing prevents the introduction of data corruption or schema drift during rapid software releases[3][4].",
+      "tags": ["ci/cd", "testing", "data integrity"],
+      "related": ["Automated Data Consistency Checks", "Regulatory Compliance"]
+    },
+    {
+      "priority": 24,
+      "concept": "Automated Data Integrity Analytics",
+      "category": "Data Integrity",
+      "definition": "Use AI-driven analytics to monitor, detect, and report on data integrity issues across connected vehicles, infrastructure, and cloud.",
+      "syntax": "// AI analyzes data flows and flags anomalies in real time",
+      "examples": [
+        "Analytics dashboard highlights missing or inconsistent data from vehicle sensors[1][2][4]."
+      ],
+      "explanation": "Continuous analytics are essential for early detection and remediation of data integrity issues in distributed systems[1][2][4].",
+      "tags": ["analytics", "ai", "data integrity"],
+      "related": ["Data Quality Monitoring", "Self-Healing Data Pipelines"]
+    },
+    {
+      "priority": 25,
+      "concept": "Automated Data Governance",
+      "category": "Data Integrity",
+      "definition": "AI-driven enforcement of data governance policies, including data ownership, access, retention, and compliance.",
+      "syntax": "// AI enforces data retention and access policies automatically",
+      "examples": [
+        "System deletes expired vehicle data and restricts access to PII based on governance rules[2][3][4]."
+      ],
+      "explanation": "Automated governance ensures compliance, reduces risk, and supports data minimization as regulatory requirements evolve[2][3][4].",
+      "tags": ["governance", "automation", "compliance"],
+      "related": ["Automated Data Retention and Deletion", "Regulatory Compliance"]
+    },
+    {
+      "priority": 26,
+      "concept": "Automated Data Provenance Analytics",
+      "category": "Data Integrity",
+      "definition": "AI-driven tracking and analysis of data origin, transformation, and flow for audit, compliance, and root cause analysis.",
+      "syntax": "// AI tracks and visualizes data lineage across systems",
+      "examples": [
+        "System reconstructs the full history of a data record for regulatory audit[2][4]."
+      ],
+      "explanation": "Provenance analytics support traceability, trust, and rapid resolution of data integrity incidents[2][4].",
+      "tags": ["provenance", "lineage", "analytics"],
+      "related": ["Data Provenance and Lineage Tracking", "Regulatory Compliance"]
+    },
+    {
+      "priority": 27,
+      "concept": "Automated Data Integrity Policy Auditing",
+      "category": "Data Integrity",
+      "definition": "Continuously audit and verify data integrity policy compliance using AI and automated tools.",
+      "syntax": "// AI audits data retention, access, and privacy policies in real time",
+      "examples": [
+        "Automated auditing ensures all systems comply with data integrity and privacy policies[2][3][4]."
+      ],
+      "explanation": "Continuous auditing prevents drift and ensures ongoing compliance with evolving regulations[2][3][4].",
+      "tags": ["policy", "auditing", "automation"],
+      "related": ["Automated Data Governance", "Regulatory Compliance"]
+    },
+    {
+      "priority": 28,
+      "concept": "Automated Regulatory Reporting for Data Integrity",
+      "category": "Data Integrity",
+      "definition": "AI-driven generation and submission of required data integrity and privacy reports to regulators and authorities.",
+      "syntax": "// AI compiles and submits compliance reports automatically",
+      "examples": [
+        "Automakers use AI to generate and submit GDPR and WP.29 compliance documentation[2][3][4]."
+      ],
+      "explanation": "Automated reporting streamlines compliance and reduces manual effort as regulations expand[2][3][4].",
+      "tags": ["regulatory", "reporting", "automation"],
+      "related": ["Regulatory Compliance", "Automated Data Integrity Policy Auditing"]
+    },
+    {
+      "priority": 29,
+      "concept": "Automated Data Quality Analytics",
+      "category": "Data Integrity",
+      "definition": "AI-driven analytics platforms continuously monitor data completeness, accuracy, and timeliness across all automotive systems.",
+      "syntax": "// AI analyzes data flows and flags quality issues",
+      "examples": [
+        "Dashboard highlights delayed or missing data from vehicle sensors for rapid remediation[2][4]."
+      ],
+      "explanation": "Continuous analytics are essential for trustworthy analytics, machine learning, and compliance in connected vehicles[2][4].",
+      "tags": ["quality", "analytics", "ai"],
+      "related": ["Data Quality Monitoring", "Self-Healing Data Pipelines"]
+    },
+    {
+      "priority": 30,
+      "concept": "Automated Data Integrity for OTA Updates",
+      "category": "Data Integrity",
+      "definition": "Automate validation, verification, and auditing of data integrity before and after over-the-air (OTA) software and data updates.",
+      "syntax": "// AI validates OTA update data for integrity and compliance",
+      "examples": [
+        "System verifies OTA update packages for data corruption and compliance before deployment[3][4]."
+      ],
+      "explanation": "Automated OTA integrity checks prevent the introduction of vulnerabilities or data corruption during software releases[3][4].",
+      "tags": ["ota", "data integrity", "automation"],
+      "related": ["Automated Data Integrity Testing in CI/CD", "Regulatory Compliance"]
+    },
+    {
+      "priority": 31,
+      "concept": "Automated Data Integrity for ADAS/SDV/EV Systems",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in advanced driver-assistance systems (ADAS), software-defined vehicles (SDV), and electric vehicles (EV).",
+      "syntax": "// AI monitors ADAS/SDV/EV data streams for anomalies",
+      "examples": [
+        "System detects and repairs corrupted sensor data in ADAS, preventing safety issues[1][2][4]."
+      ],
+      "explanation": "Continuous integrity checks are critical as ADAS/SDV/EV systems become more complex and safety-critical[1][2][4].",
+      "tags": ["adas", "sdv", "ev", "data integrity"],
+      "related": ["Self-Healing Data Pipelines", "Data Quality Monitoring"]
+    },
+    {
+      "priority": 32,
+      "concept": "Automated Data Integrity for Charging Infrastructure",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in EV charging networks and related infrastructure.",
+      "syntax": "// AI monitors charging data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in charging station logs[1][2][4]."
+      ],
+      "explanation": "Charging infrastructure is a major cyberattack target; continuous integrity monitoring is essential for safety and compliance[1][2][4].",
+      "tags": ["charging", "infrastructure", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 33,
+      "concept": "Automated Data Integrity for Mobility Services",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in mobility services, ride-sharing, and fleet management platforms.",
+      "syntax": "// AI monitors mobility data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in ride-sharing platform logs[1][2][4]."
+      ],
+      "explanation": "Mobility services depend on accurate, timely data; automated integrity checks are essential for trust and compliance[1][2][4].",
+      "tags": ["mobility", "services", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 34,
+      "concept": "Automated Data Integrity for IoT Devices",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in IoT devices and edge computing platforms.",
+      "syntax": "// AI monitors IoT data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in IoT sensor logs[1][2][4]."
+      ],
+      "explanation": "IoT devices are increasingly targeted for data manipulation; automated integrity checks are essential for reliability and security[1][2][4].",
+      "tags": ["iot", "edge", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 35,
+      "concept": "Automated Data Integrity for Cloud Platforms",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in cloud platforms and distributed data lakes.",
+      "syntax": "// AI monitors cloud data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in cloud analytics logs[1][2][4]."
+      ],
+      "explanation": "Cloud platforms are central to automotive data; automated integrity checks are essential for trust and compliance[1][2][4].",
+      "tags": ["cloud", "data lake", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 36,
+      "concept": "Automated Data Integrity for Manufacturing",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in manufacturing equipment, processes, and supply chain systems.",
+      "syntax": "// AI monitors manufacturing data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in manufacturing process logs[1][2][4]."
+      ],
+      "explanation": "Manufacturing data integrity is essential for quality control, safety, and regulatory compliance[1][2][4].",
+      "tags": ["manufacturing", "supply chain", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 37,
+      "concept": "Automated Data Integrity for Regulatory Compliance",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation, monitoring, and reporting of data integrity for compliance with GDPR, WP.29, and other regulations.",
+      "syntax": "// AI validates and reports data integrity compliance automatically",
+      "examples": [
+        "System generates GDPR and WP.29 compliance reports for data integrity[2][3][4]."
+      ],
+      "explanation": "Automated compliance is essential as regulations expand and data flows become more complex[2][3][4].",
+      "tags": ["compliance", "regulation", "data integrity"],
+      "related": ["Automated Regulatory Reporting for Data Integrity", "Automated Data Integrity Policy Auditing"]
+    },
+    {
+      "priority": 38,
+      "concept": "Automated Data Integrity for Customer Experience",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity for all customer-facing digital services, from infotainment to mobile apps.",
+      "syntax": "// AI monitors customer data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in digital infotainment logs[1][2][4]."
+      ],
+      "explanation": "Customer experience depends on accurate, timely data; automated integrity checks are essential for trust and satisfaction[1][2][4].",
+      "tags": ["customer experience", "digital", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 39,
+      "concept": "Automated Data Integrity for V2X Communications",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity in vehicle-to-everything (V2X) communications.",
+      "syntax": "// AI monitors V2X data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies in V2X communication logs[1][2][4]."
+      ],
+      "explanation": "V2X communications are critical for safety and mobility; automated integrity checks are essential for reliability and trust[1][2][4].",
+      "tags": ["v2x", "communications", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    },
+    {
+      "priority": 40,
+      "concept": "Automated Data Integrity for Digital Ecosystems",
+      "category": "Data Integrity",
+      "definition": "AI-driven validation and monitoring of data integrity across all digital platforms, partners, and ecosystems.",
+      "syntax": "// AI monitors digital ecosystem data for anomalies and compliance",
+      "examples": [
+        "System detects and repairs data inconsistencies across partner APIs and digital platforms[1][2][4]."
+      ],
+      "explanation": "Digital ecosystems require continuous, automated integrity checks for trust, compliance, and operational resilience[1][2][4].",
+      "tags": ["ecosystem", "digital", "data integrity"],
+      "related": ["Automated Data Quality Analytics", "Regulatory Compliance"]
+    }
+  ]
+}
