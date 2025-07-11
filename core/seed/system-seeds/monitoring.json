@@ -1,0 +1,11 @@
+{
+  "health_checks": [
+    {
+      "component_id": "comp-001",
+      "check_type": "ping",
+      "interval_seconds": 60,
+      "alert_on_fail": true
+    }
+    // Add more health checks as needed
+  ]
+}
