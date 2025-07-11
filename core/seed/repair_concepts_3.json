@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 41,
+      "concept": "EV and Hybrid Readiness",
+      "category": "Self-Healing",
+      "definition": "Develop specialized repair, diagnostics, and maintenance protocols for electric and hybrid vehicles, including battery systems and charging infrastructure.",
+      "syntax": "// AI monitors battery health, schedules preventive maintenance",
+      "examples": [
+        "Technicians use advanced diagnostics for EV batteries and charging systems, ensuring safe and efficient repairs[1][2][5][8]."
+      ],
+      "explanation": "EVs require new skills, tools, and workflows—workshops must upskill and invest in dedicated infrastructure to remain competitive.",
+      "tags": ["ev", "hybrid", "diagnostics", "repair"],
+      "related": ["Predictive Maintenance", "Workforce Training and Upskilling for AI Repair"]
+    },
+    {
+      "priority": 42,
+      "concept": "ADAS (Advanced Driver Assistance Systems) Repair",
+      "category": "Self-Healing",
+      "definition": "Specialized diagnostics, calibration, and repair for ADAS sensors, cameras, and software.",
+      "syntax": "// AI calibrates sensors and verifies functionality after repair",
+      "examples": [
+        "Technicians use AI-guided tools to recalibrate ADAS after windshield replacement or collision repair[2][5]."
+      ],
+      "explanation": "ADAS systems are critical for safety and require precise calibration—AI tools improve accuracy and compliance.",
+      "tags": ["adas", "calibration", "repair"],
+      "related": ["AI-Enhanced Diagnostics", "Workforce Training and Upskilling for AI Repair"]
+    },
+    {
+      "priority": 43,
+      "concept": "Digitalization of Repair Workflows",
+      "category": "Self-Healing",
+      "definition": "Adopt cloud-based software, data-driven diagnostics, and digital management tools to streamline repair and maintenance.",
+      "syntax": "// Use cloud repair management and real-time diagnostics dashboards",
+      "examples": [
+        "Shops use digital inspection reports and predictive maintenance alerts to optimize workflow[1][3][4]."
+      ],
+      "explanation": "Digitalization increases efficiency, transparency, and customer satisfaction in the repair process.",
+      "tags": ["digitalization", "cloud", "repair"],
+      "related": ["Customer Communication Automation", "Integration with Digital Ecosystems"]
+    },
+    {
+      "priority": 44,
+      "concept": "AI-Powered Repair Management",
+      "category": "Self-Healing",
+      "definition": "Leverage AI for scheduling, diagnostics, parts ordering, and workflow optimization in repair shops.",
+      "syntax": "// AI schedules repairs, orders parts, and allocates technicians",
+      "examples": [
+        "AI predicts service demand, manages inventory, and optimizes technician assignments for maximum efficiency[1][3]."
+      ],
+      "explanation": "AI management tools reduce costs, minimize downtime, and improve service quality.",
+      "tags": ["ai", "management", "repair"],
+      "related": ["Resource Optimization for Repair", "Digitalization of Repair Workflows"]
+    },
+    {
+      "priority": 45,
+      "concept": "Advanced Diagnostics Training",
+      "category": "Self-Healing",
+      "definition": "Continuous upskilling of technicians in advanced diagnostics, programming, and next-generation vehicle systems.",
+      "syntax": "// Training modules for J2534, EVs, ADAS, waveform analysis",
+      "examples": [
+        "Workshops invest in hands-on and digital training for new vehicle technologies, boosting efficiency and profitability[2][4][5][6][8]."
+      ],
+      "explanation": "Advanced training empowers technicians to handle complex repairs in-house, reducing outsourcing and turnaround times.",
+      "tags": ["training", "diagnostics", "repair"],
+      "related": ["Workforce Training and Upskilling for AI Repair", "EV and Hybrid Readiness"]
+    },
+    {
+      "priority": 46,
+      "concept": "J2534 Programming and Reflashing",
+      "category": "Self-Healing",
+      "definition": "Standardized programming and updating of vehicle ECUs using J2534 pass-thru devices and software.",
+      "syntax": "// Use J2534 tool to reflash ECU with latest software",
+      "examples": [
+        "Technician updates ECU firmware to fix bugs or enable new features, using manufacturer-compliant tools[2][5]."
+      ],
+      "explanation": "Mastery of J2534 enables independent workshops to perform advanced repairs and stay competitive.",
+      "tags": ["j2534", "ecu", "programming", "repair"],
+      "related": ["Advanced Diagnostics Training", "Digitalization of Repair Workflows"]
+    },
+    {
+      "priority": 47,
+      "concept": "Data-Driven Decision Making in Repair",
+      "category": "Self-Healing",
+      "definition": "Leverage real-time vehicle and workshop data to prioritize repairs, personalize maintenance, and optimize resource use.",
+      "syntax": "// AI analyzes vehicle data to recommend personalized repairs",
+      "examples": [
+        "Shops use connected vehicle data for early issue detection and proactive service recommendations[1][3]."
+      ],
+      "explanation": "Data-driven repair improves accuracy, efficiency, and customer loyalty.",
+      "tags": ["data", "decision", "repair"],
+      "related": ["Digitalization of Repair Workflows", "AI-Powered Repair Management"]
+    },
+    {
+      "priority": 48,
+      "concept": "Cloud-Based Repair Management",
+      "category": "Self-Healing",
+      "definition": "Centralize repair operations, diagnostics, and customer communication using cloud platforms.",
+      "syntax": "// Cloud dashboard tracks repair status and customer updates",
+      "examples": [
+        "Technicians and customers access real-time repair status and recommendations via cloud portals[1][3]."
+      ],
+      "explanation": "Cloud platforms streamline workflow, increase transparency, and support remote diagnostics and management.",
+      "tags": ["cloud", "management", "repair"],
+      "related": ["Digitalization of Repair Workflows", "Customer Communication Automation"]
+    },
+    {
+      "priority": 49,
+      "concept": "Robotic Arms and Automation in Service Centers",
+      "category": "Self-Healing",
+      "definition": "Deploy robotic arms and automated machinery for repetitive repair tasks (tire mounting, oil changes, battery swaps).",
+      "syntax": "// Robotic arm mounts tire or performs oil change",
+      "examples": [
+        "Service centers use robots for high-volume, precision tasks, freeing technicians for complex diagnostics[7]."
+      ],
+      "explanation": "Automation increases throughput, reduces labor costs, and ensures quality in routine repairs.",
+      "tags": ["robotics", "automation", "repair"],
+      "related": ["Robotic Repair Automation", "Resource Optimization for Repair"]
+    },
+    {
+      "priority": 50,
+      "concept": "Workshop Management Training",
+      "category": "Self-Healing",
+      "definition": "Specialized business training for workshop owners/managers on growth, talent attraction, productivity, and profitability.",
+      "syntax": "// Training modules on workflow, marketing, and team management",
+      "examples": [
+        "Workshops invest in management training to adapt to tech and market changes, ensuring long-term success[3][4][6]."
+      ],
+      "explanation": "Management upskilling is as critical as technical training for sustainable, future-ready repair businesses.",
+      "tags": ["management", "training", "repair"],
+      "related": ["Advanced Diagnostics Training", "Digitalization of Repair Workflows"]
+    },
+    {
+      "priority": 51,
+      "concept": "Hands-On Training and Live Demonstrations",
+      "category": "Self-Healing",
+      "definition": "Practical, interactive learning sessions for technicians to master new tools, diagnostics, and repair techniques.",
+      "syntax": "// Live demo of advanced scan tools or calibration equipment",
+      "examples": [
+        "Technicians participate in live demos of ADAS calibration and EV diagnostics at industry events[2][3][4][5][8]."
+      ],
+      "explanation": "Hands-on training accelerates skill acquisition and confidence in using advanced technologies.",
+      "tags": ["training", "demonstration", "repair"],
+      "related": ["Advanced Diagnostics Training", "Workshop Management Training"]
+    },
+    {
+      "priority": 52,
+      "concept": "National and Industry Standards Compliance",
+      "category": "Self-Healing",
+      "definition": "Adhere to evolving vehicle modification, repair, and safety standards to ensure compliance and quality.",
+      "syntax": "// Apply national standards for vehicle modifications and repairs",
+      "examples": [
+        "Workshops follow MVIS and other regulations to access manufacturer repair data and ensure legal compliance[2][3][4][6]."
+      ],
+      "explanation": "Compliance with standards protects business, builds trust, and opens access to essential repair information.",
+      "tags": ["standards", "compliance", "repair"],
+      "related": ["J2534 Programming and Reflashing", "Digitalization of Repair Workflows"]
+    },
+    {
+      "priority": 53,
+      "concept": "Connected Vehicle Data Integration",
+      "category": "Self-Healing",
+      "definition": "Utilize real-time connected vehicle data for diagnostics, repair recommendations, and personalized service.",
+      "syntax": "// Integrate telematics data into repair workflow",
+      "examples": [
+        "Shops receive live alerts from vehicles, enabling proactive maintenance and rapid issue resolution[1][3]."
+      ],
+      "explanation": "Connected data transforms repair from reactive to proactive, improving uptime and customer satisfaction.",
+      "tags": ["connected vehicles", "data", "repair"],
+      "related": ["Data-Driven Decision Making in Repair", "Cloud-Based Repair Management"]
+    },
+    {
+      "priority": 54,
+      "concept": "E-Commerce and Digital Parts Ordering",
+      "category": "Self-Healing",
+      "definition": "Automate parts sourcing and inventory management using e-commerce platforms and digital catalogs.",
+      "syntax": "// AI orders parts as needed based on repair queue",
+      "examples": [
+        "Workshop automatically orders required parts when a repair order is created, reducing delays[1][3]."
+      ],
+      "explanation": "Digital parts ordering streamlines workflow and reduces inventory costs.",
+      "tags": ["e-commerce", "parts", "repair"],
+      "related": ["Cloud-Based Repair Management", "Integration with Digital Ecosystems"]
+    },
+    {
+      "priority": 55,
+      "concept": "Workshop Digital Ecosystem Integration",
+      "category": "Self-Healing",
+      "definition": "Connect repair operations with ERP, CRM, and supply chain platforms for seamless, automated data flow.",
+      "syntax": "// Sync repair orders, inventory, and customer data across all systems",
+      "examples": [
+        "All repair, parts, and customer data is integrated into a single digital platform[1][3]."
+      ],
+      "explanation": "Ecosystem integration increases efficiency, reduces errors, and supports advanced automation.",
+      "tags": ["ecosystem", "integration", "repair"],
+      "related": ["Digitalization of Repair Workflows", "E-Commerce and Digital Parts Ordering"]
+    },
+    {
+      "priority": 56,
+      "concept": "Workshop Networking and Community Engagement",
+      "category": "Self-Healing",
+      "definition": "Participate in industry events, training, and peer networks to stay current with trends and best practices.",
+      "syntax": "// Attend trade shows, conferences, and online forums",
+      "examples": [
+        "Technicians and owners network at Autocare 2025 to learn about new tools and standards[2][3][4][8]."
+      ],
+      "explanation": "Community engagement accelerates innovation and skill development in a rapidly changing industry.",
+      "tags": ["networking", "community", "repair"],
+      "related": ["Hands-On Training and Live Demonstrations", "Workshop Management Training"]
+    },
+    {
+      "priority": 57,
+      "concept": "AI-Driven Emission Control System Repair",
+      "category": "Self-Healing",
+      "definition": "Use AI diagnostics and automated tools to repair and maintain advanced emission control and diesel systems.",
+      "syntax": "// AI analyzes emissions data, recommends targeted repairs",
+      "examples": [
+        "Technician uses AI to pinpoint and fix emission system faults, ensuring compliance[2]."
+      ],
+      "explanation": "AI-driven emission repair supports environmental compliance and efficient operation.",
+      "tags": ["emission", "ai", "repair"],
+      "related": ["AI-Enhanced Diagnostics", "National and Industry Standards Compliance"]
+    },
+    {
+      "priority": 58,
+      "concept": "Precision Air Conditioning (AC) Diagnosis and Repair",
+      "category": "Self-Healing",
+      "definition": "Advanced diagnostics and repair for modern vehicle AC systems, including hybrid and EV-specific cooling.",
+      "syntax": "// Use picoscope or AI tool for waveform analysis of AC system",
+      "examples": [
+        "Technician uses advanced tools to diagnose and repair AC in EVs and hybrids[2][5]."
+      ],
+      "explanation": "Precision AC repair ensures comfort, efficiency, and system longevity in next-gen vehicles.",
+      "tags": ["ac", "diagnostics", "repair"],
+      "related": ["Advanced Diagnostics Training", "EV and Hybrid Readiness"]
+    },
+    {
+      "priority": 59,
+      "concept": "Diesel System Diagnostics and Repair",
+      "category": "Self-Healing",
+      "definition": "Specialized diagnostics and repair for modern diesel engines and emission control systems.",
+      "syntax": "// Use AI and scan tools for diesel system troubleshooting",
+      "examples": [
+        "AI pinpoints injector or emission faults, enabling efficient diesel repairs[2]."
+      ],
+      "explanation": "Diesel system expertise remains vital for many fleets and commercial vehicles.",
+      "tags": ["diesel", "diagnostics", "repair"],
+      "related": ["AI-Driven Emission Control System Repair", "Advanced Diagnostics Training"]
+    },
+    {
+      "priority": 60,
+      "concept": "Network Failure Diagnosis and Repair",
+      "category": "Self-Healing",
+      "definition": "Advanced troubleshooting and repair of vehicle communication networks (CAN bus, LIN, Ethernet, etc.).",
+      "syntax": "// AI analyzes network data and suggests repair steps",
+      "examples": [
+        "Technician uses AI to diagnose and repair CAN bus faults, restoring vehicle communication[2][5]."
+      ],
+      "explanation": "Network repair is critical for modern, connected vehicles and requires advanced tools and skills.",
+      "tags": ["network", "diagnostics", "repair"],
+      "related": ["AI-Enhanced Diagnostics", "Connected Vehicle Data Integration"]
+    }
+  ]
+}
