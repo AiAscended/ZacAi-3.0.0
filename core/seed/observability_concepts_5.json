@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 61,
+      "concept": "Security Observability Integration",
+      "category": "Observability",
+      "definition": "Combine security monitoring (IDS/IPS, threat intelligence) with operational observability for unified threat and failure detection.",
+      "syntax": "// Correlate security events with system health metrics",
+      "examples": [
+        "Trigger self-healing when a security anomaly (e.g., intrusion attempt) is detected alongside a system fault[1][2][3][4][7]."
+      ],
+      "explanation": "Integrating security and operational observability enables rapid, automated response to cyber threats and operational failures.",
+      "tags": ["security", "observability", "integration"],
+      "related": ["Anomaly Detection", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 62,
+      "concept": "Self-Healing Cybersecurity",
+      "category": "Observability",
+      "definition": "AI-driven systems that detect, contain, and remediate cyber threats automatically, restoring normal operations without human intervention.",
+      "syntax": "// On intrusion, quarantine affected node and auto-patch vulnerability",
+      "examples": [
+        "Detect ransomware activity, isolate infected devices, and restore clean backups in real time[1][2][3][4][7]."
+      ],
+      "explanation": "Self-healing cybersecurity reduces mean time to detect/respond (MTTD/MTTR) and increases resilience against advanced threats.",
+      "tags": ["cybersecurity", "self-healing", "ai"],
+      "related": ["Security Observability Integration", "Automated Recovery"]
+    },
+    {
+      "priority": 63,
+      "concept": "Threat Intelligence Feedback Loops",
+      "category": "Observability",
+      "definition": "Use real-time threat intelligence feeds to update detection models and healing protocols automatically.",
+      "syntax": "// Ingest threat feeds, update AI models, trigger new controls",
+      "examples": [
+        "Adapt firewall rules and anomaly detection thresholds based on emerging global threats[1][2][7]."
+      ],
+      "explanation": "Continuous threat intelligence ensures the system adapts to new attack vectors and vulnerabilities.",
+      "tags": ["threat intelligence", "feedback", "security"],
+      "related": ["Self-Healing Cybersecurity", "Continuous Learning and Adaptation"]
+    },
+    {
+      "priority": 64,
+      "concept": "Predictive Self-Healing",
+      "category": "Observability",
+      "definition": "Use AI/ML to forecast failures or attacks and trigger preemptive healing actions (e.g., patching, scaling, isolation).",
+      "syntax": "// Predictive model: if risk > threshold, auto-remediate",
+      "examples": [
+        "Predict a likely DDoS attack and scale up resources or apply rate limiting before impact[1][3][5]."
+      ],
+      "explanation": "Predictive self-healing minimizes disruption by acting before failures or breaches occur.",
+      "tags": ["predictive", "self-healing", "ai"],
+      "related": ["Predictive Monitoring", "Automated Recovery"]
+    },
+    {
+      "priority": 65,
+      "concept": "Automated Threat Containment",
+      "category": "Observability",
+      "definition": "Automatically isolate, sandbox, or restrict compromised systems or processes to prevent threat spread.",
+      "syntax": "// Quarantine infected container, block malicious traffic",
+      "examples": [
+        "AI detects malware, isolates the affected VM, and blocks outgoing traffic[1][2][3][4][7]."
+      ],
+      "explanation": "Automated containment limits damage and buys time for full remediation.",
+      "tags": ["containment", "security", "automation"],
+      "related": ["Self-Healing Cybersecurity", "Automated Recovery"]
+    },
+    {
+      "priority": 66,
+      "concept": "Runtime Patch Injection",
+      "category": "Observability",
+      "definition": "Dynamically apply temporary security patches or code modifications at runtime, without system downtime.",
+      "syntax": "// Inject runtime patch into memory to block exploit",
+      "examples": [
+        "AI injects a memory patch to neutralize a zero-day vulnerability while a permanent fix is developed[2]."
+      ],
+      "explanation": "Runtime patching enables instant remediation and uninterrupted operations.",
+      "tags": ["patching", "runtime", "security"],
+      "related": ["Automated Repair", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 67,
+      "concept": "Compensating Controls",
+      "category": "Observability",
+      "definition": "Deploy alternative controls (e.g., access restrictions, microsegmentation, sandboxing) when a vulnerability cannot be immediately patched.",
+      "syntax": "// Apply dynamic firewall rules or isolate APIs",
+      "examples": [
+        "Temporarily disable an exposed API or segment network traffic until full remediation is possible[2]."
+      ],
+      "explanation": "Compensating controls minimize risk while maintaining critical operations.",
+      "tags": ["controls", "security", "risk"],
+      "related": ["Automated Threat Containment", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 68,
+      "concept": "Behavioral Analytics for Threat Detection",
+      "category": "Observability",
+      "definition": "Use ML to analyze user, network, and application behavior for signs of compromise or misuse.",
+      "syntax": "// Model detects deviation from normal access patterns",
+      "examples": [
+        "Flag a user account for unusual login times and locations[1][2][3][4]."
+      ],
+      "explanation": "Behavioral analytics detect novel and sophisticated threats that signature-based systems miss.",
+      "tags": ["behavioral analytics", "threat detection", "ai"],
+      "related": ["Anomaly Detection", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 69,
+      "concept": "Attack Classification and Response",
+      "category": "Observability",
+      "definition": "Classify detected attacks (e.g., DDoS, malware, privilege escalation) and trigger appropriate automated responses.",
+      "syntax": "// Use ML to classify attack type and select response playbook",
+      "examples": [
+        "Identify a SQL injection and apply input sanitization at the API gateway[4]."
+      ],
+      "explanation": "Accurate classification ensures the right healing or containment action is taken.",
+      "tags": ["attack classification", "response", "ai"],
+      "related": ["Self-Healing Cybersecurity", "Automated Threat Containment"]
+    },
+    {
+      "priority": 70,
+      "concept": "Self-Healing SOC (Security Operations Center)",
+      "category": "Observability",
+      "definition": "Automate threat detection, containment, and remediation workflows in SOCs using AI and orchestration.",
+      "syntax": "// Orchestrate automated incident response playbooks",
+      "examples": [
+        "SOC AI detects incident, quarantines affected hosts, and deploys compensating controls[7]."
+      ],
+      "explanation": "Self-healing SOCs reduce human workload and accelerate incident resolution.",
+      "tags": ["soc", "automation", "security"],
+      "related": ["Self-Healing Cybersecurity", "Threat Intelligence Feedback Loops"]
+    },
+    {
+      "priority": 71,
+      "concept": "Self-Healing Network Security",
+      "category": "Observability",
+      "definition": "Deploy AI agents to monitor, detect, and autonomously repair network-level threats and failures.",
+      "syntax": "// AI agent blocks malicious IPs, repairs routing tables",
+      "examples": [
+        "Detect and mitigate DDoS attacks, reroute traffic, and patch network misconfigurations automatically[4][8]."
+      ],
+      "explanation": "Self-healing network security ensures continuous connectivity and resilience against evolving attacks.",
+      "tags": ["network security", "self-healing", "ai"],
+      "related": ["Self-Healing Cybersecurity", "Automated Recovery"]
+    },
+    {
+      "priority": 72,
+      "concept": "Self-Healing AI for Endpoint Defense",
+      "category": "Observability",
+      "definition": "Use AI to monitor endpoints for threats, remediate infections, and restore healthy states autonomously.",
+      "syntax": "// Endpoint agent detects malware, restores clean snapshot",
+      "examples": [
+        "AI agent overwrites infected memory regions and reboots endpoint to safe state[1][2][3][4]."
+      ],
+      "explanation": "Endpoint self-healing minimizes manual intervention and reduces dwell time for attackers.",
+      "tags": ["endpoint", "self-healing", "ai"],
+      "related": ["Self-Healing Cybersecurity", "Automated Threat Containment"]
+    },
+    {
+      "priority": 73,
+      "concept": "Self-Healing for Cloud Workloads",
+      "category": "Observability",
+      "definition": "Apply self-healing techniques to cloud-native environments (containers, serverless, VMs) for automated threat detection and remediation.",
+      "syntax": "// Cloud agent scans images, hardens policies, isolates affected pods",
+      "examples": [
+        "Detect vulnerable container images, apply runtime hardening, and isolate compromised pods[2]."
+      ],
+      "explanation": "Cloud self-healing ensures security and reliability in dynamic, scalable environments.",
+      "tags": ["cloud", "self-healing", "automation"],
+      "related": ["Self-Healing Cybersecurity", "Automated Recovery"]
+    },
+    {
+      "priority": 74,
+      "concept": "Auditability and Explainability in Self-Healing",
+      "category": "Observability",
+      "definition": "Log and explain all automated healing actions for compliance, trust, and human review.",
+      "syntax": "// Record every automated patch, quarantine, or rollback",
+      "examples": [
+        "Generate audit logs and explanations for each self-healing event[2][6]."
+      ],
+      "explanation": "Auditability ensures regulatory compliance and enables operators to understand and trust AI-driven interventions.",
+      "tags": ["audit", "explainability", "compliance"],
+      "related": ["Self-Healing Cybersecurity", "Human-in-the-Loop"]
+    },
+    {
+      "priority": 75,
+      "concept": "Human-in-the-Loop for Self-Healing",
+      "category": "Observability",
+      "definition": "Allow escalation, override, or review of automated healing actions by human operators when necessary.",
+      "syntax": "// Alert human operator for critical or ambiguous incidents",
+      "examples": [
+        "Pause automated patching and request approval for high-impact changes[2][6]."
+      ],
+      "explanation": "Human-in-the-loop ensures safety and governance in autonomous self-healing systems.",
+      "tags": ["human-in-the-loop", "governance", "safety"],
+      "related": ["Auditability and Explainability in Self-Healing", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 76,
+      "concept": "Continuous Improvement of Healing Protocols",
+      "category": "Observability",
+      "definition": "AI systems learn from each incident to refine detection, classification, and healing strategies.",
+      "syntax": "// Update ML models and playbooks after each incident",
+      "examples": [
+        "Incorporate new attack patterns into future threat detection and response[1][2][3][6]."
+      ],
+      "explanation": "Continuous improvement increases resilience and reduces future risk.",
+      "tags": ["continuous improvement", "ml", "self-healing"],
+      "related": ["Self-Healing Feedback Loops", "Continuous Learning and Adaptation"]
+    },
+    {
+      "priority": 77,
+      "concept": "Integration with Incident Response Platforms",
+      "category": "Observability",
+      "definition": "Connect self-healing AI with existing incident response and SOAR (Security Orchestration, Automation, and Response) platforms.",
+      "syntax": "// API integration with SIEM/SOAR for coordinated response",
+      "examples": [
+        "Trigger automated healing actions from SIEM alerts or playbooks[2][7]."
+      ],
+      "explanation": "Integration ensures seamless, end-to-end incident management and healing.",
+      "tags": ["integration", "soar", "incident response"],
+      "related": ["Self-Healing SOC", "Automated Recovery"]
+    },
+    {
+      "priority": 78,
+      "concept": "Self-Healing for Operational Technology (OT/ICS)",
+      "category": "Observability",
+      "definition": "Apply self-healing to industrial and operational technology environments, with special attention to safety and uptime.",
+      "syntax": "// Monitor and isolate compromised PLCs or SCADA systems",
+      "examples": [
+        "Apply protocol filtering and behavior monitoring to prevent process disruption in factories[2][7]."
+      ],
+      "explanation": "OT/ICS self-healing maintains safety and reliability in critical infrastructure.",
+      "tags": ["ot", "ics", "self-healing"],
+      "related": ["Self-Healing Cybersecurity", "Compensating Controls"]
+    },
+    {
+      "priority": 79,
+      "concept": "Self-Healing AI for Data Integrity",
+      "category": "Observability",
+      "definition": "Detect and repair data corruption, unauthorized changes, or schema drift automatically using AI.",
+      "syntax": "// AI validates and restores data to last known good state",
+      "examples": [
+        "Detects unauthorized DB changes and rolls back to a safe snapshot[3][5][8]."
+      ],
+      "explanation": "Self-healing for data integrity ensures trustworthy analytics, compliance, and business continuity.",
+      "tags": ["data integrity", "self-healing", "ai"],
+      "related": ["Self-Healing Data Pipelines", "Automated Recovery"]
+    },
+    {
+      "priority": 80,
+      "concept": "Self-Healing AI for Physical Systems",
+      "category": "Observability",
+      "definition": "Extend self-healing to physical systems (robots, IoT, hardware) with AI-driven monitoring, diagnosis, and repair.",
+      "syntax": "// AI detects hardware fault, triggers robotic repair sequence",
+      "examples": [
+        "Robot replaces failed server module while AI reroutes workloads[4][8]."
+      ],
+      "explanation": "Physical system self-healing enables end-to-end resilience from software to hardware.",
+      "tags": ["physical systems", "iot", "robotics"],
+      "related": ["Physical System Integration", "Automated Recovery"]
+    }
+  ]
+}
