@@ -1,0 +1,472 @@
+{
+  "concepts": [
+    {
+      "priority": 253,
+      "concept": "Supremum and Infimum",
+      "category": "Analysis",
+      "definition": "The least upper bound (supremum) and greatest lower bound (infimum) of a set.",
+      "syntax": "sup S, inf S",
+      "examples": [
+        "sup{1 - 1/n | n ∈ N} = 1; inf{1/n | n ∈ N} = 0"
+      ],
+      "explanation": "Supremum and infimum are foundational for real analysis and calculus[1].",
+      "tags": ["analysis", "real numbers"],
+      "related": ["Completeness", "Limits"]
+    },
+    {
+      "priority": 254,
+      "concept": "Completeness (Real Numbers)",
+      "category": "Analysis",
+      "definition": "Every non-empty set of real numbers that is bounded above has a supremum in R.",
+      "syntax": "If S ⊆ R, S ≠ ∅, S bounded above ⇒ sup S ∈ R",
+      "examples": [
+        "The set {x | x < 1} has supremum 1 in R."
+      ],
+      "explanation": "Completeness distinguishes the real numbers from rationals and is vital for analysis[1].",
+      "tags": ["analysis", "real numbers"],
+      "related": ["Supremum and Infimum", "Limits"]
+    },
+    {
+      "priority": 255,
+      "concept": "Axioms for the Real Numbers",
+      "category": "Analysis",
+      "definition": "The set of properties (field, order, completeness) that define the real numbers.",
+      "syntax": "Field, order, completeness axioms",
+      "examples": [
+        "Closure, associativity, distributivity, etc."
+      ],
+      "explanation": "Axioms provide the logical foundation for real analysis and calculus[1].",
+      "tags": ["analysis", "axioms"],
+      "related": ["Completeness", "Field"]
+    },
+    {
+      "priority": 256,
+      "concept": "Field (Algebra)",
+      "category": "Abstract Algebra",
+      "definition": "A set with two operations (addition and multiplication) satisfying field axioms.",
+      "syntax": "F, +, ×, with inverses, identity, distributivity",
+      "examples": [
+        "R, Q, C are fields; Z is not."
+      ],
+      "explanation": "Fields are the basis for algebra, number theory, and cryptography.",
+      "tags": ["algebra", "field"],
+      "related": ["Axioms for the Real Numbers", "Group"]
+    },
+    {
+      "priority": 257,
+      "concept": "Group",
+      "category": "Abstract Algebra",
+      "definition": "A set with a single operation satisfying closure, associativity, identity, and invertibility.",
+      "syntax": "(G, *)",
+      "examples": [
+        "Integers under addition form a group."
+      ],
+      "explanation": "Groups are fundamental in algebra, symmetry, and cryptography.",
+      "tags": ["algebra", "group theory"],
+      "related": ["Field", "Ring"]
+    },
+    {
+      "priority": 258,
+      "concept": "Ring",
+      "category": "Abstract Algebra",
+      "definition": "A set with two operations (addition and multiplication) where addition forms an abelian group and multiplication is associative.",
+      "syntax": "(R, +, ×)",
+      "examples": [
+        "Integers Z form a ring."
+      ],
+      "explanation": "Rings generalize arithmetic and are used in algebra and coding theory.",
+      "tags": ["algebra", "ring theory"],
+      "related": ["Group", "Field"]
+    },
+    {
+      "priority": 259,
+      "concept": "Complex Numbers",
+      "category": "Analysis",
+      "definition": "Numbers of the form a + bi, where i is the imaginary unit (i² = -1).",
+      "syntax": "z = a + bi",
+      "examples": [
+        "3 + 4i"
+      ],
+      "explanation": "Complex numbers extend the real numbers and are used in engineering, physics, and signal processing[3].",
+      "tags": ["analysis", "complex numbers"],
+      "related": ["Real Numbers", "Field"]
+    },
+    {
+      "priority": 260,
+      "concept": "Modulus (Complex Numbers)",
+      "category": "Analysis",
+      "definition": "The distance of a complex number from the origin in the complex plane.",
+      "syntax": "|z| = sqrt(a² + b²)",
+      "examples": [
+        "|3 + 4i| = 5"
+      ],
+      "explanation": "Modulus is used to measure magnitude in the complex plane.",
+      "tags": ["analysis", "complex numbers"],
+      "related": ["Complex Numbers", "Argument"]
+    },
+    {
+      "priority": 261,
+      "concept": "Argument (Complex Numbers)",
+      "category": "Analysis",
+      "definition": "The angle a complex number makes with the positive real axis in the complex plane.",
+      "syntax": "arg(z) = arctan(b/a)",
+      "examples": [
+        "arg(1 + i) = π/4"
+      ],
+      "explanation": "Argument is used in polar representation and Euler's formula.",
+      "tags": ["analysis", "complex numbers"],
+      "related": ["Complex Numbers", "Modulus"]
+    },
+    {
+      "priority": 262,
+      "concept": "Polar Form (Complex Numbers)",
+      "category": "Analysis",
+      "definition": "A representation of complex numbers using modulus and argument.",
+      "syntax": "z = r(cos θ + i sin θ) = re^{iθ}",
+      "examples": [
+        "1 + i = sqrt(2) e^{iπ/4}"
+      ],
+      "explanation": "Polar form simplifies multiplication and division of complex numbers.",
+      "tags": ["analysis", "complex numbers"],
+      "related": ["Complex Numbers", "Modulus"]
+    },
+    {
+      "priority": 263,
+      "concept": "Euler's Formula",
+      "category": "Analysis",
+      "definition": "A fundamental formula linking complex exponentials and trigonometric functions.",
+      "syntax": "e^{ix} = cos x + i sin x",
+      "examples": [
+        "e^{iπ} + 1 = 0"
+      ],
+      "explanation": "Euler's formula is crucial in analysis, physics, and engineering.",
+      "tags": ["analysis", "complex numbers"],
+      "related": ["Complex Numbers", "Polar Form"]
+    },
+    {
+      "priority": 264,
+      "concept": "Roots of Unity",
+      "category": "Analysis",
+      "definition": "Complex numbers that satisfy the equation z^n = 1.",
+      "syntax": "z_k = e^{2πik/n}, k = 0,...,n-1",
+      "examples": [
+        "Cube roots of unity: 1, -1/2 + i√3/2, -1/2 - i√3/2"
+      ],
+      "explanation": "Roots of unity are important in Fourier analysis and algebra.",
+      "tags": ["analysis", "complex numbers"],
+      "related": ["Complex Numbers", "Euler's Formula"]
+    },
+    {
+      "priority": 265,
+      "concept": "Measure Theory",
+      "category": "Analysis",
+      "definition": "A branch of mathematics studying generalized notions of size, length, and probability.",
+      "syntax": "Measure μ, σ-algebra",
+      "examples": [
+        "Lebesgue measure on R"
+      ],
+      "explanation": "Measure theory underpins modern probability and integration.",
+      "tags": ["analysis", "measure theory"],
+      "related": ["Integration", "Probability"]
+    },
+    {
+      "priority": 266,
+      "concept": "Lebesgue Integral",
+      "category": "Analysis",
+      "definition": "An integral defined using measure theory, generalizing the Riemann integral.",
+      "syntax": "∫ f dμ",
+      "examples": [
+        "Integrating functions with respect to Lebesgue measure"
+      ],
+      "explanation": "Lebesgue integration is more powerful and general than Riemann integration.",
+      "tags": ["analysis", "integration"],
+      "related": ["Measure Theory", "Riemann Integral"]
+    },
+    {
+      "priority": 267,
+      "concept": "Riemann Integral",
+      "category": "Analysis",
+      "definition": "A definition of the integral based on sums of areas of rectangles under a curve.",
+      "syntax": "∫_a^b f(x) dx (Riemann)",
+      "examples": [
+        "Area under f(x) = x^2 from 0 to 1"
+      ],
+      "explanation": "Riemann integration is the classical approach taught in calculus[1].",
+      "tags": ["analysis", "integration"],
+      "related": ["Lebesgue Integral", "Fundamental Theorem of Calculus"]
+    },
+    {
+      "priority": 268,
+      "concept": "Riemann-Darboux Integral",
+      "category": "Analysis",
+      "definition": "An equivalent definition of the Riemann integral using upper and lower sums.",
+      "syntax": "Supremum of lower sums, infimum of upper sums",
+      "examples": [
+        "Integrating piecewise continuous functions"
+      ],
+      "explanation": "Riemann-Darboux integral formalizes the classical integral using bounds[1].",
+      "tags": ["analysis", "integration"],
+      "related": ["Riemann Integral", "Supremum and Infimum"]
+    },
+    {
+      "priority": 269,
+      "concept": "Taylor Polynomial",
+      "category": "Analysis",
+      "definition": "A polynomial approximation of a function around a point using derivatives.",
+      "syntax": "T_n(x) = Σ_{k=0}^n f^{(k)}(a)/k! * (x-a)^k",
+      "examples": [
+        "exp(x) ≈ 1 + x + x^2/2! + x^3/3!"
+      ],
+      "explanation": "Taylor polynomials approximate functions in calculus, physics, and engineering[1].",
+      "tags": ["analysis", "approximation"],
+      "related": ["Maclaurin Series", "Differentiation"]
+    },
+    {
+      "priority": 270,
+      "concept": "Maclaurin Series",
+      "category": "Analysis",
+      "definition": "A Taylor series expansion about the point x = 0.",
+      "syntax": "f(x) = Σ_{k=0}^∞ f^{(k)}(0)/k! * x^k",
+      "examples": [
+        "sin(x) ≈ x - x^3/3! + x^5/5! - ..."
+      ],
+      "explanation": "Maclaurin series are used for function approximation and analysis.",
+      "tags": ["analysis", "approximation"],
+      "related": ["Taylor Polynomial", "Series"]
+    },
+    {
+      "priority": 271,
+      "concept": "l'Hospital's Rule",
+      "category": "Analysis",
+      "definition": "A method for evaluating limits of indeterminate forms by differentiating numerator and denominator.",
+      "syntax": "lim_{x→a} f(x)/g(x) = lim_{x→a} f'(x)/g'(x)",
+      "examples": [
+        "lim_{x→0} sin(x)/x = 1"
+      ],
+      "explanation": "l'Hospital's rule is a standard tool for calculus and analysis[1].",
+      "tags": ["analysis", "limits"],
+      "related": ["Limits", "Differentiation"]
+    },
+    {
+      "priority": 272,
+      "concept": "Inverse Function",
+      "category": "Analysis",
+      "definition": "A function that reverses the effect of another function.",
+      "syntax": "f(f^{-1}(x)) = x",
+      "examples": [
+        "If f(x) = 2x+1, then f^{-1}(x) = (x-1)/2"
+      ],
+      "explanation": "Inverse functions are key in algebra, calculus, and cryptography[1].",
+      "tags": ["analysis", "functions"],
+      "related": ["Function", "Composition"]
+    },
+    {
+      "priority": 273,
+      "concept": "Implicit Function Theorem",
+      "category": "Analysis",
+      "definition": "A theorem giving conditions under which a relation defines a function implicitly.",
+      "syntax": "If F(x, y) = 0, then y = f(x) locally",
+      "examples": [
+        "Circle: x^2 + y^2 = 1 defines y implicitly as a function of x."
+      ],
+      "explanation": "The theorem is used in multivariable calculus and differential equations.",
+      "tags": ["analysis", "theorem"],
+      "related": ["Inverse Function", "Differentiation"]
+    },
+    {
+      "priority": 274,
+      "concept": "Extremum (Maximum and Minimum)",
+      "category": "Analysis",
+      "definition": "The largest or smallest value of a function, either locally or globally.",
+      "syntax": "f(x) has maximum/minimum at x₀",
+      "examples": [
+        "f(x) = -x^2 has maximum at x=0"
+      ],
+      "explanation": "Finding extrema is central to optimization and calculus[1].",
+      "tags": ["analysis", "optimization"],
+      "related": ["Critical Points", "Optimization"]
+    },
+    {
+      "priority": 275,
+      "concept": "Existence Theorem (Calculus)",
+      "category": "Analysis",
+      "definition": "A theorem guaranteeing the existence of a solution to a mathematical problem under certain conditions.",
+      "syntax": "Intermediate Value Theorem, Extreme Value Theorem",
+      "examples": [
+        "A continuous function on [a, b] attains a maximum and minimum."
+      ],
+      "explanation": "Existence theorems provide foundational guarantees in analysis and calculus[1].",
+      "tags": ["analysis", "theorem"],
+      "related": ["Completeness", "Extremum"]
+    },
+    {
+      "priority": 276,
+      "concept": "Uniform Continuity",
+      "category": "Analysis",
+      "definition": "A function is uniformly continuous if, for every ε > 0, there exists δ > 0 such that for all x, y, |x-y| < δ ⇒ |f(x)-f(y)| < ε.",
+      "syntax": "∀ε>0 ∃δ>0: |x-y|<δ ⇒ |f(x)-f(y)|<ε",
+      "examples": [
+        "f(x) = x^2 is uniformly continuous on [0,1]"
+      ],
+      "explanation": "Uniform continuity strengthens the usual notion of continuity and is important in analysis.",
+      "tags": ["analysis", "continuity"],
+      "related": ["Continuity", "Lipschitz Continuity"]
+    },
+    {
+      "priority": 277,
+      "concept": "Lipschitz Continuity",
+      "category": "Analysis",
+      "definition": "A function f is Lipschitz continuous if there exists a constant L such that |f(x)-f(y)| ≤ L|x-y| for all x, y.",
+      "syntax": "|f(x)-f(y)| ≤ L|x-y|",
+      "examples": [
+        "f(x) = 3x is Lipschitz with L = 3."
+      ],
+      "explanation": "Lipschitz continuity is used in analysis and differential equations.",
+      "tags": ["analysis", "continuity"],
+      "related": ["Uniform Continuity", "Continuity"]
+    },
+    {
+      "priority": 278,
+      "concept": "Convergence (Sequences and Series)",
+      "category": "Analysis",
+      "definition": "A sequence or series converges if it approaches a finite limit as the number of terms increases.",
+      "syntax": "lim_{n→∞} a_n = L",
+      "examples": [
+        "1/n → 0 as n → ∞"
+      ],
+      "explanation": "Convergence is foundational for calculus, analysis, and probability[1].",
+      "tags": ["analysis", "limits"],
+      "related": ["Limits", "Completeness"]
+    },
+    {
+      "priority": 279,
+      "concept": "Divergence (Sequences and Series)",
+      "category": "Analysis",
+      "definition": "A sequence or series diverges if it does not approach a finite limit.",
+      "syntax": "lim_{n→∞} a_n does not exist or is infinite",
+      "examples": [
+        "n → ∞ as n → ∞"
+      ],
+      "explanation": "Divergence is important for understanding the behavior of series and improper integrals.",
+      "tags": ["analysis", "limits"],
+      "related": ["Convergence", "Limits"]
+    },
+    {
+      "priority": 280,
+      "concept": "Cauchy Sequence",
+      "category": "Analysis",
+      "definition": "A sequence where the terms become arbitrarily close to each other as the sequence progresses.",
+      "syntax": "∀ε>0 ∃N ∀m,n>N: |a_m - a_n| < ε",
+      "examples": [
+        "a_n = 1/n is a Cauchy sequence."
+      ],
+      "explanation": "Cauchy sequences are used to define completeness in metric spaces.",
+      "tags": ["analysis", "sequences"],
+      "related": ["Convergence", "Completeness"]
+    },
+    {
+      "priority": 281,
+      "concept": "Absolute Convergence",
+      "category": "Analysis",
+      "definition": "A series ∑ a_n converges absolutely if ∑ |a_n| converges.",
+      "syntax": "If ∑ |a_n| converges, then ∑ a_n converges absolutely.",
+      "examples": [
+        "∑ (-1)^n / n^2 converges absolutely."
+      ],
+      "explanation": "Absolute convergence is a stronger form of convergence for series.",
+      "tags": ["analysis", "series"],
+      "related": ["Convergence", "Conditional Convergence"]
+    },
+    {
+      "priority": 282,
+      "concept": "Conditional Convergence",
+      "category": "Analysis",
+      "definition": "A series ∑ a_n converges conditionally if ∑ a_n converges but ∑ |a_n| does not.",
+      "syntax": "∑ a_n converges, ∑ |a_n| diverges",
+      "examples": [
+        "Alternating harmonic series."
+      ],
+      "explanation": "Conditional convergence is important in the study of series and rearrangements.",
+      "tags": ["analysis", "series"],
+      "related": ["Convergence", "Absolute Convergence"]
+    },
+    {
+      "priority": 283,
+      "concept": "Radius of Convergence",
+      "category": "Analysis",
+      "definition": "The radius within which a power series converges.",
+      "syntax": "R = limsup_{n→∞} |a_n|^{1/n}",
+      "examples": [
+        "For ∑ x^n/n!, R = ∞"
+      ],
+      "explanation": "Radius of convergence determines the domain of analytic functions.",
+      "tags": ["analysis", "series"],
+      "related": ["Power Series", "Convergence"]
+    },
+    {
+      "priority": 284,
+      "concept": "Power Series",
+      "category": "Analysis",
+      "definition": "An infinite series of the form ∑ a_n (x-c)^n.",
+      "syntax": "∑ a_n (x-c)^n",
+      "examples": [
+        "exp(x) = ∑ x^n/n!"
+      ],
+      "explanation": "Power series are used in function approximation and analytic continuation.",
+      "tags": ["analysis", "series"],
+      "related": ["Radius of Convergence", "Taylor Polynomial"]
+    },
+    {
+      "priority": 285,
+      "concept": "Fourier Series",
+      "category": "Analysis",
+      "definition": "A way to represent a periodic function as a sum of sines and cosines.",
+      "syntax": "f(x) = a_0/2 + ∑ [a_n cos(nx) + b_n sin(nx)]",
+      "examples": [
+        "Square wave as sum of odd harmonics."
+      ],
+      "explanation": "Fourier series are fundamental in signal processing, physics, and data science.",
+      "tags": ["analysis", "series"],
+      "related": ["Power Series", "Fourier Transform"]
+    },
+    {
+      "priority": 286,
+      "concept": "Fourier Transform",
+      "category": "Analysis",
+      "definition": "A mathematical transform that expresses a function in terms of its frequency components.",
+      "syntax": "F(ω) = ∫ f(x) e^{-iωx} dx",
+      "examples": [
+        "Transforming a time signal to frequency domain."
+      ],
+      "explanation": "Fourier transforms are used in engineering, physics, and AI for signal analysis.",
+      "tags": ["analysis", "transform"],
+      "related": ["Fourier Series", "Laplace Transform"]
+    },
+    {
+      "priority": 287,
+      "concept": "Laplace Transform",
+      "category": "Analysis",
+      "definition": "An integral transform converting a function of time into a function of complex frequency.",
+      "syntax": "L[f](s) = ∫₀^∞ e^{-st} f(t) dt",
+      "examples": [
+        "Solving ODEs in engineering."
+      ],
+      "explanation": "Laplace transforms are used for solving differential equations and system analysis.",
+      "tags": ["analysis", "transform"],
+      "related": ["Fourier Transform", "Differential Equation"]
+    },
+    {
+      "priority": 288,
+      "concept": "Mathematical Modeling",
+      "category": "Applied Mathematics",
+      "definition": "The process of representing real-world phenomena with mathematical structures and equations.",
+      "syntax": "Formulate, analyze, validate, interpret",
+      "examples": [
+        "Modeling population growth with differential equations."
+      ],
+      "explanation": "Mathematical modeling is essential in engineering, science, economics, and AI[1][3][4][5][8][9].",
+      "tags": ["applied math", "modeling"],
+      "related": ["Differential Equation", "Numerical Methods"]
+    }
+  ]
+}
