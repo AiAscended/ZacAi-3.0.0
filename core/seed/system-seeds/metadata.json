@@ -1,0 +1,18 @@
+{
+  "tags": ["seed", "system", "config", "ai", "2025"],
+  "changelog": [
+    {
+      "date": "2025-07-07T19:40:00+10:00",
+      "change": "Initial system seed files created."
+    }
+  ],
+  "provenance": {
+    "source": "manual",
+    "confidence": 1.0,
+    "reviewed_by": "UltimateAI Team"
+  },
+  "documentation_links": [
+    "https://docs.ultimateai.com/system",
+    "https://github.com/ultimateai/seeds"
+  ]
+}
