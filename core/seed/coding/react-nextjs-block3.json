@@ -1,0 +1,869 @@
+[
+  {
+    "word": "styled-jsx",
+    "priority": 73,
+    "definitions": [
+      {
+        "meaning": "A CSS-in-JS library built into Next.js for component-scoped styles.",
+        "partOfSpeech": "library",
+        "example": "Use styled-jsx to style components locally."
+      }
+    ],
+    "syntax": "<style jsx>{`div { color: red; }`}</style>",
+    "examples": [
+      "export default function RedText() {\n  return (\n    <div>\n      <p>Hello</p>\n      <style jsx>{`p { color: red; }`}</style>\n    </div>\n  );\n}"
+    ],
+    "synonyms": ["css-in-js"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "staɪld dʒeɪ ɛs ɛks",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use styled-jsx for local component styles in Next.js.",
+    "relatedConcepts": ["CSS Modules", "global styles"]
+  },
+  {
+    "word": "CSS Modules",
+    "priority": 74,
+    "definitions": [
+      {
+        "meaning": "A CSS file in which all class and animation names are scoped locally by default.",
+        "partOfSpeech": "library",
+        "example": "Use Button.module.css for component styles."
+      }
+    ],
+    "syntax": "import styles from './Button.module.css';",
+    "examples": [
+      "import styles from './Button.module.css';\n<button className={styles.primary}>Click</button>"
+    ],
+    "synonyms": ["modular css"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "siː ɛs ɛs ˈmɒdjuːlz",
+    "difficulty": "basic",
+    "category": "styling",
+    "bestPractice": "Use CSS Modules for locally-scoped component styles.",
+    "relatedConcepts": ["styled-jsx", "global styles"]
+  },
+  {
+    "word": "global styles",
+    "priority": 75,
+    "definitions": [
+      {
+        "meaning": "CSS rules that apply to the entire application.",
+        "partOfSpeech": "noun",
+        "example": "Import global CSS in _app.js."
+      }
+    ],
+    "syntax": "import '../styles/globals.css';",
+    "examples": [
+      "import '../styles/globals.css';"
+    ],
+    "synonyms": ["global css"],
+    "antonyms": ["CSS Modules", "styled-jsx"],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "ˈɡloʊbəl staɪlz",
+    "difficulty": "basic",
+    "category": "styling",
+    "bestPractice": "Use global styles for resets and shared typography.",
+    "relatedConcepts": ["CSS Modules", "styled-jsx"]
+  },
+  {
+    "word": "Sass",
+    "priority": 76,
+    "definitions": [
+      {
+        "meaning": "A CSS preprocessor supported by Next.js for advanced styling features.",
+        "partOfSpeech": "library",
+        "example": "Use .scss files for Sass styles."
+      }
+    ],
+    "syntax": "import styles from './Button.module.scss';",
+    "examples": [
+      "import styles from './Button.module.scss';"
+    ],
+    "synonyms": ["scss", "sass css"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "sæs",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use Sass for complex styles and variables.",
+    "relatedConcepts": ["CSS Modules", "global styles"]
+  },
+  {
+    "word": "PostCSS",
+    "priority": 77,
+    "definitions": [
+      {
+        "meaning": "A tool for transforming CSS with JavaScript plugins.",
+        "partOfSpeech": "library",
+        "example": "Use PostCSS for autoprefixing and future CSS features."
+      }
+    ],
+    "syntax": "module.exports = { plugins: { autoprefixer: {} } }",
+    "examples": [
+      "// postcss.config.js\nmodule.exports = { plugins: { autoprefixer: {} } }"
+    ],
+    "synonyms": ["css processor"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "poʊst siː ɛs ɛs",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use PostCSS for vendor prefixes and modern CSS.",
+    "relatedConcepts": ["Sass", "CSS Modules"]
+  },
+  {
+    "word": "Tailwind CSS",
+    "priority": 78,
+    "definitions": [
+      {
+        "meaning": "A utility-first CSS framework for rapidly building custom designs.",
+        "partOfSpeech": "library",
+        "example": "Use Tailwind for utility classes in JSX."
+      }
+    ],
+    "syntax": "className='bg-blue-500 text-white p-4'",
+    "examples": [
+      "<button className='bg-blue-500 text-white p-4'>Click</button>"
+    ],
+    "synonyms": ["utility css"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˈteɪlwɪnd siː ɛs ɛs",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use Tailwind for fast prototyping and consistent design.",
+    "relatedConcepts": ["PostCSS", "CSS Modules"]
+  },
+  {
+    "word": "emotion",
+    "priority": 79,
+    "definitions": [
+      {
+        "meaning": "A popular CSS-in-JS library for React.",
+        "partOfSpeech": "library",
+        "example": "Use emotion for dynamic styles in React."
+      }
+    ],
+    "syntax": "import styled from '@emotion/styled';",
+    "examples": [
+      "const Button = styled.button`color: hotpink;`;"
+    ],
+    "synonyms": ["css-in-js"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "ɪˈmoʊʃən",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use emotion for dynamic, themeable styles.",
+    "relatedConcepts": ["styled-components", "CSS Modules"]
+  },
+  {
+    "word": "styled-components",
+    "priority": 80,
+    "definitions": [
+      {
+        "meaning": "A CSS-in-JS library for styling React components.",
+        "partOfSpeech": "library",
+        "example": "Use styled-components for dynamic component styles."
+      }
+    ],
+    "syntax": "import styled from 'styled-components';",
+    "examples": [
+      "const Button = styled.button`background: papayawhip; color: palevioletred;`;"
+    ],
+    "synonyms": ["css-in-js"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "staɪld kəmˈpoʊnənts",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use styled-components for themeable and dynamic styles.",
+    "relatedConcepts": ["emotion", "CSS Modules"]
+  },
+  {
+    "word": "classnames",
+    "priority": 81,
+    "definitions": [
+      {
+        "meaning": "A utility for conditionally joining classNames together.",
+        "partOfSpeech": "library",
+        "example": "Use classnames to toggle classes based on state."
+      }
+    ],
+    "syntax": "import classNames from 'classnames';",
+    "examples": [
+      "classNames('foo', { bar: isActive })"
+    ],
+    "synonyms": ["class utility"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "klæsˈneɪmz",
+    "difficulty": "intermediate",
+    "category": "styling",
+    "bestPractice": "Use classnames for conditional class logic.",
+    "relatedConcepts": ["CSS Modules", "Tailwind CSS"]
+  },
+  {
+    "word": "PropTypes",
+    "priority": 82,
+    "definitions": [
+      {
+        "meaning": "A library for runtime type checking of React props.",
+        "partOfSpeech": "library",
+        "example": "Use PropTypes to validate props."
+      }
+    ],
+    "syntax": "Component.propTypes = { name: PropTypes.string };",
+    "examples": [
+      "import PropTypes from 'prop-types';\nButton.propTypes = { label: PropTypes.string.isRequired };"
+    ],
+    "synonyms": ["prop validation"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "prɒp taɪps",
+    "difficulty": "basic",
+    "category": "validation",
+    "bestPractice": "Use PropTypes or TypeScript for prop validation.",
+    "relatedConcepts": ["TypeScript", "props"]
+  },
+  {
+    "word": "defaultProps",
+    "priority": 83,
+    "definitions": [
+      {
+        "meaning": "A way to specify default values for props in React.",
+        "partOfSpeech": "property",
+        "example": "Button.defaultProps = { color: 'blue' };"
+      }
+    ],
+    "syntax": "Component.defaultProps = { ... }",
+    "examples": [
+      "Button.defaultProps = { color: 'blue' };"
+    ],
+    "synonyms": ["prop defaults"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "dɪˈfɔːlt prɒps",
+    "difficulty": "basic",
+    "category": "props",
+    "bestPractice": "Use defaultProps for non-required props.",
+    "relatedConcepts": ["props", "PropTypes"]
+  },
+  {
+    "word": "children",
+    "priority": 84,
+    "definitions": [
+      {
+        "meaning": "A special prop for passing nested elements to components.",
+        "partOfSpeech": "prop",
+        "example": "props.children contains nested JSX."
+      }
+    ],
+    "syntax": "function Wrapper({ children }) { return <div>{children}</div>; }",
+    "examples": [
+      "<Wrapper><span>Hello</span></Wrapper>"
+    ],
+    "synonyms": ["nested elements"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "ˈtʃɪldrən",
+    "difficulty": "basic",
+    "category": "props",
+    "bestPractice": "Use children for flexible composition.",
+    "relatedConcepts": ["props", "composition"]
+  },
+  {
+    "word": "composition",
+    "priority": 85,
+    "definitions": [
+      {
+        "meaning": "Building complex UIs from smaller components.",
+        "partOfSpeech": "noun",
+        "example": "Compose layouts from smaller components."
+      }
+    ],
+    "syntax": "<Layout><Page /></Layout>",
+    "examples": [
+      "<Page><Header /><Content /><Footer /></Page>"
+    ],
+    "synonyms": ["component composition"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˌkɒmpəˈzɪʃən",
+    "difficulty": "basic",
+    "category": "architecture",
+    "bestPractice": "Favor composition over inheritance in React.",
+    "relatedConcepts": ["children", "component"]
+  },
+  {
+    "word": "render props",
+    "priority": 86,
+    "definitions": [
+      {
+        "meaning": "A technique for sharing code between React components using a function prop.",
+        "partOfSpeech": "pattern",
+        "example": "Pass a function as a child to implement render props."
+      }
+    ],
+    "syntax": "<DataProvider render={data => <List data={data} />} />",
+    "examples": [
+      "<Mouse render={mouse => <p>{mouse.x}, {mouse.y}</p>} />"
+    ],
+    "synonyms": ["function as child"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ˈrɛndər prɒps",
+    "difficulty": "intermediate",
+    "category": "pattern",
+    "bestPractice": "Use render props for flexible code sharing.",
+    "relatedConcepts": ["children", "composition"]
+  },
+  {
+    "word": "higher-order component",
+    "priority": 87,
+    "definitions": [
+      {
+        "meaning": "A function that takes a component and returns a new component.",
+        "partOfSpeech": "pattern",
+        "example": "withRouter is a higher-order component."
+      }
+    ],
+    "syntax": "const Enhanced = withFeature(Component);",
+    "examples": [
+      "const Enhanced = withRouter(MyComponent);"
+    ],
+    "synonyms": ["HOC"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ˈhaɪər ˈɔːrdər kəmˈpoʊnənt",
+    "difficulty": "intermediate",
+    "category": "pattern",
+    "bestPractice": "Use HOCs for cross-cutting concerns; prefer hooks for new code.",
+    "relatedConcepts": ["hook", "composition"]
+  },
+  {
+    "word": "custom hook",
+    "priority": 88,
+    "definitions": [
+      {
+        "meaning": "A user-defined function that leverages React hooks for reusable logic.",
+        "partOfSpeech": "function",
+        "example": "useAuth is a custom hook."
+      }
+    ],
+    "syntax": "function useCustomHook() { ... }",
+    "examples": [
+      "function useWindowWidth() {\n  const [width, setWidth] = useState(window.innerWidth);\n  useEffect(() => {\n    const handleResize = () => setWidth(window.innerWidth);\n    window.addEventListener('resize', handleResize);\n    return () => window.removeEventListener('resize', handleResize);\n  }, []);\n  return width;\n}"
+    ],
+    "synonyms": ["user hook"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "ˈkʌstəm hʊk",
+    "difficulty": "intermediate",
+    "category": "hook",
+    "bestPractice": "Prefix custom hooks with 'use' and keep them focused.",
+    "relatedConcepts": ["hook", "useState", "useEffect"]
+  },
+  {
+    "word": "useContext",
+    "priority": 89,
+    "definitions": [
+      {
+        "meaning": "A React hook for accessing context values.",
+        "partOfSpeech": "function",
+        "example": "const theme = useContext(ThemeContext);"
+      }
+    ],
+    "syntax": "const value = useContext(Context);",
+    "examples": [
+      "const theme = useContext(ThemeContext);"
+    ],
+    "synonyms": ["context hook"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "juːs ˈkɒntekst",
+    "difficulty": "intermediate",
+    "category": "hook",
+    "bestPractice": "Use useContext for consuming context in function components.",
+    "relatedConcepts": ["context", "provider"]
+  },
+  {
+    "word": "useReducer",
+    "priority": 90,
+    "definitions": [
+      {
+        "meaning": "A React hook for managing complex state logic.",
+        "partOfSpeech": "function",
+        "example": "const [state, dispatch] = useReducer(reducer, initialState);"
+      }
+    ],
+    "syntax": "const [state, dispatch] = useReducer(reducer, initialState);",
+    "examples": [
+      "function reducer(state, action) { switch(action.type) { ... } }",
+      "const [state, dispatch] = useReducer(reducer, { count: 0 });"
+    ],
+    "synonyms": ["reducer hook"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "juːs rɪˈdjuːsər",
+    "difficulty": "intermediate",
+    "category": "hook",
+    "bestPractice": "Use useReducer for state with complex transitions.",
+    "relatedConcepts": ["useState", "state"]
+  },
+  {
+    "word": "useLayoutEffect",
+    "priority": 91,
+    "definitions": [
+      {
+        "meaning": "A React hook that fires synchronously after all DOM mutations.",
+        "partOfSpeech": "function",
+        "example": "useLayoutEffect is like useEffect but fires sooner."
+      }
+    ],
+    "syntax": "useLayoutEffect(() => { ... }, [dependencies]);",
+    "examples": [
+      "useLayoutEffect(() => { /* measure DOM */ }, []);"
+    ],
+    "synonyms": ["layout effect hook"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "juːs ˈleɪaʊt ɪˈfɛkt",
+    "difficulty": "advanced",
+    "category": "hook",
+    "bestPractice": "Use useLayoutEffect for measurements and synchronizing with the DOM.",
+    "relatedConcepts": ["useEffect", "hook"]
+  },
+  {
+    "word": "useImperativeHandle",
+    "priority": 92,
+    "definitions": [
+      {
+        "meaning": "A React hook to customize the instance value that is exposed to parent components when using refs.",
+        "partOfSpeech": "function",
+        "example": "useImperativeHandle lets you expose custom methods to parent refs."
+      }
+    ],
+    "syntax": "useImperativeHandle(ref, () => ({ ... }), [dependencies]);",
+    "examples": [
+      "useImperativeHandle(ref, () => ({ focus: () => { inputRef.current.focus(); } }));"
+    ],
+    "synonyms": ["imperative handle hook"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "juːs ɪmˌpɛrətɪv ˈhændl",
+    "difficulty": "advanced",
+    "category": "hook",
+    "bestPractice": "Use useImperativeHandle only when exposing imperative methods.",
+    "relatedConcepts": ["ref", "useRef"]
+  },
+  {
+    "word": "forwardRef",
+    "priority": 93,
+    "definitions": [
+      {
+        "meaning": "A React function to pass refs through a component to one of its children.",
+        "partOfSpeech": "function",
+        "example": "forwardRef lets you pass a ref to a child component."
+      }
+    ],
+    "syntax": "const FancyButton = forwardRef((props, ref) => <button ref={ref}>{props.children}</button>);",
+    "examples": [
+      "const FancyButton = React.forwardRef((props, ref) => <button ref={ref}>{props.children}</button>);"
+    ],
+    "synonyms": ["ref forwarding"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "ˈfɔːrwərd rɛf",
+    "difficulty": "advanced",
+    "category": "ref",
+    "bestPractice": "Use forwardRef for reusable components that need to expose refs.",
+    "relatedConcepts": ["ref", "useRef"]
+  },
+  {
+    "word": "ErrorBoundary",
+    "priority": 94,
+    "definitions": [
+      {
+        "meaning": "A React component that catches JavaScript errors anywhere in its child component tree.",
+        "partOfSpeech": "component",
+        "example": "Wrap components with ErrorBoundary to handle errors."
+      }
+    ],
+    "syntax": "class ErrorBoundary extends React.Component { ... }",
+    "examples": [
+      "class ErrorBoundary extends React.Component {\n  componentDidCatch(error, info) { ... }\n  render() { return this.props.children; }\n}"
+    ],
+    "synonyms": ["error handler"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "ˈɛrər ˈbaʊndəri",
+    "difficulty": "advanced",
+    "category": "error handling",
+    "bestPractice": "Use ErrorBoundary to catch and display errors in production.",
+    "relatedConcepts": ["custom error handling", "error page"]
+  },
+  {
+    "word": "StrictMode",
+    "priority": 95,
+    "definitions": [
+      {
+        "meaning": "A tool for highlighting potential problems in React applications.",
+        "partOfSpeech": "component",
+        "example": "<React.StrictMode> enables additional checks."
+      }
+    ],
+    "syntax": "<React.StrictMode>{children}</React.StrictMode>",
+    "examples": [
+      "ReactDOM.createRoot(document.getElementById('root')).render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);"
+    ],
+    "synonyms": ["strict mode"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "strɪkt moʊd",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Wrap your app in StrictMode during development.",
+    "relatedConcepts": ["React", "development"]
+  },
+  {
+    "word": "devtools",
+    "priority": 96,
+    "definitions": [
+      {
+        "meaning": "Browser extensions for debugging React and Next.js apps.",
+        "partOfSpeech": "tool",
+        "example": "Use React DevTools to inspect component trees."
+      }
+    ],
+    "syntax": "// install extension in browser",
+    "examples": [
+      "// React DevTools Chrome extension"
+    ],
+    "synonyms": ["developer tools"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "dɛv tuːlz",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Use DevTools for debugging and performance profiling.",
+    "relatedConcepts": ["debugging", "performance"]
+  },
+  {
+    "word": "debugging",
+    "priority": 97,
+    "definitions": [
+      {
+        "meaning": "The process of identifying and removing errors from code.",
+        "partOfSpeech": "noun",
+        "example": "Use console.log and DevTools for debugging."
+      }
+    ],
+    "syntax": "console.log(value);",
+    "examples": [
+      "console.log('Debug:', data);"
+    ],
+    "synonyms": ["troubleshooting"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "diːˈbʌɡɪŋ",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Debug early and often; use breakpoints and logs.",
+    "relatedConcepts": ["devtools", "console"]
+  },
+  {
+    "word": "console",
+    "priority": 98,
+    "definitions": [
+      {
+        "meaning": "A browser tool for logging and debugging JavaScript code.",
+        "partOfSpeech": "noun",
+        "example": "Use console.log to print values."
+      }
+    ],
+    "syntax": "console.log(value);",
+    "examples": [
+      "console.error('Error:', error);"
+    ],
+    "synonyms": ["log", "debug output"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "ˈkɒnsəʊl",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Remove debug logs before deploying to production.",
+    "relatedConcepts": ["debugging", "devtools"]
+  },
+  {
+    "word": "performance optimization",
+    "priority": 99,
+    "definitions": [
+      {
+        "meaning": "Techniques for making React/Next.js apps faster and more efficient.",
+        "partOfSpeech": "noun",
+        "example": "Use memoization and code splitting for performance optimization."
+      }
+    ],
+    "syntax": "// Use React.memo, useMemo, and dynamic imports",
+    "examples": [
+      "const Memoized = React.memo(Component);",
+      "const value = useMemo(() => compute(), [deps]);"
+    ],
+    "synonyms": ["optimization"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "pəˈfɔːrməns ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "bestPractice": "Profile and optimize slow components and large bundles.",
+    "relatedConcepts": ["memo", "useMemo", "dynamic import"]
+  },
+  {
+    "word": "dynamic import",
+    "priority": 100,
+    "definitions": [
+      {
+        "meaning": "A feature for loading modules asynchronously in React/Next.js.",
+        "partOfSpeech": "function",
+        "example": "Use dynamic import to split code."
+      }
+    ],
+    "syntax": "const Component = dynamic(() => import('./Component'));",
+    "examples": [
+      "import dynamic from 'next/dynamic';\nconst Chart = dynamic(() => import('./Chart'));"
+    ],
+    "synonyms": ["code splitting"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "daɪˈnæmɪk ˈɪmpɔːrt",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "bestPractice": "Use dynamic imports for large or rarely used components.",
+    "relatedConcepts": ["performance optimization", "import"]
+  },
+  {
+    "word": "code splitting",
+    "priority": 101,
+    "definitions": [
+      {
+        "meaning": "Splitting code into smaller bundles for faster loading.",
+        "partOfSpeech": "noun",
+        "example": "Next.js does automatic code splitting for each page."
+      }
+    ],
+    "syntax": "dynamic(() => import('./Component'))",
+    "examples": [
+      "const Chart = dynamic(() => import('./Chart'));"
+    ],
+    "synonyms": ["bundle splitting"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "kəʊd ˈsplɪtɪŋ",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "bestPractice": "Split code to reduce initial load time.",
+    "relatedConcepts": ["dynamic import", "performance"]
+  },
+  {
+    "word": "tree shaking",
+    "priority": 102,
+    "definitions": [
+      {
+        "meaning": "Eliminating unused code from the final bundle.",
+        "partOfSpeech": "noun",
+        "example": "Tree shaking removes unused exports."
+      }
+    ],
+    "syntax": "// Use ES6 imports/exports for tree shaking",
+    "examples": [
+      "import { usedFunction } from './utils';"
+    ],
+    "synonyms": ["dead code elimination"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "triː ˈʃeɪkɪŋ",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "bestPractice": "Use ES modules for best tree shaking results.",
+    "relatedConcepts": ["code splitting", "import"]
+  },
+  {
+    "word": "static analysis",
+    "priority": 103,
+    "definitions": [
+      {
+        "meaning": "Analyzing code for errors and improvements without running it.",
+        "partOfSpeech": "noun",
+        "example": "Use ESLint for static analysis."
+      }
+    ],
+    "syntax": "eslint .",
+    "examples": [
+      "npx eslint ."
+    ],
+    "synonyms": ["linting"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "ˈstætɪk əˈnæləsɪs",
+    "difficulty": "intermediate",
+    "category": "development",
+    "bestPractice": "Run static analysis in CI/CD pipelines.",
+    "relatedConcepts": ["linting", "code quality"]
+  },
+  {
+    "word": "linting",
+    "priority": 104,
+    "definitions": [
+      {
+        "meaning": "Checking code for errors, style, and best practices.",
+        "partOfSpeech": "noun",
+        "example": "Use ESLint to lint JavaScript code."
+      }
+    ],
+    "syntax": "eslint .",
+    "examples": [
+      "npx eslint ."
+    ],
+    "synonyms": ["static analysis"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˈlɪntɪŋ",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Lint code before committing or deploying.",
+    "relatedConcepts": ["static analysis", "code quality"]
+  },
+  {
+    "word": "prettier",
+    "priority": 105,
+    "definitions": [
+      {
+        "meaning": "An opinionated code formatter for JavaScript and TypeScript.",
+        "partOfSpeech": "tool",
+        "example": "Use Prettier to format code automatically."
+      }
+    ],
+    "syntax": "prettier --write .",
+    "examples": [
+      "npx prettier --write ."
+    ],
+    "synonyms": ["formatter"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˈprɛtiər",
+    "difficulty": "basic",
+    "category": "development",
+    "bestPractice": "Use Prettier with ESLint for consistent code style.",
+    "relatedConcepts": ["linting", "static analysis"]
+  },
+  {
+    "word": "testing",
+    "priority": 106,
+    "definitions": [
+      {
+        "meaning": "The process of verifying that code works as expected.",
+        "partOfSpeech": "noun",
+        "example": "Write tests for your React components."
+      }
+    ],
+    "syntax": "test('description', () => { ... });",
+    "examples": [
+      "import { render } from '@testing-library/react';\ntest('renders button', () => {\n  render(<Button />);\n});"
+    ],
+    "synonyms": ["unit testing", "integration testing"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "ˈtɛstɪŋ",
+    "difficulty": "basic",
+    "category": "testing",
+    "bestPractice": "Write tests for all critical components and logic.",
+    "relatedConcepts": ["jest", "react-testing-library"]
+  },
+  {
+    "word": "jest",
+    "priority": 107,
+    "definitions": [
+      {
+        "meaning": "A JavaScript testing framework by Meta, popular for React apps.",
+        "partOfSpeech": "tool",
+        "example": "Use Jest to run unit tests."
+      }
+    ],
+    "syntax": "jest",
+    "examples": [
+      "jest",
+      "npm run test"
+    ],
+    "synonyms": ["testing framework"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "dʒɛst",
+    "difficulty": "basic",
+    "category": "testing",
+    "bestPractice": "Use Jest for fast, isolated tests.",
+    "relatedConcepts": ["testing", "react-testing-library"]
+  },
+  {
+    "word": "react-testing-library",
+    "priority": 108,
+    "definitions": [
+      {
+        "meaning": "A library for testing React components by simulating user interactions.",
+        "partOfSpeech": "tool",
+        "example": "Use react-testing-library for user-focused tests."
+      }
+    ],
+    "syntax": "import { render, screen } from '@testing-library/react';",
+    "examples": [
+      "import { render, screen } from '@testing-library/react';\nrender(<Button />);"
+    ],
+    "synonyms": ["RTL", "testing library"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "riːˈækt ˈtɛstɪŋ ˈlaɪbrəri",
+    "difficulty": "basic",
+    "category": "testing",
+    "bestPractice": "Test components from the user's perspective.",
+    "relatedConcepts": ["jest", "testing"]
+  }
+]
