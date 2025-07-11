@@ -1,0 +1,472 @@
+{
+  "concepts": [
+    {
+      "priority": 109,
+      "concept": "Regression Analysis",
+      "category": "Statistics",
+      "definition": "A set of statistical methods for estimating relationships among variables, especially between a dependent variable and one or more independent variables.",
+      "syntax": "y = β0 + β1x + ε",
+      "examples": [
+        "Predicting house prices based on size and location using linear regression"
+      ],
+      "explanation": "Regression is foundational for prediction, trend analysis, and causal inference in data science[2][3].",
+      "tags": ["statistics", "prediction"],
+      "related": ["Correlation", "Linear Regression"]
+    },
+    {
+      "priority": 110,
+      "concept": "Linear Regression",
+      "category": "Statistics",
+      "definition": "A regression model that assumes a linear relationship between input variables and the target variable.",
+      "syntax": "y = mx + b",
+      "examples": [
+        "Predicting salary based on years of experience"
+      ],
+      "explanation": "Linear regression is the most basic and widely used regression technique in data science and analytics[2][3].",
+      "tags": ["statistics", "regression"],
+      "related": ["Regression Analysis", "Correlation"]
+    },
+    {
+      "priority": 111,
+      "concept": "Multiple Regression",
+      "category": "Statistics",
+      "definition": "Regression analysis involving two or more independent variables to predict a dependent variable.",
+      "syntax": "y = β0 + β1x1 + β2x2 + ... + βnxn + ε",
+      "examples": [
+        "Predicting house price using size, location, and age"
+      ],
+      "explanation": "Multiple regression allows modeling of more complex relationships in data science and business analytics[2].",
+      "tags": ["statistics", "regression"],
+      "related": ["Linear Regression", "Regression Analysis"]
+    },
+    {
+      "priority": 112,
+      "concept": "Logistic Regression",
+      "category": "Statistics",
+      "definition": "A regression model used when the dependent variable is categorical (often binary).",
+      "syntax": "P(y=1) = 1 / (1 + e^-(β0 + β1x1 + ... + βnxn))",
+      "examples": [
+        "Predicting if an email is spam or not"
+      ],
+      "explanation": "Logistic regression is widely used for classification problems in machine learning and data science[2][3].",
+      "tags": ["statistics", "classification"],
+      "related": ["Regression Analysis", "Probability"]
+    },
+    {
+      "priority": 113,
+      "concept": "Polynomial Regression",
+      "category": "Statistics",
+      "definition": "A regression technique that models the relationship between the independent variable x and the dependent variable y as an nth degree polynomial.",
+      "syntax": "y = β0 + β1x + β2x^2 + ... + βnx^n + ε",
+      "examples": [
+        "Modeling growth curves or nonlinear trends"
+      ],
+      "explanation": "Polynomial regression captures nonlinear relationships in data[2].",
+      "tags": ["statistics", "regression"],
+      "related": ["Linear Regression", "Regression Analysis"]
+    },
+    {
+      "priority": 114,
+      "concept": "Residual",
+      "category": "Statistics",
+      "definition": "The difference between an observed value and the value predicted by a regression model.",
+      "syntax": "Residual = observed - predicted",
+      "examples": [
+        "If actual = 10, predicted = 8, residual = 2"
+      ],
+      "explanation": "Residuals are used to assess model fit and diagnose errors in regression analysis.",
+      "tags": ["statistics", "regression"],
+      "related": ["Regression Analysis", "Error"]
+    },
+    {
+      "priority": 115,
+      "concept": "Coefficient of Determination (R²)",
+      "category": "Statistics",
+      "definition": "A statistical measure of how well the regression predictions approximate the real data points.",
+      "syntax": "R² = 1 - (SS_res / SS_tot)",
+      "examples": [
+        "R² = 0.9 means 90% of variance explained by the model"
+      ],
+      "explanation": "R² is a key metric for evaluating regression model performance.",
+      "tags": ["statistics", "regression"],
+      "related": ["Regression Analysis", "Residual"]
+    },
+    {
+      "priority": 116,
+      "concept": "Overfitting",
+      "category": "Statistics",
+      "definition": "A modeling error that occurs when a function fits the noise in the data rather than the underlying relationship.",
+      "syntax": "Model performs well on training data, poorly on new data",
+      "examples": [
+        "A model that predicts training data perfectly but fails on test data"
+      ],
+      "explanation": "Overfitting is a major challenge in machine learning and model selection.",
+      "tags": ["statistics", "modeling"],
+      "related": ["Underfitting", "Regularization"]
+    },
+    {
+      "priority": 117,
+      "concept": "Underfitting",
+      "category": "Statistics",
+      "definition": "A modeling error that occurs when a function is too simple to capture the underlying trend of the data.",
+      "syntax": "Model performs poorly on both training and test data",
+      "examples": [
+        "A straight line model for curved data"
+      ],
+      "explanation": "Underfitting indicates the need for a more complex model or additional features.",
+      "tags": ["statistics", "modeling"],
+      "related": ["Overfitting", "Regression Analysis"]
+    },
+    {
+      "priority": 118,
+      "concept": "Regularization",
+      "category": "Statistics",
+      "definition": "Techniques used to prevent overfitting by adding a penalty term to the loss function.",
+      "syntax": "Loss + λ * penalty (e.g., L1 or L2 norm)",
+      "examples": [
+        "Ridge regression, Lasso regression"
+      ],
+      "explanation": "Regularization improves model generalization in machine learning and statistics.",
+      "tags": ["statistics", "modeling"],
+      "related": ["Overfitting", "Regression Analysis"]
+    },
+    {
+      "priority": 119,
+      "concept": "Lasso Regression",
+      "category": "Statistics",
+      "definition": "A type of linear regression that uses L1 regularization, which can shrink some coefficients to zero.",
+      "syntax": "Loss + λ * Σ|β_j|",
+      "examples": [
+        "Feature selection in high-dimensional data"
+      ],
+      "explanation": "Lasso helps with feature selection and prevents overfitting.",
+      "tags": ["statistics", "regularization"],
+      "related": ["Regularization", "Ridge Regression"]
+    },
+    {
+      "priority": 120,
+      "concept": "Ridge Regression",
+      "category": "Statistics",
+      "definition": "A type of linear regression that uses L2 regularization, penalizing the sum of the squares of the coefficients.",
+      "syntax": "Loss + λ * Σβ_j^2",
+      "examples": [
+        "Used when predictors are highly correlated"
+      ],
+      "explanation": "Ridge regression helps prevent overfitting and handles multicollinearity.",
+      "tags": ["statistics", "regularization"],
+      "related": ["Regularization", "Lasso Regression"]
+    },
+    {
+      "priority": 121,
+      "concept": "Bayesian Inference",
+      "category": "Statistics",
+      "definition": "A method of statistical inference in which Bayes' theorem is used to update the probability for a hypothesis as more evidence is acquired.",
+      "syntax": "P(H|D) = [P(D|H) * P(H)] / P(D)",
+      "examples": [
+        "Updating disease probability after a positive test result"
+      ],
+      "explanation": "Bayesian inference is foundational for probabilistic modeling and decision-making in AI[3].",
+      "tags": ["statistics", "probability"],
+      "related": ["Bayes' Theorem", "Probability"]
+    },
+    {
+      "priority": 122,
+      "concept": "Bayes' Theorem",
+      "category": "Probability",
+      "definition": "A formula that describes how to update the probabilities of hypotheses when given evidence.",
+      "syntax": "P(A|B) = [P(B|A) * P(A)] / P(B)",
+      "examples": [
+        "Probability of disease given a positive test"
+      ],
+      "explanation": "Bayes' theorem is the foundation of Bayesian statistics and machine learning[3].",
+      "tags": ["probability", "statistics"],
+      "related": ["Bayesian Inference", "Conditional Probability"]
+    },
+    {
+      "priority": 123,
+      "concept": "Conditional Probability",
+      "category": "Probability",
+      "definition": "The probability of an event occurring given that another event has already occurred.",
+      "syntax": "P(A|B) = P(A and B) / P(B)",
+      "examples": [
+        "Probability of rain given cloudy weather"
+      ],
+      "explanation": "Conditional probability is essential for reasoning under uncertainty and in Bayesian analysis.",
+      "tags": ["probability", "statistics"],
+      "related": ["Bayes' Theorem", "Probability"]
+    },
+    {
+      "priority": 124,
+      "concept": "Joint Probability",
+      "category": "Probability",
+      "definition": "The probability of two events occurring together.",
+      "syntax": "P(A and B)",
+      "examples": [
+        "Probability of drawing a red card and a king from a deck"
+      ],
+      "explanation": "Joint probability is used in multivariate analysis and probabilistic modeling.",
+      "tags": ["probability", "statistics"],
+      "related": ["Conditional Probability", "Probability"]
+    },
+    {
+      "priority": 125,
+      "concept": "Marginal Probability",
+      "category": "Probability",
+      "definition": "The probability of an event irrespective of the outcome of other variables.",
+      "syntax": "P(A) = Σ P(A and B)",
+      "examples": [
+        "Probability of drawing a red card, regardless of rank"
+      ],
+      "explanation": "Marginal probability is used in statistical inference and probability tables.",
+      "tags": ["probability", "statistics"],
+      "related": ["Joint Probability", "Conditional Probability"]
+    },
+    {
+      "priority": 126,
+      "concept": "Independence",
+      "category": "Probability",
+      "definition": "Two events are independent if the occurrence of one does not affect the probability of the other.",
+      "syntax": "P(A and B) = P(A) * P(B)",
+      "examples": [
+        "Flipping two different coins"
+      ],
+      "explanation": "Independence is a key assumption in many statistical models and probability theory.",
+      "tags": ["probability", "statistics"],
+      "related": ["Joint Probability", "Conditional Probability"]
+    },
+    {
+      "priority": 127,
+      "concept": "Mutually Exclusive Events",
+      "category": "Probability",
+      "definition": "Events that cannot occur at the same time.",
+      "syntax": "P(A and B) = 0",
+      "examples": [
+        "Rolling a die: getting a 2 and a 5 in one roll"
+      ],
+      "explanation": "Mutually exclusive events are used in probability calculations and risk assessment.",
+      "tags": ["probability", "statistics"],
+      "related": ["Probability", "Independence"]
+    },
+    {
+      "priority": 128,
+      "concept": "Binomial Distribution",
+      "category": "Probability",
+      "definition": "A discrete probability distribution of the number of successes in a sequence of independent yes/no experiments.",
+      "syntax": "P(X = k) = C(n, k) p^k (1-p)^{n-k}",
+      "examples": [
+        "Probability of 3 heads in 5 coin tosses"
+      ],
+      "explanation": "Binomial distributions model binary outcomes and are fundamental in statistics and machine learning.",
+      "tags": ["probability", "distribution"],
+      "related": ["Probability Distribution", "Normal Distribution"]
+    },
+    {
+      "priority": 129,
+      "concept": "Poisson Distribution",
+      "category": "Probability",
+      "definition": "A discrete probability distribution expressing the probability of a given number of events occurring in a fixed interval of time or space.",
+      "syntax": "P(X = k) = (λ^k * e^{-λ}) / k!",
+      "examples": [
+        "Number of emails received per hour"
+      ],
+      "explanation": "Poisson distributions are used for modeling rare events and counts.",
+      "tags": ["probability", "distribution"],
+      "related": ["Probability Distribution", "Binomial Distribution"]
+    },
+    {
+      "priority": 130,
+      "concept": "Normal Distribution",
+      "category": "Probability",
+      "definition": "A continuous probability distribution characterized by a symmetric, bell-shaped curve.",
+      "syntax": "f(x) = (1/√(2πσ^2)) e^{-(x-μ)^2/(2σ^2)}",
+      "examples": [
+        "Heights, test scores"
+      ],
+      "explanation": "Normal distributions are central to statistics, inference, and machine learning.",
+      "tags": ["probability", "distribution"],
+      "related": ["Probability Distribution", "Central Limit Theorem"]
+    },
+    {
+      "priority": 131,
+      "concept": "Standard Normal Distribution",
+      "category": "Probability",
+      "definition": "A normal distribution with mean 0 and standard deviation 1.",
+      "syntax": "Z ~ N(0,1)",
+      "examples": [
+        "Z-scores use the standard normal distribution"
+      ],
+      "explanation": "Standard normal is used for standardization and hypothesis testing.",
+      "tags": ["probability", "distribution"],
+      "related": ["Normal Distribution", "Z-score"]
+    },
+    {
+      "priority": 132,
+      "concept": "Exponential Distribution",
+      "category": "Probability",
+      "definition": "A continuous probability distribution describing the time between events in a Poisson process.",
+      "syntax": "f(x;λ) = λe^{-λx} for x≥0",
+      "examples": [
+        "Time between arrivals at a bus stop"
+      ],
+      "explanation": "Exponential distributions model waiting times and lifetimes.",
+      "tags": ["probability", "distribution"],
+      "related": ["Poisson Distribution", "Probability Distribution"]
+    },
+    {
+      "priority": 133,
+      "concept": "Gamma Distribution",
+      "category": "Probability",
+      "definition": "A two-parameter family of continuous probability distributions.",
+      "syntax": "f(x;k,θ) = x^{k-1}e^{-x/θ}/[θ^kΓ(k)]",
+      "examples": [
+        "Modeling waiting times for multiple events"
+      ],
+      "explanation": "Gamma distributions generalize exponential and are used in reliability analysis.",
+      "tags": ["probability", "distribution"],
+      "related": ["Exponential Distribution", "Probability Distribution"]
+    },
+    {
+      "priority": 134,
+      "concept": "Chi-Square Distribution",
+      "category": "Probability",
+      "definition": "A distribution of a sum of the squares of k independent standard normal random variables.",
+      "syntax": "χ² ~ χ²(k)",
+      "examples": [
+        "Used in goodness-of-fit tests"
+      ],
+      "explanation": "Chi-square is used in hypothesis testing and confidence intervals.",
+      "tags": ["probability", "distribution"],
+      "related": ["Normal Distribution", "Hypothesis Testing"]
+    },
+    {
+      "priority": 135,
+      "concept": "F-Distribution",
+      "category": "Probability",
+      "definition": "A ratio of two scaled chi-square distributions, used in analysis of variance.",
+      "syntax": "F = (χ²₁/d₁) / (χ²₂/d₂)",
+      "examples": [
+        "Used in ANOVA tests"
+      ],
+      "explanation": "F-distributions are used to compare variances and in regression analysis.",
+      "tags": ["probability", "distribution"],
+      "related": ["Chi-Square Distribution", "ANOVA"]
+    },
+    {
+      "priority": 136,
+      "concept": "Multivariate Analysis",
+      "category": "Statistics",
+      "definition": "Statistical analysis involving multiple variables simultaneously.",
+      "syntax": "Analysis of covariance, MANOVA, PCA",
+      "examples": [
+        "PCA for dimensionality reduction"
+      ],
+      "explanation": "Multivariate analysis is crucial for high-dimensional data in data science and AI[3].",
+      "tags": ["statistics", "analysis"],
+      "related": ["Principal Component Analysis", "Regression Analysis"]
+    },
+    {
+      "priority": 137,
+      "concept": "Principal Component Analysis (PCA)",
+      "category": "Statistics",
+      "definition": "A dimensionality reduction technique that transforms correlated variables into uncorrelated principal components.",
+      "syntax": "PCs = eigenvectors of covariance matrix",
+      "examples": [
+        "Reducing image data to main features"
+      ],
+      "explanation": "PCA is widely used for feature reduction and data visualization in AI[3].",
+      "tags": ["statistics", "dimensionality reduction"],
+      "related": ["Multivariate Analysis", "Eigenvectors"]
+    },
+    {
+      "priority": 138,
+      "concept": "Clustering",
+      "category": "Statistics",
+      "definition": "A technique for grouping similar data points together based on their features.",
+      "syntax": "K-means, hierarchical clustering",
+      "examples": [
+        "Grouping customers by purchasing behavior"
+      ],
+      "explanation": "Clustering is used in unsupervised learning, market segmentation, and pattern recognition.",
+      "tags": ["statistics", "machine learning"],
+      "related": ["Principal Component Analysis", "Classification"]
+    },
+    {
+      "priority": 139,
+      "concept": "Classification",
+      "category": "Statistics",
+      "definition": "Assigning data points to predefined categories or classes.",
+      "syntax": "Logistic regression, decision trees, SVM",
+      "examples": [
+        "Spam detection in emails"
+      ],
+      "explanation": "Classification is a core task in supervised learning and AI.",
+      "tags": ["statistics", "machine learning"],
+      "related": ["Clustering", "Logistic Regression"]
+    },
+    {
+      "priority": 140,
+      "concept": "Confusion Matrix",
+      "category": "Statistics",
+      "definition": "A table used to evaluate the performance of a classification algorithm.",
+      "syntax": "Rows: actual class; Columns: predicted class",
+      "examples": [
+        "True positive, false positive, true negative, false negative"
+      ],
+      "explanation": "Confusion matrices help assess accuracy, precision, recall, and F1-score.",
+      "tags": ["statistics", "evaluation"],
+      "related": ["Classification", "Precision"]
+    },
+    {
+      "priority": 141,
+      "concept": "Precision",
+      "category": "Statistics",
+      "definition": "The ratio of true positives to all predicted positives in classification.",
+      "syntax": "Precision = TP / (TP + FP)",
+      "examples": [
+        "Precision of 0.8 means 80% of positive predictions are correct"
+      ],
+      "explanation": "Precision evaluates the accuracy of positive predictions.",
+      "tags": ["statistics", "evaluation"],
+      "related": ["Recall", "Confusion Matrix"]
+    },
+    {
+      "priority": 142,
+      "concept": "Recall",
+      "category": "Statistics",
+      "definition": "The ratio of true positives to all actual positives in classification.",
+      "syntax": "Recall = TP / (TP + FN)",
+      "examples": [
+        "Recall of 0.7 means 70% of all actual positives were identified"
+      ],
+      "explanation": "Recall evaluates the ability to find all relevant cases.",
+      "tags": ["statistics", "evaluation"],
+      "related": ["Precision", "Confusion Matrix"]
+    },
+    {
+      "priority": 143,
+      "concept": "F1 Score",
+      "category": "Statistics",
+      "definition": "The harmonic mean of precision and recall.",
+      "syntax": "F1 = 2 * (Precision * Recall) / (Precision + Recall)",
+      "examples": [
+        "F1 score balances precision and recall in classification"
+      ],
+      "explanation": "F1 score is used when both precision and recall are important.",
+      "tags": ["statistics", "evaluation"],
+      "related": ["Precision", "Recall"]
+    },
+    {
+      "priority": 144,
+      "concept": "Graph Theory",
+      "category": "Discrete Mathematics",
+      "definition": "The study of graphs, which are mathematical structures used to model pairwise relations between objects.",
+      "syntax": "Graph G = (V, E) where V = vertices, E = edges",
+      "examples": [
+        "Social networks, transportation maps"
+      ],
+      "explanation": "Graph theory is vital for modeling relationships in data science, computer science, and AI[2][3].",
+      "tags": ["discrete math", "networks"],
+      "related": ["Vertex", "Edge"]
+    }
+  ]
+}
