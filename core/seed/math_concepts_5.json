@@ -1,0 +1,472 @@
+{
+  "concepts": [
+    {
+      "priority": 145,
+      "concept": "Vertex",
+      "category": "Discrete Mathematics",
+      "definition": "A fundamental unit of a graph, representing a node or point where edges meet.",
+      "syntax": "V in G = (V, E)",
+      "examples": [
+        "In a social network, each person is a vertex."
+      ],
+      "explanation": "Vertices are the primary objects in graph theory, representing entities or objects[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Edge", "Graph Theory"]
+    },
+    {
+      "priority": 146,
+      "concept": "Edge",
+      "category": "Discrete Mathematics",
+      "definition": "A connection between two vertices in a graph.",
+      "syntax": "E in G = (V, E)",
+      "examples": [
+        "A friendship between two people in a social network graph."
+      ],
+      "explanation": "Edges represent relationships or connections between entities in graph theory[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Vertex", "Graph Theory"]
+    },
+    {
+      "priority": 147,
+      "concept": "Directed Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph where edges have a direction, going from one vertex to another.",
+      "syntax": "G = (V, E), E = ordered pairs (u, v)",
+      "examples": [
+        "A Twitter follow graph (A follows B, but B may not follow A)."
+      ],
+      "explanation": "Directed graphs model asymmetric relationships such as web links or workflows[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Edge", "Vertex"]
+    },
+    {
+      "priority": 148,
+      "concept": "Undirected Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph where edges have no direction; connections are bidirectional.",
+      "syntax": "G = (V, E), E = unordered pairs {u, v}",
+      "examples": [
+        "A Facebook friendship network."
+      ],
+      "explanation": "Undirected graphs model symmetric relationships, such as friendships or collaborations[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Edge", "Vertex"]
+    },
+    {
+      "priority": 149,
+      "concept": "Weighted Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph where each edge has an associated numerical value or weight.",
+      "syntax": "E = (u, v, w)",
+      "examples": [
+        "Road network with distances as weights."
+      ],
+      "explanation": "Weighted graphs are used to model costs, distances, or strengths of relationships[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Edge", "Graph Theory"]
+    },
+    {
+      "priority": 150,
+      "concept": "Path",
+      "category": "Discrete Mathematics",
+      "definition": "A sequence of vertices connected by edges in a graph.",
+      "syntax": "v1 → v2 → ... → vn",
+      "examples": [
+        "A route from one city to another on a map."
+      ],
+      "explanation": "Paths are fundamental in analyzing connectivity and traversal in graphs[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Vertex", "Edge"]
+    },
+    {
+      "priority": 151,
+      "concept": "Cycle",
+      "category": "Discrete Mathematics",
+      "definition": "A path in a graph that starts and ends at the same vertex, with all edges and vertices distinct except the start/end.",
+      "syntax": "v1 → v2 → ... → v1",
+      "examples": [
+        "A round trip in a transportation network."
+      ],
+      "explanation": "Cycles are important for detecting feedback, redundancy, and loops in networks[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Path", "Graph Theory"]
+    },
+    {
+      "priority": 152,
+      "concept": "Tree",
+      "category": "Discrete Mathematics",
+      "definition": "An acyclic connected graph; a special kind of graph with no cycles.",
+      "syntax": "Connected, no cycles",
+      "examples": [
+        "A family tree or file directory structure."
+      ],
+      "explanation": "Trees are used for hierarchical data, parsing, and efficient searching[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Graph Theory", "Path"]
+    },
+    {
+      "priority": 153,
+      "concept": "Rooted Tree",
+      "category": "Discrete Mathematics",
+      "definition": "A tree with one designated node as the root, from which all nodes descend.",
+      "syntax": "Tree with root node",
+      "examples": [
+        "A file system directory tree."
+      ],
+      "explanation": "Rooted trees model hierarchical structures and inheritance[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Tree", "Graph Theory"]
+    },
+    {
+      "priority": 154,
+      "concept": "Leaf Node",
+      "category": "Discrete Mathematics",
+      "definition": "A node in a tree that has no children.",
+      "syntax": "Node with degree 1 (except root)",
+      "examples": [
+        "A file with no subfolders in a directory tree."
+      ],
+      "explanation": "Leaf nodes often represent endpoints or terminal states in trees[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Tree", "Rooted Tree"]
+    },
+    {
+      "priority": 155,
+      "concept": "Degree (Graph Theory)",
+      "category": "Discrete Mathematics",
+      "definition": "The number of edges incident to a vertex.",
+      "syntax": "deg(v)",
+      "examples": [
+        "A node with three connections has degree 3."
+      ],
+      "explanation": "Degree helps analyze connectivity and importance of nodes in a network[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Vertex", "Edge"]
+    },
+    {
+      "priority": 156,
+      "concept": "Connected Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph in which there is a path between every pair of vertices.",
+      "syntax": "For all u,v in V, path(u,v) exists",
+      "examples": [
+        "A transportation network where every city can be reached from every other."
+      ],
+      "explanation": "Connectivity is crucial for analyzing networks and communication systems[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Path", "Graph Theory"]
+    },
+    {
+      "priority": 157,
+      "concept": "Disconnected Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph that is not connected; some vertices cannot be reached from others.",
+      "syntax": "Not all pairs (u,v) have a path",
+      "examples": [
+        "A network with isolated subgroups."
+      ],
+      "explanation": "Disconnected graphs occur in fragmented systems or networks[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Connected Graph", "Graph Theory"]
+    },
+    {
+      "priority": 158,
+      "concept": "Subgraph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph formed from a subset of the vertices and edges of another graph.",
+      "syntax": "G' = (V', E') where V'⊆V, E'⊆E",
+      "examples": [
+        "A social network of only employees within a company."
+      ],
+      "explanation": "Subgraphs are used for analyzing parts of larger networks[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Graph Theory", "Vertex"]
+    },
+    {
+      "priority": 159,
+      "concept": "Complete Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph in which every pair of distinct vertices is connected by a unique edge.",
+      "syntax": "K_n: n vertices, (n(n-1))/2 edges",
+      "examples": [
+        "A network where everyone knows everyone else."
+      ],
+      "explanation": "Complete graphs are used in combinatorics and network analysis[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Graph Theory", "Vertex"]
+    },
+    {
+      "priority": 160,
+      "concept": "Bipartite Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph whose vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to one in the other.",
+      "syntax": "G = (U ∪ V, E), E ⊆ U × V",
+      "examples": [
+        "Matching jobs to applicants."
+      ],
+      "explanation": "Bipartite graphs model matching problems and two-sided networks[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Graph Theory", "Edge"]
+    },
+    {
+      "priority": 161,
+      "concept": "Adjacency Matrix",
+      "category": "Discrete Mathematics",
+      "definition": "A square matrix used to represent a finite graph, where each element indicates if a pair of vertices are adjacent.",
+      "syntax": "A[i][j] = 1 if (i,j) in E, else 0",
+      "examples": [
+        "Matrix for a triangle graph: [[0,1,1],[1,0,1],[1,1,0]]"
+      ],
+      "explanation": "Adjacency matrices are used for efficient graph algorithms and network analysis[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Graph Theory", "Edge"]
+    },
+    {
+      "priority": 162,
+      "concept": "Incidence Matrix",
+      "category": "Discrete Mathematics",
+      "definition": "A matrix that shows the relationship between vertices and edges in a graph.",
+      "syntax": "Rows: vertices, Columns: edges",
+      "examples": [
+        "Incidence matrix for a simple graph"
+      ],
+      "explanation": "Incidence matrices are used in network flow and graph algorithms[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Adjacency Matrix", "Graph Theory"]
+    },
+    {
+      "priority": 163,
+      "concept": "Eulerian Path",
+      "category": "Discrete Mathematics",
+      "definition": "A path in a graph that visits every edge exactly once.",
+      "syntax": "Exists if at most two vertices have odd degree",
+      "examples": [
+        "The classic Seven Bridges of Königsberg problem."
+      ],
+      "explanation": "Eulerian paths are important in routing, DNA sequencing, and logistics[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Path", "Cycle"]
+    },
+    {
+      "priority": 164,
+      "concept": "Hamiltonian Path",
+      "category": "Discrete Mathematics",
+      "definition": "A path in a graph that visits every vertex exactly once.",
+      "syntax": "Visits all vertices, may repeat edges",
+      "examples": [
+        "Traveling salesman problem route."
+      ],
+      "explanation": "Hamiltonian paths are central in optimization and computational complexity[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Path", "Cycle"]
+    },
+    {
+      "priority": 165,
+      "concept": "Planar Graph",
+      "category": "Discrete Mathematics",
+      "definition": "A graph that can be drawn on a plane without edges crossing.",
+      "syntax": "Can be embedded in the plane",
+      "examples": [
+        "A map of countries with shared borders."
+      ],
+      "explanation": "Planar graphs are used in circuit design, geography, and visualization[2][3].",
+      "tags": ["discrete math", "graph theory"],
+      "related": ["Graph Theory", "Edge"]
+    },
+    {
+      "priority": 166,
+      "concept": "Set",
+      "category": "Discrete Mathematics",
+      "definition": "A collection of distinct objects, considered as an object in its own right.",
+      "syntax": "{a, b, c}",
+      "examples": [
+        "Set of all prime numbers less than 10: {2, 3, 5, 7}"
+      ],
+      "explanation": "Sets are foundational for all of mathematics and logic[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Subset", "Union"]
+    },
+    {
+      "priority": 167,
+      "concept": "Subset",
+      "category": "Discrete Mathematics",
+      "definition": "A set whose elements are all contained in another set.",
+      "syntax": "A ⊆ B",
+      "examples": [
+        "{2, 3} ⊆ {2, 3, 5, 7}"
+      ],
+      "explanation": "Subsets are used in combinatorics, logic, and probability[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Power Set"]
+    },
+    {
+      "priority": 168,
+      "concept": "Power Set",
+      "category": "Discrete Mathematics",
+      "definition": "The set of all subsets of a set.",
+      "syntax": "P(S) = {A | A ⊆ S}",
+      "examples": [
+        "Power set of {a, b}: {{}, {a}, {b}, {a, b}}"
+      ],
+      "explanation": "Power sets are important in combinatorics and logic[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Subset"]
+    },
+    {
+      "priority": 169,
+      "concept": "Union (Set Theory)",
+      "category": "Discrete Mathematics",
+      "definition": "The set containing all elements from two or more sets.",
+      "syntax": "A ∪ B",
+      "examples": [
+        "{1,2} ∪ {2,3} = {1,2,3}"
+      ],
+      "explanation": "Union is a basic operation in set theory and probability[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Intersection"]
+    },
+    {
+      "priority": 170,
+      "concept": "Intersection (Set Theory)",
+      "category": "Discrete Mathematics",
+      "definition": "The set containing only the elements common to two or more sets.",
+      "syntax": "A ∩ B",
+      "examples": [
+        "{1,2} ∩ {2,3} = {2}"
+      ],
+      "explanation": "Intersection is used in probability, logic, and data querying[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Union"]
+    },
+    {
+      "priority": 171,
+      "concept": "Complement (Set Theory)",
+      "category": "Discrete Mathematics",
+      "definition": "The set of all elements not in a given set, relative to a universal set.",
+      "syntax": "A' = U \\ A",
+      "examples": [
+        "If U = {1,2,3,4}, A = {1,2}, then A' = {3,4}"
+      ],
+      "explanation": "Complements are used in probability and logic[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Union"]
+    },
+    {
+      "priority": 172,
+      "concept": "Cartesian Product",
+      "category": "Discrete Mathematics",
+      "definition": "The set of all ordered pairs from two sets.",
+      "syntax": "A × B = {(a, b) | a ∈ A, b ∈ B}",
+      "examples": [
+        "{1,2} × {a,b} = {(1,a), (1,b), (2,a), (2,b)}"
+      ],
+      "explanation": "Cartesian products are used in relations, databases, and combinatorics[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Relation"]
+    },
+    {
+      "priority": 173,
+      "concept": "Relation (Discrete Math)",
+      "category": "Discrete Mathematics",
+      "definition": "A subset of the Cartesian product of two sets, representing a relationship between elements.",
+      "syntax": "R ⊆ A × B",
+      "examples": [
+        "Less-than relation on numbers: (a, b) where a < b"
+      ],
+      "explanation": "Relations generalize functions and are used in databases and logic[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Set", "Cartesian Product"]
+    },
+    {
+      "priority": 174,
+      "concept": "Function (Discrete Math)",
+      "category": "Discrete Mathematics",
+      "definition": "A special type of relation where each input is related to exactly one output.",
+      "syntax": "f: A → B",
+      "examples": [
+        "f(x) = x^2 from integers to integers"
+      ],
+      "explanation": "Functions are fundamental in all mathematics and computer science[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Relation", "Set"]
+    },
+    {
+      "priority": 175,
+      "concept": "Injection (One-to-One Function)",
+      "category": "Discrete Mathematics",
+      "definition": "A function where each element of the domain maps to a unique element of the codomain.",
+      "syntax": "f(x1) = f(x2) ⇒ x1 = x2",
+      "examples": [
+        "f(x) = 2x is injective from integers to even integers"
+      ],
+      "explanation": "Injections are used in counting, cryptography, and database indexing[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Function", "Surjection"]
+    },
+    {
+      "priority": 176,
+      "concept": "Surjection (Onto Function)",
+      "category": "Discrete Mathematics",
+      "definition": "A function where every element of the codomain is mapped to by at least one element of the domain.",
+      "syntax": "For all y in B, exists x in A: f(x) = y",
+      "examples": [
+        "f(x) = floor(x) from real numbers to integers"
+      ],
+      "explanation": "Surjections are important in combinatorics and database design[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Function", "Injection"]
+    },
+    {
+      "priority": 177,
+      "concept": "Bijection",
+      "category": "Discrete Mathematics",
+      "definition": "A function that is both injective and surjective; a one-to-one correspondence between two sets.",
+      "syntax": "Both injection and surjection",
+      "examples": [
+        "f(x) = x + 1 from integers to integers"
+      ],
+      "explanation": "Bijections are used in combinatorics, cryptography, and counting[2][3][4].",
+      "tags": ["discrete math", "set theory"],
+      "related": ["Injection", "Surjection"]
+    },
+    {
+      "priority": 178,
+      "concept": "Combinatorics",
+      "category": "Discrete Mathematics",
+      "definition": "The branch of mathematics dealing with counting, arrangement, and combination of objects.",
+      "syntax": "n!, C(n, k), P(n, k)",
+      "examples": [
+        "Ways to arrange 3 books: 3! = 6"
+      ],
+      "explanation": "Combinatorics underpins probability, algorithms, and optimization[2][3][4].",
+      "tags": ["discrete math", "counting"],
+      "related": ["Permutation", "Combination"]
+    },
+    {
+      "priority": 179,
+      "concept": "Permutation",
+      "category": "Discrete Mathematics",
+      "definition": "An arrangement of objects in a specific order.",
+      "syntax": "P(n, k) = n! / (n - k)!",
+      "examples": [
+        "Arranging 3 out of 5 books: P(5,3) = 60"
+      ],
+      "explanation": "Permutations are used in counting, cryptography, and probability[2][3][4].",
+      "tags": ["discrete math", "counting"],
+      "related": ["Combinatorics", "Combination"]
+    },
+    {
+      "priority": 180,
+      "concept": "Combination",
+      "category": "Discrete Mathematics",
+      "definition": "A selection of objects without regard to order.",
+      "syntax": "C(n, k) = n! / (k! (n - k)!)",
+      "examples": [
+        "Choosing 2 out of 4 items: C(4,2) = 6"
+      ],
+      "explanation": "Combinations are key in probability, statistics, and optimization[2][3][4].",
+      "tags": ["discrete math", "counting"],
+      "related": ["Combinatorics", "Permutation"]
+    }
+  ]
+}
