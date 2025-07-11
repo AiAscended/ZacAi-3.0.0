@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 1,
+      "concept": "AI-Driven Threat Detection",
+      "category": "Cybersecurity",
+      "definition": "Use embedded AI and machine learning models to detect and respond to cyber threats in real time, recognizing unusual patterns and isolating threats instantly.",
+      "syntax": "// AI model monitors system logs and network traffic for anomalies",
+      "examples": [
+        "AI in vehicles recognizes a remote hijack attempt and isolates the compromised ECU instantly[1][2][3][7]."
+      ],
+      "explanation": "AI-driven threat detection enables rapid, adaptive defense against evolving cyberattacks, learning from each attempt to improve future resilience.",
+      "tags": ["ai", "threat detection", "real-time"],
+      "related": ["Anomaly Detection", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 2,
+      "concept": "Security by Design",
+      "category": "Cybersecurity",
+      "definition": "Integrate security into every stage of system and software architecture, from initial design through deployment and updates.",
+      "syntax": "// Enforce secure boot, encrypted storage, and access controls in architecture",
+      "examples": [
+        "Automakers implement zonal control and integrated domain controllers for consistent, centralized protection[1][4]."
+      ],
+      "explanation": "Security by design reduces vulnerabilities, simplifies compliance, and ensures consistent protection across all system functions.",
+      "tags": ["design", "architecture", "security"],
+      "related": ["Secure Vehicle Architecture", "Zero Trust Architecture"]
+    },
+    {
+      "priority": 3,
+      "concept": "Zero Trust Architecture (ZTA)",
+      "category": "Cybersecurity",
+      "definition": "Adopt a security model where no device, user, or process is trusted by default, enforcing strict verification at every access point.",
+      "syntax": "// Require authentication and authorization for all internal and external communications",
+      "examples": [
+        "Vehicles and cloud systems use ZTA to secure data exchanges and API access[4]."
+      ],
+      "explanation": "Zero trust minimizes the risk of lateral movement and unauthorized access, especially in highly connected environments.",
+      "tags": ["zero trust", "architecture", "security"],
+      "related": ["Security by Design", "API Security"]
+    },
+    {
+      "priority": 4,
+      "concept": "Blockchain for Data Integrity",
+      "category": "Cybersecurity",
+      "definition": "Use blockchain technology to ensure authenticity, immutability, and traceability of data transactions and OTA updates.",
+      "syntax": "// Blockchain logs all OTA update transactions and code changes",
+      "examples": [
+        "Vehicles use blockchain to verify OTA updates and prevent unauthorized code injection[1]."
+      ],
+      "explanation": "Blockchain ensures data integrity and trust in distributed, connected systems.",
+      "tags": ["blockchain", "data integrity", "security"],
+      "related": ["Data Integrity & Self-Healing", "OTA Security"]
+    },
+    {
+      "priority": 5,
+      "concept": "Supply Chain Security",
+      "category": "Cybersecurity",
+      "definition": "Enforce rigorous supplier security evaluations, software bills of materials (SBOMs), and secure firmware/hardware development to prevent supply chain attacks.",
+      "syntax": "// Require SBOM and security assessments for all third-party code",
+      "examples": [
+        "Automakers track software dependencies and secure firmware to prevent supply chain exploits[4]."
+      ],
+      "explanation": "Supply chain security is critical as platform standardization and interconnectedness increase the risk of systemwide vulnerabilities.",
+      "tags": ["supply chain", "sbom", "security"],
+      "related": ["Security by Design", "Regulatory Compliance"]
+    },
+    {
+      "priority": 6,
+      "concept": "Continuous Security Assessment",
+      "category": "Cybersecurity",
+      "definition": "Conduct ongoing vulnerability scans, penetration testing, and monitoring to identify and remediate risks proactively.",
+      "syntax": "// Schedule automated vulnerability scans and pen tests",
+      "examples": [
+        "Automakers run continuous scans on in-vehicle systems and cloud infrastructure[4][8]."
+      ],
+      "explanation": "Continuous assessment closes the cybersecurity gap and ensures rapid response to emerging threats.",
+      "tags": ["assessment", "vulnerability", "security"],
+      "related": ["AI-Driven Threat Detection", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 7,
+      "concept": "Self-Healing Cybersecurity",
+      "category": "Cybersecurity",
+      "definition": "AI-driven systems that autonomously detect, isolate, and remediate cyber threats, restoring normal operations without human intervention.",
+      "syntax": "// AI quarantines compromised node and restores clean backup",
+      "examples": [
+        "AI detects ransomware, isolates affected components, and rolls back to safe state[1][3][7][8]."
+      ],
+      "explanation": "Self-healing cybersecurity reduces mean time to detect/respond (MTTD/MTTR) and improves operational resilience.",
+      "tags": ["self-healing", "cybersecurity", "ai"],
+      "related": ["AI-Driven Threat Detection", "Automated Recovery"]
+    },
+    {
+      "priority": 8,
+      "concept": "Secure OTA (Over-the-Air) Updates",
+      "category": "Cybersecurity",
+      "definition": "Ensure OTA updates are authenticated, encrypted, and verified to prevent unauthorized code injection or tampering.",
+      "syntax": "// OTA updates require digital signature verification",
+      "examples": [
+        "Vehicles only accept OTA updates signed by trusted manufacturer keys[1][4]."
+      ],
+      "explanation": "Secure OTA updates are essential for maintaining vehicle safety and integrity as software complexity grows.",
+      "tags": ["ota", "updates", "security"],
+      "related": ["Blockchain for Data Integrity", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 9,
+      "concept": "API Security",
+      "category": "Cybersecurity",
+      "definition": "Protect APIs from unauthorized access, injection attacks, and data breaches using authentication, authorization, and input validation.",
+      "syntax": "// Use OAuth2, input sanitization, and rate limiting on APIs",
+      "examples": [
+        "Vehicle cloud APIs require strong authentication and validate all requests[4]."
+      ],
+      "explanation": "API security is critical as vehicles and infrastructure increasingly rely on cloud and third-party integrations.",
+      "tags": ["api", "security", "integration"],
+      "related": ["Zero Trust Architecture", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 10,
+      "concept": "Firmware Integrity Verification",
+      "category": "Cybersecurity",
+      "definition": "Implement secure boot and cryptographic checks to ensure firmware has not been tampered with or replaced by malicious code.",
+      "syntax": "// Device verifies firmware signature at boot",
+      "examples": [
+        "Vehicles refuse to boot if firmware signature is invalid or missing[4]."
+      ],
+      "explanation": "Firmware integrity checks prevent persistent threats and unauthorized modifications.",
+      "tags": ["firmware", "integrity", "security"],
+      "related": ["Security by Design", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 11,
+      "concept": "Incident Response Automation",
+      "category": "Cybersecurity",
+      "definition": "Automate detection, containment, and remediation workflows for cyber incidents using AI and orchestration tools.",
+      "syntax": "// SOAR platform triggers automated response playbooks",
+      "examples": [
+        "AI detects intrusion, isolates affected systems, and initiates patch deployment[3][7][8]."
+      ],
+      "explanation": "Automation accelerates incident response, reduces human workload, and limits damage from attacks.",
+      "tags": ["incident response", "automation", "security"],
+      "related": ["Self-Healing Cybersecurity", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 12,
+      "concept": "Regulatory Compliance (UNECE WP.29, etc.)",
+      "category": "Cybersecurity",
+      "definition": "Adhere to global and regional cybersecurity regulations, such as UNECE WP.29, to ensure vehicles and systems meet minimum security standards.",
+      "syntax": "// Implement cybersecurity management systems as required by law",
+      "examples": [
+        "Automakers comply with UNECE WP.29 mandates for cybersecurity management and risk assessment[1][4][10]."
+      ],
+      "explanation": "Regulatory compliance is a baseline requirement for market approval and customer trust.",
+      "tags": ["compliance", "regulation", "security"],
+      "related": ["Supply Chain Security", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 13,
+      "concept": "Hardware Security Modules (HSM)",
+      "category": "Cybersecurity",
+      "definition": "Use dedicated hardware to securely store cryptographic keys, manage encryption, and protect sensitive operations.",
+      "syntax": "// HSM stores keys and performs cryptographic operations",
+      "examples": [
+        "Vehicle ECUs use HSMs to protect keys for OTA updates and secure communication[1][2]."
+      ],
+      "explanation": "HSMs safeguard critical assets and are resistant to physical and software attacks.",
+      "tags": ["hsm", "hardware", "security"],
+      "related": ["Firmware Integrity Verification", "Secure OTA Updates"]
+    },
+    {
+      "priority": 14,
+      "concept": "Threat Intelligence Integration",
+      "category": "Cybersecurity",
+      "definition": "Ingest real-time threat intelligence feeds to update detection models, blocklists, and response protocols automatically.",
+      "syntax": "// AI updates defense rules based on threat feeds",
+      "examples": [
+        "Vehicles and infrastructure adapt to new attack signatures and tactics in real time[3][7][8]."
+      ],
+      "explanation": "Threat intelligence integration enables proactive, adaptive defense against emerging threats.",
+      "tags": ["threat intelligence", "adaptive", "security"],
+      "related": ["AI-Driven Threat Detection", "Incident Response Automation"]
+    },
+    {
+      "priority": 15,
+      "concept": "Data Privacy and Protection",
+      "category": "Cybersecurity",
+      "definition": "Ensure personal and operational data is encrypted, anonymized, and only accessible to authorized parties.",
+      "syntax": "// Encrypt all sensitive data at rest and in transit",
+      "examples": [
+        "Vehicle telematics data is anonymized and encrypted before cloud upload[1][2][4]."
+      ],
+      "explanation": "Data privacy is essential for compliance and user trust in connected systems.",
+      "tags": ["privacy", "data protection", "security"],
+      "related": ["Regulatory Compliance", "API Security"]
+    },
+    {
+      "priority": 16,
+      "concept": "Vulnerability Disclosure Programs",
+      "category": "Cybersecurity",
+      "definition": "Establish formal processes for researchers and third parties to report vulnerabilities responsibly.",
+      "syntax": "// Provide secure channels for vulnerability reporting",
+      "examples": [
+        "Automakers offer bug bounty programs and respond rapidly to reported issues[4][8]."
+      ],
+      "explanation": "Disclosure programs accelerate remediation and foster a collaborative security culture.",
+      "tags": ["vulnerability", "disclosure", "security"],
+      "related": ["Continuous Security Assessment", "Incident Response Automation"]
+    },
+    {
+      "priority": 17,
+      "concept": "Secure Software Development Lifecycle (SDLC)",
+      "category": "Cybersecurity",
+      "definition": "Integrate security best practices into every phase of software development, from design to deployment and maintenance.",
+      "syntax": "// Enforce code review, static analysis, and security testing in CI/CD",
+      "examples": [
+        "Automakers conduct security reviews and automated scans before deploying software updates[4][8]."
+      ],
+      "explanation": "Secure SDLC reduces vulnerabilities and ensures ongoing software integrity.",
+      "tags": ["sdlc", "development", "security"],
+      "related": ["Security by Design", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 18,
+      "concept": "Prompt Injection and AI-Specific Threats",
+      "category": "Cybersecurity",
+      "definition": "Recognize and defend against prompt injection and other attacks targeting AI-driven vehicle features, such as voice assistants and onboard models.",
+      "syntax": "// Validate and sanitize all user inputs to AI systems",
+      "examples": [
+        "Voice assistant resists prompt injection by filtering and verifying commands[2]."
+      ],
+      "explanation": "AI-specific threats require new security controls as vehicles become more autonomous and AI-driven.",
+      "tags": ["ai", "prompt injection", "security"],
+      "related": ["AI-Driven Threat Detection", "API Security"]
+    },
+    {
+      "priority": 19,
+      "concept": "Platform Standardization Risks",
+      "category": "Cybersecurity",
+      "definition": "Recognize that standardizing hardware/software platforms can increase the impact of vulnerabilities, making systemwide exploits more likely.",
+      "syntax": "// Monitor and patch standardized platforms rapidly",
+      "examples": [
+        "A single vulnerability in a standardized platform can affect millions of vehicles[2][4]."
+      ],
+      "explanation": "Platform standardization improves efficiency but requires rapid, coordinated security response.",
+      "tags": ["standardization", "platform", "security"],
+      "related": ["Supply Chain Security", "Incident Response Automation"]
+    },
+    {
+      "priority": 20,
+      "concept": "EV Charging Infrastructure Security",
+      "category": "Cybersecurity",
+      "definition": "Protect electric vehicle charging networks from data theft, system hijacking, and cyberattacks targeting critical infrastructure.",
+      "syntax": "// Secure charging stations with authentication, encryption, and monitoring",
+      "examples": [
+        "AI monitors charging network traffic for anomalies and blocks suspicious activity[2][3][4]."
+      ],
+      "explanation": "EV charging infrastructure is a new hotspot for cyber threats and must be secured as vehicles and grids become more connected.",
+      "tags": ["ev", "charging", "security"],
+      "related": ["AI-Driven Threat Detection", "API Security"]
+    }
+  ]
+}
