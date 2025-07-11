@@ -1,0 +1,32 @@
+{
+  "manifest_version": "1.0.0",
+  "description": "Seed file manifest for UltimateAISystem",
+  "created_at": "2025-07-08T02:00:00+10:00",
+  "files": [
+    {
+      "priority": 1,
+      "file": "core_config.json",
+      "type": "config",
+      "description": "System identity and global settings"
+    },
+    {
+      "priority": 2,
+      "file": "components_core1.json",
+      "type": "components",
+      "description": "Core system components"
+    },
+    {
+      "priority": 3,
+      "file": "system_vocabulary1.json",
+      "type": "vocabulary",
+      "description": "System-specific vocabulary"
+    },
+    {
+      "priority": 4,
+      "file": "relationships_core.json",
+      "type": "relationships",
+      "description": "Core relationships and dependencies"
+    }
+    // ...add all other files in load order
+  ]
+}
