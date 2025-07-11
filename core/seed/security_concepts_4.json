@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 61,
+      "concept": "AI-Powered Threat Hunting",
+      "category": "Cybersecurity",
+      "definition": "Use AI to proactively search for unknown threats and vulnerabilities in automotive and mobility networks, beyond signature-based detection.",
+      "syntax": "// AI analyzes logs and telemetry for emerging attack patterns",
+      "examples": [
+        "AI-driven threat hunting uncovers stealthy attacks in vehicle-to-everything (V2X) communications and cloud APIs[1][2][7][8]."
+      ],
+      "explanation": "AI threat hunting enables rapid detection of novel and covert attacks, reducing dwell time and risk.",
+      "tags": ["threat hunting", "ai", "proactive"],
+      "related": ["AI-Driven Threat Detection", "Incident Response Automation"]
+    },
+    {
+      "priority": 62,
+      "concept": "Automated Regulatory Gap Analysis",
+      "category": "Cybersecurity",
+      "definition": "AI-driven tools continuously compare security practices and system configurations against evolving global and regional regulations.",
+      "syntax": "// AI scans configs and reports regulatory gaps",
+      "examples": [
+        "Automated analysis highlights missing controls for UNECE WP.29 or GDPR compliance[1][4][10]."
+      ],
+      "explanation": "Automated gap analysis accelerates compliance and reduces risk of penalties or market exclusion.",
+      "tags": ["regulatory", "gap analysis", "automation"],
+      "related": ["Continuous Compliance Monitoring", "Regulatory Compliance"]
+    },
+    {
+      "priority": 63,
+      "concept": "Automated SDV/ADAS/EV Security Hardening",
+      "category": "Cybersecurity",
+      "definition": "Use AI and automation to enforce security best practices and harden software-defined vehicle (SDV), ADAS, and EV systems.",
+      "syntax": "// AI applies security policies and patches across SDV/ADAS/EV stack",
+      "examples": [
+        "Automated systems deploy encryption, access controls, and vulnerability patches across all vehicle domains[2][4][5]."
+      ],
+      "explanation": "Automated hardening keeps pace with rapid software and hardware changes in modern vehicles.",
+      "tags": ["sdv", "adas", "ev", "hardening"],
+      "related": ["Automated Vulnerability Remediation", "Automated Security Policy Enforcement"]
+    },
+    {
+      "priority": 64,
+      "concept": "Automated Supply Chain Security Auditing",
+      "category": "Cybersecurity",
+      "definition": "Continuously audit and verify the security posture of all suppliers, firmware, and software components using AI.",
+      "syntax": "// AI audits supplier SBOMs and compliance status",
+      "examples": [
+        "Automated tools flag suppliers with unpatched vulnerabilities or missing security documentation[4][5]."
+      ],
+      "explanation": "Continuous auditing reduces the risk of introducing vulnerabilities through third-party components.",
+      "tags": ["supply chain", "auditing", "automation"],
+      "related": ["Supply Chain Security", "Automated Supply Chain Vulnerability Management"]
+    },
+    {
+      "priority": 65,
+      "concept": "Automated Incident Simulation for SDV/EV/ADAS",
+      "category": "Cybersecurity",
+      "definition": "Simulate cyberattacks and test defenses in SDV, EV, and ADAS systems using automated tools and AI.",
+      "syntax": "// Automated simulation tests OTA, sensor, and API protections",
+      "examples": [
+        "Automated incident simulation exposes weaknesses in EV charging APIs and ADAS sensor validation[2][4][5]."
+      ],
+      "explanation": "Simulation ensures resilience and rapid response to emerging threats in complex, software-driven vehicles.",
+      "tags": ["simulation", "sdv", "adas", "ev"],
+      "related": ["Incident Simulation and Red Teaming", "Automated Security Testing in CI/CD"]
+    },
+    {
+      "priority": 66,
+      "concept": "Automated Platform Standardization Risk Mitigation",
+      "category": "Cybersecurity",
+      "definition": "AI-driven detection and rapid patching of vulnerabilities that could impact millions of standardized vehicles or devices.",
+      "syntax": "// AI monitors for exploits and deploys patches fleetwide",
+      "examples": [
+        "Automated systems patch all vehicles using a vulnerable platform within hours of exploit discovery[2][4][5]."
+      ],
+      "explanation": "Rapid, automated mitigation is critical as standardization increases the impact of vulnerabilities.",
+      "tags": ["standardization", "platform", "mitigation"],
+      "related": ["Platform Standardization and Systemic Risk", "Automated Vulnerability Remediation"]
+    },
+    {
+      "priority": 67,
+      "concept": "AI-Driven Voice and AI Assistant Security",
+      "category": "Cybersecurity",
+      "definition": "Continuously test, monitor, and defend AI-powered voice assistants and onboard models against prompt injection, spoofing, and unauthorized command execution.",
+      "syntax": "// AI tests and monitors voice assistant for malicious inputs",
+      "examples": [
+        "Automated tools simulate and block prompt injection attacks on vehicle voice assistants[2][4]."
+      ],
+      "explanation": "Continuous validation and monitoring prevent new attack vectors as voice and AI assistants proliferate.",
+      "tags": ["voice assistant", "ai", "security"],
+      "related": ["AI/Voice Assistant Security and Prompt Injection Defense", "Automated AI/Voice Security Testing"]
+    },
+    {
+      "priority": 68,
+      "concept": "AI-Driven Sensor Data Spoofing Detection",
+      "category": "Cybersecurity",
+      "definition": "Use AI to detect and block attempts to manipulate or spoof sensor data in autonomous and connected vehicles.",
+      "syntax": "// AI cross-checks sensor streams for anomalies",
+      "examples": [
+        "AI detects and rejects manipulated camera, GPS, or LIDAR data intended to mislead ADAS or autonomous systems[2][4]."
+      ],
+      "explanation": "Sensor spoofing detection is critical for the safety and reliability of next-gen vehicles.",
+      "tags": ["sensor", "spoofing", "ai"],
+      "related": ["ADAS and Autonomous Vehicle Security", "Sensor Data Integrity and Validation"]
+    },
+    {
+      "priority": 69,
+      "concept": "Continuous Security Assessment for OTA Updates",
+      "category": "Cybersecurity",
+      "definition": "Automate vulnerability scanning, testing, and validation of all OTA updates before and after deployment.",
+      "syntax": "// AI scans OTA packages for vulnerabilities pre/post deployment",
+      "examples": [
+        "Automated tools validate OTA updates for malware or configuration drift before release to vehicles[1][4]."
+      ],
+      "explanation": "Continuous assessment prevents the introduction of vulnerabilities via OTA updates.",
+      "tags": ["ota", "assessment", "automation"],
+      "related": ["Secure OTA Updates", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 70,
+      "concept": "AI-Driven Attack Surface Management",
+      "category": "Cybersecurity",
+      "definition": "Use AI to map, monitor, and minimize the attack surface across vehicles, infrastructure, and cloud systems.",
+      "syntax": "// AI maps exposed APIs, ports, and interfaces for risk analysis",
+      "examples": [
+        "Automated attack surface mapping identifies new vulnerabilities as features are added or updated[1][2][4]."
+      ],
+      "explanation": "Attack surface management is essential as vehicles and infrastructure become more connected and software-driven.",
+      "tags": ["attack surface", "ai", "management"],
+      "related": ["Continuous Security Assessment", "AI-Driven Threat Detection"]
+    },
+    {
+      "priority": 71,
+      "concept": "Automated Ransomware Containment and Recovery",
+      "category": "Cybersecurity",
+      "definition": "AI-driven systems that detect, isolate, and remediate ransomware attacks, restoring clean backups and minimizing downtime.",
+      "syntax": "// AI detects ransomware, isolates nodes, restores backups",
+      "examples": [
+        "Automated ransomware response limits spread and restores vehicle or infrastructure operations[3][9]."
+      ],
+      "explanation": "Rapid, automated containment and recovery are essential as ransomware threats evolve.",
+      "tags": ["ransomware", "containment", "recovery"],
+      "related": ["Ransomware Defense and Response", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 72,
+      "concept": "AI-Driven Security Operations Automation",
+      "category": "Cybersecurity",
+      "definition": "Automate security operations center (SOC) workflows, incident triage, and response using AI and orchestration tools.",
+      "syntax": "// AI triages alerts and triggers response playbooks",
+      "examples": [
+        "AI-driven SOC automates detection, investigation, and remediation across fleets and infrastructure[3][9]."
+      ],
+      "explanation": "Automation accelerates response times and reduces human workload in modern SOCs.",
+      "tags": ["soc", "automation", "ai"],
+      "related": ["Virtual Security Operations Center (vSOC)", "Incident Response Automation"]
+    },
+    {
+      "priority": 73,
+      "concept": "Automated Security Telemetry Correlation",
+      "category": "Cybersecurity",
+      "definition": "AI correlates security logs, sensor data, and events across distributed systems to detect complex, multi-stage attacks.",
+      "syntax": "// AI links events across vehicle, cloud, and charging networks",
+      "examples": [
+        "Automated correlation uncovers coordinated attacks targeting vehicles, cloud APIs, and charging infrastructure[1][2][4]."
+      ],
+      "explanation": "Telemetry correlation improves detection accuracy and enables rapid, coordinated defense.",
+      "tags": ["telemetry", "correlation", "ai"],
+      "related": ["AI-Driven Threat Detection", "Incident Response Automation"]
+    },
+    {
+      "priority": 74,
+      "concept": "Automated Security Analytics for Supply Chain",
+      "category": "Cybersecurity",
+      "definition": "AI-driven analytics platforms process supplier data, firmware, and software for vulnerabilities and compliance gaps.",
+      "syntax": "// AI analyzes supplier SBOMs and firmware for risk",
+      "examples": [
+        "Automated analytics flag high-risk suppliers and components for further review and remediation[4][5]."
+      ],
+      "explanation": "Supply chain analytics reduce risk and accelerate remediation in complex, global ecosystems.",
+      "tags": ["supply chain", "analytics", "ai"],
+      "related": ["Supply Chain Security", "Automated Supply Chain Vulnerability Management"]
+    },
+    {
+      "priority": 75,
+      "concept": "Automated Security Analytics for Regulatory Compliance",
+      "category": "Cybersecurity",
+      "definition": "Use AI to generate and submit required cybersecurity reports to regulators, ensuring accuracy and timeliness.",
+      "syntax": "// AI compiles and submits compliance reports automatically",
+      "examples": [
+        "Automakers use AI to generate and submit UNECE WP.29 compliance documentation[1][4][10]."
+      ],
+      "explanation": "Automated analytics streamline compliance and reduce manual reporting effort.",
+      "tags": ["analytics", "regulatory", "automation"],
+      "related": ["Automated Regulatory Reporting", "Continuous Compliance Monitoring"]
+    },
+    {
+      "priority": 76,
+      "concept": "Automated Security Analytics for Platform Standardization",
+      "category": "Cybersecurity",
+      "definition": "AI-driven analytics identify and prioritize vulnerabilities in standardized platforms, enabling rapid, coordinated defense.",
+      "syntax": "// AI scans standardized platforms for new CVEs and exploits",
+      "examples": [
+        "Automated analytics prioritize patching for platforms used across millions of vehicles[2][4][5]."
+      ],
+      "explanation": "Platform standardization analytics reduce the risk and impact of systemic vulnerabilities.",
+      "tags": ["standardization", "analytics", "ai"],
+      "related": ["Platform Standardization and Systemic Risk", "Automated Platform Standardization Risk Mitigation"]
+    },
+    {
+      "priority": 77,
+      "concept": "Automated Security Analytics for EV/Charging Networks",
+      "category": "Cybersecurity",
+      "definition": "AI-driven analytics continuously monitor EV charging networks for anomalies, attacks, and compliance violations.",
+      "syntax": "// AI analyzes charging station logs and network traffic",
+      "examples": [
+        "Automated analytics detect and respond to charging network attacks or data breaches[2][4][5]."
+      ],
+      "explanation": "Continuous analytics are essential as EV charging infrastructure becomes a major cyberattack target.",
+      "tags": ["ev", "charging", "analytics"],
+      "related": ["EV and Charging Infrastructure Security", "Automated EV/Charging Network Security Monitoring"]
+    },
+    {
+      "priority": 78,
+      "concept": "Automated Security Analytics for SDV/ADAS",
+      "category": "Cybersecurity",
+      "definition": "AI-driven analytics platforms process SDV/ADAS data for vulnerabilities, threats, and compliance gaps.",
+      "syntax": "// AI analyzes SDV/ADAS logs and telemetry for risk",
+      "examples": [
+        "Automated analytics flag vulnerabilities in ADAS sensor data processing and SDV software updates[2][4][5]."
+      ],
+      "explanation": "Continuous analytics are required to keep pace with rapid SDV/ADAS evolution.",
+      "tags": ["sdv", "adas", "analytics"],
+      "related": ["Automated SDV/ADAS/EV Security Hardening", "Continuous Security Assessment"]
+    },
+    {
+      "priority": 79,
+      "concept": "Automated Security Analytics for AI/Voice Assistants",
+      "category": "Cybersecurity",
+      "definition": "AI-driven analytics platforms process voice assistant and onboard AI logs for prompt injection, spoofing, and unauthorized command execution.",
+      "syntax": "// AI analyzes voice assistant logs for malicious activity",
+      "examples": [
+        "Automated analytics detect and block prompt injection attacks on vehicle voice assistants[2][4]."
+      ],
+      "explanation": "Continuous analytics ensure new interfaces do not introduce exploitable vulnerabilities.",
+      "tags": ["ai", "voice assistant", "analytics"],
+      "related": ["AI/Voice Assistant Security and Prompt Injection Defense", "Automated AI/Voice Security Testing"]
+    },
+    {
+      "priority": 80,
+      "concept": "Self-Healing Security for Connected Mobility",
+      "category": "Cybersecurity",
+      "definition": "Build AI-driven, self-healing security systems that autonomously detect, isolate, and remediate threats, restoring normal operations in connected vehicles, infrastructure, and mobility devices.",
+      "syntax": "// AI quarantines compromised node and restores clean backup",
+      "examples": [
+        "Self-healing infrastructure detects ransomware, isolates affected systems, and rolls back to safe state[1][3][7][8]."
+      ],
+      "explanation": "Self-healing security reduces mean time to detect/respond and ensures operational continuity in complex, connected ecosystems.",
+      "tags": ["self-healing", "mobility", "ai"],
+      "related": ["Self-Healing Cybersecurity", "Incident Response Automation"]
+    }
+  ]
+}
