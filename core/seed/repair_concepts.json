@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 1,
+      "concept": "Automated Repair",
+      "category": "Self-Healing",
+      "definition": "The process by which AI systems autonomously detect, diagnose, and fix operational failures or code bugs without human intervention.",
+      "syntax": "// Pseudocode: if anomaly_detected(): trigger_repair()",
+      "examples": [
+        "Automatically restart a failed service or patch a bug in real time."
+      ],
+      "explanation": "Automated repair minimizes downtime, reduces maintenance costs, and improves system reliability by responding instantly to failures[1][2][3][4][8][9].",
+      "tags": ["repair", "self-healing", "automation"],
+      "related": ["Anomaly Detection", "Root Cause Analysis"]
+    },
+    {
+      "priority": 2,
+      "concept": "Self-Healing Code",
+      "category": "Self-Healing",
+      "definition": "AI-driven code that can detect errors, automatically generate fixes, and deploy them without manual intervention.",
+      "syntax": "// AI identifies bug, writes patch, and runs tests before deploying",
+      "examples": [
+        "AI detects a null pointer exception, generates a fix, and pushes an update to production[8][9]."
+      ],
+      "explanation": "Self-healing code reduces the need for developer involvement in routine bug fixing and enables continuous, resilient operations.",
+      "tags": ["code", "self-healing", "ai"],
+      "related": ["Automated Bug Fixing", "Automated Testing"]
+    },
+    {
+      "priority": 3,
+      "concept": "Detection-Prevention-Correction Cycle",
+      "category": "Self-Healing",
+      "definition": "The three-phase process of self-healing: detect anomalies, prevent escalation, and correct the issue.",
+      "syntax": "// Monitor → Detect → Prevent → Correct → Monitor",
+      "examples": [
+        "Detect a memory leak, prevent further allocation, and patch the faulty code[2][3]."
+      ],
+      "explanation": "This cycle ensures that systems not only react to failures but also learn to prevent future occurrences.",
+      "tags": ["detection", "prevention", "correction"],
+      "related": ["Automated Repair", "Monitoring Systems"]
+    },
+    {
+      "priority": 4,
+      "concept": "Root Cause Analysis for Repair",
+      "category": "Self-Healing",
+      "definition": "AI-driven analysis of logs, traces, and metrics to identify the underlying cause of a failure before repair.",
+      "syntax": "// Use ML to correlate error logs and pinpoint faulty module",
+      "examples": [
+        "Trace a cascading failure back to a misconfigured database connection[2][3][4]."
+      ],
+      "explanation": "Root cause analysis enables targeted repairs and prevents recurrence.",
+      "tags": ["root cause", "diagnosis", "repair"],
+      "related": ["Anomaly Detection", "Automated Repair"]
+    },
+    {
+      "priority": 5,
+      "concept": "Automated Bug Fixing",
+      "category": "Self-Healing",
+      "definition": "AI tools that detect, generate, and test code patches for software bugs in real time.",
+      "syntax": "// AI suggests and applies code fix, runs tests, and deploys",
+      "examples": [
+        "AI fixes a security vulnerability as soon as it is detected in the codebase[8][9]."
+      ],
+      "explanation": "Automated bug fixing accelerates remediation and reduces security risk.",
+      "tags": ["bug fixing", "ai", "automation"],
+      "related": ["Self-Healing Code", "Automated Testing"]
+    },
+    {
+      "priority": 6,
+      "concept": "Automated Rollback",
+      "category": "Self-Healing",
+      "definition": "Reverting to a previous stable system state or software version when a new update causes failures.",
+      "syntax": "// On failure, rollback to last known good version",
+      "examples": [
+        "Automatically revert a deployment if error rates spike after release."
+      ],
+      "explanation": "Automated rollback minimizes impact of failed updates and ensures service continuity[2][3].",
+      "tags": ["rollback", "recovery", "automation"],
+      "related": ["Automated Repair", "Self-Restoration"]
+    },
+    {
+      "priority": 7,
+      "concept": "Fault Isolation",
+      "category": "Self-Healing",
+      "definition": "Automatically identify and isolate faulty components to prevent cascading failures.",
+      "syntax": "// Quarantine failing microservice, reroute traffic",
+      "examples": [
+        "Detect a compromised node and isolate it from the network[2][3][7]."
+      ],
+      "explanation": "Fault isolation limits the spread of problems and maintains overall system health.",
+      "tags": ["fault isolation", "containment", "repair"],
+      "related": ["Automated Repair", "Automated Threat Containment"]
+    },
+    {
+      "priority": 8,
+      "concept": "Self-Restoration",
+      "category": "Self-Healing",
+      "definition": "Restoring a system to a previous stable state after a failure or corruption is detected.",
+      "syntax": "// Restore from backup or snapshot automatically",
+      "examples": [
+        "Roll back to a clean VM snapshot after malware infection[2][10]."
+      ],
+      "explanation": "Self-restoration ensures rapid recovery from severe failures or security breaches.",
+      "tags": ["restoration", "backup", "recovery"],
+      "related": ["Automated Rollback", "Automated Repair"]
+    },
+    {
+      "priority": 9,
+      "concept": "AI-Driven Workarounds",
+      "category": "Self-Healing",
+      "definition": "Temporary, automated changes implemented by AI to maintain operations when a full repair is not immediately possible.",
+      "syntax": "// Apply config change or disable feature until patch is ready",
+      "examples": [
+        "Disable a failing feature while a permanent fix is developed[2][3]."
+      ],
+      "explanation": "Workarounds keep systems functional and minimize user impact during ongoing incidents.",
+      "tags": ["workaround", "ai", "automation"],
+      "related": ["Automated Repair", "Compensating Controls"]
+    },
+    {
+      "priority": 10,
+      "concept": "Automated Configuration Repair",
+      "category": "Self-Healing",
+      "definition": "Detect and correct misconfigurations in real time using AI or rule-based systems.",
+      "syntax": "// Detect invalid config, auto-correct to safe defaults",
+      "examples": [
+        "AI fixes a misconfigured firewall rule to restore network access[2][3]."
+      ],
+      "explanation": "Automated config repair prevents outages and security incidents caused by human error.",
+      "tags": ["configuration", "repair", "automation"],
+      "related": ["Automated Repair", "Self-Healing Code"]
+    },
+    {
+      "priority": 11,
+      "concept": "Predictive Repair",
+      "category": "Self-Healing",
+      "definition": "Use ML to forecast failures and trigger preventive repairs before disruptions occur.",
+      "syntax": "// Predict disk failure, migrate data preemptively",
+      "examples": [
+        "AI predicts a failing hard drive and migrates data before loss[1][2][4][7]."
+      ],
+      "explanation": "Predictive repair minimizes downtime and data loss by acting before failures happen.",
+      "tags": ["predictive", "repair", "ai"],
+      "related": ["Predictive Monitoring", "Automated Repair"]
+    },
+    {
+      "priority": 12,
+      "concept": "Self-Healing Network Repair",
+      "category": "Self-Healing",
+      "definition": "AI-driven detection and repair of network failures, outages, and misconfigurations.",
+      "syntax": "// Detect link failure, reroute traffic automatically",
+      "examples": [
+        "AI identifies a broken route and updates network tables to restore connectivity[1][7]."
+      ],
+      "explanation": "Self-healing networks ensure high availability and resilience for critical infrastructure.",
+      "tags": ["network", "repair", "ai"],
+      "related": ["Automated Repair", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 13,
+      "concept": "Automated Patch Management",
+      "category": "Self-Healing",
+      "definition": "AI-driven detection, testing, and deployment of software patches to fix vulnerabilities and bugs.",
+      "syntax": "// Detect vulnerability, auto-apply patch after test pass",
+      "examples": [
+        "AI applies a security patch across all servers after automated validation[2][10]."
+      ],
+      "explanation": "Automated patching reduces exposure to threats and accelerates remediation.",
+      "tags": ["patching", "automation", "security"],
+      "related": ["Automated Repair", "Self-Healing Cybersecurity"]
+    },
+    {
+      "priority": 14,
+      "concept": "Rollback and Version Control Integration",
+      "category": "Self-Healing",
+      "definition": "Integrate repair mechanisms with version control to enable seamless rollback and audit trails.",
+      "syntax": "// On failure, revert to previous commit or tag",
+      "examples": [
+        "Automatically roll back to last passing commit if deployment fails[2][3]."
+      ],
+      "explanation": "Version control integration ensures traceability and safe, reversible repairs.",
+      "tags": ["rollback", "version control", "repair"],
+      "related": ["Automated Rollback", "Self-Restoration"]
+    },
+    {
+      "priority": 15,
+      "concept": "Self-Healing Data Repair",
+      "category": "Self-Healing",
+      "definition": "Detect and automatically fix data corruption, missing records, or schema drift in databases and pipelines.",
+      "syntax": "// Validate data, auto-correct or restore from backup",
+      "examples": [
+        "AI detects and repairs missing database rows using backup data[4]."
+      ],
+      "explanation": "Data repair ensures data integrity and prevents analytics or operational failures.",
+      "tags": ["data", "repair", "ai"],
+      "related": ["Self-Healing Data Pipelines", "Automated Repair"]
+    },
+    {
+      "priority": 16,
+      "concept": "Self-Healing for Cloud Workloads",
+      "category": "Self-Healing",
+      "definition": "Apply self-healing repair to cloud-native environments (containers, serverless, VMs) for automated detection and remediation.",
+      "syntax": "// Cloud agent restarts failed pod or replaces unhealthy VM",
+      "examples": [
+        "Automatically replace a crashed container in Kubernetes[2][6][7]."
+      ],
+      "explanation": "Cloud self-healing ensures reliability and scalability in dynamic environments.",
+      "tags": ["cloud", "repair", "automation"],
+      "related": ["Automated Repair", "Self-Healing Network Repair"]
+    },
+    {
+      "priority": 17,
+      "concept": "Automated Testing for Repairs",
+      "category": "Self-Healing",
+      "definition": "Run automated tests before and after repairs to ensure system stability and correctness.",
+      "syntax": "// Run regression tests after patch or config change",
+      "examples": [
+        "AI applies a fix, runs test suite, and only deploys if all tests pass[8][9]."
+      ],
+      "explanation": "Automated testing prevents regressions and ensures repairs do not introduce new issues.",
+      "tags": ["testing", "repair", "automation"],
+      "related": ["Automated Bug Fixing", "Self-Healing Code"]
+    },
+    {
+      "priority": 18,
+      "concept": "Self-Healing for Edge and IoT Devices",
+      "category": "Self-Healing",
+      "definition": "Autonomously detect and repair failures in distributed edge or IoT devices, often with limited connectivity.",
+      "syntax": "// Device agent detects fault, restarts or patches locally",
+      "examples": [
+        "Edge device reboots and applies patch after detecting sensor failure[2][3]."
+      ],
+      "explanation": "Edge self-healing extends resilience to remote and resource-constrained environments.",
+      "tags": ["iot", "edge", "repair"],
+      "related": ["Automated Repair", "Self-Healing Network Repair"]
+    },
+    {
+      "priority": 19,
+      "concept": "Swarm Intelligence for Distributed Healing",
+      "category": "Self-Healing",
+      "definition": "Use collective behavior and communication among distributed AI agents to coordinate large-scale self-healing.",
+      "syntax": "// Agents share state, coordinate repairs across cluster",
+      "examples": [
+        "Multiple AI agents collaborate to restore network connectivity after a widespread outage[1]."
+      ],
+      "explanation": "Swarm intelligence enables scalable, robust healing in large, distributed systems.",
+      "tags": ["swarm", "distributed", "repair"],
+      "related": ["Self-Healing Network Repair", "Automated Repair"]
+    },
+    {
+      "priority": 20,
+      "concept": "Human-in-the-Loop for Repair",
+      "category": "Self-Healing",
+      "definition": "Allow escalation, override, or review of automated repairs by human operators when needed.",
+      "syntax": "// Pause automated repair, request human approval",
+      "examples": [
+        "AI suggests a patch, but waits for human sign-off on critical systems[1][2][3][5][9]."
+      ],
+      "explanation": "Human-in-the-loop ensures safety, compliance, and trust in autonomous repair systems.",
+      "tags": ["human-in-the-loop", "repair", "governance"],
+      "related": ["Auditability and Explainability", "Automated Repair"]
+    }
+  ]
+}
