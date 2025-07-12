@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-hydration",
+    "priority": 289,
+    "definitions": [
+      {
+        "meaning": "The process of attaching React event handlers to server-rendered HTML.",
+        "partOfSpeech": "noun",
+        "example": "Hydration allows SSR pages to become interactive on the client."
+      }
+    ],
+    "syntax": "hydrateRoot(document.getElementById('root'), <App />);",
+    "examples": [
+      "import { hydrateRoot } from 'react-dom/client';\nhydrateRoot(document.getElementById('root'), <App />);"
+    ],
+    "synonyms": ["hydrate", "react hydration"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "haɪˈdreɪʃən",
+    "difficulty": "advanced",
+    "category": "rendering",
+    "bestPractice": "Ensure server and client markup match for correct hydration.",
+    "relatedConcepts": ["SSR", "CSR", "ReactDOM"]
+  },
+  {
+    "word": "nextjs-client-only",
+    "priority": 290,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering components only on the client in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use dynamic import with ssr: false for client-only components."
+      }
+    ],
+    "syntax": "dynamic(() => import('./Component'), { ssr: false })",
+    "examples": [
+      "import dynamic from 'next/dynamic';\nconst Map = dynamic(() => import('./Map'), { ssr: false });"
+    ],
+    "synonyms": ["client only rendering"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈklaɪənt ˈoʊnli",
+    "difficulty": "advanced",
+    "category": "rendering",
+    "bestPractice": "Use client-only pattern for browser APIs or window-dependent code.",
+    "relatedConcepts": ["dynamic import", "SSR", "CSR"]
+  },
+  {
+    "word": "nextjs-suspense",
+    "priority": 291,
+    "definitions": [
+      {
+        "meaning": "A React feature for handling asynchronous rendering and data fetching.",
+        "partOfSpeech": "component",
+        "example": "Use <Suspense> to show fallback UI while loading."
+      }
+    ],
+    "syntax": "<Suspense fallback={<Spinner />}>{children}</Suspense>",
+    "examples": [
+      "import { Suspense } from 'react';\n<Suspense fallback={<div>Loading...</div>}><Profile /></Suspense>"
+    ],
+    "synonyms": ["suspense", "react suspense"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "səˈspɛns",
+    "difficulty": "advanced",
+    "category": "rendering",
+    "bestPractice": "Use Suspense for async components and data fetching.",
+    "relatedConcepts": ["lazy", "React", "data fetching"]
+  },
+  {
+    "word": "nextjs-lazy",
+    "priority": 292,
+    "definitions": [
+      {
+        "meaning": "A React function for lazy-loading components.",
+        "partOfSpeech": "function",
+        "example": "Use React.lazy for code splitting."
+      }
+    ],
+    "syntax": "const LazyComponent = React.lazy(() => import('./Component'));",
+    "examples": [
+      "import { Suspense, lazy } from 'react';\nconst Chart = lazy(() => import('./Chart'));\n<Suspense fallback={<div>Loading...</div>}><Chart /></Suspense>"
+    ],
+    "synonyms": ["react lazy", "code splitting"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈleɪzi",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Wrap lazy components in Suspense for fallback UI.",
+    "relatedConcepts": ["Suspense", "dynamic import"]
+  },
+  {
+    "word": "nextjs-error-boundary-retry",
+    "priority": 293,
+    "definitions": [
+      {
+        "meaning": "A pattern for retrying rendering after an error in an ErrorBoundary.",
+        "partOfSpeech": "pattern",
+        "example": "Let users retry after a component error."
+      }
+    ],
+    "syntax": "this.setState({ error: null })",
+    "examples": [
+      "class ErrorBoundary extends React.Component {\n  state = { error: null };\n  retry = () => this.setState({ error: null });\n}"
+    ],
+    "synonyms": ["error retry"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈɛrər baʊndəri rɪˈtraɪ",
+    "difficulty": "advanced",
+    "category": "error handling",
+    "bestPractice": "Provide a retry button in error boundaries.",
+    "relatedConcepts": ["ErrorBoundary", "error handling"]
+  },
+  {
+    "word": "nextjs-optimistic-ui",
+    "priority": 294,
+    "definitions": [
+      {
+        "meaning": "A pattern for updating the UI before the server confirms a change.",
+        "partOfSpeech": "pattern",
+        "example": "Show updated UI before API response."
+      }
+    ],
+    "syntax": "// Update state before API call completes",
+    "examples": [
+      "setItems(items => [...items, newItem]);\nawait api.addItem(newItem);"
+    ],
+    "synonyms": ["optimistic update"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ɒpˈtɪmɪstɪk juː aɪ",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Handle errors by reverting optimistic updates if needed.",
+    "relatedConcepts": ["ui", "state management"]
+  },
+  {
+    "word": "nextjs-undo-redo",
+    "priority": 295,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing undo/redo functionality in React apps.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to undo recent actions."
+      }
+    ],
+    "syntax": "// Maintain a history stack in state",
+    "examples": [
+      "const [history, setHistory] = useState([]);\nconst undo = () => setHistory(h => h.slice(0, -1));"
+    ],
+    "synonyms": ["undo", "redo"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈʌnduː ˈriːduː",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Limit history size for performance.",
+    "relatedConcepts": ["ui", "state management"]
+  },
+  {
+    "word": "nextjs-virtual-list",
+    "priority": 296,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering large lists efficiently using virtualization.",
+        "partOfSpeech": "pattern",
+        "example": "Render only visible items for performance."
+      }
+    ],
+    "syntax": "// Use react-window or react-virtualized",
+    "examples": [
+      "import { FixedSizeList } from 'react-window';"
+    ],
+    "synonyms": ["virtualization", "windowing"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈvɜːrtʃuəl lɪst",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Use virtualization for lists with 1000+ items.",
+    "relatedConcepts": ["performance", "ui"]
+  },
+  {
+    "word": "nextjs-infinite-scroll",
+    "priority": 297,
+    "definitions": [
+      {
+        "meaning": "A pattern for loading more content as the user scrolls.",
+        "partOfSpeech": "pattern",
+        "example": "Fetch more data when user nears bottom."
+      }
+    ],
+    "syntax": "// Listen for scroll event and fetch more data",
+    "examples": [
+      "window.addEventListener('scroll', handleScroll);"
+    ],
+    "synonyms": ["infinite loading"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈɪnfɪnɪt skrəʊl",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Debounce scroll events for performance.",
+    "relatedConcepts": ["ui", "data fetching"]
+  },
+  {
+    "word": "nextjs-skeleton-loading",
+    "priority": 298,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing placeholder skeletons while loading data.",
+        "partOfSpeech": "pattern",
+        "example": "Show skeletons instead of spinners for better UX."
+      }
+    ],
+    "syntax": "<Skeleton />",
+    "examples": [
+      "<Skeleton width={200} height={20} />"
+    ],
+    "synonyms": ["skeleton screen"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈskɛlɪtən ˈloʊdɪŋ",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use skeletons for perceived performance.",
+    "relatedConcepts": ["ui", "loading"]
+  },
+  {
+    "word": "nextjs-portal",
+    "priority": 299,
+    "definitions": [
+      {
+        "meaning": "A React feature for rendering children into a DOM node outside the parent hierarchy.",
+        "partOfSpeech": "component",
+        "example": "Use portals for modals and tooltips."
+      }
+    ],
+    "syntax": "ReactDOM.createPortal(child, container)",
+    "examples": [
+      "ReactDOM.createPortal(<Modal />, document.body)"
+    ],
+    "synonyms": ["portal", "react portal"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈpɔːrtəl",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use portals for overlay UI elements.",
+    "relatedConcepts": ["ui", "modal"]
+  },
+  {
+    "word": "nextjs-modal",
+    "priority": 300,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing modal dialogs in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show modals for user interactions."
+      }
+    ],
+    "syntax": "<Modal isOpen={isOpen} onClose={closeModal} />",
+    "examples": [
+      "<Modal isOpen={show} onClose={() => setShow(false)} />"
+    ],
+    "synonyms": ["modal dialog"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈmoʊdəl",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Trap focus inside modals for accessibility.",
+    "relatedConcepts": ["ui", "portal"]
+  },
+  {
+    "word": "nextjs-tooltip",
+    "priority": 301,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing tooltips in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show tooltips on hover or focus."
+      }
+    ],
+    "syntax": "<Tooltip content='Info'>Hover me</Tooltip>",
+    "examples": [
+      "<Tooltip content='More info'>?</Tooltip>"
+    ],
+    "synonyms": ["tooltip"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈtuːltɪp",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Ensure tooltips are accessible and keyboard navigable.",
+    "relatedConcepts": ["ui", "portal"]
+  },
+  {
+    "word": "nextjs-popover",
+    "priority": 302,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing popovers in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show popovers for contextual UI."
+      }
+    ],
+    "syntax": "<Popover content='Details'>Click me</Popover>",
+    "examples": [
+      "<Popover content='Details'>Click here</Popover>"
+    ],
+    "synonyms": ["popover"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈpɒpˌoʊvər",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Position popovers relative to trigger element.",
+    "relatedConcepts": ["ui", "portal"]
+  },
+  {
+    "word": "nextjs-dropdown",
+    "priority": 303,
+    "definitions": [
+      {
+        "meaning": "A pattern for dropdown menus in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use dropdowns for selectable options."
+      }
+    ],
+    "syntax": "<Dropdown options={options} onSelect={handleSelect} />",
+    "examples": [
+      "<Dropdown options={[{ label: 'A', value: 'a' }]} onSelect={fn} />"
+    ],
+    "synonyms": ["dropdown menu"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈdrɒpdaʊn",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Close dropdown on outside click or escape key.",
+    "relatedConcepts": ["ui", "menu"]
+  },
+  {
+    "word": "nextjs-menu",
+    "priority": 304,
+    "definitions": [
+      {
+        "meaning": "A pattern for navigation and action menus in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use menus for navigation or actions."
+      }
+    ],
+    "syntax": "<Menu items={items} />",
+    "examples": [
+      "<Menu items={[{ label: 'Home', href: '/' }]} />"
+    ],
+    "synonyms": ["menu"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈmɛnjuː",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use semantic HTML for navigation menus.",
+    "relatedConcepts": ["ui", "dropdown"]
+  },
+  {
+    "word": "nextjs-tabs",
+    "priority": 305,
+    "definitions": [
+      {
+        "meaning": "A pattern for tabbed navigation in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Switch between content panels with tabs."
+      }
+    ],
+    "syntax": "<Tabs tabs={tabs} />",
+    "examples": [
+      "<Tabs tabs={[{ label: 'Tab 1', content: <Tab1 /> }]} />"
+    ],
+    "synonyms": ["tabs"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "tæbz",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use ARIA roles for accessible tabs.",
+    "relatedConcepts": ["ui", "navigation"]
+  },
+  {
+    "word": "nextjs-accordion",
+    "priority": 306,
+    "definitions": [
+      {
+        "meaning": "A pattern for collapsible accordion sections in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show/hide content with accordions."
+      }
+    ],
+    "syntax": "<Accordion items={items} />",
+    "examples": [
+      "<Accordion items={[{ title: 'Section 1', content: <Content1 /> }]} />"
+    ],
+    "synonyms": ["accordion"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "əˈkɔːrdiən",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use ARIA attributes for accessible accordions.",
+    "relatedConcepts": ["ui", "collapse"]
+  },
+  {
+    "word": "nextjs-collapse",
+    "priority": 307,
+    "definitions": [
+      {
+        "meaning": "A pattern for collapsible UI sections in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Collapse and expand content panels."
+      }
+    ],
+    "syntax": "<Collapse isOpen={isOpen}>{children}</Collapse>",
+    "examples": [
+      "<Collapse isOpen={show}>{content}</Collapse>"
+    ],
+    "synonyms": ["collapse"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "kəˈlæps",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Animate collapse/expand for better UX.",
+    "relatedConcepts": ["ui", "accordion"]
+  },
+  {
+    "word": "nextjs-breadcrumbs",
+    "priority": 308,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing breadcrumbs navigation in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show breadcrumbs for navigation hierarchy."
+      }
+    ],
+    "syntax": "<Breadcrumbs items={items} />",
+    "examples": [
+      "<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Page', href: '/page' }]} />"
+    ],
+    "synonyms": ["breadcrumbs"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈbrɛdkrʌmz",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use nav and aria-label for breadcrumbs.",
+    "relatedConcepts": ["ui", "navigation"]
+  },
+  {
+    "word": "nextjs-pagination",
+    "priority": 309,
+    "definitions": [
+      {
+        "meaning": "A pattern for paginating lists in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show pagination controls for long lists."
+      }
+    ],
+    "syntax": "<Pagination currentPage={1} totalPages={10} />",
+    "examples": [
+      "<Pagination currentPage={2} totalPages={5} onPageChange={fn} />"
+    ],
+    "synonyms": ["pagination"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˌpeɪdʒɪˈneɪʃən",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Show page numbers and next/prev controls.",
+    "relatedConcepts": ["ui", "data fetching"]
+  },
+  {
+    "word": "nextjs-table",
+    "priority": 310,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering data tables in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show sortable and filterable tables."
+      }
+    ],
+    "syntax": "<Table columns={columns} data={data} />",
+    "examples": [
+      "<Table columns={[{ Header: 'Name', accessor: 'name' }]} data={rows} />"
+    ],
+    "synonyms": ["table"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈteɪbəl",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use semantic table markup for accessibility.",
+    "relatedConcepts": ["ui", "data display"]
+  },
+  {
+    "word": "nextjs-chart",
+    "priority": 311,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering charts in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show bar, line, or pie charts."
+      }
+    ],
+    "syntax": "<Chart type='bar' data={data} />",
+    "examples": [
+      "<Chart type='line' data={lineData} />"
+    ],
+    "synonyms": ["chart"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "tʃɑːrt",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use chart libraries like Chart.js or Recharts.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-graph",
+    "priority": 312,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering graphs (networks) in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Visualize data as a graph or network."
+      }
+    ],
+    "syntax": "<Graph nodes={nodes} edges={edges} />",
+    "examples": [
+      "<Graph nodes={nodes} edges={edges} />"
+    ],
+    "synonyms": ["graph", "network graph"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ɡræf",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use libraries like vis.js or d3 for complex graphs.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-map",
+    "priority": 313,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering interactive maps in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show maps with markers and overlays."
+      }
+    ],
+    "syntax": "<Map center={coords} zoom={10} />",
+    "examples": [
+      "<Map center={{ lat: 40, lng: -74 }} zoom={12} />"
+    ],
+    "synonyms": ["map"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "mæp",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use libraries like react-leaflet or google-maps-react.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-calendar",
+    "priority": 314,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering calendars in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show events on a calendar UI."
+      }
+    ],
+    "syntax": "<Calendar events={events} />",
+    "examples": [
+      "<Calendar events={[{ date: '2025-07-12', title: 'Event' }]} />"
+    ],
+    "synonyms": ["calendar"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈkælɪndər",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use libraries like react-big-calendar for complex needs.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-file-upload",
+    "priority": 315,
+    "definitions": [
+      {
+        "meaning": "A pattern for uploading files in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to upload files via forms."
+      }
+    ],
+    "syntax": "<input type='file' onChange={handleUpload} />",
+    "examples": [
+      "<input type='file' onChange={e => upload(e.target.files[0])} />"
+    ],
+    "synonyms": ["file upload"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "faɪl ˈʌpˌloʊd",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Validate files and show progress.",
+    "relatedConcepts": ["ui", "api"]
+  },
+  {
+    "word": "nextjs-image-upload",
+    "priority": 316,
+    "definitions": [
+      {
+        "meaning": "A pattern for uploading images in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to upload and preview images."
+      }
+    ],
+    "syntax": "<input type='file' accept='image/*' onChange={handleImage} />",
+    "examples": [
+      "<input type='file' accept='image/*' onChange={e => preview(e.target.files[0])} />"
+    ],
+    "synonyms": ["image upload"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈɪmɪdʒ ˈʌpˌloʊd",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Resize images before upload for performance.",
+    "relatedConcepts": ["file upload", "ui"]
+  },
+  {
+    "word": "nextjs-avatar-upload",
+    "priority": 317,
+    "definitions": [
+      {
+        "meaning": "A pattern for uploading avatar/profile images in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users upload and crop avatars."
+      }
+    ],
+    "syntax": "<AvatarUpload onUpload={handleAvatar} />",
+    "examples": [
+      "<AvatarUpload onUpload={fn} />"
+    ],
+    "synonyms": ["avatar upload"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈævətɑːr ˈʌpˌloʊd",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Crop and optimize avatars before upload.",
+    "relatedConcepts": ["image upload", "ui"]
+  },
+  {
+    "word": "nextjs-drag-and-drop",
+    "priority": 318,
+    "definitions": [
+      {
+        "meaning": "A pattern for drag-and-drop interactions in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to reorder items via drag-and-drop."
+      }
+    ],
+    "syntax": "<Draggable onDragEnd={handleDrop} />",
+    "examples": [
+      "<Draggable onDragEnd={fn} />"
+    ],
+    "synonyms": ["drag and drop"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "dræɡ ənd drɒp",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use libraries like react-beautiful-dnd for complex needs.",
+    "relatedConcepts": ["ui", "interaction"]
+  },
+  {
+    "word": "nextjs-toast",
+    "priority": 319,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing toast notifications in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show toasts for user feedback."
+      }
+    ],
+    "syntax": "<Toast message='Saved!' />",
+    "examples": [
+      "<Toast message='Profile updated' />"
+    ],
+    "synonyms": ["toast notification"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "toʊst",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Auto-dismiss toasts after a few seconds.",
+    "relatedConcepts": ["ui", "notification"]
+  },
+  {
+    "word": "nextjs-snackbar",
+    "priority": 320,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing snackbars in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use snackbars for brief, unobtrusive messages."
+      }
+    ],
+    "syntax": "<Snackbar open={open} message='Message' />",
+    "examples": [
+      "<Snackbar open={show} message='Done!' />"
+    ],
+    "synonyms": ["snackbar"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsnækˌbɑːr",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Place snackbars at the bottom of the screen.",
+    "relatedConcepts": ["ui", "toast"]
+  },
+  {
+    "word": "nextjs-alert",
+    "priority": 321,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing alerts in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show alerts for important user actions."
+      }
+    ],
+    "syntax": "<Alert type='error' message='Failed!' />",
+    "examples": [
+      "<Alert type='success' message='Saved!' />"
+    ],
+    "synonyms": ["alert"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "əˈlɜːrt",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use alerts sparingly for critical information.",
+    "relatedConcepts": ["ui", "notification"]
+  },
+  {
+    "word": "nextjs-progress-bar",
+    "priority": 322,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing progress bars in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show progress for uploads or loading."
+      }
+    ],
+    "syntax": "<ProgressBar value={percent} />",
+    "examples": [
+      "<ProgressBar value={50} />"
+    ],
+    "synonyms": ["progress bar"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈprəʊɡrɛs bɑːr",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Animate progress for better UX.",
+    "relatedConcepts": ["ui", "loading"]
+  },
+  {
+    "word": "nextjs-spinner",
+    "priority": 323,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing spinners (loading indicators) in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show spinners while waiting for data."
+      }
+    ],
+    "syntax": "<Spinner />",
+    "examples": [
+      "<Spinner />"
+    ],
+    "synonyms": ["spinner", "loading indicator"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈspɪnər",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use spinners for short waits, skeletons for longer loads.",
+    "relatedConcepts": ["ui", "loading"]
+  },
+  {
+    "word": "nextjs-loading-bar",
+    "priority": 324,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing loading bars in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show a loading bar at the top of the page."
+      }
+    ],
+    "syntax": "<LoadingBar progress={progress} />",
+    "examples": [
+      "<LoadingBar progress={70} />"
+    ],
+    "synonyms": ["loading bar"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈloʊdɪŋ bɑːr",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use loading bars for global or route-level loading.",
+    "relatedConcepts": ["ui", "progress bar"]
+  }
+]
