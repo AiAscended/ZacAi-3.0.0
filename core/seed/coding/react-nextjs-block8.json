@@ -1,0 +1,866 @@
+[
+  {
+    "word": "nextjs-custom-webpack-plugin",
+    "priority": 253,
+    "definitions": [
+      {
+        "meaning": "A pattern for adding custom Webpack plugins in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add plugins for asset optimization or code transformation."
+      }
+    ],
+    "syntax": "module.exports = { webpack: (config) => { config.plugins.push(new MyPlugin()); return config; } }",
+    "examples": [
+      "const MyPlugin = require('my-webpack-plugin');\nmodule.exports = { webpack: (config) => { config.plugins.push(new MyPlugin()); return config; } }"
+    ],
+    "synonyms": ["webpack plugin"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈwɛbˌpæk ˈplʌɡɪn",
+    "difficulty": "advanced",
+    "category": "configuration",
+    "bestPractice": "Document all custom plugins for maintainability.",
+    "relatedConcepts": ["webpack", "next.config.js"]
+  },
+  {
+    "word": "nextjs-webpack-alias",
+    "priority": 254,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting up Webpack path aliases in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use aliases for cleaner imports."
+      }
+    ],
+    "syntax": "config.resolve.alias['@'] = path.resolve(__dirname, 'src');",
+    "examples": [
+      "import Button from '@/components/Button';"
+    ],
+    "synonyms": ["webpack alias"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈwɛbˌpæk ˈæliəs",
+    "difficulty": "advanced",
+    "category": "configuration",
+    "bestPractice": "Use aliases for large projects to avoid relative paths.",
+    "relatedConcepts": ["webpack", "jsconfig.json"]
+  },
+  {
+    "word": "nextjs-webpack-bundle-splitting",
+    "priority": 255,
+    "definitions": [
+      {
+        "meaning": "A pattern for splitting Webpack bundles in Next.js for performance.",
+        "partOfSpeech": "pattern",
+        "example": "Split vendor and app code for faster loads."
+      }
+    ],
+    "syntax": "// Use optimization.splitChunks in next.config.js",
+    "examples": [
+      "module.exports = { webpack: (config) => { config.optimization.splitChunks = { chunks: 'all' }; return config; } }"
+    ],
+    "synonyms": ["bundle splitting"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈbʌndl ˈsplɪtɪŋ",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Split large dependencies for better caching.",
+    "relatedConcepts": ["webpack", "code splitting"]
+  },
+  {
+    "word": "nextjs-babel-plugin",
+    "priority": 256,
+    "definitions": [
+      {
+        "meaning": "A pattern for adding custom Babel plugins in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Transform code with Babel plugins."
+      }
+    ],
+    "syntax": "{ \"plugins\": [\"my-babel-plugin\"] }",
+    "examples": [
+      "{ \"plugins\": [\"@babel/plugin-proposal-optional-chaining\"] }"
+    ],
+    "synonyms": ["babel plugin"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈbeɪbəl ˈplʌɡɪn",
+    "difficulty": "advanced",
+    "category": "configuration",
+    "bestPractice": "Use Babel plugins for language features and polyfills.",
+    "relatedConcepts": ["babel", "next.config.js"]
+  },
+  {
+    "word": "nextjs-legacy-browser-support",
+    "priority": 257,
+    "definitions": [
+      {
+        "meaning": "A pattern for supporting legacy browsers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add polyfills for IE11 support."
+      }
+    ],
+    "syntax": "import 'react-app-polyfill/ie11';",
+    "examples": [
+      "import 'react-app-polyfill/stable';"
+    ],
+    "synonyms": ["legacy browser"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈlɛɡəsi ˈbraʊzər səˈpɔːrt",
+    "difficulty": "advanced",
+    "category": "compatibility",
+    "bestPractice": "Only support legacy browsers if required by users.",
+    "relatedConcepts": ["polyfill", "babel"]
+  },
+  {
+    "word": "nextjs-accessibility",
+    "priority": 258,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring accessibility (a11y) in Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Use semantic HTML and ARIA attributes."
+      }
+    ],
+    "syntax": "<button aria-label='Close'>×</button>",
+    "examples": [
+      "<nav aria-label='Main navigation'>...</nav>"
+    ],
+    "synonyms": ["a11y"],
+    "antonyms": [],
+    "frequency": 20,
+    "etymology": "",
+    "pronunciation": "əkˌsɛsəˈbɪlɪti",
+    "difficulty": "intermediate",
+    "category": "accessibility",
+    "bestPractice": "Test with screen readers and keyboard navigation.",
+    "relatedConcepts": ["a11y", "semantic html"]
+  },
+  {
+    "word": "nextjs-aria",
+    "priority": 259,
+    "definitions": [
+      {
+        "meaning": "A pattern for using ARIA attributes for accessibility in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add aria-labels to improve screen reader support."
+      }
+    ],
+    "syntax": "<button aria-label='Close'>×</button>",
+    "examples": [
+      "<input aria-required='true' />"
+    ],
+    "synonyms": ["aria attributes"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈɛəriə",
+    "difficulty": "intermediate",
+    "category": "accessibility",
+    "bestPractice": "Use ARIA attributes only when semantic HTML is not sufficient.",
+    "relatedConcepts": ["accessibility", "a11y"]
+  },
+  {
+    "word": "nextjs-lighthouse",
+    "priority": 260,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Lighthouse to audit Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Audit performance, accessibility, and SEO."
+      }
+    ],
+    "syntax": "npx lighthouse https://localhost:3000",
+    "examples": [
+      "npx lighthouse https://localhost:3000"
+    ],
+    "synonyms": ["lighthouse audit"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈlaɪthaʊs",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "bestPractice": "Run Lighthouse on production builds for accurate results.",
+    "relatedConcepts": ["performance", "seo", "accessibility"]
+  },
+  {
+    "word": "nextjs-web-vitals",
+    "priority": 261,
+    "definitions": [
+      {
+        "meaning": "A pattern for measuring Web Vitals metrics in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Report CLS, LCP, FID, and more."
+      }
+    ],
+    "syntax": "export function reportWebVitals(metric) { ... }",
+    "examples": [
+      "export function reportWebVitals(metric) {\n  console.log(metric);\n}"
+    ],
+    "synonyms": ["web vitals"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "wɛb ˈvaɪtəlz",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "bestPractice": "Send Web Vitals to analytics for monitoring.",
+    "relatedConcepts": ["performance", "analytics"]
+  },
+  {
+    "word": "nextjs-pwa-manifest",
+    "priority": 262,
+    "definitions": [
+      {
+        "meaning": "A pattern for configuring web app manifests for PWAs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add manifest.json for installable apps."
+      }
+    ],
+    "syntax": "/public/manifest.json",
+    "examples": [
+      "{ \"name\": \"My App\", \"start_url\": \"/\", \"display\": \"standalone\" }"
+    ],
+    "synonyms": ["web app manifest"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈmænɪfɛst",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Update manifest.json for branding and installability.",
+    "relatedConcepts": ["pwa", "nextjs-pwa"]
+  },
+  {
+    "word": "nextjs-pwa-icons",
+    "priority": 263,
+    "definitions": [
+      {
+        "meaning": "A pattern for configuring icons for PWAs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add icons to manifest.json and /public."
+      }
+    ],
+    "syntax": "/public/icon-192x192.png",
+    "examples": [
+      "{ \"src\": \"/icon-192x192.png\", \"sizes\": \"192x192\", \"type\": \"image/png\" }"
+    ],
+    "synonyms": ["pwa icons"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈaɪkɒnz",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Provide multiple icon sizes for all platforms.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-service-worker",
+    "priority": 264,
+    "definitions": [
+      {
+        "meaning": "A pattern for registering and updating service workers for PWAs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Register service worker for offline support."
+      }
+    ],
+    "syntax": "navigator.serviceWorker.register('/sw.js');",
+    "examples": [
+      "if ('serviceWorker' in navigator) {\n  navigator.serviceWorker.register('/sw.js');\n}"
+    ],
+    "synonyms": ["service worker"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈsɜːrvɪs ˈwɜːrkər",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Update service worker for new versions of your app.",
+    "relatedConcepts": ["pwa", "nextjs-pwa"]
+  },
+  {
+    "word": "nextjs-pwa-offline-fallback",
+    "priority": 265,
+    "definitions": [
+      {
+        "meaning": "A pattern for providing offline fallback pages in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Show a fallback page when offline."
+      }
+    ],
+    "syntax": "/public/offline.html",
+    "examples": [
+      "<meta http-equiv='refresh' content='0; url=/offline.html'>"
+    ],
+    "synonyms": ["offline fallback"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈɒfˌlaɪn ˈfɔːlbæk",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Provide a user-friendly offline fallback.",
+    "relatedConcepts": ["pwa", "service worker"]
+  },
+  {
+    "word": "nextjs-pwa-push-notifications",
+    "priority": 266,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing push notifications in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Send push notifications to users."
+      }
+    ],
+    "syntax": "// Use service worker push event",
+    "examples": [
+      "self.addEventListener('push', event => { ... });"
+    ],
+    "synonyms": ["push notifications"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "pʊʃ noʊtɪfɪˈkeɪʃənz",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Ask for permission before sending notifications.",
+    "relatedConcepts": ["pwa", "service worker"]
+  },
+  {
+    "word": "nextjs-pwa-background-sync",
+    "priority": 267,
+    "definitions": [
+      {
+        "meaning": "A pattern for background syncing in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Sync data in the background using service workers."
+      }
+    ],
+    "syntax": "// Use service worker sync event",
+    "examples": [
+      "self.addEventListener('sync', event => { ... });"
+    ],
+    "synonyms": ["background sync"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈbækˌɡraʊnd sɪŋk",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use background sync for reliable data submission.",
+    "relatedConcepts": ["pwa", "service worker"]
+  },
+  {
+    "word": "nextjs-pwa-custom-caching",
+    "priority": 268,
+    "definitions": [
+      {
+        "meaning": "A pattern for custom caching strategies in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Cache API responses and assets for offline use."
+      }
+    ],
+    "syntax": "// Use service worker fetch event",
+    "examples": [
+      "self.addEventListener('fetch', event => { ... });"
+    ],
+    "synonyms": ["custom caching"],
+    "antonyms": [],
+    "frequency": 10,
+    "etymology": "",
+    "pronunciation": "ˈkʌstəm ˈkæʃɪŋ",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Cache only what is needed for offline experience.",
+    "relatedConcepts": ["pwa", "service worker"]
+  },
+  {
+    "word": "nextjs-pwa-data-encryption",
+    "priority": 269,
+    "definitions": [
+      {
+        "meaning": "A pattern for encrypting cached data in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Encrypt sensitive data before caching."
+      }
+    ],
+    "syntax": "// Use Crypto API in service worker",
+    "examples": [
+      "const encrypted = await crypto.subtle.encrypt(...);"
+    ],
+    "synonyms": ["data encryption"],
+    "antonyms": [],
+    "frequency": 5,
+    "etymology": "",
+    "pronunciation": "dɛɪtə ɪnˈkrɪpʃən",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Encrypt all sensitive data in caches.",
+    "relatedConcepts": ["pwa", "encryption"]
+  },
+  {
+    "word": "nextjs-pwa-security",
+    "priority": 270,
+    "definitions": [
+      {
+        "meaning": "A pattern for securing PWAs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use HTTPS and secure service workers."
+      }
+    ],
+    "syntax": "// Use HTTPS and CSP",
+    "examples": [
+      "// Enforce HTTPS for all PWA assets"
+    ],
+    "synonyms": ["pwa security"],
+    "antonyms": [],
+    "frequency": 5,
+    "etymology": "",
+    "pronunciation": "sɪˈkjʊrɪti",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Always use HTTPS and strong CSP for PWAs.",
+    "relatedConcepts": ["pwa", "security"]
+  },
+  {
+    "word": "nextjs-pwa-install-prompt",
+    "priority": 271,
+    "definitions": [
+      {
+        "meaning": "A pattern for prompting users to install a Next.js PWA.",
+        "partOfSpeech": "pattern",
+        "example": "Show install prompt on supported browsers."
+      }
+    ],
+    "syntax": "window.addEventListener('beforeinstallprompt', event => { ... });",
+    "examples": [
+      "window.addEventListener('beforeinstallprompt', e => { e.prompt(); });"
+    ],
+    "synonyms": ["install prompt"],
+    "antonyms": [],
+    "frequency": 5,
+    "etymology": "",
+    "pronunciation": "ɪnˈstɔːl prɒmpt",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Prompt users at the right time for best install rates.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-uninstall",
+    "priority": 272,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling PWA uninstall events in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Detect when a PWA is uninstalled."
+      }
+    ],
+    "syntax": "// No direct uninstall event, use analytics",
+    "examples": [
+      "// Track uninstall via analytics drop-off"
+    ],
+    "synonyms": ["pwa uninstall"],
+    "antonyms": [],
+    "frequency": 1,
+    "etymology": "",
+    "pronunciation": "ˈʌnɪnˌstɔːl",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Track uninstall indirectly via analytics.",
+    "relatedConcepts": ["pwa", "analytics"]
+  },
+  {
+    "word": "nextjs-pwa-multi-platform",
+    "priority": 273,
+    "definitions": [
+      {
+        "meaning": "A pattern for supporting PWAs on multiple platforms in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure PWA works on Android, iOS, and desktop."
+      }
+    ],
+    "syntax": "// Test on all platforms",
+    "examples": [
+      "// Use browserstack or device lab for testing"
+    ],
+    "synonyms": ["multi-platform PWA"],
+    "antonyms": [],
+    "frequency": 5,
+    "etymology": "",
+    "pronunciation": "ˈmʌlti ˈplætfɔːrm",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Test and optimize PWA for all supported platforms.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-a2hs",
+    "priority": 274,
+    "definitions": [
+      {
+        "meaning": "A pattern for Add To Home Screen (A2HS) support in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Enable users to add app to home screen."
+      }
+    ],
+    "syntax": "// Use manifest.json and service worker",
+    "examples": [
+      "// Provide icons and manifest for A2HS"
+    ],
+    "synonyms": ["add to home screen"],
+    "antonyms": [],
+    "frequency": 5,
+    "etymology": "",
+    "pronunciation": "eɪ tuː eɪtʃ ɛs",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Configure manifest and icons for A2HS.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-shortcuts",
+    "priority": 275,
+    "definitions": [
+      {
+        "meaning": "A pattern for adding shortcuts to Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Add shortcuts to manifest for quick actions."
+      }
+    ],
+    "syntax": "{ \"shortcuts\": [{ \"name\": \"Open Inbox\", \"url\": \"/inbox\" }] }",
+    "examples": [
+      "{ \"shortcuts\": [{ \"name\": \"Open Inbox\", \"url\": \"/inbox\" }] }"
+    ],
+    "synonyms": ["pwa shortcuts"],
+    "antonyms": [],
+    "frequency": 5,
+    "etymology": "",
+    "pronunciation": "ˈʃɔːrtkʌts",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Provide shortcuts for most-used app features.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-share-target",
+    "priority": 276,
+    "definitions": [
+      {
+        "meaning": "A pattern for enabling PWA share target in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to share content to your app."
+      }
+    ],
+    "syntax": "{ \"share_target\": { \"action\": \"/share\", ... } }",
+    "examples": [
+      "{ \"share_target\": { \"action\": \"/share\", \"method\": \"POST\", \"enctype\": \"multipart/form-data\", \"params\": { \"title\": \"title\", \"text\": \"text\", \"url\": \"url\" } } }"
+    ],
+    "synonyms": ["pwa share target"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "ʃɛr ˈtɑːrɡɪt",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Implement share target for social and productivity PWAs.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-badging",
+    "priority": 277,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing app icon badges in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Show notification count on app icon."
+      }
+    ],
+    "syntax": "navigator.setAppBadge(count);",
+    "examples": [
+      "navigator.setAppBadge(3);"
+    ],
+    "synonyms": ["pwa badging"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "ˈbædʒɪŋ",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use badging for actionable notifications.",
+    "relatedConcepts": ["pwa", "notifications"]
+  },
+  {
+    "word": "nextjs-pwa-link-handling",
+    "priority": 278,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling app links in Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Open links in-app or externally as appropriate."
+      }
+    ],
+    "syntax": "{ \"scope\": \"/\", \"start_url\": \"/\" }",
+    "examples": [
+      "{ \"scope\": \"/\", \"start_url\": \"/\" }"
+    ],
+    "synonyms": ["pwa link handling"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "lɪŋk ˈhændlɪŋ",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Set scope and start_url for correct link handling.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-custom-install-ui",
+    "priority": 279,
+    "definitions": [
+      {
+        "meaning": "A pattern for custom install UI for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Show a custom banner for PWA installation."
+      }
+    ],
+    "syntax": "// Listen for beforeinstallprompt and show UI",
+    "examples": [
+      "window.addEventListener('beforeinstallprompt', e => { /* show custom UI */ });"
+    ],
+    "synonyms": ["custom install ui"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "ˈkʌstəm ɪnˈstɔːl juː aɪ",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Use custom install prompts for higher install rates.",
+    "relatedConcepts": ["pwa", "install prompt"]
+  },
+  {
+    "word": "nextjs-pwa-apple-touch-icon",
+    "priority": 280,
+    "definitions": [
+      {
+        "meaning": "A pattern for specifying Apple touch icons for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Add apple-touch-icon for iOS home screen."
+      }
+    ],
+    "syntax": "<link rel='apple-touch-icon' href='/icon.png'>",
+    "examples": [
+      "<link rel='apple-touch-icon' href='/icon-180x180.png'>"
+    ],
+    "synonyms": ["apple touch icon"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "ˈæpəl tʌtʃ ˈaɪkɒn",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Provide high-res icons for iOS devices.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-maskable-icon",
+    "priority": 281,
+    "definitions": [
+      {
+        "meaning": "A pattern for specifying maskable icons for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Add maskable icons for Android PWAs."
+      }
+    ],
+    "syntax": "{ \"purpose\": \"maskable\" }",
+    "examples": [
+      "{ \"src\": \"/icon-maskable.png\", \"purpose\": \"maskable\" }"
+    ],
+    "synonyms": ["maskable icon"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "ˈmæskəbəl ˈaɪkɒn",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Use maskable icons for best Android PWA experience.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-splash-screen",
+    "priority": 282,
+    "definitions": [
+      {
+        "meaning": "A pattern for configuring splash screens for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Show a splash screen on PWA launch."
+      }
+    ],
+    "syntax": "<link rel='apple-touch-startup-image' href='/splash.png'>",
+    "examples": [
+      "<link rel='apple-touch-startup-image' href='/splash-640x1136.png'>"
+    ],
+    "synonyms": ["splash screen"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "splæʃ skriːn",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Provide splash screens for all device resolutions.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-orientation",
+    "priority": 283,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting orientation for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Lock orientation to portrait or landscape."
+      }
+    ],
+    "syntax": "{ \"orientation\": \"portrait\" }",
+    "examples": [
+      "{ \"orientation\": \"landscape\" }"
+    ],
+    "synonyms": ["pwa orientation"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "ˌɔːriənˈteɪʃən",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Set orientation in manifest for intended UX.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-theme-color",
+    "priority": 284,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting the browser theme color for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Set theme color for browser UI."
+      }
+    ],
+    "syntax": "<meta name='theme-color' content='#317EFB'>",
+    "examples": [
+      "<meta name='theme-color' content='#317EFB'>"
+    ],
+    "synonyms": ["theme color"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "θiːm ˈkʌlər",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Match theme color to app branding.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-display-mode",
+    "priority": 285,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting display mode for Next.js PWAs.",
+        "partOfSpeech": "pattern",
+        "example": "Set standalone or fullscreen display."
+      }
+    ],
+    "syntax": "{ \"display\": \"standalone\" }",
+    "examples": [
+      "{ \"display\": \"fullscreen\" }"
+    ],
+    "synonyms": ["display mode"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "dɪsˈpleɪ moʊd",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Set display mode for best user experience.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-lang",
+    "priority": 286,
+    "definitions": [
+      {
+        "meaning": "A pattern for specifying language in Next.js PWA manifest.",
+        "partOfSpeech": "pattern",
+        "example": "Set lang for localization."
+      }
+    ],
+    "syntax": "{ \"lang\": \"en\" }",
+    "examples": [
+      "{ \"lang\": \"en\" }"
+    ],
+    "synonyms": ["pwa lang"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "læŋ",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Set lang for localization and accessibility.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-description",
+    "priority": 287,
+    "definitions": [
+      {
+        "meaning": "A pattern for adding description to Next.js PWA manifest.",
+        "partOfSpeech": "pattern",
+        "example": "Describe your app in manifest.json."
+      }
+    ],
+    "syntax": "{ \"description\": \"My PWA app\" }",
+    "examples": [
+      "{ \"description\": \"My PWA app\" }"
+    ],
+    "synonyms": ["pwa description"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "dɪˈskrɪpʃən",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Provide a clear description for your app.",
+    "relatedConcepts": ["pwa", "manifest"]
+  },
+  {
+    "word": "nextjs-pwa-start-url",
+    "priority": 288,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting start_url in Next.js PWA manifest.",
+        "partOfSpeech": "pattern",
+        "example": "Set start_url for app launch."
+      }
+    ],
+    "syntax": "{ \"start_url\": \"/\" }",
+    "examples": [
+      "{ \"start_url\": \"/\" }"
+    ],
+    "synonyms": ["pwa start url"],
+    "antonyms": [],
+    "frequency": 2,
+    "etymology": "",
+    "pronunciation": "stɑːrt juː ɑːr ɛl",
+    "difficulty": "intermediate",
+    "category": "deployment",
+    "bestPractice": "Set start_url for correct app launch behavior.",
+    "relatedConcepts": ["pwa", "manifest"]
+  }
+]
