@@ -1,0 +1,91 @@
+{
+  "react": {
+    "core-concepts": [
+      "jsx",
+      "components",
+      "props",
+      "state",
+      "events",
+      "conditional-rendering",
+      "lists-and-keys",
+      "forms",
+      "lifting-state-up",
+      "composition-vs-inheritance",
+      "fragments",
+      "portals",
+      "error-boundaries",
+      "context",
+      "refs",
+      "render-props"
+    ],
+    "hooks": [
+      "useState",
+      "useEffect",
+      "useContext",
+      "useReducer",
+      "useMemo",
+      "useCallback",
+      "useRef",
+      "useLayoutEffect",
+      "useImperativeHandle",
+      "useDebugValue",
+      "custom-hooks"
+    ],
+    "advanced": [
+      "forwarding-refs",
+      "higher-order-components",
+      "reconciliation",
+      "suspense",
+      "concurrent-mode",
+      "lazy-loading",
+      "code-splitting",
+      "error-handling"
+    ],
+    "performance": [
+      "memoization",
+      "purecomponent",
+      "shouldcomponentupdate",
+      "react-memo",
+      "profiling",
+      "react-devtools"
+    ],
+    "testing": [
+      "jest",
+      "react-testing-library",
+      "enzyme",
+      "unit-testing",
+      "integration-testing",
+      "mocking"
+    ],
+    "routing": [
+      "react-router",
+      "route-params",
+      "nested-routes",
+      "redirects"
+    ],
+    "state-management": [
+      "context-api",
+      "redux",
+      "mobx",
+      "zustand",
+      "recoil",
+      "jotai"
+    ],
+    "styling": [
+      "css-in-js",
+      "styled-components",
+      "emotion",
+      "css-modules",
+      "sass",
+      "tailwind-css"
+    ],
+    "best-practices": [
+      "component-organization",
+      "file-structure",
+      "naming-conventions",
+      "accessibility",
+      "performance-optimization",
+      "testing-best-practices"
+    ]
+  }
+}
