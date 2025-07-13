@@ -1,0 +1,52 @@
+{
+  "php": {
+    "basics": [
+      "syntax",
+      "variables",
+      "data-types",
+      "operators",
+      "control-structures",
+      "functions",
+      "arrays",
+      "superglobals"
+    ],
+    "oop": [
+      "classes",
+      "objects",
+      "inheritance",
+      "interfaces",
+      "traits",
+      "namespaces",
+      "autoloading"
+    ],
+    "web-development": [
+      "forms",
+      "sessions",
+      "cookies",
+      "file-upload",
+      "file-handling",
+      "headers",
+      "http-requests"
+    ],
+    "database": [
+      "mysql",
+      "mysqli",
+      "pdo",
+      "prepared-statements",
+      "transactions"
+    ],
+    "security": [
+      "input-validation",
+      "output-escaping",
+      "csrf",
+      "xss",
+      "sql-injection"
+    ],
+    "best-practices": [
+      "error-handling",
+      "logging",
+      "configuration",
+      "deployment"
+    ]
+  }
+}
