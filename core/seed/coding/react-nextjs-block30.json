@@ -1,0 +1,650 @@
+[
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-scheduling",
+    "priority": 1045,
+    "definitions": [
+      {
+        "meaning": "A pattern for scheduling cache snapshot creation for tenant data search at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Automate snapshot scheduling for all tenants."
+      }
+    ],
+    "syntax": "// Schedule cache snapshot jobs",
+    "examples": [
+      "scheduleCacheSnapshot(tenantId, cronExpression)"
+    ],
+    "synonyms": ["cache snapshot scheduling"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-rotation",
+    "priority": 1046,
+    "definitions": [
+      {
+        "meaning": "A pattern for rotating cache snapshots for tenant data search at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Rotate old snapshots to manage storage and compliance."
+      }
+    ],
+    "syntax": "// Rotate cache snapshot files",
+    "examples": [
+      "rotateCacheSnapshots(tenantId)"
+    ],
+    "synonyms": ["cache snapshot rotation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-retention",
+    "priority": 1047,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting retention policies for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Define how long to retain each snapshot for compliance and cost."
+      }
+    ],
+    "syntax": "// Set snapshot retention policy",
+    "examples": [
+      "setSnapshotRetention(tenantId, days)"
+    ],
+    "synonyms": ["cache snapshot retention"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-expiry",
+    "priority": 1048,
+    "definitions": [
+      {
+        "meaning": "A pattern for expiring cache snapshots for tenant data search at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Expire and delete snapshots after retention period."
+      }
+    ],
+    "syntax": "// Expire old snapshots",
+    "examples": [
+      "expireOldSnapshots(tenantId)"
+    ],
+    "synonyms": ["cache snapshot expiry"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-garbage-collection",
+    "priority": 1049,
+    "definitions": [
+      {
+        "meaning": "A pattern for garbage collection of expired cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Automate deletion of expired or orphaned snapshots."
+      }
+    ],
+    "syntax": "// Garbage collect expired snapshots",
+    "examples": [
+      "garbageCollectSnapshots(tenantId)"
+    ],
+    "synonyms": ["cache snapshot garbage collection"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive",
+    "priority": 1050,
+    "definitions": [
+      {
+        "meaning": "A pattern for archiving cache snapshots for tenant data search at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Move old snapshots to archive storage for compliance."
+      }
+    ],
+    "syntax": "// Archive old snapshots",
+    "examples": [
+      "archiveSnapshots(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-restore",
+    "priority": 1051,
+    "definitions": [
+      {
+        "meaning": "A pattern for restoring cache snapshots from archive at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Restore archived snapshots for audits or recovery."
+      }
+    ],
+    "syntax": "// Restore from archive",
+    "examples": [
+      "restoreArchivedSnapshot(tenantId, snapshotId)"
+    ],
+    "synonyms": ["cache snapshot archive restore"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-policy",
+    "priority": 1052,
+    "definitions": [
+      {
+        "meaning": "A pattern for defining archive policies for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Set frequency, duration, and compliance for snapshot archiving."
+      }
+    ],
+    "syntax": "// Archive policy logic",
+    "examples": [
+      "enforceArchivePolicy(tenantId, policy)"
+    ],
+    "synonyms": ["cache snapshot archive policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-audit",
+    "priority": 1053,
+    "definitions": [
+      {
+        "meaning": "A pattern for auditing archive operations for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Log all archive and restore operations for compliance."
+      }
+    ],
+    "syntax": "// Audit archive events",
+    "examples": [
+      "archiveAuditLogger.log('archive', { tenantId, snapshotId })"
+    ],
+    "synonyms": ["cache snapshot archive audit"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-monitoring",
+    "priority": 1054,
+    "definitions": [
+      {
+        "meaning": "A pattern for monitoring archive status and health for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Track archive completion, failures, and alerts."
+      }
+    ],
+    "syntax": "// Monitor archive jobs",
+    "examples": [
+      "monitorArchiveStatus(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive monitoring"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-notification",
+    "priority": 1055,
+    "definitions": [
+      {
+        "meaning": "A pattern for notifying tenants about archive status and events at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Send notifications for archive completions, failures, and restores."
+      }
+    ],
+    "syntax": "// Notify tenant on archive events",
+    "examples": [
+      "notifyTenantArchiveStatus(tenantId, status)"
+    ],
+    "synonyms": ["cache snapshot archive notification"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-failover",
+    "priority": 1056,
+    "definitions": [
+      {
+        "meaning": "A pattern for automatic failover to archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Switch to archive if primary snapshot is unavailable."
+      }
+    ],
+    "syntax": "// Archive failover logic",
+    "examples": [
+      "if (!primarySnapshotAvailable) useArchiveSnapshot(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive failover"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-dr",
+    "priority": 1057,
+    "definitions": [
+      {
+        "meaning": "A pattern for disaster recovery (DR) using archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Restore cache from archive during outages."
+      }
+    ],
+    "syntax": "// Disaster recovery from archive",
+    "examples": [
+      "triggerArchiveDisasterRecovery(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive dr"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-testing",
+    "priority": 1058,
+    "definitions": [
+      {
+        "meaning": "A pattern for testing archive and restore processes for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Regularly test archive and restore for all tenants."
+      }
+    ],
+    "syntax": "// Test archive and restore logic",
+    "examples": [
+      "testArchiveRestore(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive testing"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-policy-upgrade",
+    "priority": 1059,
+    "definitions": [
+      {
+        "meaning": "A pattern for upgrading archive policies for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Upgrade archive frequency, retention, or encryption policies."
+      }
+    ],
+    "syntax": "// Upgrade archive policy",
+    "examples": [
+      "upgradeArchivePolicy(tenantId, newPolicy)"
+    ],
+    "synonyms": ["cache snapshot archive policy upgrade"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-lifecycle",
+    "priority": 1060,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing the lifecycle of archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Automate creation, retention, and deletion of archive snapshots."
+      }
+    ],
+    "syntax": "// Manage archive lifecycle",
+    "examples": [
+      "manageArchiveLifecycle(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive lifecycle"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-cost-optimization",
+    "priority": 1061,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing the cost of archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Use efficient storage and deduplication for archive cost savings."
+      }
+    ],
+    "syntax": "// Optimize archive storage",
+    "examples": [
+      "optimizeArchiveCost(tenantId, archiveData)"
+    ],
+    "synonyms": ["cache snapshot archive cost optimization"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-storage-tiering",
+    "priority": 1062,
+    "definitions": [
+      {
+        "meaning": "A pattern for using storage tiers for archive of cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Move archive snapshots to lower-cost storage tiers based on age."
+      }
+    ],
+    "syntax": "// Tier archive storage",
+    "examples": [
+      "tierArchiveStorage(tenantId, archiveData)"
+    ],
+    "synonyms": ["cache snapshot archive storage tiering"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-access-control",
+    "priority": 1063,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing access control for archive of cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Restrict who can access or restore archive snapshots."
+      }
+    ],
+    "syntax": "// Access control logic for archive",
+    "examples": [
+      "if (!hasArchiveAccess(user, tenantId)) return NextResponse.redirect('/forbidden');"
+    ],
+    "synonyms": ["cache snapshot archive access control"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-privacy",
+    "priority": 1064,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring privacy of archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Mask or encrypt sensitive data in archive snapshots."
+      }
+    ],
+    "syntax": "// Privacy logic for archive",
+    "examples": [
+      "maskSensitiveArchiveFields(archiveData)"
+    ],
+    "synonyms": ["cache snapshot archive privacy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-consent-management",
+    "priority": 1065,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing user consent for archive of cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Record and respect user consent for archive operations."
+      }
+    ],
+    "syntax": "// Consent management logic for archive",
+    "examples": [
+      "if (!consentGiven(tenant, user)) skipArchive();"
+    ],
+    "synonyms": ["cache snapshot archive consent management"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-analytics",
+    "priority": 1066,
+    "definitions": [
+      {
+        "meaning": "A pattern for collecting analytics on archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Track archive frequency, failures, and restore times."
+      }
+    ],
+    "syntax": "// Log archive analytics events",
+    "examples": [
+      "archiveAnalytics.track('archive-completed', { tenantId });"
+    ],
+    "synonyms": ["cache snapshot archive analytics"],
+    "difficulty": "advanced",
+    "category": "analytics"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-reporting",
+    "priority": 1067,
+    "definitions": [
+      {
+        "meaning": "A pattern for reporting on archive status and metrics for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Generate reports on archive health and compliance."
+      }
+    ],
+    "syntax": "// Generate archive reports",
+    "examples": [
+      "generateArchiveReport(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive reporting"],
+    "difficulty": "advanced",
+    "category": "analytics"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-incident-response",
+    "priority": 1068,
+    "definitions": [
+      {
+        "meaning": "A pattern for incident response related to archive for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Trigger alerts and mitigation for archive failures."
+      }
+    ],
+    "syntax": "// Incident response for archive failures",
+    "examples": [
+      "if (archiveFailed) triggerArchiveIncidentResponse(tenantId);"
+    ],
+    "synonyms": ["cache snapshot archive incident response"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-postmortem",
+    "priority": 1069,
+    "definitions": [
+      {
+        "meaning": "A pattern for postmortem analysis after archive failures or incidents at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze root cause and improve archive processes."
+      }
+    ],
+    "syntax": "// Conduct archive postmortem",
+    "examples": [
+      "conductArchivePostmortem(tenantId, incident)"
+    ],
+    "synonyms": ["cache snapshot archive postmortem"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-closure",
+    "priority": 1070,
+    "definitions": [
+      {
+        "meaning": "A pattern for formally closing archive incidents for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Mark archive incidents as resolved and update records."
+      }
+    ],
+    "syntax": "// Close archive incident",
+    "examples": [
+      "closeArchiveIncident(tenantId, incident)"
+    ],
+    "synonyms": ["cache snapshot archive closure"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-lessons-learned",
+    "priority": 1071,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting lessons learned from archive incidents at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share lessons learned after archive failures."
+      }
+    ],
+    "syntax": "// Document lessons learned",
+    "examples": [
+      "logArchiveLessonsLearned(tenantId, incident)"
+    ],
+    "synonyms": ["cache snapshot archive lessons learned"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-tabletop-exercise",
+    "priority": 1072,
+    "definitions": [
+      {
+        "meaning": "A pattern for running tabletop exercises for archive failures at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Simulate archive failure scenarios and test response."
+      }
+    ],
+    "syntax": "// Run archive tabletop exercises",
+    "examples": [
+      "runArchiveTabletopExercise(tenantId, scenario)"
+    ],
+    "synonyms": ["cache snapshot archive tabletop exercise"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-drill",
+    "priority": 1073,
+    "definitions": [
+      {
+        "meaning": "A pattern for running archive drills for cache snapshots for tenant data search at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Conduct live drills to test archive and restore processes."
+      }
+    ],
+    "syntax": "// Run archive drills",
+    "examples": [
+      "runArchiveDrill(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive drill"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-simulation",
+    "priority": 1074,
+    "definitions": [
+      {
+        "meaning": "A pattern for simulating archive failures and recovery for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Test detection and response with archive failure simulations."
+      }
+    ],
+    "syntax": "// Simulate archive failures in test environments",
+    "examples": [
+      "simulateArchiveFailure(tenantId, type)"
+    ],
+    "synonyms": ["cache snapshot archive simulation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-automation",
+    "priority": 1075,
+    "definitions": [
+      {
+        "meaning": "A pattern for automating archive, restore, and monitoring for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Automate all archive and restore steps for reliability."
+      }
+    ],
+    "syntax": "// Automate archive and restore tasks",
+    "examples": [
+      "automateArchiveProcess(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive automation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-orchestration",
+    "priority": 1076,
+    "definitions": [
+      {
+        "meaning": "A pattern for orchestrating archive and restore operations for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Coordinate multiple systems and teams for archive and recovery."
+      }
+    ],
+    "syntax": "// Orchestrate archive and restore",
+    "examples": [
+      "orchestrateArchiveRestore(tenantId, incident)"
+    ],
+    "synonyms": ["cache snapshot archive orchestration"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-closure",
+    "priority": 1077,
+    "definitions": [
+      {
+        "meaning": "A pattern for formally closing archive incidents for cache snapshots at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Mark archive incidents as resolved and update records."
+      }
+    ],
+    "syntax": "// Close archive incident",
+    "examples": [
+      "closeArchiveIncident(tenantId, incident)"
+    ],
+    "synonyms": ["cache snapshot archive closure"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-lessons-learned",
+    "priority": 1078,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting lessons learned from archive incidents at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share lessons learned after archive failures."
+      }
+    ],
+    "syntax": "// Document lessons learned",
+    "examples": [
+      "logArchiveLessonsLearned(tenantId, incident)"
+    ],
+    "synonyms": ["cache snapshot archive lessons learned"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-tabletop-exercise",
+    "priority": 1079,
+    "definitions": [
+      {
+        "meaning": "A pattern for running tabletop exercises for archive failures at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Simulate archive failure scenarios and test response."
+      }
+    ],
+    "syntax": "// Run archive tabletop exercises",
+    "examples": [
+      "runArchiveTabletopExercise(tenantId, scenario)"
+    ],
+    "synonyms": ["cache snapshot archive tabletop exercise"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-drill",
+    "priority": 1080,
+    "definitions": [
+      {
+        "meaning": "A pattern for running archive drills for cache snapshots for tenant data search at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Conduct live drills to test archive and restore processes."
+      }
+    ],
+    "syntax": "// Run archive drills",
+    "examples": [
+      "runArchiveDrill(tenantId)"
+    ],
+    "synonyms": ["cache snapshot archive drill"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  }
+]
