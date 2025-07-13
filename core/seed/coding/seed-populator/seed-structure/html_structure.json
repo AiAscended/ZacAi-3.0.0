@@ -1,0 +1,63 @@
+{
+  "html": {
+    "elements": [
+      "div",
+      "span",
+      "a",
+      "img",
+      "form",
+      "input",
+      "button",
+      "table",
+      "ul",
+      "li",
+      "header",
+      "footer",
+      "nav",
+      "section",
+      "article",
+      "main",
+      "aside",
+      "figure",
+      "figcaption",
+      "video",
+      "audio"
+    ],
+    "attributes": [
+      "class",
+      "id",
+      "src",
+      "href",
+      "alt",
+      "title",
+      "style",
+      "data-*",
+      "aria-*"
+    ],
+    "forms": [
+      "form",
+      "input",
+      "textarea",
+      "select",
+      "option",
+      "label",
+      "fieldset",
+      "legend"
+    ],
+    "semantics": [
+      "header",
+      "footer",
+      "nav",
+      "main",
+      "section",
+      "article",
+      "aside"
+    ],
+    "best-practices": [
+      "accessibility",
+      "seo",
+      "structure",
+      "performance"
+    ]
+  }
+}
