@@ -1,0 +1,11 @@
+{
+  "name": "auto-populate-seed-data",
+  "version": "1.0.0",
+  "scripts": {
+    "populate": "node scripts/autoPopulateSeedData.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
