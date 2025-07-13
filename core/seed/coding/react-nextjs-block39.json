@@ -1,0 +1,650 @@
+[
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-policy",
+    "priority": 1369,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise data policies during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Apply all relevant data policies to rollback operations."
+      }
+    ],
+    "syntax": "// Enforce data policy during rollback",
+    "examples": [
+      "enforceEnterpriseDataPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-security",
+    "priority": 1370,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise data security during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure all rollback operations comply with security standards."
+      }
+    ],
+    "syntax": "// Enforce data security during rollback",
+    "examples": [
+      "enforceEnterpriseDataSecurityOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data security"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-encryption-policy",
+    "priority": 1371,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise encryption policies during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Apply encryption policies to all rolled-back data."
+      }
+    ],
+    "syntax": "// Enforce encryption policy during rollback",
+    "examples": [
+      "enforceEnterpriseEncryptionPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback encryption policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-privacy-policy",
+    "priority": 1372,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise privacy policies during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure rollback operations comply with privacy policies."
+      }
+    ],
+    "syntax": "// Enforce privacy policy during rollback",
+    "examples": [
+      "enforceEnterprisePrivacyPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback privacy policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-access-policy",
+    "priority": 1373,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise access policies during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Restrict rollback access according to enterprise policy."
+      }
+    ],
+    "syntax": "// Enforce access policy during rollback",
+    "examples": [
+      "enforceEnterpriseAccessPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback access policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-audit-policy",
+    "priority": 1374,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise audit policies during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Audit all rollback operations as per policy."
+      }
+    ],
+    "syntax": "// Enforce audit policy during rollback",
+    "examples": [
+      "enforceEnterpriseAuditPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback audit policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-retention-policy",
+    "priority": 1375,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise data retention policies during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Apply retention rules to rolled-back data."
+      }
+    ],
+    "syntax": "// Enforce retention policy during rollback",
+    "examples": [
+      "enforceEnterpriseRetentionPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback retention policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-classification-policy",
+    "priority": 1376,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing enterprise data classification policies during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Classify rolled-back data according to policy."
+      }
+    ],
+    "syntax": "// Enforce classification policy during rollback",
+    "examples": [
+      "enforceEnterpriseClassificationPolicyOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback classification policy"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-loss-prevention",
+    "priority": 1377,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing data loss prevention (DLP) during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent data loss during rollback operations."
+      }
+    ],
+    "syntax": "// Enforce DLP during rollback",
+    "examples": [
+      "enforceEnterpriseDLPOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data loss prevention"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-leak-prevention",
+    "priority": 1378,
+    "definitions": [
+      {
+        "meaning": "A pattern for preventing data leaks during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent unauthorized data exposure during rollback."
+      }
+    ],
+    "syntax": "// Prevent data leaks during rollback",
+    "examples": [
+      "preventEnterpriseDataLeakOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data leak prevention"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-detection",
+    "priority": 1379,
+    "definitions": [
+      {
+        "meaning": "A pattern for detecting data breaches during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Detect and alert on potential data breaches in rollback."
+      }
+    ],
+    "syntax": "// Detect data breaches during rollback",
+    "examples": [
+      "detectEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach detection"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-response",
+    "priority": 1380,
+    "definitions": [
+      {
+        "meaning": "A pattern for responding to data breaches during rollback of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Trigger incident response on detected data breach."
+      }
+    ],
+    "syntax": "// Respond to data breach during rollback",
+    "examples": [
+      "respondToEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach response"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-postmortem",
+    "priority": 1381,
+    "definitions": [
+      {
+        "meaning": "A pattern for postmortem analysis after a data breach during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze root cause and improve breach response."
+      }
+    ],
+    "syntax": "// Postmortem after data breach in rollback",
+    "examples": [
+      "postmortemEnterpriseDataBreachOnRollback(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version rollback data breach postmortem"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-closure",
+    "priority": 1382,
+    "definitions": [
+      {
+        "meaning": "A pattern for formally closing data breach incidents after rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Mark breach incidents as resolved and update records."
+      }
+    ],
+    "syntax": "// Close data breach incident after rollback",
+    "examples": [
+      "closeEnterpriseDataBreachOnRollback(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version rollback data breach closure"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-lessons-learned",
+    "priority": 1383,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting lessons learned from data breach incidents after rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share lessons learned after breach."
+      }
+    ],
+    "syntax": "// Document breach lessons learned after rollback",
+    "examples": [
+      "logEnterpriseDataBreachLessonsLearnedOnRollback(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version rollback data breach lessons learned"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-tabletop-exercise",
+    "priority": 1384,
+    "definitions": [
+      {
+        "meaning": "A pattern for running tabletop exercises for data breach scenarios during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Simulate breach scenarios and test response."
+      }
+    ],
+    "syntax": "// Run breach tabletop exercises during rollback",
+    "examples": [
+      "runEnterpriseDataBreachTabletopExerciseOnRollback(tenantId, version, scenario)"
+    ],
+    "synonyms": ["archive version rollback data breach tabletop exercise"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-drill",
+    "priority": 1385,
+    "definitions": [
+      {
+        "meaning": "A pattern for running drills for data breach scenarios during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Conduct live breach drills to test response."
+      }
+    ],
+    "syntax": "// Run breach drills during rollback",
+    "examples": [
+      "runEnterpriseDataBreachDrillOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach drill"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-simulation",
+    "priority": 1386,
+    "definitions": [
+      {
+        "meaning": "A pattern for simulating data breach scenarios during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Test detection and response with breach simulations."
+      }
+    ],
+    "syntax": "// Simulate breach during rollback",
+    "examples": [
+      "simulateEnterpriseDataBreachOnRollback(tenantId, version, type)"
+    ],
+    "synonyms": ["archive version rollback data breach simulation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-automation",
+    "priority": 1387,
+    "definitions": [
+      {
+        "meaning": "A pattern for automating breach detection and response during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Automate breach detection and incident response."
+      }
+    ],
+    "syntax": "// Automate breach detection during rollback",
+    "examples": [
+      "automateEnterpriseDataBreachDetectionOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach automation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-orchestration",
+    "priority": 1388,
+    "definitions": [
+      {
+        "meaning": "A pattern for orchestrating breach response across systems during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Coordinate breach response workflows during rollback."
+      }
+    ],
+    "syntax": "// Orchestrate breach response during rollback",
+    "examples": [
+      "orchestrateEnterpriseDataBreachResponseOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach orchestration"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-monitoring",
+    "priority": 1389,
+    "definitions": [
+      {
+        "meaning": "A pattern for monitoring for data breaches during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor rollback for breach indicators."
+      }
+    ],
+    "syntax": "// Monitor for breaches during rollback",
+    "examples": [
+      "monitorEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach monitoring"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-validation",
+    "priority": 1390,
+    "definitions": [
+      {
+        "meaning": "A pattern for validating breach response effectiveness after rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Validate that breach response actions were effective."
+      }
+    ],
+    "syntax": "// Validate breach response after rollback",
+    "examples": [
+      "validateEnterpriseDataBreachResponseOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach validation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-quality",
+    "priority": 1391,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring data quality after breach response during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Check data quality and integrity after breach."
+      }
+    ],
+    "syntax": "// Data quality check after breach response",
+    "examples": [
+      "checkEnterpriseDataQualityAfterBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach quality"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-lineage",
+    "priority": 1392,
+    "definitions": [
+      {
+        "meaning": "A pattern for tracking data lineage after breach response during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Track origin and changes to data after breach."
+      }
+    ],
+    "syntax": "// Track data lineage after breach",
+    "examples": [
+      "trackEnterpriseDataLineageAfterBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach lineage"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-reporting",
+    "priority": 1393,
+    "definitions": [
+      {
+        "meaning": "A pattern for reporting on breach incidents during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Generate reports on breach events and responses."
+      }
+    ],
+    "syntax": "// Report on breach incidents during rollback",
+    "examples": [
+      "reportEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach reporting"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-analytics",
+    "priority": 1394,
+    "definitions": [
+      {
+        "meaning": "A pattern for analyzing breach incidents during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze breach data for trends and improvements."
+      }
+    ],
+    "syntax": "// Analyze breach incidents during rollback",
+    "examples": [
+      "analyzeEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach analytics"],
+    "difficulty": "advanced",
+    "category": "analytics"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-forecasting",
+    "priority": 1395,
+    "definitions": [
+      {
+        "meaning": "A pattern for forecasting breach risk during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Forecast breach probability based on rollback patterns."
+      }
+    ],
+    "syntax": "// Forecast breach risk during rollback",
+    "examples": [
+      "forecastEnterpriseDataBreachRiskOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach forecasting"],
+    "difficulty": "advanced",
+    "category": "analytics"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-prediction",
+    "priority": 1396,
+    "definitions": [
+      {
+        "meaning": "A pattern for predicting breach incidents during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Predict breach events using machine learning."
+      }
+    ],
+    "syntax": "// Predict breach during rollback",
+    "examples": [
+      "predictEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach prediction"],
+    "difficulty": "advanced",
+    "category": "analytics"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-mitigation",
+    "priority": 1397,
+    "definitions": [
+      {
+        "meaning": "A pattern for mitigating breach impact during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Apply mitigation strategies to reduce breach impact."
+      }
+    ],
+    "syntax": "// Mitigate breach during rollback",
+    "examples": [
+      "mitigateEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach mitigation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-communication",
+    "priority": 1398,
+    "definitions": [
+      {
+        "meaning": "A pattern for communicating breach incidents during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Notify stakeholders about breach events."
+      }
+    ],
+    "syntax": "// Communicate breach during rollback",
+    "examples": [
+      "communicateEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach communication"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-notification",
+    "priority": 1399,
+    "definitions": [
+      {
+        "meaning": "A pattern for notifying users and authorities about breach incidents during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Send breach notifications as required by law."
+      }
+    ],
+    "syntax": "// Notify about breach during rollback",
+    "examples": [
+      "notifyEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach notification"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-regulatory-reporting",
+    "priority": 1400,
+    "definitions": [
+      {
+        "meaning": "A pattern for regulatory reporting of breach incidents during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Report breaches to authorities per regulations."
+      }
+    ],
+    "syntax": "// Regulatory reporting of breach during rollback",
+    "examples": [
+      "regulatoryReportEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach regulatory reporting"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-legal-response",
+    "priority": 1401,
+    "definitions": [
+      {
+        "meaning": "A pattern for legal response to breach incidents during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Coordinate legal response to breach events."
+      }
+    ],
+    "syntax": "// Legal response to breach during rollback",
+    "examples": [
+      "legalResponseEnterpriseDataBreachOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach legal response"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-insurance",
+    "priority": 1402,
+    "definitions": [
+      {
+        "meaning": "A pattern for leveraging cyber insurance for breach incidents during rollback.",
+        "partOfSpeech": "pattern",
+        "example": "Claim insurance for breach-related losses."
+      }
+    ],
+    "syntax": "// Insurance claim for breach during rollback",
+    "examples": [
+      "claimEnterpriseDataBreachInsuranceOnRollback(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback data breach insurance"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-training",
+    "priority": 1403,
+    "definitions": [
+      {
+        "meaning": "A pattern for training staff on breach response during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Train staff on breach detection and response."
+      }
+    ],
+    "syntax": "// Train on breach response during rollback",
+    "examples": [
+      "trainEnterpriseStaffOnDataBreachOnRollback(tenantId)"
+    ],
+    "synonyms": ["archive version rollback data breach training"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback-enterprise-data-breach-awareness",
+    "priority": 1404,
+    "definitions": [
+      {
+        "meaning": "A pattern for raising breach awareness during rollback operations.",
+        "partOfSpeech": "pattern",
+        "example": "Increase breach awareness among users and staff."
+      }
+    ],
+    "syntax": "// Raise breach awareness during rollback",
+    "examples": [
+      "raiseEnterpriseDataBreachAwarenessOnRollback(tenantId)"
+    ],
+    "synonyms": ["archive version rollback data breach awareness"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  }
+]
