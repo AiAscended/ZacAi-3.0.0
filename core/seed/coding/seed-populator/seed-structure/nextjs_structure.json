@@ -1,0 +1,198 @@
+{
+  "nextjs": {
+    "core-concepts": [
+      "pages-directory",
+      "app-directory",
+      "file-based-routing",
+      "dynamic-routing",
+      "catch-all-routes",
+      "optional-catch-all",
+      "custom-app",
+      "custom-document",
+      "custom-error-pages",
+      "static-file-serving",
+      "public-directory",
+      "environment-variables",
+      "configuration-next-config-js",
+      "typescript-support",
+      "project-structure",
+      "deployment-overview"
+    ],
+    "routing": [
+      "link-component",
+      "router-push-replace",
+      "dynamic-routes",
+      "nested-routes",
+      "middleware-routing",
+      "redirects",
+      "rewrites",
+      "headers",
+      "navigation-events",
+      "route-groups",
+      "intercepting-routes"
+    ],
+    "pages": [
+      "static-page",
+      "dynamic-page",
+      "api-routes",
+      "get-static-props",
+      "get-server-side-props",
+      "get-initial-props",
+      "get-static-paths",
+      "incremental-static-regeneration",
+      "fallback-pages",
+      "preview-mode",
+      "404",
+      "500",
+      "custom-app",
+      "custom-document"
+    ],
+    "app-directory": [
+      "server-components",
+      "client-components",
+      "layout-jsx",
+      "page-jsx",
+      "template-jsx",
+      "loading-jsx",
+      "error-jsx",
+      "route-handlers",
+      "metadata",
+      "head-jsx",
+      "parallel-routes",
+      "intercepting-routes",
+      "server-actions"
+    ],
+    "api-routes": [
+      "creating-endpoint",
+      "dynamic-api-routes",
+      "middleware",
+      "api-middleware",
+      "api-request-helpers",
+      "api-response-helpers",
+      "error-handling-api",
+      "rate-limiting",
+      "api-authentication"
+    ],
+    "data-fetching": [
+      "fetch-api",
+      "get-static-props",
+      "get-server-side-props",
+      "get-initial-props",
+      "get-static-paths",
+      "incremental-static-regeneration",
+      "client-side-fetching",
+      "swr",
+      "react-query",
+      "revalidation",
+      "preview-mode"
+    ],
+    "styling": [
+      "css-support",
+      "sass-support",
+      "styled-jsx",
+      "tailwind-css",
+      "css-modules",
+      "global-css",
+      "postcss",
+      "emotion",
+      "styled-components"
+    ],
+    "performance": [
+      "image-optimization",
+      "next-image",
+      "script-optimization",
+      "font-optimization",
+      "automatic-static-optimization",
+      "code-splitting",
+      "dynamic-import",
+      "prefetching",
+      "caching",
+      "edge-runtime"
+    ],
+    "deployment": [
+      "vercel-deployment",
+      "custom-server",
+      "static-export",
+      "docker-deployment",
+      "serverless-functions",
+      "edge-functions",
+      "ci-cd-integration",
+      "environment-variables-deployment"
+    ],
+    "auth": [
+      "authentication",
+      "authorization",
+      "next-auth",
+      "jwt-auth",
+      "session-management",
+      "oauth-integration"
+    ],
+    "middleware": [
+      "middleware-basics",
+      "edge-middleware",
+      "middleware-routing",
+      "middleware-headers",
+      "middleware-redirects",
+      "middleware-rewrites"
+    ],
+    "testing": [
+      "jest",
+      "react-testing-library",
+      "cypress",
+      "unit-testing",
+      "integration-testing",
+      "e2e-testing",
+      "test-coverage"
+    ],
+    "internationalization": [
+      "i18n-routing",
+      "localization",
+      "automatic-locale-detection",
+      "custom-locale-domains"
+    ],
+    "analytics": [
+      "next-analytics",
+      "vercel-analytics",
+      "google-analytics",
+      "custom-analytics"
+    ],
+    "security": [
+      "csp",
+      "helmet",
+      "csrf-protection",
+      "rate-limiting",
+      "secure-headers",
+      "xss-protection",
+      "authentication-security"
+    ],
+    "error-handling": [
+      "custom-error-pages",
+      "error-boundaries",
+      "logging-errors",
+      "reporting-errors"
+    ],
+    "best-practices": [
+      "project-structure",
+      "env-management",
+      "performance-optimization",
+      "security-best-practices",
+      "accessibility",
+      "seo",
+      "code-splitting",
+      "static-assets",
+      "monitoring",
+      "logging"
+    ],
+    "advanced": [
+      "custom-server",
+      "edge-runtime",
+      "serverless-functions",
+      "incremental-static-regeneration",
+      "api-rate-limiting",
+      "custom-webpack-config",
+      "monorepo-support",
+      "multi-zone-deployment",
+      "proxying"
+    ]
+  }
+}
