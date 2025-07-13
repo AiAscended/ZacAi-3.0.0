@@ -1,0 +1,62 @@
+{
+  "javascript": {
+    "basics": [
+      "variables",
+      "data-types",
+      "operators",
+      "control-flow",
+      "functions",
+      "scope",
+      "hoisting",
+      "closures",
+      "this",
+      "prototype",
+      "es6-features"
+    ],
+    "array": [
+      "map",
+      "filter",
+      "reduce",
+      "forEach",
+      "find",
+      "some",
+      "every",
+      "sort",
+      "splice",
+      "concat"
+    ],
+    "object": [
+      "object-literals",
+      "destructuring",
+      "spread-operator",
+      "rest-operator",
+      "object-assign"
+    ],
+    "promise": [
+      "then",
+      "catch",
+      "finally",
+      "async-await",
+      "promise-all",
+      "promise-race"
+    ],
+    "dom": [
+      "selectors",
+      "event-listeners",
+      "manipulation",
+      "ajax",
+      "fetch-api"
+    ],
+    "modules": [
+      "import-export",
+      "commonjs",
+      "es-modules"
+    ],
+    "best-practices": [
+      "code-style",
+      "linting",
+      "testing",
+      "performance"
+    ]
+  }
+}
