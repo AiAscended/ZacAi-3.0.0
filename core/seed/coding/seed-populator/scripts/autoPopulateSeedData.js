@@ -2,9 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const Ajv = require('ajv');
 const schema = require('../lib/schema');
 
-// Map language to doc sources/selectors (expand as needed)
+// Map language to doc sources/selectors
 const docSources = {
   nextjs: {
     base: 'https://nextjs.org/docs/pages/building-your-application/',
@@ -59,15 +60,44 @@ const docSources = {
     selector: '#main',
     github: 'https://github.com/sqlite/sqlite',
     soTag: 'https://stackoverflow.com/questions/tagged/sql'
+  },
+  php: {
+    base: 'https://www.php.net/manual/en/',
+    selector: '#layout-content',
+    github: 'https://github.com/php/php-src',
+    soTag: 'https://stackoverflow.com/questions/tagged/php'
+  },
+  mysql: {
+    base: 'https://dev.mysql.com/doc/refman/8.0/en/',
+    selector: '#content',
+    github: 'https://github.com/mysql/mysql-server',
+    soTag: 'https://stackoverflow.com/questions/tagged/mysql'
+  },
+  postgresql: {
+    base: 'https://www.postgresql.org/docs/current/',
+    selector: '#content',
+    github: 'https://github.com/postgres/postgres',
+    soTag: 'https://stackoverflow.com/questions/tagged/postgresql'
+  },
+  supabase: {
+    base: 'https://supabase.com/docs/',
+    selector: 'main',
+    github: 'https://github.com/supabase/supabase',
+    soTag: 'https://stackoverflow.com/questions/tagged/supabase'
   }
 };
 
-const seedDir = path.join(__dirname, '..', 'seed-structures');
+const seedDir = path.join(__dirname, '..', 'seed-structure');
+console.log("Script started");
+console.log("Looking for seed structures in:", seedDir);
+
 const seedFiles = fs.readdirSync(seedDir).filter(f => f.endsWith('.json'));
+console.log("Seed files found:", seedFiles);
 
 function loadAllStructures() {
   const all = {};
   for (const file of seedFiles) {
+    console.log("Loading structure:", file);
     const structure = require(path.join(seedDir, file));
     Object.assign(all, structure);
   }
@@ -86,6 +116,10 @@ function getConceptUrl(lang, folder, concept) {
   if (lang === 'python') return `${source.base}${concept}.html`;
   if (lang === 'html') return `${source.base}${concept}`;
   if (lang === 'sql') return `${source.base}${concept}.asp`;
+  if (lang === 'php') return `${source.base}${concept}.php`;
+  if (lang === 'mysql') return `${source.base}${concept}.html`;
+  if (lang === 'postgresql') return `${source.base}${concept}.html`;
+  if (lang === 'supabase') return `${source.base}${concept}`;
   return null;
 }
 
@@ -106,41 +140,58 @@ async function scrapeDocs(lang, folder, concept) {
       description = null;
       usage = null;
       examples = [];
+      console.error(`Failed to scrape ${lang}/${folder}/${concept}: ${url}`);
     }
   }
   return { description, usage, examples, url };
 }
 
 async function main() {
-  const structure = loadAllStructures();
-  for (const lang of Object.keys(structure)) {
-    for (const folder of Object.keys(structure[lang])) {
-      const concepts = structure[lang][folder];
-      const folderPath = path.join(__dirname, '..', 'data', lang, folder);
-      fs.mkdirSync(folderPath, { recursive: true });
-      for (const concept of concepts) {
-        const filePath = path.join(folderPath, `${concept}.json`);
-        if (fs.existsSync(filePath)) continue;
-        const s = { ...schema };
-        s.id = concept;
-        s.name = concept;
-        s.language = lang;
-        s.category = folder;
-        s.framework = ['nextjs','react','tailwind'].includes(lang) ? lang : null;
-        s.links = [
-          { title: 'Official Docs', url: null },
-          { title: 'GitHub', url: docSources[lang]?.github || null },
-          { title: 'Stack Overflow', url: docSources[lang]?.soTag || null }
-        ];
-        const { description, usage, examples, url } = await scrapeDocs(lang, folder, concept);
-        s.description = description;
-        s.usage = usage;
-        s.examples = examples;
-        if (url) s.links[0].url = url;
-        fs.writeFileSync(filePath, JSON.stringify(s, null, 2));
-        console.log(`Populated: ${filePath}`);
+  try {
+    const ajv = new Ajv();
+    const validate = ajv.compile(schema);
+
+    const structure = loadAllStructures();
+    for (const lang of Object.keys(structure)) {
+      for (const folder of Object.keys(structure[lang])) {
+        const concepts = structure[lang][folder];
+        const folderPath = path.join(__dirname, '..', 'data', lang, folder);
+        fs.mkdirSync(folderPath, { recursive: true });
+        for (const concept of concepts) {
+          const filePath = path.join(folderPath, `${concept}.json`);
+          if (fs.existsSync(filePath)) {
+            console.log(`File exists, skipping: ${filePath}`);
+            continue;
+          }
+          const s = { ...schema };
+          s.id = concept;
+          s.name = concept;
+          s.language = lang;
+          s.category = folder;
+          s.framework = ['nextjs','react','tailwind'].includes(lang) ? lang : null;
+          s.links = [
+            { title: 'Official Docs', url: null },
+            { title: 'GitHub', url: docSources[lang]?.github || null },
+            { title: 'Stack Overflow', url: docSources[lang]?.soTag || null }
+          ];
+          const { description, usage, examples, url } = await scrapeDocs(lang, folder, concept);
+          s.description = description;
+          s.usage = usage;
+          s.examples = examples;
+          if (url) s.links[0].url = url;
+          fs.writeFileSync(filePath, JSON.stringify(s, null, 2));
+          // Validate output
+          const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+          if (!validate(data)) {
+            console.error(`Validation failed for ${filePath}:`, validate.errors);
+          }
+          console.log(`Populated: ${filePath}`);
+        }
       }
     }
+    console.log("All done!");
+  } catch (err) {
+    console.error("Script failed:", err);
   }
 }
 
