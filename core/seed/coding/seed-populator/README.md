@@ -334,17 +334,6 @@ node_modules
 - Set up a GitHub token as a secret if you want to push changes automatically.
 ```
 
-# 🚦 **How to Use**
-
-1. **Clone this repo or copy the structure above.**
-2. **Edit `/seed-structure.json`** to add/remove concepts for each language.
-3. **Run:**
-   ```bash
-   npm install
-   npm run populate
-   ```
-4. **Your `/data/<language>/<concept>.json` files will be created and filled with real scraped content.**
-
 # 🔑 **GitHub API/Token/Action**
 
 - **You do NOT need a GitHub token** to run this script locally or in Codespaces.
@@ -371,3 +360,66 @@ Just copy, edit, and run!**
 
 If you want a ZIP or ready-to-clone repo, just ask!
 
+
+# 🚦 **How to Use**
+
+1. **Clone this repo or copy the structure above.**
+2. **Edit `/seed-structure.json`** to add/remove concepts for each language.
+3. **Run:**
+   ```bash
+   npm install
+   npm run populate
+   ```
+4. **Your `/data/<language>/<concept>.json` files will be created and filled with real scraped content.**
+
+How to use test mode:
+
+bash
+TEST_MODE=true npm run populate
+or
+
+bash
+TEST_MODE=true node scripts/autoPopulateSeedData.js
+Key features:
+
+Uses a real JSON Schema for validation (not your template)
+
+Always writes files, never fails on missing fields
+
+Assigns correct types to all fields (expand assignField as needed)
+
+Logs validation errors but continues
+
+Supports test mode for safe QA
+
+# How npm works!
+
+npm Works
+npm install (with no arguments) always looks for package.json in the current working directory.
+
+If you want to install dependencies for a package.json in a subfolder, you must run npm install from that subfolder, or use the --prefix or --cwd flags to point npm to the correct directory.
+
+What You Should Do
+Option 1: Change Directory and Run Install
+From your repo root:
+
+bash
+cd core/seed/coding/seed-populator
+npm install
+Now, all dependencies will be installed in core/seed/coding/seed-populator/node_modules as expected, and you can run your scripts from there.
+
+Option 2: Use npm install with --prefix or --cwd
+From your repo root, you can also run:
+
+bash
+npm install --prefix core/seed/coding/seed-populator
+or
+
+bash
+npm --prefix core/seed/coding/seed-populator install
+This tells npm to install dependencies in that specific folder.
+
+Best Practice
+Always run npm install from the directory containing your package.json (or use the --prefix flag as above).
+
+If your scripts and code are all inside seed-populator, you should always run commands from inside that folder
