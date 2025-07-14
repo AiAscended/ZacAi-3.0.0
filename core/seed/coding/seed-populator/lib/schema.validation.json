@@ -1,0 +1,182 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "category": { "type": "string" },
+    "language": { "type": "string" },
+    "framework": { "type": ["string", "null"] },
+    "framework_version": { "type": ["string", "null"] },
+    "complexity": { "type": ["string", "null"] },
+    "description": { "type": "string" },
+    "usage": { "type": "string" },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": ["string", "null"] },
+          "title": { "type": ["string", "null"] },
+          "code": { "type": ["string", "null"] },
+          "explanation": { "type": ["string", "null"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "language": { "type": ["string", "null"] },
+          "output": { "type": ["string", "null"] }
+        },
+        "required": []
+      }
+    },
+    "instructions": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "use_cases": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "anti_patterns": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "performance_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "security_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "ai_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "logic_flows": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "decision_trees": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "preconditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "postconditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "links": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "priority": { "type": ["number", "null"] },
+    "frequency": { "type": ["string", "null"] },
+    "compatibility": { "type": "object" },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "metrics": { "type": "object" },
+    "user_feedback": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "usage_telemetry": { "type": "object" },
+    "update_history": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "media": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "voice_instructions": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "localizations": { "type": "object" },
+    "semantic_embedding": { "type": ["string", "null"] },
+    "search_boost": { "type": ["number", "null"] },
+    "related_questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "api_contract": { "type": ["string", "null"] },
+    "success": { "type": ["boolean", "null"] },
+    "error": { "type": ["string", "null"] },
+    "metadata": { "type": "object" },
+    "schema_version": { "type": ["string", "null"] },
+    "common_errors": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "debugging_steps": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "error_examples": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "test_cases": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "validation_schema": { "type": "object" },
+    "reference_implementations": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "alternative_approaches": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "next_steps": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "environment_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contextual_adaptations": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "reasoning_paths": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "self_assessment": { "type": "object" },
+    "discussion_threads": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "license": { "type": ["string", "null"] },
+    "usage_restrictions": { "type": ["string", "null"] },
+    "trend_score": { "type": ["string", "null"] },
+    "deprecation_status": { "type": ["string", "null"] },
+    "prompt_templates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "integration_guides": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  },
+  "required": ["id", "name", "category", "language", "description", "usage", "examples"]
+}
