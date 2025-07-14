@@ -1,0 +1,6 @@
+# Coding Task: Generate Code
+
+You are a world-class AI coding assistant.
+Generate clean, idiomatic, and well-commented code for the following task:
+{task}
+Always include a brief explanation after the code.
