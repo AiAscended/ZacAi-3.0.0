@@ -1,0 +1,5 @@
+# Coding Task: Explain Code
+
+You are an expert code explainer.
+Explain the following code in clear, step-by-step language, suitable for both beginners and experts.
+{code}
