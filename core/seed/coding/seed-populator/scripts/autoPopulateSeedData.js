@@ -3,7 +3,15 @@ const path = require('path');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const Ajv = require('ajv');
-const schema = require('../lib/schema');
+
+// Use the template for default values
+const schemaTemplate = require('../lib/schema');
+// Use the JSON Schema for validation
+const schemaValidation = require('../lib/schema.validation.json');
+
+// ====== CONFIG ======
+const TEST_MODE = process.env.TEST_MODE === 'true'; // Set TEST_MODE=true for test run
+const TEST_LIMIT = 5; // Number of files to write in test mode
 
 // Map language to doc sources/selectors
 const docSources = {
@@ -146,28 +154,44 @@ async function scrapeDocs(lang, folder, concept) {
   return { description, usage, examples, url };
 }
 
+// Helper to robustly assign types for all fields
+function assignField(val, type) {
+  if (type === "string") return typeof val === "string" ? val : "";
+  if (type === "number") return typeof val === "number" ? val : null;
+  if (type === "boolean") return typeof val === "boolean" ? val : null;
+  if (type === "array") return Array.isArray(val) ? val : [];
+  if (type === "object") return (val && typeof val === "object" && !Array.isArray(val)) ? val : {};
+  return val;
+}
+
 async function main() {
   try {
     const ajv = new Ajv();
-    const validate = ajv.compile(schema);
+    const validate = ajv.compile(schemaValidation);
 
     const structure = loadAllStructures();
+    let filesWritten = 0;
+
     for (const lang of Object.keys(structure)) {
       for (const folder of Object.keys(structure[lang])) {
         const concepts = structure[lang][folder];
         const folderPath = path.join(__dirname, '..', 'data', lang, folder);
         fs.mkdirSync(folderPath, { recursive: true });
         for (const concept of concepts) {
+          if (TEST_MODE && filesWritten >= TEST_LIMIT) {
+            console.log("Test mode: reached file limit, stopping early.");
+            return;
+          }
           const filePath = path.join(folderPath, `${concept}.json`);
           if (fs.existsSync(filePath)) {
             console.log(`File exists, skipping: ${filePath}`);
             continue;
           }
-          const s = { ...schema };
-          s.id = concept;
-          s.name = concept;
-          s.language = lang;
-          s.category = folder;
+          const s = { ...schemaTemplate };
+          s.id = assignField(concept, "string");
+          s.name = assignField(concept, "string");
+          s.language = assignField(lang, "string");
+          s.category = assignField(folder, "string");
           s.framework = ['nextjs','react','tailwind'].includes(lang) ? lang : null;
           s.links = [
             { title: 'Official Docs', url: null },
@@ -175,17 +199,25 @@ async function main() {
             { title: 'Stack Overflow', url: docSources[lang]?.soTag || null }
           ];
           const { description, usage, examples, url } = await scrapeDocs(lang, folder, concept);
-          s.description = description;
-          s.usage = usage;
-          s.examples = examples;
+
+          // Robust assignment for core fields
+          s.description = assignField(description, "string");
+          s.usage = assignField(usage, "string");
+          s.examples = assignField(examples, "array");
           if (url) s.links[0].url = url;
+
+          // Add robust assignment for any other fields as needed, e.g.:
+          // s.instructions = assignField(s.instructions, "array");
+          // s.use_cases = assignField(s.use_cases, "array");
+          // ...repeat for all fields in your schema...
+
           fs.writeFileSync(filePath, JSON.stringify(s, null, 2));
-          // Validate output
           const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
           if (!validate(data)) {
             console.error(`Validation failed for ${filePath}:`, validate.errors);
           }
           console.log(`Populated: ${filePath}`);
+          filesWritten++;
         }
       }
     }
