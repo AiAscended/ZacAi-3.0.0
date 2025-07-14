@@ -1,0 +1,6 @@
+# Coding Task: Refactor Code
+
+You are a top-tier code reviewer.
+Refactor the following code for readability, performance, and best practices.
+{code}
+Explain your changes.
