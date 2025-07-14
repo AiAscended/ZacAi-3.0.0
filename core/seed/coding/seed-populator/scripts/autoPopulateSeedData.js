@@ -4,16 +4,13 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const Ajv = require('ajv');
 
-// Use the template for default values
 const schemaTemplate = require('../lib/schema');
-// Use the JSON Schema for validation
 const schemaValidation = require('../lib/schema.validation.json');
 
-// ====== CONFIG ======
-const TEST_MODE = process.env.TEST_MODE === 'true'; // Set TEST_MODE=true for test run
-const TEST_LIMIT = 5; // Number of files to write in test mode
+const TEST_MODE = process.env.TEST_MODE === 'true';
+const TEST_LIMIT = 5;
 
-// Map language to doc sources/selectors
+// --- Doc sources (same as before, add more as needed) ---
 const docSources = {
   nextjs: {
     base: 'https://nextjs.org/docs/pages/building-your-application/',
@@ -135,23 +132,48 @@ async function scrapeDocs(lang, folder, concept) {
   const source = docSources[lang];
   const url = getConceptUrl(lang, folder, concept);
   let description = null, usage = null, examples = [];
+  let performance_notes = [], security_notes = [], instructions = [], tags = [];
+
   if (url) {
     try {
       const { data } = await axios.get(url);
       const $ = cheerio.load(data);
+
       description = $(`${source.selector} p`).first().text() || null;
       usage = $(`${source.selector} pre`).first().text() || null;
+
       $(`${source.selector} pre`).each((i, el) => {
         if (i < 3) examples.push({ code: $(el).text(), explanation: null });
       });
+
+      // Try to scrape performance notes, security notes, instructions if present
+      $('h2, h3').each((i, el) => {
+        const heading = $(el).text().toLowerCase();
+        if (heading.includes('performance')) {
+          performance_notes.push($(el).next('p').text());
+        }
+        if (heading.includes('security')) {
+          security_notes.push($(el).next('p').text());
+        }
+        if (heading.includes('usage') || heading.includes('how to')) {
+          instructions.push({ step: i + 1, details: $(el).next('p').text() });
+        }
+      });
+
+      // Generate tags from concept/lang/folder
+      tags = [concept, lang, folder];
     } catch (e) {
       description = null;
       usage = null;
       examples = [];
+      performance_notes = [];
+      security_notes = [];
+      instructions = [];
+      tags = [];
       console.error(`Failed to scrape ${lang}/${folder}/${concept}: ${url}`);
     }
   }
-  return { description, usage, examples, url };
+  return { description, usage, examples, url, performance_notes, security_notes, instructions, tags };
 }
 
 // Helper to robustly assign types for all fields
@@ -198,67 +220,72 @@ async function main() {
             { title: 'GitHub', url: docSources[lang]?.github || null },
             { title: 'Stack Overflow', url: docSources[lang]?.soTag || null }
           ];
-          const { description, usage, examples, url } = await scrapeDocs(lang, folder, concept);
 
-          // Robust assignment for core fields
+          // Scrape as much as possible
+          const {
+            description, usage, examples, url,
+            performance_notes, security_notes, instructions, tags
+          } = await scrapeDocs(lang, folder, concept);
+
           s.description = assignField(description, "string");
           s.usage = assignField(usage, "string");
           s.examples = assignField(examples, "array");
           if (url) s.links[0].url = url;
+          s.performance_notes = assignField(performance_notes, "array");
+          s.security_notes = assignField(security_notes, "array");
+          s.instructions = assignField(instructions, "array");
+          s.tags = assignField(tags, "array");
 
-          // Robust assignment for other fields (expand as needed)
-          s.instructions = assignField(s.instructions, "array");
-          s.use_cases = assignField(s.use_cases, "array");
-          s.anti_patterns = assignField(s.anti_patterns, "array");
-          s.performance_notes = assignField(s.performance_notes, "array");
-          s.security_notes = assignField(s.security_notes, "array");
-          s.ai_notes = assignField(s.ai_notes, "array");
-          s.logic_flows = assignField(s.logic_flows, "array");
-          s.decision_trees = assignField(s.decision_trees, "array");
-          s.preconditions = assignField(s.preconditions, "array");
-          s.postconditions = assignField(s.postconditions, "array");
-          s.tags = assignField(s.tags, "array");
-          s.related = assignField(s.related, "array");
-          s.links = assignField(s.links, "array");
-          s.priority = assignField(s.priority, "number");
-          s.frequency = assignField(s.frequency, "string");
-          s.compatibility = assignField(s.compatibility, "object");
-          s.dependencies = assignField(s.dependencies, "array");
-          s.metrics = assignField(s.metrics, "object");
-          s.user_feedback = assignField(s.user_feedback, "array");
-          s.usage_telemetry = assignField(s.usage_telemetry, "object");
-          s.update_history = assignField(s.update_history, "array");
-          s.media = assignField(s.media, "array");
-          s.voice_instructions = assignField(s.voice_instructions, "array");
-          s.localizations = assignField(s.localizations, "object");
-          s.semantic_embedding = assignField(s.semantic_embedding, "string");
-          s.search_boost = assignField(s.search_boost, "number");
-          s.related_questions = assignField(s.related_questions, "array");
-          s.api_contract = assignField(s.api_contract, "string");
-          s.success = assignField(s.success, "boolean");
-          s.error = assignField(s.error, "string");
-          s.metadata = assignField(s.metadata, "object");
-          s.schema_version = assignField(s.schema_version, "string");
-          s.common_errors = assignField(s.common_errors, "array");
-          s.debugging_steps = assignField(s.debugging_steps, "array");
-          s.error_examples = assignField(s.error_examples, "array");
-          s.test_cases = assignField(s.test_cases, "array");
-          s.validation_schema = assignField(s.validation_schema, "object");
-          s.reference_implementations = assignField(s.reference_implementations, "array");
-          s.alternative_approaches = assignField(s.alternative_approaches, "array");
-          s.prerequisites = assignField(s.prerequisites, "array");
-          s.next_steps = assignField(s.next_steps, "array");
-          s.environment_constraints = assignField(s.environment_constraints, "array");
-          s.contextual_adaptations = assignField(s.contextual_adaptations, "array");
-          s.reasoning_paths = assignField(s.reasoning_paths, "array");
-          s.self_assessment = assignField(s.self_assessment, "object");
-          s.discussion_threads = assignField(s.discussion_threads, "array");
-          s.license = assignField(s.license, "string");
-          s.usage_restrictions = assignField(s.usage_restrictions, "string");
-          s.trend_score = assignField(s.trend_score, "string");
-          s.deprecation_status = assignField(s.deprecation_status, "string");
-          s.prompt_templates = assignField(s.prompt_templates, "array");
-          s.integration_guides = assignField(s.integration_guides, "array");
+          // Heuristic/static fields
+          s.priority = filesWritten + 1;
+          s.frequency = "common";
+          s.update_history = [{ date: new Date().toISOString(), by: "auto-populator" }];
+          s.schema_version = "1.0";
+
+          // Placeholders for future AI/LLM/manual completion
+          s.use_cases = [];
+          s.anti_patterns = [];
+          s.ai_notes = [];
+          s.logic_flows = [];
+          s.decision_trees = [];
+          s.preconditions = [];
+          s.postconditions = [];
+          s.related = [];
+          s.compatibility = {};
+          s.dependencies = [];
+          s.metrics = {};
+          s.user_feedback = [];
+          s.usage_telemetry = {};
+          s.media = [];
+          s.voice_instructions = [];
+          s.localizations = {};
+          s.semantic_embedding = "";
+          s.search_boost = null;
+          s.related_questions = [];
+          s.api_contract = "";
+          s.success = null;
+          s.error = "";
+          s.metadata = {};
+          s.common_errors = [];
+          s.debugging_steps = [];
+          s.error_examples = [];
+          s.test_cases = [];
+          s.validation_schema = {};
+          s.reference_implementations = [];
+          s.alternative_approaches = [];
+          s.prerequisites = [];
+          s.next_steps = [];
+          s.environment_constraints = [];
+          s.contextual_adaptations = [];
+          s.reasoning_paths = [];
+          s.self_assessment = {};
+          s.discussion_threads = [];
+          s.license = "";
+          s.usage_restrictions = "";
+          s.trend_score = "";
+          s.deprecation_status = "";
+          s.prompt_templates = [];
+          s.integration_guides = [];
 
           fs.writeFileSync(filePath, JSON.stringify(s, null, 2));
           const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
