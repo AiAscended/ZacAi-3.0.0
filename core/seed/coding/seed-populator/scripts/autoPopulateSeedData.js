@@ -206,10 +206,59 @@ async function main() {
           s.examples = assignField(examples, "array");
           if (url) s.links[0].url = url;
 
-          // Add robust assignment for any other fields as needed, e.g.:
-          // s.instructions = assignField(s.instructions, "array");
-          // s.use_cases = assignField(s.use_cases, "array");
-          // ...repeat for all fields in your schema...
+          // Robust assignment for other fields (expand as needed)
+          s.instructions = assignField(s.instructions, "array");
+          s.use_cases = assignField(s.use_cases, "array");
+          s.anti_patterns = assignField(s.anti_patterns, "array");
+          s.performance_notes = assignField(s.performance_notes, "array");
+          s.security_notes = assignField(s.security_notes, "array");
+          s.ai_notes = assignField(s.ai_notes, "array");
+          s.logic_flows = assignField(s.logic_flows, "array");
+          s.decision_trees = assignField(s.decision_trees, "array");
+          s.preconditions = assignField(s.preconditions, "array");
+          s.postconditions = assignField(s.postconditions, "array");
+          s.tags = assignField(s.tags, "array");
+          s.related = assignField(s.related, "array");
+          s.links = assignField(s.links, "array");
+          s.priority = assignField(s.priority, "number");
+          s.frequency = assignField(s.frequency, "string");
+          s.compatibility = assignField(s.compatibility, "object");
+          s.dependencies = assignField(s.dependencies, "array");
+          s.metrics = assignField(s.metrics, "object");
+          s.user_feedback = assignField(s.user_feedback, "array");
+          s.usage_telemetry = assignField(s.usage_telemetry, "object");
+          s.update_history = assignField(s.update_history, "array");
+          s.media = assignField(s.media, "array");
+          s.voice_instructions = assignField(s.voice_instructions, "array");
+          s.localizations = assignField(s.localizations, "object");
+          s.semantic_embedding = assignField(s.semantic_embedding, "string");
+          s.search_boost = assignField(s.search_boost, "number");
+          s.related_questions = assignField(s.related_questions, "array");
+          s.api_contract = assignField(s.api_contract, "string");
+          s.success = assignField(s.success, "boolean");
+          s.error = assignField(s.error, "string");
+          s.metadata = assignField(s.metadata, "object");
+          s.schema_version = assignField(s.schema_version, "string");
+          s.common_errors = assignField(s.common_errors, "array");
+          s.debugging_steps = assignField(s.debugging_steps, "array");
+          s.error_examples = assignField(s.error_examples, "array");
+          s.test_cases = assignField(s.test_cases, "array");
+          s.validation_schema = assignField(s.validation_schema, "object");
+          s.reference_implementations = assignField(s.reference_implementations, "array");
+          s.alternative_approaches = assignField(s.alternative_approaches, "array");
+          s.prerequisites = assignField(s.prerequisites, "array");
+          s.next_steps = assignField(s.next_steps, "array");
+          s.environment_constraints = assignField(s.environment_constraints, "array");
+          s.contextual_adaptations = assignField(s.contextual_adaptations, "array");
+          s.reasoning_paths = assignField(s.reasoning_paths, "array");
+          s.self_assessment = assignField(s.self_assessment, "object");
+          s.discussion_threads = assignField(s.discussion_threads, "array");
+          s.license = assignField(s.license, "string");
+          s.usage_restrictions = assignField(s.usage_restrictions, "string");
+          s.trend_score = assignField(s.trend_score, "string");
+          s.deprecation_status = assignField(s.deprecation_status, "string");
+          s.prompt_templates = assignField(s.prompt_templates, "array");
+          s.integration_guides = assignField(s.integration_guides, "array");
 
           fs.writeFileSync(filePath, JSON.stringify(s, null, 2));
           const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
