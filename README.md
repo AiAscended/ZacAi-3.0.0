@@ -174,4 +174,4 @@ Modular ZacAi first version but named v3.0.0 as its the 3rd version of Zac Ai ju
 You are on the cusp of a truly world-class code LLM/AI project. A single commit that reorganizes and modernizes your structure could multiply your velocity and maintainability.
 
 Citations:
-[1] 1000001660.jpg https://pplx-res.cloudinary.com/image/upload/v1752461155/user_uploads/73481744/43840a02-a75f-4901-b35e-6bff294ddc51/1000001660.jpg
+1. Next.js 
