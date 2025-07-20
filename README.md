@@ -1,6 +1,44 @@
 # ZacAi-3.0.0
 Modular ZacAi first version but named v3.0.0 as its the 3rd version of Zac Ai just the first time we've broken down all the code into modules and a more developer friendly modular structure!
 
+----------
+
+/app/                                # Next.js routes/UI
+/components/                         # React components
+/lib/                                # Core logic and organelles (neural mesh nodes)
+  eventBus.ts                        # Universal event system
+  pluginManager.ts                   # Agnostic plugin registry/executor
+  orchestrator/                      # Orchestration core (brainstem/heart)
+    core.ts
+    context.ts
+    trace.ts
+  memory/                            # Organelles (neurons)
+    index.ts
+    shortTerm.ts
+    longTerm.ts
+  vocabulary/
+    index.ts
+    words.ts
+  emotion/
+    index.ts
+    hormone.ts
+  tools/                             # Other tools/engines
+    codeEngine.ts
+    mathEngine.ts
+infrastructure/                      # Tech resources (cache, embeddings, dbs, external IO)
+  cache.ts
+  embedding.ts
+  vectorDB.ts
+/plugins/                            # Agnostic, system-wide plugins
+  logger.ts
+  rateLimiter.ts
+  safety.ts
+  cacheCheck.ts
+  cacheStore.ts
+
+
+---------
+
 /lib
   /ai-engine/
     orchestrator.ts   // Main orchestrator (see above)
