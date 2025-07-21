@@ -1,0 +1,11 @@
+{
+  "test_users": [
+    {
+      "user_id": "test-001",
+      "name": "Test User",
+      "role": "role-user",
+      "email": "testuser@example.com"
+    }
+    // Add more test users or data as needed
+  ]
+}
