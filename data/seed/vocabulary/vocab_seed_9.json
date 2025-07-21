@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 289,
+      "word": "parent",
+      "part_of_speech": "noun",
+      "definition": "A father or mother.",
+      "example": "Each child needs a parent.",
+      "frequency_rank": 289,
+      "tags": ["noun", "family", "high-frequency"],
+      "related": ["mother", "father", "guardian"]
+    },
+    {
+      "priority": 290,
+      "word": "stop",
+      "part_of_speech": "verb/noun",
+      "definition": "To cease movement or operation; a place where vehicles regularly halt.",
+      "example": "Please stop talking. The bus stop is ahead.",
+      "frequency_rank": 290,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["cease", "end", "halt"]
+    },
+    {
+      "priority": 291,
+      "word": "face",
+      "part_of_speech": "noun/verb",
+      "definition": "The front part of a person's head; to confront or deal with.",
+      "example": "She washed her face. Face your fears.",
+      "frequency_rank": 291,
+      "tags": ["noun", "verb", "body", "high-frequency"],
+      "related": ["head", "confront", "meet"]
+    },
+    {
+      "priority": 292,
+      "word": "anything",
+      "part_of_speech": "pronoun",
+      "definition": "Any object, event, or matter.",
+      "example": "Is there anything you need?",
+      "frequency_rank": 292,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["something", "nothing", "everything"]
+    },
+    {
+      "priority": 293,
+      "word": "create",
+      "part_of_speech": "verb",
+      "definition": "To bring something into existence.",
+      "example": "Artists create beautiful paintings.",
+      "frequency_rank": 293,
+      "tags": ["verb", "high-frequency"],
+      "related": ["make", "produce", "build"]
+    },
+    {
+      "priority": 294,
+      "word": "public",
+      "part_of_speech": "adjective/noun",
+      "definition": "Concerning the people as a whole; ordinary people in general.",
+      "example": "Public transport is convenient. The public was informed.",
+      "frequency_rank": 294,
+      "tags": ["adjective", "noun", "society", "high-frequency"],
+      "related": ["community", "open", "general"]
+    },
+    {
+      "priority": 295,
+      "word": "already",
+      "part_of_speech": "adverb",
+      "definition": "Before or by now or the time in question.",
+      "example": "I have already finished my homework.",
+      "frequency_rank": 295,
+      "tags": ["adverb", "time", "high-frequency"],
+      "related": ["yet", "before", "previously"]
+    },
+    {
+      "priority": 296,
+      "word": "speak",
+      "part_of_speech": "verb",
+      "definition": "To say words; to talk.",
+      "example": "Can you speak English?",
+      "frequency_rank": 296,
+      "tags": ["verb", "high-frequency"],
+      "related": ["talk", "say", "converse"]
+    },
+    {
+      "priority": 297,
+      "word": "others",
+      "part_of_speech": "pronoun",
+      "definition": "People or things that are additional or different.",
+      "example": "Some students left, but others stayed.",
+      "frequency_rank": 297,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["other", "another", "else"]
+    },
+    {
+      "priority": 298,
+      "word": "read",
+      "part_of_speech": "verb",
+      "definition": "To look at and comprehend the meaning of written or printed matter.",
+      "example": "I like to read books.",
+      "frequency_rank": 298,
+      "tags": ["verb", "high-frequency"],
+      "related": ["study", "peruse", "scan"]
+    },
+    {
+      "priority": 299,
+      "word": "level",
+      "part_of_speech": "noun/adjective/verb",
+      "definition": "A position on a scale of amount, quantity, extent, or quality; having a flat surface; to make flat.",
+      "example": "What is your level of English? The table is level. Level the ground.",
+      "frequency_rank": 299,
+      "tags": ["noun", "adjective", "verb", "high-frequency"],
+      "related": ["stage", "degree", "flat"]
+    },
+    {
+      "priority": 300,
+      "word": "allow",
+      "part_of_speech": "verb",
+      "definition": "To give permission for something to happen.",
+      "example": "Smoking is not allowed here.",
+      "frequency_rank": 300,
+      "tags": ["verb", "high-frequency"],
+      "related": ["permit", "let", "authorize"]
+    },
+    {
+      "priority": 301,
+      "word": "add",
+      "part_of_speech": "verb",
+      "definition": "To join something to something else to increase the size, number, or amount.",
+      "example": "Add sugar to your tea.",
+      "frequency_rank": 301,
+      "tags": ["verb", "high-frequency"],
+      "related": ["increase", "combine", "sum"]
+    },
+    {
+      "priority": 302,
+      "word": "office",
+      "part_of_speech": "noun",
+      "definition": "A room or building where people work.",
+      "example": "She works in an office.",
+      "frequency_rank": 302,
+      "tags": ["noun", "place", "high-frequency"],
+      "related": ["workplace", "bureau"]
+    },
+    {
+      "priority": 303,
+      "word": "spend",
+      "part_of_speech": "verb",
+      "definition": "To use money to pay for something; to use time doing something.",
+      "example": "How much did you spend? I spend time reading.",
+      "frequency_rank": 303,
+      "tags": ["verb", "high-frequency"],
+      "related": ["pay", "use", "consume"]
+    },
+    {
+      "priority": 304,
+      "word": "door",
+      "part_of_speech": "noun",
+      "definition": "A movable barrier used to open and close the entrance to a room, building, or vehicle.",
+      "example": "Please close the door.",
+      "frequency_rank": 304,
+      "tags": ["noun", "place", "high-frequency"],
+      "related": ["gate", "entrance", "exit"]
+    },
+    {
+      "priority": 305,
+      "word": "health",
+      "part_of_speech": "noun",
+      "definition": "The state of being free from illness or injury.",
+      "example": "Exercise is good for your health.",
+      "frequency_rank": 305,
+      "tags": ["noun", "wellness", "high-frequency"],
+      "related": ["well-being", "fitness", "condition"]
+    },
+    {
+      "priority": 306,
+      "word": "person",
+      "part_of_speech": "noun",
+      "definition": "A human being regarded as an individual.",
+      "example": "He is a nice person.",
+      "frequency_rank": 306,
+      "tags": ["noun", "high-frequency"],
+      "related": ["individual", "human", "people"]
+    },
+    {
+      "priority": 307,
+      "word": "art",
+      "part_of_speech": "noun",
+      "definition": "The expression or application of human creative skill and imagination.",
+      "example": "She studies art at university.",
+      "frequency_rank": 307,
+      "tags": ["noun", "creativity", "high-frequency"],
+      "related": ["painting", "drawing", "culture"]
+    },
+    {
+      "priority": 308,
+      "word": "sure",
+      "part_of_speech": "adjective",
+      "definition": "Confident in what one thinks or knows; having no doubt.",
+      "example": "Are you sure?",
+      "frequency_rank": 308,
+      "tags": ["adjective", "certainty", "high-frequency"],
+      "related": ["certain", "confident", "positive"]
+    },
+    {
+      "priority": 309,
+      "word": "such",
+      "part_of_speech": "pronoun",
+      "definition": "Of the type previously mentioned or implied.",
+      "example": "I've never seen such before.",
+      "frequency_rank": 309,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["like", "so"]
+    },
+    {
+      "priority": 310,
+      "word": "war",
+      "part_of_speech": "noun",
+      "definition": "A state of armed conflict between different countries or groups.",
+      "example": "The war lasted for years.",
+      "frequency_rank": 310,
+      "tags": ["noun", "conflict", "high-frequency"],
+      "related": ["battle", "fight", "conflict"]
+    },
+    {
+      "priority": 311,
+      "word": "history",
+      "part_of_speech": "noun",
+      "definition": "The study of past events.",
+      "example": "She loves studying history.",
+      "frequency_rank": 311,
+      "tags": ["noun", "past", "high-frequency"],
+      "related": ["past", "chronicle", "record"]
+    },
+    {
+      "priority": 312,
+      "word": "party",
+      "part_of_speech": "noun",
+      "definition": "A social gathering; a political group.",
+      "example": "We had a party last night.",
+      "frequency_rank": 312,
+      "tags": ["noun", "event", "high-frequency"],
+      "related": ["celebration", "gathering", "group"]
+    },
+    {
+      "priority": 313,
+      "word": "within",
+      "part_of_speech": "preposition/adverb",
+      "definition": "Inside; not beyond a particular area, period, or range.",
+      "example": "Finish the work within an hour.",
+      "frequency_rank": 313,
+      "tags": ["preposition", "adverb", "high-frequency"],
+      "related": ["inside", "in", "during"]
+    },
+    {
+      "priority": 314,
+      "word": "grow",
+      "part_of_speech": "verb",
+      "definition": "To increase in size, number, or importance.",
+      "example": "Children grow quickly.",
+      "frequency_rank": 314,
+      "tags": ["verb", "high-frequency"],
+      "related": ["develop", "increase", "expand"]
+    },
+    {
+      "priority": 315,
+      "word": "result",
+      "part_of_speech": "noun/verb",
+      "definition": "A consequence, effect, or outcome; to happen because of something.",
+      "example": "The result was surprising. The accident resulted in injury.",
+      "frequency_rank": 315,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["outcome", "consequence", "effect"]
+    },
+    {
+      "priority": 316,
+      "word": "open",
+      "part_of_speech": "verb/adjective",
+      "definition": "To move so as to leave a space allowing access; not closed.",
+      "example": "Open the window. The store is open.",
+      "frequency_rank": 316,
+      "tags": ["verb", "adjective", "high-frequency"],
+      "related": ["close", "unlock", "accessible"]
+    },
+    {
+      "priority": 317,
+      "word": "change",
+      "part_of_speech": "verb/noun",
+      "definition": "To make or become different; the act or instance of making or becoming different.",
+      "example": "Change your clothes. There was a change in the plan.",
+      "frequency_rank": 317,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["alter", "modify", "shift"]
+    },
+    {
+      "priority": 318,
+      "word": "morning",
+      "part_of_speech": "noun",
+      "definition": "The period of time between midnight and noon.",
+      "example": "I wake up early in the morning.",
+      "frequency_rank": 318,
+      "tags": ["noun", "time", "high-frequency"],
+      "related": ["evening", "afternoon", "day"]
+    },
+    {
+      "priority": 319,
+      "word": "walk",
+      "part_of_speech": "verb/noun",
+      "definition": "To move at a regular pace by lifting and setting down each foot in turn; an act of walking.",
+      "example": "Let's walk to school. He went for a walk.",
+      "frequency_rank": 319,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["stroll", "hike", "move"]
+    },
+    {
+      "priority": 320,
+      "word": "reason",
+      "part_of_speech": "noun/verb",
+      "definition": "A cause, explanation, or justification; to think or argue logically.",
+      "example": "What is your reason for leaving? He reasoned with them.",
+      "frequency_rank": 320,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["cause", "explanation", "justify"]
+    },
+    {
+      "priority": 321,
+      "word": "low",
+      "part_of_speech": "adjective/adverb",
+      "definition": "Of less than average height or amount; in a low position.",
+      "example": "The price is low. The plane flew low.",
+      "frequency_rank": 321,
+      "tags": ["adjective", "adverb", "high-frequency"],
+      "related": ["high", "short", "down"]
+    },
+    {
+      "priority": 322,
+      "word": "win",
+      "part_of_speech": "verb/noun",
+      "definition": "To achieve victory; a successful result.",
+      "example": "Our team will win. That was a big win.",
+      "frequency_rank": 322,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["victory", "succeed", "triumph"]
+    },
+    {
+      "priority": 323,
+      "word": "research",
+      "part_of_speech": "noun/verb",
+      "definition": "The systematic investigation into and study of materials and sources; to investigate systematically.",
+      "example": "She is doing research. Research the topic online.",
+      "frequency_rank": 323,
+      "tags": ["noun", "verb", "study", "high-frequency"],
+      "related": ["study", "investigate", "explore"]
+    },
+    {
+      "priority": 324,
+      "word": "girl",
+      "part_of_speech": "noun",
+      "definition": "A female child.",
+      "example": "The girl is reading.",
+      "frequency_rank": 324,
+      "tags": ["noun", "person", "high-frequency"],
+      "related": ["boy", "child", "daughter"]
+    }
+  ]
+}

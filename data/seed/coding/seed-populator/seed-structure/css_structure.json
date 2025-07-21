@@ -1,0 +1,47 @@
+{
+  "css": {
+    "layout": [
+      "flexbox",
+      "grid",
+      "float",
+      "positioning",
+      "display",
+      "box-model"
+    ],
+    "selectors": [
+      "class",
+      "id",
+      "attribute",
+      "pseudo-class",
+      "pseudo-element",
+      "combinators"
+    ],
+    "properties": [
+      "color",
+      "background",
+      "margin",
+      "padding",
+      "border",
+      "font",
+      "text",
+      "z-index"
+    ],
+    "animations": [
+      "transitions",
+      "keyframes",
+      "animation",
+      "transform"
+    ],
+    "responsive": [
+      "media-queries",
+      "mobile-first",
+      "breakpoints"
+    ],
+    "best-practices": [
+      "naming-conventions",
+      "organization",
+      "performance",
+      "accessibility"
+    ]
+  }
+}

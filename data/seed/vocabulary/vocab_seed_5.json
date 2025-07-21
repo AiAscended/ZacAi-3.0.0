@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 145,
+      "word": "while",
+      "part_of_speech": "conjunction/noun",
+      "definition": "During the time that; a period of time.",
+      "example": "Wait here while I get ready.",
+      "frequency_rank": 145,
+      "tags": ["conjunction", "noun", "high-frequency"],
+      "related": ["when", "as", "time"]
+    },
+    {
+      "priority": 146,
+      "word": "mean",
+      "part_of_speech": "verb",
+      "definition": "To signify or indicate; to intend.",
+      "example": "What does this word mean?",
+      "frequency_rank": 146,
+      "tags": ["verb", "high-frequency"],
+      "related": ["signify", "intend"]
+    },
+    {
+      "priority": 147,
+      "word": "keep",
+      "part_of_speech": "verb",
+      "definition": "To retain possession of; to continue doing something.",
+      "example": "Keep the change. Keep working.",
+      "frequency_rank": 147,
+      "tags": ["verb", "high-frequency"],
+      "related": ["hold", "continue"]
+    },
+    {
+      "priority": 148,
+      "word": "student",
+      "part_of_speech": "noun",
+      "definition": "A person who is studying at a school or college.",
+      "example": "She is a good student.",
+      "frequency_rank": 148,
+      "tags": ["noun", "person", "high-frequency"],
+      "related": ["pupil", "learner"]
+    },
+    {
+      "priority": 149,
+      "word": "let",
+      "part_of_speech": "verb",
+      "definition": "To allow or permit.",
+      "example": "Let him go.",
+      "frequency_rank": 149,
+      "tags": ["verb", "high-frequency"],
+      "related": ["allow", "permit"]
+    },
+    {
+      "priority": 150,
+      "word": "great",
+      "part_of_speech": "adjective",
+      "definition": "Of an extent, amount, or intensity considerably above average.",
+      "example": "You did a great job.",
+      "frequency_rank": 150,
+      "tags": ["adjective", "high-frequency"],
+      "related": ["excellent", "good", "large"]
+    },
+    {
+      "priority": 151,
+      "word": "same",
+      "part_of_speech": "adjective/pronoun",
+      "definition": "Identical; not different.",
+      "example": "We have the same idea.",
+      "frequency_rank": 151,
+      "tags": ["adjective", "pronoun", "high-frequency"],
+      "related": ["identical", "similar"]
+    },
+    {
+      "priority": 152,
+      "word": "big",
+      "part_of_speech": "adjective",
+      "definition": "Of considerable size or extent.",
+      "example": "They have a big house.",
+      "frequency_rank": 152,
+      "tags": ["adjective", "high-frequency"],
+      "related": ["large", "huge"]
+    },
+    {
+      "priority": 153,
+      "word": "group",
+      "part_of_speech": "noun",
+      "definition": "A number of people or things that are together or in the same place.",
+      "example": "A group of students.",
+      "frequency_rank": 153,
+      "tags": ["noun", "high-frequency"],
+      "related": ["team", "crowd", "class"]
+    },
+    {
+      "priority": 154,
+      "word": "begin",
+      "part_of_speech": "verb",
+      "definition": "To start; to do the first part of something.",
+      "example": "Let's begin the lesson.",
+      "frequency_rank": 154,
+      "tags": ["verb", "high-frequency"],
+      "related": ["start", "commence"]
+    },
+    {
+      "priority": 155,
+      "word": "seem",
+      "part_of_speech": "verb",
+      "definition": "To appear to be; to give the impression of being.",
+      "example": "You seem happy today.",
+      "frequency_rank": 155,
+      "tags": ["verb", "high-frequency"],
+      "related": ["appear", "look"]
+    },
+    {
+      "priority": 156,
+      "word": "country",
+      "part_of_speech": "noun",
+      "definition": "A nation with its own government and borders.",
+      "example": "France is a country in Europe.",
+      "frequency_rank": 156,
+      "tags": ["noun", "place", "high-frequency"],
+      "related": ["nation", "state"]
+    },
+    {
+      "priority": 157,
+      "word": "help",
+      "part_of_speech": "verb/noun",
+      "definition": "To assist; the action of helping.",
+      "example": "Can you help me?",
+      "frequency_rank": 157,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["assist", "aid", "support"]
+    },
+    {
+      "priority": 158,
+      "word": "talk",
+      "part_of_speech": "verb/noun",
+      "definition": "To speak in order to give information or express ideas or feelings.",
+      "example": "Let's talk after class.",
+      "frequency_rank": 158,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["speak", "chat", "converse"]
+    },
+    {
+      "priority": 159,
+      "word": "where",
+      "part_of_speech": "adverb/conjunction",
+      "definition": "In or to what place or position.",
+      "example": "Where do you live?",
+      "frequency_rank": 159,
+      "tags": ["adverb", "conjunction", "question", "high-frequency"],
+      "related": ["here", "there", "when"]
+    },
+    {
+      "priority": 160,
+      "word": "turn",
+      "part_of_speech": "verb/noun",
+      "definition": "To move in a circular direction; an opportunity or duty to do something.",
+      "example": "Turn left at the corner. It's your turn.",
+      "frequency_rank": 160,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["rotate", "spin", "chance"]
+    },
+    {
+      "priority": 161,
+      "word": "problem",
+      "part_of_speech": "noun",
+      "definition": "A matter or situation regarded as unwelcome or harmful and needing to be dealt with.",
+      "example": "We have a problem to solve.",
+      "frequency_rank": 161,
+      "tags": ["noun", "issue", "high-frequency"],
+      "related": ["issue", "difficulty", "challenge"]
+    },
+    {
+      "priority": 162,
+      "word": "every",
+      "part_of_speech": "determiner",
+      "definition": "All the individual members of a group without exception.",
+      "example": "Every student passed the test.",
+      "frequency_rank": 162,
+      "tags": ["determiner", "high-frequency"],
+      "related": ["all", "each"]
+    },
+    {
+      "priority": 163,
+      "word": "start",
+      "part_of_speech": "verb/noun",
+      "definition": "To begin; the point in time or space at which something begins.",
+      "example": "Start the engine. The start of the race.",
+      "frequency_rank": 163,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["begin", "commence", "launch"]
+    },
+    {
+      "priority": 164,
+      "word": "hand",
+      "part_of_speech": "noun/verb",
+      "definition": "The end part of a person's arm; to give something to someone.",
+      "example": "Raise your hand. Hand me the pen.",
+      "frequency_rank": 164,
+      "tags": ["noun", "verb", "body", "high-frequency"],
+      "related": ["give", "arm"]
+    },
+    {
+      "priority": 165,
+      "word": "might",
+      "part_of_speech": "modal verb",
+      "definition": "Used to express possibility.",
+      "example": "It might rain today.",
+      "frequency_rank": 165,
+      "tags": ["modal verb", "possibility", "high-frequency"],
+      "related": ["may", "could"]
+    },
+    {
+      "priority": 166,
+      "word": "American",
+      "part_of_speech": "adjective/noun",
+      "definition": "Relating to the United States or its people; a person from the United States.",
+      "example": "He is an American citizen.",
+      "frequency_rank": 166,
+      "tags": ["adjective", "noun", "nationality", "high-frequency"],
+      "related": ["USA", "United States"]
+    },
+    {
+      "priority": 167,
+      "word": "show",
+      "part_of_speech": "verb/noun",
+      "definition": "To allow something to be seen; a performance or display.",
+      "example": "Show me your homework. The show starts at 8.",
+      "frequency_rank": 167,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["display", "present", "performance"]
+    },
+    {
+      "priority": 168,
+      "word": "part",
+      "part_of_speech": "noun",
+      "definition": "A piece or segment of something.",
+      "example": "This is my favorite part of the movie.",
+      "frequency_rank": 168,
+      "tags": ["noun", "segment", "high-frequency"],
+      "related": ["piece", "portion", "section"]
+    },
+    {
+      "priority": 169,
+      "word": "against",
+      "part_of_speech": "preposition",
+      "definition": "In opposition to; touching or supported by.",
+      "example": "They fought against the enemy.",
+      "frequency_rank": 169,
+      "tags": ["preposition", "opposition", "high-frequency"],
+      "related": ["versus", "opposite"]
+    },
+    {
+      "priority": 170,
+      "word": "place",
+      "part_of_speech": "noun/verb",
+      "definition": "A particular position or point in space; to put something somewhere.",
+      "example": "This is a nice place. Place the book on the shelf.",
+      "frequency_rank": 170,
+      "tags": ["noun", "verb", "location", "high-frequency"],
+      "related": ["location", "put", "area"]
+    },
+    {
+      "priority": 171,
+      "word": "over",
+      "part_of_speech": "adverb",
+      "definition": "Finished; ended.",
+      "example": "The game is over.",
+      "frequency_rank": 171,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["finished", "done"]
+    },
+    {
+      "priority": 172,
+      "word": "such",
+      "part_of_speech": "determiner/adjective",
+      "definition": "Of the type previously mentioned or implied.",
+      "example": "I have never seen such a thing.",
+      "frequency_rank": 172,
+      "tags": ["determiner", "adjective", "high-frequency"],
+      "related": ["like", "so"]
+    },
+    {
+      "priority": 173,
+      "word": "again",
+      "part_of_speech": "adverb",
+      "definition": "Once more; another time.",
+      "example": "Please try again.",
+      "frequency_rank": 173,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["once more", "repeat"]
+    },
+    {
+      "priority": 174,
+      "word": "few",
+      "part_of_speech": "adjective/pronoun",
+      "definition": "A small number of.",
+      "example": "Few people know the answer.",
+      "frequency_rank": 174,
+      "tags": ["adjective", "pronoun", "high-frequency"],
+      "related": ["some", "several", "many"]
+    },
+    {
+      "priority": 175,
+      "word": "case",
+      "part_of_speech": "noun",
+      "definition": "An instance or example of something occurring.",
+      "example": "In this case, we will wait.",
+      "frequency_rank": 175,
+      "tags": ["noun", "example", "high-frequency"],
+      "related": ["example", "instance"]
+    },
+    {
+      "priority": 176,
+      "word": "most",
+      "part_of_speech": "adjective",
+      "definition": "Greatest in amount or degree.",
+      "example": "She is the most talented student.",
+      "frequency_rank": 176,
+      "tags": ["adjective", "high-frequency"],
+      "related": ["least", "more"]
+    },
+    {
+      "priority": 177,
+      "word": "week",
+      "part_of_speech": "noun",
+      "definition": "A period of seven days.",
+      "example": "I will see you next week.",
+      "frequency_rank": 177,
+      "tags": ["noun", "time", "high-frequency"],
+      "related": ["day", "month"]
+    },
+    {
+      "priority": 178,
+      "word": "company",
+      "part_of_speech": "noun",
+      "definition": "A business organization; the fact or condition of being with others.",
+      "example": "She works for a big company.",
+      "frequency_rank": 178,
+      "tags": ["noun", "business", "high-frequency"],
+      "related": ["business", "firm", "corporation"]
+    },
+    {
+      "priority": 179,
+      "word": "system",
+      "part_of_speech": "noun",
+      "definition": "A set of connected things or parts working together.",
+      "example": "The school system needs improvement.",
+      "frequency_rank": 179,
+      "tags": ["noun", "structure", "high-frequency"],
+      "related": ["network", "structure"]
+    },
+    {
+      "priority": 180,
+      "word": "right",
+      "part_of_speech": "adjective/noun/adverb",
+      "definition": "Morally good, justified, or acceptable; a direction; exactly.",
+      "example": "Do the right thing. Turn right. I'll be right back.",
+      "frequency_rank": 180,
+      "tags": ["adjective", "noun", "adverb", "high-frequency"],
+      "related": ["correct", "left", "just"]
+    }
+  ]
+}

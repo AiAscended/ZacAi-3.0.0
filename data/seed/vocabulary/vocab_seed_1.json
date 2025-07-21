@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 1,
+      "word": "the",
+      "part_of_speech": "article",
+      "definition": "Used to refer to a specific or previously mentioned noun.",
+      "example": "The dog barked.",
+      "frequency_rank": 1,
+      "tags": ["function", "article", "high-frequency"],
+      "related": ["a", "an", "this", "that"]
+    },
+    {
+      "priority": 2,
+      "word": "be",
+      "part_of_speech": "verb",
+      "definition": "To exist or to have a particular quality.",
+      "example": "She will be happy.",
+      "frequency_rank": 2,
+      "tags": ["verb", "high-frequency"],
+      "related": ["am", "is", "are", "was", "were"]
+    },
+    {
+      "priority": 3,
+      "word": "to",
+      "part_of_speech": "preposition",
+      "definition": "Expressing motion in the direction of a particular location.",
+      "example": "Go to school.",
+      "frequency_rank": 3,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["toward", "into"]
+    },
+    {
+      "priority": 4,
+      "word": "of",
+      "part_of_speech": "preposition",
+      "definition": "Expressing the relationship between a part and a whole.",
+      "example": "A cup of tea.",
+      "frequency_rank": 4,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["from", "about"]
+    },
+    {
+      "priority": 5,
+      "word": "and",
+      "part_of_speech": "conjunction",
+      "definition": "Used to connect words or phrases of the same type.",
+      "example": "Bread and butter.",
+      "frequency_rank": 5,
+      "tags": ["conjunction", "function", "high-frequency"],
+      "related": ["or", "but"]
+    },
+    {
+      "priority": 6,
+      "word": "a",
+      "part_of_speech": "article",
+      "definition": "Used before nouns to refer to a single but unspecified thing.",
+      "example": "A cat ran away.",
+      "frequency_rank": 6,
+      "tags": ["article", "function", "high-frequency"],
+      "related": ["the", "an"]
+    },
+    {
+      "priority": 7,
+      "word": "in",
+      "part_of_speech": "preposition",
+      "definition": "Expressing the situation of something that is or appears to be enclosed or surrounded.",
+      "example": "The book is in the bag.",
+      "frequency_rank": 7,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["on", "inside"]
+    },
+    {
+      "priority": 8,
+      "word": "to",
+      "part_of_speech": "infinitive marker",
+      "definition": "Used with the base form of a verb to indicate the infinitive.",
+      "example": "I want to eat.",
+      "frequency_rank": 8,
+      "tags": ["function", "infinitive", "high-frequency"],
+      "related": ["will", "shall"]
+    },
+    {
+      "priority": 9,
+      "word": "have",
+      "part_of_speech": "verb",
+      "definition": "To possess, own, or hold.",
+      "example": "They have a car.",
+      "frequency_rank": 9,
+      "tags": ["verb", "high-frequency"],
+      "related": ["own", "possess"]
+    },
+    {
+      "priority": 10,
+      "word": "it",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to a thing previously mentioned or easily identified.",
+      "example": "It is raining.",
+      "frequency_rank": 10,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["this", "that"]
+    },
+    {
+      "priority": 11,
+      "word": "I",
+      "part_of_speech": "pronoun",
+      "definition": "Used by a speaker to refer to himself or herself.",
+      "example": "I am here.",
+      "frequency_rank": 11,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["me", "my"]
+    },
+    {
+      "priority": 12,
+      "word": "that",
+      "part_of_speech": "conjunction/pronoun",
+      "definition": "Used to identify a specific person or thing observed or heard by the speaker.",
+      "example": "That is my book.",
+      "frequency_rank": 12,
+      "tags": ["conjunction", "pronoun", "high-frequency"],
+      "related": ["this", "those"]
+    },
+    {
+      "priority": 13,
+      "word": "for",
+      "part_of_speech": "preposition",
+      "definition": "Used to indicate the use of something.",
+      "example": "This is for you.",
+      "frequency_rank": 13,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["to", "with"]
+    },
+    {
+      "priority": 14,
+      "word": "you",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to the person or people being addressed.",
+      "example": "You are welcome.",
+      "frequency_rank": 14,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["your", "yours"]
+    },
+    {
+      "priority": 15,
+      "word": "he",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to a male person or animal previously mentioned.",
+      "example": "He is my brother.",
+      "frequency_rank": 15,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["him", "his"]
+    },
+    {
+      "priority": 16,
+      "word": "with",
+      "part_of_speech": "preposition",
+      "definition": "Accompanied by another person or thing.",
+      "example": "Come with me.",
+      "frequency_rank": 16,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["and", "together"]
+    },
+    {
+      "priority": 17,
+      "word": "on",
+      "part_of_speech": "preposition",
+      "definition": "Physically in contact with and supported by a surface.",
+      "example": "The keys are on the table.",
+      "frequency_rank": 17,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["in", "at"]
+    },
+    {
+      "priority": 18,
+      "word": "do",
+      "part_of_speech": "verb",
+      "definition": "To perform an action or activity.",
+      "example": "Do your homework.",
+      "frequency_rank": 18,
+      "tags": ["verb", "high-frequency"],
+      "related": ["make", "perform"]
+    },
+    {
+      "priority": 19,
+      "word": "say",
+      "part_of_speech": "verb",
+      "definition": "To express in words; to speak.",
+      "example": "What did you say?",
+      "frequency_rank": 19,
+      "tags": ["verb", "high-frequency"],
+      "related": ["tell", "speak"]
+    },
+    {
+      "priority": 20,
+      "word": "this",
+      "part_of_speech": "pronoun/determiner",
+      "definition": "Used to identify a specific person or thing close at hand.",
+      "example": "This is my seat.",
+      "frequency_rank": 20,
+      "tags": ["pronoun", "determiner", "high-frequency"],
+      "related": ["that", "these"]
+    },
+    {
+      "priority": 21,
+      "word": "they",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to two or more people or things previously mentioned.",
+      "example": "They are coming.",
+      "frequency_rank": 21,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["them", "their"]
+    },
+    {
+      "priority": 22,
+      "word": "at",
+      "part_of_speech": "preposition",
+      "definition": "Used to indicate a location or time.",
+      "example": "Meet me at the park.",
+      "frequency_rank": 22,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["in", "on"]
+    },
+    {
+      "priority": 23,
+      "word": "but",
+      "part_of_speech": "conjunction",
+      "definition": "Used to introduce a contrast or exception.",
+      "example": "I like tea but not coffee.",
+      "frequency_rank": 23,
+      "tags": ["conjunction", "function", "high-frequency"],
+      "related": ["and", "however"]
+    },
+    {
+      "priority": 24,
+      "word": "we",
+      "part_of_speech": "pronoun",
+      "definition": "Used by a speaker to refer to himself or herself and one or more other people.",
+      "example": "We are friends.",
+      "frequency_rank": 24,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["us", "our"]
+    },
+    {
+      "priority": 25,
+      "word": "his",
+      "part_of_speech": "pronoun/possessive",
+      "definition": "Belonging to or associated with a male person or animal.",
+      "example": "This is his book.",
+      "frequency_rank": 25,
+      "tags": ["pronoun", "possessive", "high-frequency"],
+      "related": ["he", "him"]
+    },
+    {
+      "priority": 26,
+      "word": "from",
+      "part_of_speech": "preposition",
+      "definition": "Indicating the point in space at which a journey, motion, or action starts.",
+      "example": "She is from Canada.",
+      "frequency_rank": 26,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["to", "of"]
+    },
+    {
+      "priority": 27,
+      "word": "that",
+      "part_of_speech": "determiner",
+      "definition": "Used to identify a specific thing or person that is not near the speaker.",
+      "example": "I want that one.",
+      "frequency_rank": 27,
+      "tags": ["determiner", "function", "high-frequency"],
+      "related": ["this", "those"]
+    },
+    {
+      "priority": 28,
+      "word": "not",
+      "part_of_speech": "adverb",
+      "definition": "Used to make a word or group of words negative.",
+      "example": "I am not ready.",
+      "frequency_rank": 28,
+      "tags": ["adverb", "negation", "high-frequency"],
+      "related": ["no", "never"]
+    },
+    {
+      "priority": 29,
+      "word": "by",
+      "part_of_speech": "preposition",
+      "definition": "Indicates the agent performing an action or the means of achieving something.",
+      "example": "Written by John.",
+      "frequency_rank": 29,
+      "tags": ["preposition", "function", "high-frequency"],
+      "related": ["with", "via"]
+    },
+    {
+      "priority": 30,
+      "word": "she",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to a female person or animal previously mentioned.",
+      "example": "She is a doctor.",
+      "frequency_rank": 30,
+      "tags": ["pronoun", "function", "high-frequency"],
+      "related": ["her", "hers"]
+    },
+    {
+      "priority": 31,
+      "word": "or",
+      "part_of_speech": "conjunction",
+      "definition": "Used to link alternatives.",
+      "example": "Tea or coffee?",
+      "frequency_rank": 31,
+      "tags": ["conjunction", "function", "high-frequency"],
+      "related": ["and", "nor"]
+    },
+    {
+      "priority": 32,
+      "word": "as",
+      "part_of_speech": "conjunction/preposition",
+      "definition": "Used to indicate by comparison the way that something happens.",
+      "example": "As fast as possible.",
+      "frequency_rank": 32,
+      "tags": ["conjunction", "preposition", "high-frequency"],
+      "related": ["like", "since"]
+    },
+    {
+      "priority": 33,
+      "word": "what",
+      "part_of_speech": "pronoun",
+      "definition": "Asking for information specifying something.",
+      "example": "What is your name?",
+      "frequency_rank": 33,
+      "tags": ["pronoun", "question", "high-frequency"],
+      "related": ["which", "who"]
+    },
+    {
+      "priority": 34,
+      "word": "go",
+      "part_of_speech": "verb",
+      "definition": "To move from one place to another.",
+      "example": "Let's go home.",
+      "frequency_rank": 34,
+      "tags": ["verb", "high-frequency"],
+      "related": ["move", "travel"]
+    },
+    {
+      "priority": 35,
+      "word": "their",
+      "part_of_speech": "pronoun/possessive",
+      "definition": "Belonging to or associated with the people or things previously mentioned.",
+      "example": "Their house is big.",
+      "frequency_rank": 35,
+      "tags": ["pronoun", "possessive", "high-frequency"],
+      "related": ["they", "them"]
+    },
+    {
+      "priority": 36,
+      "word": "can",
+      "part_of_speech": "verb/modal",
+      "definition": "Be able to; have the ability to.",
+      "example": "She can swim.",
+      "frequency_rank": 36,
+      "tags": ["verb", "modal", "high-frequency"],
+      "related": ["could", "may"]
+    }
+  ]
+}

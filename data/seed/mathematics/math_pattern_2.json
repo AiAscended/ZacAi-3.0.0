@@ -1,0 +1,316 @@
+{
+  "concepts": [
+    {
+      "priority": 1,
+      "concept": "Casting Out Nines",
+      "category": "Pattern Mathematics",
+      "definition": "A quick method for checking arithmetic calculations by reducing numbers to their digital roots and comparing results.",
+      "syntax": "Sum the digits of each operand and result until one digit remains; compare products.",
+      "examples": [
+        "123 × 4 = 492; 1+2+3=6, 4; 6×4=24→6, 4+9+2=15→6; both match."
+      ],
+      "explanation": "If the digital roots match, the calculation is likely correct. Used as an error-checking shortcut.",
+      "tags": ["digital root", "check", "pattern"],
+      "related": ["Digital Root Cycles", "Divisibility Rules Patterns"]
+    },
+    {
+      "priority": 2,
+      "concept": "Divisibility Rules Patterns",
+      "category": "Pattern Mathematics",
+      "definition": "Rules for quickly determining if a number is divisible by another (e.g., 3, 9, 11) based on digit patterns.",
+      "syntax": "Sum or alternate sum of digits, or check last digit(s).",
+      "examples": [
+        "Divisible by 3 if digit sum is divisible by 3; by 11 if alternating sum is divisible by 11."
+      ],
+      "explanation": "Divisibility rules are shortcuts for mental math and error checking.",
+      "tags": ["divisibility", "pattern", "arithmetic"],
+      "related": ["Casting Out Nines", "Alternating Sum Patterns"]
+    },
+    {
+      "priority": 3,
+      "concept": "Alternating Sum Patterns",
+      "category": "Pattern Mathematics",
+      "definition": "Patterns using alternating sums of digits to test divisibility, especially for 11.",
+      "syntax": "Subtract and add digits in order: d1 - d2 + d3 - d4 ...",
+      "examples": [
+        "2728: 2-7+2-8=-11, divisible by 11."
+      ],
+      "explanation": "Alternating sums reveal divisibility for certain numbers and are used in error detection.",
+      "tags": ["divisibility", "pattern"],
+      "related": ["Divisibility Rules Patterns", "Casting Out Nines"]
+    },
+    {
+      "priority": 4,
+      "concept": "Multiplication Finger Tricks",
+      "category": "Pattern Mathematics",
+      "definition": "Using finger positions to multiply certain numbers (e.g., 9s on fingers, 6–9 on both hands).",
+      "syntax": "Fold finger for multiplier; count fingers left/right for answer.",
+      "examples": [
+        "9×7: Fold 7th finger, left=6, right=3, answer=63."
+      ],
+      "explanation": "Finger tricks make multiplication fast and visual, especially for young learners.",
+      "tags": ["mental math", "pattern", "visual"],
+      "related": ["Patterned Multiplication by 9", "Pattern Math"]
+    },
+    {
+      "priority": 5,
+      "concept": "Calendar Calculation Patterns",
+      "category": "Pattern Mathematics",
+      "definition": "Tricks for finding the day of the week for any date using modular arithmetic and repeating cycles.",
+      "syntax": "Apply Zeller’s congruence or Doomsday rule.",
+      "examples": [
+        "Find day of week for 4 July 1776 using Zeller's formula."
+      ],
+      "explanation": "Calendar math uses modular patterns to quickly determine weekdays for any date.",
+      "tags": ["calendar", "pattern", "modular arithmetic"],
+      "related": ["Modular Arithmetic", "Pattern Math"]
+    },
+    {
+      "priority": 6,
+      "concept": "Sum of Consecutive Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "The sum of the first n natural numbers forms a triangular number.",
+      "syntax": "n(n+1)/2",
+      "examples": [
+        "Sum of 1 to 100: 100×101/2=5050."
+      ],
+      "explanation": "This pattern underlies triangular numbers and is used in many math shortcuts.",
+      "tags": ["sequence", "pattern"],
+      "related": ["Triangular Numbers", "Arithmetic Progression Patterns"]
+    },
+    {
+      "priority": 7,
+      "concept": "Sum of Odd Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "The sum of the first n odd numbers is always a perfect square.",
+      "syntax": "1+3+5+...+(2n-1)=n²",
+      "examples": [
+        "1+3+5=9=3²"
+      ],
+      "explanation": "This reveals a deep connection between odd numbers and squares.",
+      "tags": ["sequence", "pattern"],
+      "related": ["Patterned Square Numbers", "Sum of Consecutive Numbers"]
+    },
+    {
+      "priority": 8,
+      "concept": "Sum of Even Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "The sum of the first n even numbers is n(n+1).",
+      "syntax": "2+4+6+...+2n=n(n+1)",
+      "examples": [
+        "2+4+6=12=3×4"
+      ],
+      "explanation": "This pattern links even numbers to triangular numbers.",
+      "tags": ["sequence", "pattern"],
+      "related": ["Sum of Consecutive Numbers", "Pattern Math"]
+    },
+    {
+      "priority": 9,
+      "concept": "Multiplicative Inverses in Modular Arithmetic",
+      "category": "Pattern Mathematics",
+      "definition": "Patterns in finding numbers that, when multiplied, yield 1 modulo n.",
+      "syntax": "a × b ≡ 1 (mod n)",
+      "examples": [
+        "3 × 7 ≡ 1 (mod 20)"
+      ],
+      "explanation": "Multiplicative inverses are essential for cryptography and modular computations.",
+      "tags": ["modular arithmetic", "pattern"],
+      "related": ["Modular Arithmetic", "Pattern Math"]
+    },
+    {
+      "priority": 10,
+      "concept": "Patterns in Pascal’s Triangle",
+      "category": "Pattern Mathematics",
+      "definition": "Patterns beyond binomial coefficients, such as Fibonacci sequence in diagonals, hockey stick pattern, and Sierpinski triangle mod 2.",
+      "syntax": "Sum diagonals or shade odd numbers for fractal pattern.",
+      "examples": [
+        "Sum of shallow diagonals gives Fibonacci numbers."
+      ],
+      "explanation": "Pascal’s triangle encodes many hidden mathematical patterns.",
+      "tags": ["pascal", "triangle", "pattern"],
+      "related": ["Pascal's Triangle Patterns", "Pattern Math"]
+    },
+    {
+      "priority": 11,
+      "concept": "Self-Descriptive Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers that describe their own digits (e.g., 1210: 1 zero, 2 ones, 1 two, 0 threes).",
+      "syntax": "n-digit number where the ith digit counts occurrences of digit i.",
+      "examples": [
+        "1210, 2020"
+      ],
+      "explanation": "Self-descriptive numbers are rare and fascinating, showing self-referential patterns.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Look-and-Say Sequence"]
+    },
+    {
+      "priority": 12,
+      "concept": "Armstrong Numbers (Narcissistic Numbers)",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers that are the sum of their own digits each raised to the power of the number of digits.",
+      "syntax": "For n-digit number: sum(d_i^n) = original number.",
+      "examples": [
+        "153 = 1³ + 5³ + 3³"
+      ],
+      "explanation": "Armstrong numbers are rare and show unique digit power patterns.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Self-Descriptive Numbers"]
+    },
+    {
+      "priority": 13,
+      "concept": "Happy Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers that eventually reach 1 when replaced by the sum of the squares of their digits repeatedly.",
+      "syntax": "Repeat: replace n with sum of squares of digits, until 1 or a cycle.",
+      "examples": [
+        "19: 1²+9²=82→8²+2²=68→6²+8²=100→1"
+      ],
+      "explanation": "Happy numbers form interesting cycles and are used in recreational math.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Persistence"]
+    },
+    {
+      "priority": 14,
+      "concept": "Harshad Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers divisible by the sum of their digits.",
+      "syntax": "n mod sum(digits of n) == 0",
+      "examples": [
+        "18: 1+8=9; 18/9=2"
+      ],
+      "explanation": "Harshad numbers are also called Niven numbers and have divisibility patterns.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Divisibility Rules Patterns"]
+    },
+    {
+      "priority": 15,
+      "concept": "Automorphic Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers whose square ends with the number itself.",
+      "syntax": "n² ends with n",
+      "examples": [
+        "76² = 5776"
+      ],
+      "explanation": "Automorphic numbers are rare and show self-replicating patterns.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Palindromic Numbers"]
+    },
+    {
+      "priority": 16,
+      "concept": "Look-and-Say Sequence",
+      "category": "Pattern Mathematics",
+      "definition": "A sequence where each term describes the previous term’s digits.",
+      "syntax": "Start with 1; next term: count and say digits.",
+      "examples": [
+        "1, 11, 21, 1211, 111221, ..."
+      ],
+      "explanation": "The look-and-say sequence has exponential growth and unique digit patterns.",
+      "tags": ["sequence", "pattern"],
+      "related": ["Self-Descriptive Numbers", "Pattern Math"]
+    },
+    {
+      "priority": 17,
+      "concept": "Collatz Conjecture Pattern",
+      "category": "Pattern Mathematics",
+      "definition": "The sequence generated by n → n/2 if even, 3n+1 if odd, always appears to reach 1.",
+      "syntax": "Repeat: if n even, n/2; if odd, 3n+1.",
+      "examples": [
+        "6: 6→3→10→5→16→8→4→2→1"
+      ],
+      "explanation": "The Collatz conjecture is an unsolved problem with simple rules and complex behavior.",
+      "tags": ["sequence", "pattern"],
+      "related": ["Pattern Math", "Persistence"]
+    },
+    {
+      "priority": 18,
+      "concept": "Prime Number Gaps and Patterns",
+      "category": "Pattern Mathematics",
+      "definition": "Patterns in the distribution of prime numbers, including twin primes and prime gaps.",
+      "syntax": "List primes, observe gaps and pairs.",
+      "examples": [
+        "Twin primes: 11,13; 17,19; 29,31"
+      ],
+      "explanation": "Prime gaps and patterns are central to number theory and cryptography.",
+      "tags": ["primes", "pattern"],
+      "related": ["Circular Primes", "Pandigital Numbers"]
+    },
+    {
+      "priority": 19,
+      "concept": "Circular Primes",
+      "category": "Pattern Mathematics",
+      "definition": "Primes that remain prime when their digits are rotated.",
+      "syntax": "Rotate digits and test primality.",
+      "examples": [
+        "197, 971, 719"
+      ],
+      "explanation": "Circular primes are rare and show rotational digit patterns.",
+      "tags": ["primes", "pattern"],
+      "related": ["Prime Number Gaps and Patterns", "Pandigital Numbers"]
+    },
+    {
+      "priority": 20,
+      "concept": "Pandigital Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers that use each digit exactly once.",
+      "syntax": "n-digit number with all digits 1–n once each.",
+      "examples": [
+        "123456789"
+      ],
+      "explanation": "Pandigital numbers are used in puzzles and cryptography.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Circular Primes"]
+    },
+    {
+      "priority": 21,
+      "concept": "Kaprekar Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers whose square can be split into two parts that sum to the original number.",
+      "syntax": "n² = A | B, A+B = n",
+      "examples": [
+        "45² = 2025; 20+25=45"
+      ],
+      "explanation": "Kaprekar numbers are rare and have unique digit-splitting properties.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Kaprekar's Constant", "Pattern Math"]
+    },
+    {
+      "priority": 22,
+      "concept": "Smith Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Composite numbers whose digit sum equals the sum of the digits of their prime factors.",
+      "syntax": "Sum of digits(n) = sum of digits(prime factors of n)",
+      "examples": [
+        "666: 6+6+6=18, 2×3×3×37, 2+3+3+3+7=18"
+      ],
+      "explanation": "Smith numbers are rare and connect digit sums to factorization.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Harshad Numbers"]
+    },
+    {
+      "priority": 23,
+      "concept": "Sociable Numbers",
+      "category": "Pattern Mathematics",
+      "definition": "Numbers that form a chain with their sum-of-divisors function, returning to the original.",
+      "syntax": "s(n1)=n2, s(n2)=n3, ..., s(nk)=n1",
+      "examples": [
+        "1264460 → 1547860 → 1727636 → 1305184 → 1264460"
+      ],
+      "explanation": "Sociable numbers generalize amicable and perfect numbers.",
+      "tags": ["number theory", "pattern"],
+      "related": ["Pattern Math", "Perfect Numbers"]
+    },
+    {
+      "priority": 24,
+      "concept": "Multiplication by Doubling and Halving",
+      "category": "Pattern Mathematics",
+      "definition": "Multiply by repeatedly doubling one number and halving the other, summing results where the halved number is odd.",
+      "syntax": "Halve one, double the other, sum products where halved is odd.",
+      "examples": [
+        "18 × 25: 18,25 → 9,50 → 4,100 → 2,200 → 1,400; sum 50+400=450."
+      ],
+      "explanation": "This pattern is a generalization of Russian/Egyptian multiplication and reveals binary structure.",
+      "tags": ["multiplication", "pattern"],
+      "related": ["Russian Peasant Multiplication", "Egyptian Multiplication"]
+    }
+  ]
+}

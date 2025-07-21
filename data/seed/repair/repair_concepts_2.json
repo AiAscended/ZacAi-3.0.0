@@ -1,0 +1,264 @@
+{
+  "concepts": [
+    {
+      "priority": 21,
+      "concept": "Predictive Maintenance",
+      "category": "Self-Healing",
+      "definition": "Use AI and IoT sensors to anticipate and schedule repairs before failures occur, based on real-time and historical data.",
+      "syntax": "// Predictive model: if wear > threshold, schedule replacement",
+      "examples": [
+        "AI predicts tire wear using audio signals and schedules preemptive replacement[2]."
+      ],
+      "explanation": "Predictive maintenance prevents breakdowns, reduces costs, and maximizes uptime by repairing before failure is visible[1][2][3][7].",
+      "tags": ["predictive", "maintenance", "ai", "iot"],
+      "related": ["Automated Repair", "Anomaly Detection"]
+    },
+    {
+      "priority": 22,
+      "concept": "Robotic Repair Automation",
+      "category": "Self-Healing",
+      "definition": "Use AI-powered robots to perform repetitive or precision repair tasks autonomously.",
+      "syntax": "// Robot mounts tire or assembles component automatically",
+      "examples": [
+        "Robotic units handle tire changes and basic assembly with high precision and consistency[3][7][8]."
+      ],
+      "explanation": "Robotic repair increases efficiency, reduces labor costs, and ensures consistent quality.",
+      "tags": ["robotics", "automation", "repair"],
+      "related": ["Automated Repair", "Predictive Maintenance"]
+    },
+    {
+      "priority": 23,
+      "concept": "Augmented Reality (AR) Guided Repair",
+      "category": "Self-Healing",
+      "definition": "Technicians use AR tools for real-time visualizations, step-by-step instructions, and component overlays during repairs.",
+      "syntax": "// AR headset displays 3D model and repair steps",
+      "examples": [
+        "Technician sees a live overlay of engine components and guided instructions while repairing[1]."
+      ],
+      "explanation": "AR improves repair accuracy, speeds up training, and reduces errors, especially for complex systems.",
+      "tags": ["ar", "visualization", "repair"],
+      "related": ["Workforce Training", "Advanced Diagnostics"]
+    },
+    {
+      "priority": 24,
+      "concept": "IoT-Integrated Diagnostics and Repair",
+      "category": "Self-Healing",
+      "definition": "Connect repair systems to IoT-enabled sensors for real-time diagnostics, remote monitoring, and automated repair triggers.",
+      "syntax": "// IoT sensor detects fault, triggers repair workflow",
+      "examples": [
+        "Vehicle sensors send data to shop, triggering a repair order before a breakdown[2][5]."
+      ],
+      "explanation": "IoT integration enables proactive, data-driven repair and continuous monitoring.",
+      "tags": ["iot", "diagnostics", "repair"],
+      "related": ["Predictive Maintenance", "Automated Repair"]
+    },
+    {
+      "priority": 25,
+      "concept": "AI-Enhanced Diagnostics",
+      "category": "Self-Healing",
+      "definition": "Use AI algorithms to analyze diagnostic data, identify hidden issues, and recommend or initiate repairs.",
+      "syntax": "// AI model interprets error codes and suggests fix",
+      "examples": [
+        "AI diagnoses subtle engine issues from sensor data faster than a human technician[1][2][3][4][5][6]."
+      ],
+      "explanation": "AI diagnostics increase repair accuracy, reduce downtime, and support self-healing workflows.",
+      "tags": ["ai", "diagnostics", "repair"],
+      "related": ["Automated Repair", "Anomaly Detection"]
+    },
+    {
+      "priority": 26,
+      "concept": "3D Printing for On-Demand Parts",
+      "category": "Self-Healing",
+      "definition": "Use 3D printing to create custom or replacement parts on-site, reducing wait times and inventory costs.",
+      "syntax": "// Print replacement component from digital model",
+      "examples": [
+        "Shop prints a custom bracket or cover for immediate use in repair[1]."
+      ],
+      "explanation": "On-demand parts production enables rapid, cost-effective repairs and supports self-healing supply chains.",
+      "tags": ["3d printing", "parts", "repair"],
+      "related": ["Automated Repair", "Sustainability"]
+    },
+    {
+      "priority": 27,
+      "concept": "Sustainability in Repair",
+      "category": "Self-Healing",
+      "definition": "Adopt green materials, recycled parts, and resource-efficient processes in repair workflows.",
+      "syntax": "// Use bio-based paints or recycled components",
+      "examples": [
+        "Repair shop uses recycled fenders and bio paints to reduce environmental impact[3]."
+      ],
+      "explanation": "Sustainable repair practices lower costs, reduce waste, and appeal to eco-conscious consumers.",
+      "tags": ["sustainability", "green", "repair"],
+      "related": ["3D Printing for On-Demand Parts", "Resource Optimization"]
+    },
+    {
+      "priority": 28,
+      "concept": "Advanced Driver Assistance Systems (ADAS) Calibration and Repair",
+      "category": "Self-Healing",
+      "definition": "Use specialized AI and calibration tools to repair and recalibrate ADAS after maintenance or collision.",
+      "syntax": "// AI calibrates sensors and cameras post-repair",
+      "examples": [
+        "ADAS system is recalibrated using AI-guided tools after windshield replacement[1][2][5][6]."
+      ],
+      "explanation": "ADAS calibration is critical for safety and compliance in modern vehicles.",
+      "tags": ["adas", "calibration", "repair"],
+      "related": ["AI-Enhanced Diagnostics", "Automated Repair"]
+    },
+    {
+      "priority": 29,
+      "concept": "Digital Vehicle Inspections (DVI)",
+      "category": "Self-Healing",
+      "definition": "Automate inspection processes with digital tools, increasing transparency and consistency in repair recommendations.",
+      "syntax": "// DVI app records inspection results and images",
+      "examples": [
+        "Technician uses tablet to document inspection, share photos, and generate repair orders[4]."
+      ],
+      "explanation": "DVIs improve communication, trust, and efficiency in repair shops.",
+      "tags": ["inspection", "digital", "repair"],
+      "related": ["AI-Enhanced Diagnostics", "Automated Repair"]
+    },
+    {
+      "priority": 30,
+      "concept": "Workforce Training and Upskilling for AI Repair",
+      "category": "Self-Healing",
+      "definition": "Ongoing technician education in AI diagnostics, IoT systems, and advanced repair technologies.",
+      "syntax": "// Training modules for ADAS, EVs, AI tools",
+      "examples": [
+        "Technicians complete AR-guided training on EV battery diagnostics and repair[2][3][5][6]."
+      ],
+      "explanation": "Upskilling ensures technicians can operate and maintain AI-driven, self-healing systems.",
+      "tags": ["training", "upskilling", "repair"],
+      "related": ["Augmented Reality (AR) Guided Repair", "AI-Enhanced Diagnostics"]
+    },
+    {
+      "priority": 31,
+      "concept": "Automated Inspection Tools",
+      "category": "Self-Healing",
+      "definition": "Use sensors, cameras, and AI to automate inspection of components, detecting faults invisible to the human eye.",
+      "syntax": "// AI camera inspects welds or surfaces for defects",
+      "examples": [
+        "Automated tool scans vehicle body for hidden damage after collision[3]."
+      ],
+      "explanation": "Automated inspection speeds up repair and improves accuracy, supporting predictive and preventive maintenance.",
+      "tags": ["inspection", "automation", "repair"],
+      "related": ["Digital Vehicle Inspections (DVI)", "Predictive Maintenance"]
+    },
+    {
+      "priority": 32,
+      "concept": "Remote Diagnostics and Repair",
+      "category": "Self-Healing",
+      "definition": "Diagnose and sometimes repair issues remotely using connected vehicle data and over-the-air (OTA) updates.",
+      "syntax": "// OTA update patches vehicle software remotely",
+      "examples": [
+        "Technician diagnoses fault and applies fix without physical access to vehicle[2][3][5]."
+      ],
+      "explanation": "Remote repair reduces downtime and extends reach of repair services.",
+      "tags": ["remote", "diagnostics", "repair"],
+      "related": ["IoT-Integrated Diagnostics and Repair", "Automated Repair"]
+    },
+    {
+      "priority": 33,
+      "concept": "Resource Optimization for Repair",
+      "category": "Self-Healing",
+      "definition": "AI-driven scheduling and resource allocation to maximize repair shop efficiency and minimize waste.",
+      "syntax": "// AI schedules repairs and orders parts based on demand",
+      "examples": [
+        "AI optimizes technician assignments and part inventory to reduce wait times[2][3]."
+      ],
+      "explanation": "Resource optimization increases shop productivity and customer satisfaction.",
+      "tags": ["optimization", "resource", "repair"],
+      "related": ["Sustainability in Repair", "Automated Repair"]
+    },
+    {
+      "priority": 34,
+      "concept": "Self-Healing for Electric Vehicles (EVs)",
+      "category": "Self-Healing",
+      "definition": "Specialized repair and diagnostics for EVs, including battery management, software updates, and high-voltage safety.",
+      "syntax": "// AI monitors battery health, schedules preventive repair",
+      "examples": [
+        "AI detects battery degradation and schedules replacement before failure[3][4][6]."
+      ],
+      "explanation": "Self-healing for EVs addresses unique challenges and maximizes uptime for electric fleets.",
+      "tags": ["ev", "battery", "repair"],
+      "related": ["Predictive Maintenance", "Automated Repair"]
+    },
+    {
+      "priority": 35,
+      "concept": "Self-Healing for Advanced Materials",
+      "category": "Self-Healing",
+      "definition": "Repair and maintenance strategies for vehicles using composites, lightweight alloys, and other advanced materials.",
+      "syntax": "// AI detects microfractures, triggers composite patch",
+      "examples": [
+        "Automated system repairs carbon fiber panels using resin injection[3]."
+      ],
+      "explanation": "Advanced materials require specialized, often automated, repair techniques for safety and durability.",
+      "tags": ["materials", "composites", "repair"],
+      "related": ["Automated Inspection Tools", "Resource Optimization for Repair"]
+    },
+    {
+      "priority": 36,
+      "concept": "Customer Communication Automation",
+      "category": "Self-Healing",
+      "definition": "Use AI chatbots and digital tools to update customers on repair status, costs, and recommendations.",
+      "syntax": "// AI chatbot sends repair updates and answers questions",
+      "examples": [
+        "Customer receives automated notifications and digital inspection reports[2][4]."
+      ],
+      "explanation": "Automated communication improves transparency and customer experience.",
+      "tags": ["communication", "automation", "repair"],
+      "related": ["Digital Vehicle Inspections (DVI)", "Resource Optimization for Repair"]
+    },
+    {
+      "priority": 37,
+      "concept": "Circular Economy in Repair",
+      "category": "Self-Healing",
+      "definition": "Integrate repair operations into a circular economy by reusing, recycling, and remanufacturing parts.",
+      "syntax": "// Recycle old parts, remanufacture components for reuse",
+      "examples": [
+        "Shop recycles damaged bumpers and remanufactures alternators for future use[3]."
+      ],
+      "explanation": "Circular economy practices reduce waste, save resources, and support sustainability goals.",
+      "tags": ["circular economy", "recycling", "repair"],
+      "related": ["Sustainability in Repair", "3D Printing for On-Demand Parts"]
+    },
+    {
+      "priority": 38,
+      "concept": "Self-Healing for Industrial and Heavy Equipment",
+      "category": "Self-Healing",
+      "definition": "Apply predictive, automated, and remote repair techniques to industrial machinery and heavy vehicles.",
+      "syntax": "// IoT sensors monitor equipment, trigger repair workflow",
+      "examples": [
+        "AI predicts hydraulic failure and schedules preemptive maintenance on excavator[8]."
+      ],
+      "explanation": "Self-healing for industry minimizes costly downtime and improves safety.",
+      "tags": ["industrial", "heavy equipment", "repair"],
+      "related": ["Predictive Maintenance", "Remote Diagnostics and Repair"]
+    },
+    {
+      "priority": 39,
+      "concept": "Integration with Digital Ecosystems",
+      "category": "Self-Healing",
+      "definition": "Connect repair systems with digital platforms (ERP, CRM, supply chain) for seamless data flow and automation.",
+      "syntax": "// Sync repair orders and inventory with ERP system",
+      "examples": [
+        "Parts ordering and scheduling are automatically updated in business management software[2]."
+      ],
+      "explanation": "Digital integration streamlines operations and supports end-to-end automation.",
+      "tags": ["integration", "digital", "repair"],
+      "related": ["Resource Optimization for Repair", "Customer Communication Automation"]
+    },
+    {
+      "priority": 40,
+      "concept": "Self-Healing for Smart and Connected Vehicles",
+      "category": "Self-Healing",
+      "definition": "Enable vehicles to self-diagnose, request repairs, and even initiate remote fixes using AI and IoT connectivity.",
+      "syntax": "// Vehicle sends diagnostic data, requests OTA repair",
+      "examples": [
+        "Smart car detects issue, schedules service, and receives software update remotely[2][3][5]."
+      ],
+      "explanation": "Self-healing for connected vehicles maximizes uptime and user convenience in the era of smart mobility.",
+      "tags": ["smart vehicles", "connected", "repair"],
+      "related": ["IoT-Integrated Diagnostics and Repair", "Remote Diagnostics and Repair"]
+    }
+  ]
+}

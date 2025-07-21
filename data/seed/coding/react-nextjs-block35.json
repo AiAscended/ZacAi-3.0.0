@@ -1,0 +1,488 @@
+[
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-audit-compliance",
+    "priority": 1225,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring audit and compliance during restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Log all restore steps and validate compliance."
+      }
+    ],
+    "syntax": "// Audit compliance during restore",
+    "examples": [
+      "auditRestoreCompliance(tenantId, version, restoreId)"
+    ],
+    "synonyms": ["archive version restore audit compliance"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-gdpr",
+    "priority": 1226,
+    "definitions": [
+      {
+        "meaning": "A pattern for GDPR compliance during restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure restores respect GDPR data handling requirements."
+      }
+    ],
+    "syntax": "// GDPR compliance for restore",
+    "examples": [
+      "ensureGDPRRestoreCompliance(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore gdpr"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-ccpa",
+    "priority": 1227,
+    "definitions": [
+      {
+        "meaning": "A pattern for CCPA compliance during restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure restores respect CCPA data privacy requirements."
+      }
+    ],
+    "syntax": "// CCPA compliance for restore",
+    "examples": [
+      "ensureCCPARestoreCompliance(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore ccpa"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-hipaa",
+    "priority": 1228,
+    "definitions": [
+      {
+        "meaning": "A pattern for HIPAA compliance during restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure restores respect HIPAA data privacy requirements."
+      }
+    ],
+    "syntax": "// HIPAA compliance for restore",
+    "examples": [
+      "ensureHIPAARestoreCompliance(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore hipaa"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-sox",
+    "priority": 1229,
+    "definitions": [
+      {
+        "meaning": "A pattern for SOX compliance during restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Ensure restores respect SOX audit and traceability requirements."
+      }
+    ],
+    "syntax": "// SOX compliance for restore",
+    "examples": [
+      "ensureSOXRestoreCompliance(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore sox"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-pii-masking",
+    "priority": 1230,
+    "definitions": [
+      {
+        "meaning": "A pattern for masking personally identifiable information (PII) during restores.",
+        "partOfSpeech": "pattern",
+        "example": "Mask PII fields in restored data for privacy."
+      }
+    ],
+    "syntax": "// Mask PII during restore",
+    "examples": [
+      "maskPIIRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore pii masking"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-anonymization",
+    "priority": 1231,
+    "definitions": [
+      {
+        "meaning": "A pattern for anonymizing data during restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Anonymize sensitive fields in restored data."
+      }
+    ],
+    "syntax": "// Anonymize data during restore",
+    "examples": [
+      "anonymizeRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data anonymization"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-redaction",
+    "priority": 1232,
+    "definitions": [
+      {
+        "meaning": "A pattern for redacting sensitive data during restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Redact sensitive fields in restored data for compliance."
+      }
+    ],
+    "syntax": "// Redact data during restore",
+    "examples": [
+      "redactRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data redaction"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-validation",
+    "priority": 1233,
+    "definitions": [
+      {
+        "meaning": "A pattern for validating restored data for accuracy and completeness.",
+        "partOfSpeech": "pattern",
+        "example": "Validate all fields after restore for correctness."
+      }
+    ],
+    "syntax": "// Validate restored data",
+    "examples": [
+      "validateRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data validation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-quality",
+    "priority": 1234,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring data quality during restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Check for data quality issues after restore."
+      }
+    ],
+    "syntax": "// Data quality check after restore",
+    "examples": [
+      "checkRestoreDataQuality(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data quality"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-lineage",
+    "priority": 1235,
+    "definitions": [
+      {
+        "meaning": "A pattern for tracking data lineage during restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Track origin and transformations of restored data."
+      }
+    ],
+    "syntax": "// Track data lineage during restore",
+    "examples": [
+      "trackRestoreDataLineage(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data lineage"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-consistency",
+    "priority": 1236,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring data consistency during restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Check for referential and transactional consistency."
+      }
+    ],
+    "syntax": "// Check data consistency after restore",
+    "examples": [
+      "checkRestoreDataConsistency(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data consistency"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-reconciliation",
+    "priority": 1237,
+    "definitions": [
+      {
+        "meaning": "A pattern for reconciling data after restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Reconcile restored data with current state."
+      }
+    ],
+    "syntax": "// Reconcile data after restore",
+    "examples": [
+      "reconcileRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data reconciliation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-merge",
+    "priority": 1238,
+    "definitions": [
+      {
+        "meaning": "A pattern for merging restored data with existing data after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Merge restored data intelligently with live data."
+      }
+    ],
+    "syntax": "// Merge restored and live data",
+    "examples": [
+      "mergeRestoreAndLiveData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data merge"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback",
+    "priority": 1239,
+    "definitions": [
+      {
+        "meaning": "A pattern for rolling back merged or reconciled data after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Rollback merged data if post-merge validation fails."
+      }
+    ],
+    "syntax": "// Rollback merged data after restore",
+    "examples": [
+      "rollbackMergedRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-validation",
+    "priority": 1240,
+    "definitions": [
+      {
+        "meaning": "A pattern for validating rollback operations after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Validate data integrity after rollback."
+      }
+    ],
+    "syntax": "// Validate rollback after restore",
+    "examples": [
+      "validateRollbackRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback validation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-audit",
+    "priority": 1241,
+    "definitions": [
+      {
+        "meaning": "A pattern for auditing rollback operations after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Log all rollback actions for compliance."
+      }
+    ],
+    "syntax": "// Audit rollback after restore",
+    "examples": [
+      "auditRollbackRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback audit"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-lessons-learned",
+    "priority": 1242,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting lessons learned from rollback operations after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share lessons learned after rollback failures."
+      }
+    ],
+    "syntax": "// Document rollback lessons learned",
+    "examples": [
+      "logRollbackRestoreLessonsLearned(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback lessons learned"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-tabletop-exercise",
+    "priority": 1243,
+    "definitions": [
+      {
+        "meaning": "A pattern for running tabletop exercises for rollback failures after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Simulate rollback failure scenarios and test response."
+      }
+    ],
+    "syntax": "// Run rollback tabletop exercises",
+    "examples": [
+      "runRollbackRestoreTabletopExercise(tenantId, version, scenario)"
+    ],
+    "synonyms": ["archive version restore data rollback tabletop exercise"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-drill",
+    "priority": 1244,
+    "definitions": [
+      {
+        "meaning": "A pattern for running drills for rollback failures after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Conduct live drills to test rollback and recovery processes."
+      }
+    ],
+    "syntax": "// Run rollback drills",
+    "examples": [
+      "runRollbackRestoreDrill(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback drill"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-simulation",
+    "priority": 1245,
+    "definitions": [
+      {
+        "meaning": "A pattern for simulating rollback failures and recovery after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Test detection and response with rollback failure simulations."
+      }
+    ],
+    "syntax": "// Simulate rollback failures",
+    "examples": [
+      "simulateRollbackRestoreFailure(tenantId, version, type)"
+    ],
+    "synonyms": ["archive version restore data rollback simulation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-automation",
+    "priority": 1246,
+    "definitions": [
+      {
+        "meaning": "A pattern for automating rollback workflows after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Automate rollback steps for rapid recovery."
+      }
+    ],
+    "syntax": "// Automate rollback after restore",
+    "examples": [
+      "automateRollbackRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback automation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-orchestration",
+    "priority": 1247,
+    "definitions": [
+      {
+        "meaning": "A pattern for orchestrating rollback operations after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Coordinate multi-system rollback workflows."
+      }
+    ],
+    "syntax": "// Orchestrate rollback after restore",
+    "examples": [
+      "orchestrateRollbackRestoreData(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback orchestration"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-incident-response",
+    "priority": 1248,
+    "definitions": [
+      {
+        "meaning": "A pattern for incident response during rollback operations after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Trigger alerts and mitigation during rollback failures."
+      }
+    ],
+    "syntax": "// Incident response for rollback after restore",
+    "examples": [
+      "triggerRollbackRestoreIncidentResponse(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore data rollback incident response"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-postmortem",
+    "priority": 1249,
+    "definitions": [
+      {
+        "meaning": "A pattern for postmortem analysis after rollback incidents following restore.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze root cause and improve rollback processes."
+      }
+    ],
+    "syntax": "// Conduct rollback postmortem",
+    "examples": [
+      "conductRollbackRestorePostmortem(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore data rollback postmortem"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-closure",
+    "priority": 1250,
+    "definitions": [
+      {
+        "meaning": "A pattern for formally closing rollback incidents after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Mark rollback incidents as resolved and update records."
+      }
+    ],
+    "syntax": "// Close rollback incident",
+    "examples": [
+      "closeRollbackRestoreIncident(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore data rollback closure"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-data-rollback-lessons-learned",
+    "priority": 1260,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting lessons learned from rollback incidents after restore.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share lessons learned after rollback failures."
+      }
+    ],
+    "syntax": "// Document rollback lessons learned",
+    "examples": [
+      "logRollbackRestoreLessonsLearned(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore data rollback lessons learned"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  }
+]

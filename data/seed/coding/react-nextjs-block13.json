@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-jest-testing",
+    "priority": 433,
+    "definitions": [
+      {
+        "meaning": "A pattern for unit and integration testing React/Next.js apps using Jest.",
+        "partOfSpeech": "pattern",
+        "example": "Write tests for components and logic using Jest."
+      }
+    ],
+    "syntax": "test('renders', () => { render(<Component />); });",
+    "examples": [
+      "expect(screen.getByText('Hello')).toBeInTheDocument();"
+    ],
+    "synonyms": ["jest", "unit testing"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "dʒɛst ˈtɛstɪŋ",
+    "difficulty": "intermediate",
+    "category": "testing",
+    "bestPractice": "Mock dependencies and test edge cases.",
+    "relatedConcepts": ["testing", "react-testing-library"]
+  },
+  {
+    "word": "nextjs-react-testing-library",
+    "priority": 434,
+    "definitions": [
+      {
+        "meaning": "A pattern for testing React components with React Testing Library.",
+        "partOfSpeech": "pattern",
+        "example": "Test UI interactions and accessibility."
+      }
+    ],
+    "syntax": "render(<Button />);",
+    "examples": [
+      "fireEvent.click(screen.getByRole('button'));"
+    ],
+    "synonyms": ["testing-library", "component testing"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "riˈækt ˈtɛstɪŋ ˈlaɪbrəri",
+    "difficulty": "intermediate",
+    "category": "testing",
+    "bestPractice": "Test user interactions, not implementation details.",
+    "relatedConcepts": ["testing", "jest"]
+  },
+  {
+    "word": "nextjs-cypress-e2e",
+    "priority": 435,
+    "definitions": [
+      {
+        "meaning": "A pattern for end-to-end (E2E) testing React/Next.js apps with Cypress.",
+        "partOfSpeech": "pattern",
+        "example": "Test user flows and integration with Cypress."
+      }
+    ],
+    "syntax": "cy.visit('/'); cy.get('button').click();",
+    "examples": [
+      "cy.get('input').type('hello');"
+    ],
+    "synonyms": ["cypress", "e2e testing"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsaɪprəs iː tuː iː",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Test real browser interactions and edge cases.",
+    "relatedConcepts": ["testing", "integration"]
+  },
+  {
+    "word": "nextjs-playwright-e2e",
+    "priority": 436,
+    "definitions": [
+      {
+        "meaning": "A pattern for end-to-end (E2E) testing React/Next.js apps with Playwright.",
+        "partOfSpeech": "pattern",
+        "example": "Test cross-browser flows and automation."
+      }
+    ],
+    "syntax": "await page.goto('/'); await page.click('button');",
+    "examples": [
+      "await expect(page).toHaveText('Welcome');"
+    ],
+    "synonyms": ["playwright", "e2e testing"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈpleɪˌraɪt iː tuː iː",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Run tests in multiple browsers for coverage.",
+    "relatedConcepts": ["testing", "automation"]
+  },
+  {
+    "word": "nextjs-msw-mocking",
+    "priority": 437,
+    "definitions": [
+      {
+        "meaning": "A pattern for mocking API requests in tests using Mock Service Worker (MSW).",
+        "partOfSpeech": "pattern",
+        "example": "Intercept and mock network requests in tests."
+      }
+    ],
+    "syntax": "setupServer(...handlers);",
+    "examples": [
+      "rest.get('/api/user', (req, res, ctx) => res(ctx.json({ name: 'John' })));"
+    ],
+    "synonyms": ["msw", "api mocking"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ɛm ɛs dʌbəljuː ˈmɒkɪŋ",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Mock all external APIs for reliable tests.",
+    "relatedConcepts": ["testing", "mocking"]
+  },
+  {
+    "word": "nextjs-storybook",
+    "priority": 438,
+    "definitions": [
+      {
+        "meaning": "A pattern for developing and documenting UI components in isolation using Storybook.",
+        "partOfSpeech": "pattern",
+        "example": "Build and preview components in Storybook."
+      }
+    ],
+    "syntax": "export default { title: 'Button', component: Button };",
+    "examples": [
+      "<Story name='Primary'><Button primary /></Story>"
+    ],
+    "synonyms": ["storybook", "component docs"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈstɔːriˌbʊk",
+    "difficulty": "intermediate",
+    "category": "documentation",
+    "bestPractice": "Document all reusable components.",
+    "relatedConcepts": ["ui", "testing"]
+  },
+  {
+    "word": "nextjs-stylelint",
+    "priority": 439,
+    "definitions": [
+      {
+        "meaning": "A pattern for linting CSS and styled-components in React/Next.js with Stylelint.",
+        "partOfSpeech": "pattern",
+        "example": "Enforce consistent CSS styles with Stylelint."
+      }
+    ],
+    "syntax": "stylelint '**/*.css'",
+    "examples": [
+      "stylelint src/**/*.js"
+    ],
+    "synonyms": ["stylelint", "css lint"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "staɪl lɪnt",
+    "difficulty": "intermediate",
+    "category": "tooling",
+    "bestPractice": "Integrate Stylelint with your CI pipeline.",
+    "relatedConcepts": ["css", "linting"]
+  },
+  {
+    "word": "nextjs-eslint",
+    "priority": 440,
+    "definitions": [
+      {
+        "meaning": "A pattern for linting JavaScript/TypeScript code in React/Next.js with ESLint.",
+        "partOfSpeech": "pattern",
+        "example": "Enforce code quality and conventions with ESLint."
+      }
+    ],
+    "syntax": "eslint .",
+    "examples": [
+      "eslint src/**/*.js"
+    ],
+    "synonyms": ["eslint", "js lint"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "iː ɛs lɪnt",
+    "difficulty": "intermediate",
+    "category": "tooling",
+    "bestPractice": "Use recommended and Next.js-specific ESLint configs.",
+    "relatedConcepts": ["linting", "tooling"]
+  },
+  {
+    "word": "nextjs-prettier",
+    "priority": 441,
+    "definitions": [
+      {
+        "meaning": "A pattern for auto-formatting code in React/Next.js with Prettier.",
+        "partOfSpeech": "pattern",
+        "example": "Format code automatically on save."
+      }
+    ],
+    "syntax": "prettier --write .",
+    "examples": [
+      "prettier --check src/"
+    ],
+    "synonyms": ["prettier", "code format"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈprɛtiər",
+    "difficulty": "intermediate",
+    "category": "tooling",
+    "bestPractice": "Integrate Prettier with ESLint for consistent style.",
+    "relatedConcepts": ["tooling", "linting"]
+  },
+  {
+    "word": "nextjs-husky",
+    "priority": 442,
+    "definitions": [
+      {
+        "meaning": "A pattern for running Git hooks in React/Next.js projects using Husky.",
+        "partOfSpeech": "pattern",
+        "example": "Run lint and tests before commit or push."
+      }
+    ],
+    "syntax": "husky add .husky/pre-commit 'npm test'",
+    "examples": [
+      "husky add .husky/pre-commit 'npm run lint'"
+    ],
+    "synonyms": ["husky", "git hooks"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈhʌski",
+    "difficulty": "intermediate",
+    "category": "tooling",
+    "bestPractice": "Automate code checks with pre-commit hooks.",
+    "relatedConcepts": ["tooling", "git"]
+  },
+  {
+    "word": "nextjs-lint-staged",
+    "priority": 443,
+    "definitions": [
+      {
+        "meaning": "A pattern for running linters on staged files in Git using lint-staged.",
+        "partOfSpeech": "pattern",
+        "example": "Lint only staged files before commit."
+      }
+    ],
+    "syntax": "\"*.js\": [\"eslint --fix\", \"git add\"]",
+    "examples": [
+      "\"*.ts\": [\"eslint --fix\", \"git add\"]"
+    ],
+    "synonyms": ["lint-staged", "staged lint"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "lɪnt steɪdʒd",
+    "difficulty": "intermediate",
+    "category": "tooling",
+    "bestPractice": "Combine with Husky for fast pre-commit checks.",
+    "relatedConcepts": ["tooling", "linting"]
+  },
+  {
+    "word": "nextjs-git-hooks",
+    "priority": 444,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Git hooks for automation in React/Next.js projects.",
+        "partOfSpeech": "pattern",
+        "example": "Run scripts on commit, push, or merge."
+      }
+    ],
+    "syntax": ".git/hooks/pre-commit",
+    "examples": [
+      "echo 'npm test' > .git/hooks/pre-commit"
+    ],
+    "synonyms": ["git hooks"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ɡɪt hʊks",
+    "difficulty": "intermediate",
+    "category": "tooling",
+    "bestPractice": "Automate checks and formatting with hooks.",
+    "relatedConcepts": ["tooling", "git"]
+  },
+  {
+    "word": "nextjs-github-actions",
+    "priority": 445,
+    "definitions": [
+      {
+        "meaning": "A pattern for automating CI/CD pipelines with GitHub Actions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Run tests, builds, and deploys on push."
+      }
+    ],
+    "syntax": ".github/workflows/ci.yml",
+    "examples": [
+      "on: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest"
+    ],
+    "synonyms": ["github actions", "ci/cd"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ɡɪtˌhʌb ˈækʃənz",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Automate tests and deployments on every PR.",
+    "relatedConcepts": ["ci/cd", "automation"]
+  },
+  {
+    "word": "nextjs-vercel-ci",
+    "priority": 446,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Vercel's built-in CI/CD for Next.js deployments.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy and preview every push with Vercel CI."
+      }
+    ],
+    "syntax": "vercel --prod",
+    "examples": [
+      "vercel --prod"
+    ],
+    "synonyms": ["vercel ci", "vercel deploy"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈvɜːrsəl siː aɪ",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Use Vercel for instant previews and production deploys.",
+    "relatedConcepts": ["ci/cd", "deployment"]
+  },
+  {
+    "word": "nextjs-netlify-ci",
+    "priority": 447,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Netlify's CI/CD for Next.js static and SSR deployments.",
+        "partOfSpeech": "pattern",
+        "example": "Build and deploy with Netlify CI."
+      }
+    ],
+    "syntax": "netlify build && netlify deploy",
+    "examples": [
+      "netlify deploy --prod"
+    ],
+    "synonyms": ["netlify ci", "netlify deploy"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈnɛtlɪfaɪ siː aɪ",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Use Netlify for atomic deploys and rollbacks.",
+    "relatedConcepts": ["ci/cd", "deployment"]
+  },
+  {
+    "word": "nextjs-aws-codepipeline",
+    "priority": 448,
+    "definitions": [
+      {
+        "meaning": "A pattern for CI/CD automation using AWS CodePipeline for Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Automate builds and deploys with AWS CodePipeline."
+      }
+    ],
+    "syntax": "aws codepipeline create-pipeline ...",
+    "examples": [
+      "aws codepipeline start-pipeline-execution --name my-nextjs-pipeline"
+    ],
+    "synonyms": ["aws codepipeline", "ci/cd"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "eɪ dʌbəljuː ɛs koʊdˈpaɪplaɪn",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Integrate with AWS CodeBuild and CodeDeploy.",
+    "relatedConcepts": ["ci/cd", "aws"]
+  },
+  {
+    "word": "nextjs-azure-pipelines",
+    "priority": 449,
+    "definitions": [
+      {
+        "meaning": "A pattern for CI/CD automation using Azure Pipelines for Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Build and deploy with Azure Pipelines."
+      }
+    ],
+    "syntax": "azure-pipelines.yml",
+    "examples": [
+      "trigger:\n- main\npool:\n  vmImage: 'ubuntu-latest'"
+    ],
+    "synonyms": ["azure pipelines", "ci/cd"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈæʒər ˈpaɪplaɪnz",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Use Azure DevOps for enterprise CI/CD.",
+    "relatedConcepts": ["ci/cd", "azure"]
+  },
+  {
+    "word": "nextjs-gitlab-ci",
+    "priority": 450,
+    "definitions": [
+      {
+        "meaning": "A pattern for CI/CD automation using GitLab CI for Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Configure .gitlab-ci.yml for builds and deploys."
+      }
+    ],
+    "syntax": ".gitlab-ci.yml",
+    "examples": [
+      "stages:\n  - build\n  - deploy"
+    ],
+    "synonyms": ["gitlab ci", "ci/cd"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɡɪtlæb siː aɪ",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Automate all tests and deployments.",
+    "relatedConcepts": ["ci/cd", "gitlab"]
+  },
+  {
+    "word": "nextjs-circleci",
+    "priority": 451,
+    "definitions": [
+      {
+        "meaning": "A pattern for CI/CD automation using CircleCI for Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Configure .circleci/config.yml for builds and deploys."
+      }
+    ],
+    "syntax": ".circleci/config.yml",
+    "examples": [
+      "version: 2.1\njobs:\n  build:\n    docker:\n      - image: circleci/node:14"
+    ],
+    "synonyms": ["circleci", "ci/cd"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈsɜːrkəl siː aɪ",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Parallelize jobs for faster pipelines.",
+    "relatedConcepts": ["ci/cd", "circleci"]
+  },
+  {
+    "word": "nextjs-travisci",
+    "priority": 452,
+    "definitions": [
+      {
+        "meaning": "A pattern for CI/CD automation using Travis CI for Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Configure .travis.yml for builds and deploys."
+      }
+    ],
+    "syntax": ".travis.yml",
+    "examples": [
+      "language: node_js\nnode_js:\n  - '14'"
+    ],
+    "synonyms": ["travisci", "ci/cd"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈtrævɪs siː aɪ",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Cache node_modules for faster builds.",
+    "relatedConcepts": ["ci/cd", "travis"]
+  },
+  {
+    "word": "nextjs-docker-ci",
+    "priority": 453,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Docker in CI/CD pipelines for Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Build and test in Docker containers."
+      }
+    ],
+    "syntax": "docker build -t my-next-app .",
+    "examples": [
+      "docker run --rm my-next-app npm test"
+    ],
+    "synonyms": ["docker ci", "docker pipeline"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdɒkər siː aɪ",
+    "difficulty": "advanced",
+    "category": "automation",
+    "bestPractice": "Use multi-stage builds for efficient pipelines.",
+    "relatedConcepts": ["ci/cd", "docker"]
+  },
+  {
+    "word": "nextjs-monorepo",
+    "priority": 454,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing multiple projects or packages in a single repository.",
+        "partOfSpeech": "pattern",
+        "example": "Use Yarn Workspaces or Nx for monorepos."
+      }
+    ],
+    "syntax": "packages/\n  app/\n  ui/\n  utils/",
+    "examples": [
+      "yarn workspace add @myorg/ui"
+    ],
+    "synonyms": ["monorepo", "workspace"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈmɒnəˌriːpoʊ",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Isolate packages and use consistent tooling.",
+    "relatedConcepts": ["architecture", "workspace"]
+  },
+  {
+    "word": "nextjs-nx",
+    "priority": 455,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing monorepos and advanced tooling with Nx in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Nx for scalable monorepo management."
+      }
+    ],
+    "syntax": "nx generate @nrwl/next:app my-app",
+    "examples": [
+      "nx run-many --target=build --all"
+    ],
+    "synonyms": ["nx", "monorepo"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ɛn ɛks",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Leverage Nx for code sharing and caching.",
+    "relatedConcepts": ["monorepo", "workspace"]
+  },
+  {
+    "word": "nextjs-lerna",
+    "priority": 456,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing JavaScript monorepos with Lerna in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Lerna for versioning and publishing packages."
+      }
+    ],
+    "syntax": "lerna bootstrap",
+    "examples": [
+      "lerna publish"
+    ],
+    "synonyms": ["lerna", "monorepo"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈlɜːrnə",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Combine Lerna with Yarn Workspaces for efficiency.",
+    "relatedConcepts": ["monorepo", "workspace"]
+  },
+  {
+    "word": "nextjs-yarn-workspaces",
+    "priority": 457,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing multiple packages in a monorepo with Yarn Workspaces.",
+        "partOfSpeech": "pattern",
+        "example": "Use Yarn Workspaces for dependency management."
+      }
+    ],
+    "syntax": "workspaces: ['packages/*']",
+    "examples": [
+      "yarn workspace add @myorg/utils"
+    ],
+    "synonyms": ["yarn workspaces", "monorepo"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "jɑrn ˈwɜːrkˌspeɪsɪz",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Deduplicate dependencies in the root.",
+    "relatedConcepts": ["monorepo", "workspace"]
+  },
+  {
+    "word": "nextjs-pnpm-workspaces",
+    "priority": 458,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing monorepos with pnpm workspaces in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use pnpm for fast, disk-efficient monorepos."
+      }
+    ],
+    "syntax": "packages:\n  - 'packages/*'",
+    "examples": [
+      "pnpm add -w @myorg/ui"
+    ],
+    "synonyms": ["pnpm workspaces", "monorepo"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "piː ɛn piː ɛm ˈwɜːrkˌspeɪsɪz",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Use pnpm for large, complex monorepos.",
+    "relatedConcepts": ["monorepo", "workspace"]
+  },
+  {
+    "word": "nextjs-turborepo",
+    "priority": 459,
+    "definitions": [
+      {
+        "meaning": "A pattern for high-performance monorepos with Turborepo in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Turborepo for build and cache optimization."
+      }
+    ],
+    "syntax": "turbo run build",
+    "examples": [
+      "turbo run lint"
+    ],
+    "synonyms": ["turborepo", "monorepo"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈtɜːrboʊˌriːpoʊ",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Leverage remote caching for faster CI.",
+    "relatedConcepts": ["monorepo", "workspace"]
+  },
+  {
+    "word": "nextjs-chromatic",
+    "priority": 460,
+    "definitions": [
+      {
+        "meaning": "A pattern for visual regression testing of UI components with Chromatic.",
+        "partOfSpeech": "pattern",
+        "example": "Automate UI snapshot tests with Chromatic."
+      }
+    ],
+    "syntax": "npx chromatic --project-token=<token>",
+    "examples": [
+      "chromatic test"
+    ],
+    "synonyms": ["chromatic", "visual testing"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "kroʊˈmætɪk",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Integrate Chromatic with Storybook for UI QA.",
+    "relatedConcepts": ["testing", "storybook"]
+  },
+  {
+    "word": "nextjs-percy",
+    "priority": 461,
+    "definitions": [
+      {
+        "meaning": "A pattern for visual regression testing of web pages with Percy.",
+        "partOfSpeech": "pattern",
+        "example": "Automate visual tests with Percy snapshots."
+      }
+    ],
+    "syntax": "percy snapshot <url>",
+    "examples": [
+      "percy exec -- npm run test"
+    ],
+    "synonyms": ["percy", "visual testing"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈpɜːrsi",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Run Percy on every PR for visual QA.",
+    "relatedConcepts": ["testing", "visual regression"]
+  },
+  {
+    "word": "nextjs-screener",
+    "priority": 462,
+    "definitions": [
+      {
+        "meaning": "A pattern for automated visual regression testing with Screener.",
+        "partOfSpeech": "pattern",
+        "example": "Detect visual changes with Screener snapshots."
+      }
+    ],
+    "syntax": "screener-runner --config screener.config.js",
+    "examples": [
+      "screener-runner --config screener.config.js"
+    ],
+    "synonyms": ["screener", "visual testing"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈskriːnər",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Integrate with CI for visual regression QA.",
+    "relatedConcepts": ["testing", "visual regression"]
+  },
+  {
+    "word": "nextjs-backstopjs",
+    "priority": 463,
+    "definitions": [
+      {
+        "meaning": "A pattern for visual regression testing with BackstopJS.",
+        "partOfSpeech": "pattern",
+        "example": "Compare screenshots to catch UI regressions."
+      }
+    ],
+    "syntax": "backstop test",
+    "examples": [
+      "backstop reference && backstop test"
+    ],
+    "synonyms": ["backstopjs", "visual testing"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈbækstɒp dʒeɪ ɛs",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Use BackstopJS for pixel-perfect UI QA.",
+    "relatedConcepts": ["testing", "visual regression"]
+  },
+  {
+    "word": "nextjs-lighthouse-ci",
+    "priority": 464,
+    "definitions": [
+      {
+        "meaning": "A pattern for automated Lighthouse audits in CI pipelines.",
+        "partOfSpeech": "pattern",
+        "example": "Run Lighthouse CI for performance and accessibility."
+      }
+    ],
+    "syntax": "lhci autorun",
+    "examples": [
+      "lhci collect && lhci assert"
+    ],
+    "synonyms": ["lighthouse ci", "performance testing"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈlaɪthaʊs siː aɪ",
+    "difficulty": "advanced",
+    "category": "testing",
+    "bestPractice": "Fail builds on critical Lighthouse issues.",
+    "relatedConcepts": ["testing", "ci/cd"]
+  },
+  {
+    "word": "nextjs-bundle-analyzer",
+    "priority": 465,
+    "definitions": [
+      {
+        "meaning": "A pattern for analyzing JavaScript bundle size with Bundle Analyzer.",
+        "partOfSpeech": "pattern",
+        "example": "Visualize and optimize bundle size."
+      }
+    ],
+    "syntax": "ANALYZE=true next build",
+    "examples": [
+      "next build && open .next/analyze/index.html"
+    ],
+    "synonyms": ["bundle analyzer", "performance"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈbʌndl əˈnaɪləzər",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Analyze and reduce bundle size regularly.",
+    "relatedConcepts": ["performance", "build"]
+  },
+  {
+    "word": "nextjs-webpack-bundle-analyzer",
+    "priority": 466,
+    "definitions": [
+      {
+        "meaning": "A pattern for using webpack-bundle-analyzer in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze webpack output with bundle analyzer."
+      }
+    ],
+    "syntax": "const withBundleAnalyzer = require('@next/bundle-analyzer');",
+    "examples": [
+      "module.exports = withBundleAnalyzer({ enabled: true })"
+    ],
+    "synonyms": ["webpack bundle analyzer"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈwɛbˌpæk ˈbʌndl əˈnaɪləzər",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Integrate analyzer in CI for ongoing monitoring.",
+    "relatedConcepts": ["performance", "webpack"]
+  },
+  {
+    "word": "nextjs-size-limit",
+    "priority": 467,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing bundle size limits with size-limit.",
+        "partOfSpeech": "pattern",
+        "example": "Fail CI if bundle size exceeds threshold."
+      }
+    ],
+    "syntax": "size-limit",
+    "examples": [
+      "npx size-limit"
+    ],
+    "synonyms": ["size limit", "performance"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "saɪz ˈlɪmɪt",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Set size budgets for all builds.",
+    "relatedConcepts": ["performance", "ci/cd"]
+  },
+  {
+    "word": "nextjs-coverage",
+    "priority": 468,
+    "definitions": [
+      {
+        "meaning": "A pattern for measuring code coverage in React/Next.js projects.",
+        "partOfSpeech": "pattern",
+        "example": "Generate coverage reports with Jest or Istanbul."
+      }
+    ],
+    "syntax": "jest --coverage",
+    "examples": [
+      "nyc --reporter=lcov npm test"
+    ],
+    "synonyms": ["coverage", "test coverage"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈkʌvərɪdʒ",
+    "difficulty": "intermediate",
+    "category": "testing",
+    "bestPractice": "Aim for high coverage but focus on critical paths.",
+    "relatedConcepts": ["testing", "ci/cd"]
+  }
+]

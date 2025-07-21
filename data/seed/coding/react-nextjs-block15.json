@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-ssrf-protection",
+    "priority": 505,
+    "definitions": [
+      {
+        "meaning": "A pattern for mitigating Server-Side Request Forgery (SSRF) in Next.js APIs.",
+        "partOfSpeech": "pattern",
+        "example": "Validate and restrict outgoing requests."
+      }
+    ],
+    "syntax": "// Validate URLs before making server-side requests",
+    "examples": [
+      "if (!url.startsWith('https://api.example.com')) throw new Error('Blocked!');"
+    ],
+    "synonyms": ["ssrf protection"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɛs ɛs ɑːr ɛf",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Whitelist allowed hosts and sanitize user input.",
+    "relatedConcepts": ["security", "api"]
+  },
+  {
+    "word": "nextjs-xss-protection",
+    "priority": 506,
+    "definitions": [
+      {
+        "meaning": "A pattern for preventing Cross-Site Scripting (XSS) in Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Escape user input and use CSP headers."
+      }
+    ],
+    "syntax": "dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(html) }}",
+    "examples": [
+      "import DOMPurify from 'dompurify';"
+    ],
+    "synonyms": ["xss protection"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ɛks ɛs ɛs",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Sanitize all dynamic HTML and set strict CSP.",
+    "relatedConcepts": ["security", "csp"]
+  },
+  {
+    "word": "nextjs-csrf-protection",
+    "priority": 507,
+    "definitions": [
+      {
+        "meaning": "A pattern for preventing Cross-Site Request Forgery (CSRF) in Next.js APIs.",
+        "partOfSpeech": "pattern",
+        "example": "Validate CSRF tokens on all state-changing requests."
+      }
+    ],
+    "syntax": "csrf({ cookie: true })",
+    "examples": [
+      "app.use(csrf({ cookie: true }));"
+    ],
+    "synonyms": ["csrf protection"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "siː ɛs ɑːr ɛf",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set SameSite cookies and validate tokens.",
+    "relatedConcepts": ["security", "api"]
+  },
+  {
+    "word": "nextjs-sql-injection-protection",
+    "priority": 508,
+    "definitions": [
+      {
+        "meaning": "A pattern for preventing SQL injection in Next.js backend code.",
+        "partOfSpeech": "pattern",
+        "example": "Use parameterized queries for all DB access."
+      }
+    ],
+    "syntax": "db.query('SELECT * FROM users WHERE id = ?', [userId])",
+    "examples": [
+      "await db.query('SELECT * FROM users WHERE email = ?', [email])"
+    ],
+    "synonyms": ["sql injection protection"],
+    "antonyms": [],
+    "frequency": 3,
+    "pronunciation": "ˈɛs kjuː ɛl ɪnˈdʒɛkʃən",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Never interpolate user input directly into SQL.",
+    "relatedConcepts": ["security", "database"]
+  },
+  {
+    "word": "nextjs-nosql-injection-protection",
+    "priority": 509,
+    "definitions": [
+      {
+        "meaning": "A pattern for preventing NoSQL injection in Next.js backend code.",
+        "partOfSpeech": "pattern",
+        "example": "Validate and sanitize all query parameters."
+      }
+    ],
+    "syntax": "db.collection('users').find({ email: sanitizedEmail })",
+    "examples": [
+      "const sanitized = validator.escape(req.body.input);"
+    ],
+    "synonyms": ["nosql injection protection"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "noʊ ɛs kjuː ɛl ɪnˈdʒɛkʃən",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Whitelist allowed fields and sanitize input.",
+    "relatedConcepts": ["security", "database"]
+  },
+  {
+    "word": "nextjs-jwt-authentication",
+    "priority": 510,
+    "definitions": [
+      {
+        "meaning": "A pattern for authenticating users with JSON Web Tokens (JWT) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Sign and verify JWTs for secure sessions."
+      }
+    ],
+    "syntax": "jwt.sign(payload, secret)",
+    "examples": [
+      "jwt.verify(token, secret)"
+    ],
+    "synonyms": ["jwt auth", "token authentication"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "dʒeɪ dʌbəljuː tiː",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Use short-lived tokens and refresh securely.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-oauth2",
+    "priority": 511,
+    "definitions": [
+      {
+        "meaning": "A pattern for OAuth 2.0 authentication in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Authenticate users via Google, GitHub, etc."
+      }
+    ],
+    "syntax": "passport.use(new OAuth2Strategy(...))",
+    "examples": [
+      "passport.authenticate('google', ...)"
+    ],
+    "synonyms": ["oauth2", "oauth"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "oʊˈɑːθ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Use state parameter to prevent CSRF.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-openid-connect",
+    "priority": 512,
+    "definitions": [
+      {
+        "meaning": "A pattern for OpenID Connect authentication in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Authenticate users with OpenID Connect providers."
+      }
+    ],
+    "syntax": "openid-client",
+    "examples": [
+      "client.authorizationUrl()"
+    ],
+    "synonyms": ["openid", "oidc"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈoʊpən aɪ diː",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Validate ID tokens and user claims.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-saml-authentication",
+    "priority": 513,
+    "definitions": [
+      {
+        "meaning": "A pattern for SAML-based single sign-on (SSO) authentication in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Integrate enterprise SSO with SAML."
+      }
+    ],
+    "syntax": "passport.use(new SamlStrategy(...))",
+    "examples": [
+      "passport.authenticate('saml', ...)"
+    ],
+    "synonyms": ["saml", "sso"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈsæməl",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Validate SAML assertions and signatures.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-auth0",
+    "priority": 514,
+    "definitions": [
+      {
+        "meaning": "A pattern for authentication and authorization using Auth0 in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add login, logout, and secure routes with Auth0."
+      }
+    ],
+    "syntax": "import { useAuth0 } from '@auth0/auth0-react';",
+    "examples": [
+      "const { loginWithRedirect } = useAuth0();"
+    ],
+    "synonyms": ["auth0", "authentication"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ɔːθ ˈzɪərəʊ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Store tokens securely and handle logout.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-next-auth",
+    "priority": 515,
+    "definitions": [
+      {
+        "meaning": "A pattern for authentication using the next-auth library in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Add providers and secure API routes with next-auth."
+      }
+    ],
+    "syntax": "import { useSession } from 'next-auth/react';",
+    "examples": [
+      "const { data: session } = useSession();"
+    ],
+    "synonyms": ["next-auth", "authentication"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "nɛkst ɔːθ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Use JWT or database sessions as needed.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-mfa",
+    "priority": 516,
+    "definitions": [
+      {
+        "meaning": "A pattern for Multi-Factor Authentication (MFA) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Require second factor for sensitive actions."
+      }
+    ],
+    "syntax": "// Use TOTP, SMS, or push for MFA",
+    "examples": [
+      "sendMfaCode(user.phone)"
+    ],
+    "synonyms": ["mfa", "2fa"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ɛm ɛf eɪ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Prompt for MFA on login and critical operations.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-passwordless-auth",
+    "priority": 517,
+    "definitions": [
+      {
+        "meaning": "A pattern for passwordless authentication in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Authenticate users via magic links or codes."
+      }
+    ],
+    "syntax": "sendMagicLink(email)",
+    "examples": [
+      "verifyMagicLink(token)"
+    ],
+    "synonyms": ["passwordless", "magic link"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈpæswɜːrd lɪs",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Expire magic links quickly and log usage.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-webauthn",
+    "priority": 518,
+    "definitions": [
+      {
+        "meaning": "A pattern for using WebAuthn (FIDO2) for passwordless authentication.",
+        "partOfSpeech": "pattern",
+        "example": "Authenticate with hardware security keys."
+      }
+    ],
+    "syntax": "navigator.credentials.create({ publicKey })",
+    "examples": [
+      "navigator.credentials.get({ publicKey })"
+    ],
+    "synonyms": ["webauthn", "fido2"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈwɛb ɔːθ ɛn",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Use WebAuthn for phishing-resistant login.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-session-management",
+    "priority": 519,
+    "definitions": [
+      {
+        "meaning": "A pattern for secure session management in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Store sessions in HTTP-only cookies or server-side."
+      }
+    ],
+    "syntax": "cookie('session', value, { httpOnly: true })",
+    "examples": [
+      "res.setHeader('Set-Cookie', ...)"
+    ],
+    "synonyms": ["session management"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈsɛʃən ˈmænɪdʒmənt",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Rotate session IDs and set secure flags.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-secure-cookies",
+    "priority": 520,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting secure, HTTP-only, SameSite cookies in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Set cookies with secure, httpOnly, and SameSite attributes."
+      }
+    ],
+    "syntax": "cookie('token', value, { httpOnly: true, secure: true, sameSite: 'lax' })",
+    "examples": [
+      "res.setHeader('Set-Cookie', ...)"
+    ],
+    "synonyms": ["secure cookies"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "sɪˈkjʊər ˈkʊkiz",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set secure cookies for all authentication tokens.",
+    "relatedConcepts": ["security", "cookies"]
+  },
+  {
+    "word": "nextjs-helmet-best-practices",
+    "priority": 521,
+    "definitions": [
+      {
+        "meaning": "A pattern for applying all recommended Helmet security headers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Helmet to secure all HTTP responses."
+      }
+    ],
+    "syntax": "app.use(helmet())",
+    "examples": [
+      "app.use(helmet());"
+    ],
+    "synonyms": ["helmet", "security headers"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈhɛlmɪt",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Apply Helmet in all custom server code.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-logging-best-practices",
+    "priority": 522,
+    "definitions": [
+      {
+        "meaning": "A pattern for secure, structured, and privacy-compliant logging.",
+        "partOfSpeech": "pattern",
+        "example": "Log errors and events with context, but no PII."
+      }
+    ],
+    "syntax": "logger.info('event', { userId, action });",
+    "examples": [
+      "logger.error('error', { error, path });"
+    ],
+    "synonyms": ["logging", "structured logging"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Mask PII and use log rotation.",
+    "relatedConcepts": ["monitoring", "logging"]
+  },
+  {
+    "word": "nextjs-observability",
+    "priority": 523,
+    "definitions": [
+      {
+        "meaning": "A pattern for full-stack observability (logs, metrics, traces) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor health, errors, and performance with observability tools."
+      }
+    ],
+    "syntax": "// Use OpenTelemetry, Datadog, or similar",
+    "examples": [
+      "instrumentAppForObservability()"
+    ],
+    "synonyms": ["observability"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "əbˌzɜːrvəˈbɪlɪti",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Instrument both client and server for tracing.",
+    "relatedConcepts": ["monitoring", "tracing"]
+  },
+  {
+    "word": "nextjs-opentelemetry",
+    "priority": 524,
+    "definitions": [
+      {
+        "meaning": "A pattern for distributed tracing and metrics with OpenTelemetry in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Trace requests and measure performance end-to-end."
+      }
+    ],
+    "syntax": "opentelemetry.instrument();",
+    "examples": [
+      "opentelemetry.trace.getTracer('nextjs-app')"
+    ],
+    "synonyms": ["opentelemetry", "tracing"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌoʊpən tɛˈlɛmɪtri",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Export traces to a backend for visualization.",
+    "relatedConcepts": ["monitoring", "tracing"]
+  },
+  {
+    "word": "nextjs-prometheus",
+    "priority": 525,
+    "definitions": [
+      {
+        "meaning": "A pattern for exporting metrics for Prometheus in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Expose /metrics endpoint for Prometheus scraping."
+      }
+    ],
+    "syntax": "prom-client.collectDefaultMetrics()",
+    "examples": [
+      "app.get('/metrics', ...)"
+    ],
+    "synonyms": ["prometheus", "metrics"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "proʊˈmiːθiəs",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Export key business and system metrics.",
+    "relatedConcepts": ["monitoring", "metrics"]
+  },
+  {
+    "word": "nextjs-grafana",
+    "priority": 526,
+    "definitions": [
+      {
+        "meaning": "A pattern for visualizing metrics and logs with Grafana in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor dashboards with Grafana."
+      }
+    ],
+    "syntax": "// Connect Prometheus to Grafana",
+    "examples": [
+      "Create dashboard panels for app metrics."
+    ],
+    "synonyms": ["grafana", "dashboard"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ɡrəˈfɑːnə",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Visualize both infrastructure and app metrics.",
+    "relatedConcepts": ["monitoring", "metrics"]
+  },
+  {
+    "word": "nextjs-datadog-apm",
+    "priority": 527,
+    "definitions": [
+      {
+        "meaning": "A pattern for distributed tracing and APM with Datadog in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Trace requests and monitor performance with Datadog APM."
+      }
+    ],
+    "syntax": "dd-trace.init();",
+    "examples": [
+      "dd-trace.trace('api-call', ...)"
+    ],
+    "synonyms": ["datadog apm", "tracing"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdeɪtə dɒɡ eɪ piː ɛm",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Instrument all services for end-to-end tracing.",
+    "relatedConcepts": ["monitoring", "apm"]
+  },
+  {
+    "word": "nextjs-application-firewall",
+    "priority": 528,
+    "definitions": [
+      {
+        "meaning": "A pattern for using a web application firewall (WAF) in Next.js deployments.",
+        "partOfSpeech": "pattern",
+        "example": "Protect against common web attacks with a WAF."
+      }
+    ],
+    "syntax": "// Deploy behind AWS WAF, Cloudflare, etc.",
+    "examples": [
+      "Configure WAF rules for SQLi, XSS, etc."
+    ],
+    "synonyms": ["waf", "firewall"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈfaɪərˌwɔːl",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Deploy a WAF in front of all public endpoints.",
+    "relatedConcepts": ["security", "cloud"]
+  },
+  {
+    "word": "nextjs-cloudflare",
+    "priority": 529,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js behind Cloudflare for security and performance.",
+        "partOfSpeech": "pattern",
+        "example": "Use Cloudflare for DDoS protection and caching."
+      }
+    ],
+    "syntax": "// Configure DNS and proxy settings in Cloudflare dashboard",
+    "examples": [
+      "Set up Cloudflare Rules for caching and firewall."
+    ],
+    "synonyms": ["cloudflare", "cdn"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈklaʊdˌflɛər",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use Cloudflare for global distribution and SSL.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-aws-waf",
+    "priority": 530,
+    "definitions": [
+      {
+        "meaning": "A pattern for using AWS WAF for web application firewall protection.",
+        "partOfSpeech": "pattern",
+        "example": "Protect APIs and apps with AWS WAF."
+      }
+    ],
+    "syntax": "aws wafv2 create-web-acl ...",
+    "examples": [
+      "aws wafv2 associate-web-acl ..."
+    ],
+    "synonyms": ["aws waf", "firewall"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "eɪ dʌbəljuː ɛs wæf",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use managed rulesets for OWASP top 10.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-azure-front-door",
+    "priority": 531,
+    "definitions": [
+      {
+        "meaning": "A pattern for global load balancing and WAF with Azure Front Door.",
+        "partOfSpeech": "pattern",
+        "example": "Distribute traffic and protect apps with Azure Front Door."
+      }
+    ],
+    "syntax": "// Configure Front Door for load balancing and WAF",
+    "examples": [
+      "Set up Front Door Rules for routing and security."
+    ],
+    "synonyms": ["azure front door", "load balancer"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈæʒər frʌnt dɔːr",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Leverage WAF and geo-distribution features.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-gcp-cloud-armor",
+    "priority": 532,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Google Cloud Armor for WAF and DDoS protection.",
+        "partOfSpeech": "pattern",
+        "example": "Protect Next.js apps with Cloud Armor policies."
+      }
+    ],
+    "syntax": "gcloud compute security-policies create ...",
+    "examples": [
+      "gcloud compute security-policies update ..."
+    ],
+    "synonyms": ["cloud armor", "gcp waf"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "klaʊd ˈɑːrmər",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Apply Cloud Armor to all public endpoints.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-akamai",
+    "priority": 533,
+    "definitions": [
+      {
+        "meaning": "A pattern for enterprise CDN, security, and acceleration with Akamai.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js apps behind Akamai for scale and security."
+      }
+    ],
+    "syntax": "// Configure Akamai for CDN and WAF",
+    "examples": [
+      "Set up Akamai rules for caching and protection."
+    ],
+    "synonyms": ["akamai", "cdn"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɑːkəˌmaɪ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Leverage Akamai for enterprise-grade delivery.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-fastly",
+    "priority": 534,
+    "definitions": [
+      {
+        "meaning": "A pattern for edge caching and CDN with Fastly in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Accelerate content with Fastly edge caching."
+      }
+    ],
+    "syntax": "// Configure Fastly for cache and routing",
+    "examples": [
+      "Set up Fastly VCL for custom caching."
+    ],
+    "synonyms": ["fastly", "cdn"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈfæstli",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Cache static and dynamic content at the edge.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-vercel-edge-network",
+    "priority": 535,
+    "definitions": [
+      {
+        "meaning": "A pattern for global edge deployment and routing with Vercel Edge Network.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js at the edge for low latency."
+      }
+    ],
+    "syntax": "// Use Vercel Edge Middleware",
+    "examples": [
+      "export const config = { matcher: '/api/:path*' };"
+    ],
+    "synonyms": ["vercel edge", "edge network"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈvɜːrsəl ɛdʒ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use edge middleware for auth and geolocation.",
+    "relatedConcepts": ["cloud", "edge"]
+  },
+  {
+    "word": "nextjs-geoip-routing",
+    "priority": 536,
+    "definitions": [
+      {
+        "meaning": "A pattern for routing users by geographic location in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Serve content based on user country or region."
+      }
+    ],
+    "syntax": "// Use request headers or edge middleware for geoip",
+    "examples": [
+      "if (req.geo?.country === 'FR') return NextResponse.redirect('/fr');"
+    ],
+    "synonyms": ["geoip", "geo-routing"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdʒiːoʊ aɪ piː",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use geoip for localization and compliance.",
+    "relatedConcepts": ["cloud", "routing"]
+  },
+  {
+    "word": "nextjs-ip-blocking",
+    "priority": 537,
+    "definitions": [
+      {
+        "meaning": "A pattern for blocking or allowing traffic by IP address in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Block abusive IPs with middleware or edge functions."
+      }
+    ],
+    "syntax": "// Check req.ip and block as needed",
+    "examples": [
+      "if (blockedIps.includes(req.ip)) return new Response('Blocked', { status: 403 });"
+    ],
+    "synonyms": ["ip blocking", "ip allowlist"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "aɪ piː ˈblɒkɪŋ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Maintain allow/deny lists for sensitive endpoints.",
+    "relatedConcepts": ["security", "cloud"]
+  },
+  {
+    "word": "nextjs-dynamic-firewall",
+    "priority": 538,
+    "definitions": [
+      {
+        "meaning": "A pattern for dynamic, programmable firewall rules in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Update firewall rules based on threat intelligence."
+      }
+    ],
+    "syntax": "// Use API or middleware to update rules",
+    "examples": [
+      "updateFirewallRules(newThreats)"
+    ],
+    "synonyms": ["dynamic firewall"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "daɪˈnæmɪk ˈfaɪərˌwɔːl",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Automate updates based on monitoring and logs.",
+    "relatedConcepts": ["security", "cloud"]
+  },
+  {
+    "word": "nextjs-enterprise-sso",
+    "priority": 539,
+    "definitions": [
+      {
+        "meaning": "A pattern for enterprise-level Single Sign-On (SSO) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Integrate SAML, OIDC, or OAuth2 for enterprise SSO."
+      }
+    ],
+    "syntax": "// Use passport-saml, oidc-client, or similar",
+    "examples": [
+      "passport.authenticate('saml', ...)"
+    ],
+    "synonyms": ["enterprise sso", "saml", "oidc"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɛntərˌpraɪz ɛs ɛs oʊ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Enforce SSO for all internal and admin apps.",
+    "relatedConcepts": ["security", "authentication"]
+  },
+  {
+    "word": "nextjs-enterprise-audit-logging",
+    "priority": 540,
+    "definitions": [
+      {
+        "meaning": "A pattern for enterprise-grade audit logging in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Log all access and changes for compliance."
+      }
+    ],
+    "syntax": "auditLogger.log('user-login', { userId, time });",
+    "examples": [
+      "auditLogger.log('data-change', { userId, resource, change });"
+    ],
+    "synonyms": ["audit logging"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɔːdɪt ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Store logs securely and monitor for suspicious activity.",
+    "relatedConcepts": ["security", "compliance"]
+  }
+]

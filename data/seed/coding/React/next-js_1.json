@@ -1,0 +1,758 @@
+[
+  {
+    "word": "React",
+    "priority": 1,
+    "definitions": [
+      {
+        "meaning": "A JavaScript library for building user interfaces using components.",
+        "partOfSpeech": "framework",
+        "example": "React is used to build dynamic web apps."
+      }
+    ],
+    "synonyms": ["reactjs", "react.js"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "Created by Facebook in 2013.",
+    "pronunciation": "ri-ˈakt",
+    "difficulty": "basic",
+    "category": "framework",
+    "codeExample": "import React from 'react';",
+    "bestPractice": "Use React for building modular, reusable UI components.",
+    "relatedConcepts": ["component", "JSX", "props", "state"]
+  },
+  {
+    "word": "Next.js",
+    "priority": 2,
+    "definitions": [
+      {
+        "meaning": "A React framework for building server-rendered and statically generated web applications.",
+        "partOfSpeech": "framework",
+        "example": "Next.js enables server-side rendering and API routes."
+      }
+    ],
+    "synonyms": ["nextjs", "next"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "Created by Vercel in 2016.",
+    "pronunciation": "nekst dʒeɪ ɛs",
+    "difficulty": "basic",
+    "category": "framework",
+    "codeExample": "import Next from 'next';",
+    "bestPractice": "Use Next.js for scalable, SEO-friendly React applications.",
+    "relatedConcepts": ["React", "SSR", "SSG", "API route"]
+  },
+  {
+    "word": "component",
+    "priority": 3,
+    "definitions": [
+      {
+        "meaning": "A reusable piece of UI built with React.",
+        "partOfSpeech": "noun",
+        "example": "The Navbar is a component."
+      }
+    ],
+    "synonyms": ["element", "widget"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "From Latin 'componere', to put together.",
+    "pronunciation": "kəmˈpoʊnənt",
+    "difficulty": "basic",
+    "category": "core concept",
+    "codeExample": "function Button() { return <button>Click me</button>; }",
+    "bestPractice": "Keep components small and focused on a single responsibility.",
+    "relatedConcepts": ["props", "state", "hook"]
+  },
+  {
+    "word": "props",
+    "priority": 4,
+    "definitions": [
+      {
+        "meaning": "Inputs passed to a component to configure it.",
+        "partOfSpeech": "noun",
+        "example": "Pass the 'label' prop to the Button component."
+      }
+    ],
+    "synonyms": ["properties", "inputs"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "Short for 'properties'.",
+    "pronunciation": "prɒps",
+    "difficulty": "basic",
+    "category": "core concept",
+    "codeExample": "function Welcome(props) { return <h1>Hello, {props.name}</h1>; }",
+    "bestPractice": "Use prop-types or TypeScript for prop validation.",
+    "relatedConcepts": ["component", "state"]
+  },
+  {
+    "word": "state",
+    "priority": 5,
+    "definitions": [
+      {
+        "meaning": "Data managed within a component that can change over time.",
+        "partOfSpeech": "noun",
+        "example": "Use state to track if the modal is open."
+      }
+    ],
+    "synonyms": ["internal data", "status"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "From Latin 'status', meaning condition.",
+    "pronunciation": "steɪt",
+    "difficulty": "basic",
+    "category": "core concept",
+    "codeExample": "const [count, setCount] = useState(0);",
+    "bestPractice": "Never mutate state directly; use setState or setCount.",
+    "relatedConcepts": ["props", "useState", "component"]
+  },
+  {
+    "word": "JSX",
+    "priority": 6,
+    "definitions": [
+      {
+        "meaning": "A syntax extension for JavaScript that looks like HTML.",
+        "partOfSpeech": "noun",
+        "example": "<div>Hello</div> is JSX."
+      }
+    ],
+    "synonyms": ["JavaScript XML"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "dʒeɪ ɛs ɛks",
+    "difficulty": "basic",
+    "category": "syntax",
+    "codeExample": "const element = <h1>Hello, world!</h1>;",
+    "bestPractice": "Always return a single parent element from a component.",
+    "relatedConcepts": ["component", "React"]
+  },
+  {
+    "word": "useState",
+    "priority": 7,
+    "definitions": [
+      {
+        "meaning": "A React hook for adding state to functional components.",
+        "partOfSpeech": "function",
+        "example": "const [count, setCount] = useState(0);"
+      }
+    ],
+    "synonyms": ["state hook"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "juːs steɪt",
+    "difficulty": "basic",
+    "category": "hook",
+    "codeExample": "const [value, setValue] = useState('');",
+    "bestPractice": "Initialize state with a sensible default value.",
+    "relatedConcepts": ["state", "hook", "useEffect"]
+  },
+  {
+    "word": "useEffect",
+    "priority": 8,
+    "definitions": [
+      {
+        "meaning": "A React hook for running side effects in components.",
+        "partOfSpeech": "function",
+        "example": "useEffect runs after every render."
+      }
+    ],
+    "synonyms": ["effect hook", "lifecycle"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "juːs ɪˈfɛkt",
+    "difficulty": "basic",
+    "category": "hook",
+    "codeExample": "useEffect(() => { document.title = count; }, [count]);",
+    "bestPractice": "Always specify dependencies in the dependency array.",
+    "relatedConcepts": ["useState", "hook", "component"]
+  },
+  {
+    "word": "page",
+    "priority": 9,
+    "definitions": [
+      {
+        "meaning": "A file in the 'pages' or 'app' directory that maps to a route in Next.js.",
+        "partOfSpeech": "noun",
+        "example": "pages/about.js creates the /about route."
+      }
+    ],
+    "synonyms": ["route", "screen"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "From Latin 'pagina'.",
+    "pronunciation": "peɪdʒ",
+    "difficulty": "basic",
+    "category": "routing",
+    "codeExample": "export default function HomePage() { return <div>Home</div>; }",
+    "bestPractice": "Organize each route as a separate file for clarity.",
+    "relatedConcepts": ["route", "dynamic route", "app directory"]
+  },
+  {
+    "word": "route",
+    "priority": 10,
+    "definitions": [
+      {
+        "meaning": "A URL path that renders a specific page or API handler.",
+        "partOfSpeech": "noun",
+        "example": "/blog is a route."
+      }
+    ],
+    "synonyms": ["path", "endpoint"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "From Latin 'rupta', meaning broken way.",
+    "pronunciation": "raʊt",
+    "difficulty": "basic",
+    "category": "routing",
+    "codeExample": "pages/posts/[id].js creates a dynamic route.",
+    "bestPractice": "Use dynamic routes for flexible URL structures.",
+    "relatedConcepts": ["page", "dynamic route", "API route"]
+  },
+  {
+    "word": "dynamic route",
+    "priority": 11,
+    "definitions": [
+      {
+        "meaning": "A route that uses brackets to match dynamic segments.",
+        "partOfSpeech": "noun",
+        "example": "pages/posts/[id].js is a dynamic route."
+      }
+    ],
+    "synonyms": ["parameterized route"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "daɪˈnæmɪk raʊt",
+    "difficulty": "intermediate",
+    "category": "routing",
+    "codeExample": "pages/posts/[slug].js matches /posts/hello-world.",
+    "bestPractice": "Use descriptive names for dynamic segments.",
+    "relatedConcepts": ["route", "page"]
+  },
+  {
+    "word": "API route",
+    "priority": 12,
+    "definitions": [
+      {
+        "meaning": "A special file in Next.js that defines a serverless API endpoint.",
+        "partOfSpeech": "noun",
+        "example": "pages/api/hello.js is an API route."
+      }
+    ],
+    "synonyms": ["api endpoint", "serverless function"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "API stands for Application Programming Interface.",
+    "pronunciation": "eɪ-piː-aɪ raʊt",
+    "difficulty": "basic",
+    "category": "api",
+    "codeExample": "export default function handler(req, res) { res.status(200).json({ name: 'John' }) }",
+    "bestPractice": "Keep API handlers stateless and lightweight.",
+    "relatedConcepts": ["route", "serverless", "handler"]
+  },
+  {
+    "word": "SSR",
+    "priority": 13,
+    "definitions": [
+      {
+        "meaning": "Server-Side Rendering, generating HTML on the server for each request.",
+        "partOfSpeech": "noun",
+        "example": "Next.js supports SSR for better SEO."
+      }
+    ],
+    "synonyms": ["server rendering"],
+    "antonyms": ["CSR", "SSG"],
+    "frequency": 90,
+    "etymology": "Acronym for Server-Side Rendering.",
+    "pronunciation": "ɛs ɛs ɑːr",
+    "difficulty": "intermediate",
+    "category": "rendering",
+    "codeExample": "export async function getServerSideProps(context) { return { props: { data } } }",
+    "bestPractice": "Use SSR for pages that require up-to-date data.",
+    "relatedConcepts": ["Next.js", "getServerSideProps", "SSG"]
+  },
+  {
+    "word": "CSR",
+    "priority": 14,
+    "definitions": [
+      {
+        "meaning": "Client-Side Rendering, where rendering happens in the browser.",
+        "partOfSpeech": "noun",
+        "example": "React apps use CSR by default."
+      }
+    ],
+    "synonyms": ["client rendering"],
+    "antonyms": ["SSR", "SSG"],
+    "frequency": 90,
+    "etymology": "Acronym for Client-Side Rendering.",
+    "pronunciation": "siː ɛs ɑːr",
+    "difficulty": "intermediate",
+    "category": "rendering",
+    "codeExample": "ReactDOM.render(<App />, document.getElementById('root'));",
+    "bestPractice": "Use CSR for highly interactive, client-only pages.",
+    "relatedConcepts": ["SSR", "SSG", "React"]
+  },
+  {
+    "word": "SSG",
+    "priority": 15,
+    "definitions": [
+      {
+        "meaning": "Static Site Generation, where HTML is generated at build time.",
+        "partOfSpeech": "noun",
+        "example": "Next.js can pre-render pages using SSG."
+      }
+    ],
+    "synonyms": ["static generation"],
+    "antonyms": ["SSR", "CSR"],
+    "frequency": 90,
+    "etymology": "Acronym for Static Site Generation.",
+    "pronunciation": "ɛs ɛs dʒiː",
+    "difficulty": "intermediate",
+    "category": "rendering",
+    "codeExample": "export async function getStaticProps(context) { return { props: { data } } }",
+    "bestPractice": "Use SSG for content that doesn’t change often.",
+    "relatedConcepts": ["Next.js", "getStaticProps", "SSR"]
+  },
+  {
+    "word": "getStaticProps",
+    "priority": 16,
+    "definitions": [
+      {
+        "meaning": "A Next.js function to fetch data at build time for SSG.",
+        "partOfSpeech": "function",
+        "example": "Use getStaticProps to fetch blog posts."
+      }
+    ],
+    "synonyms": ["SSG data fetch"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "get static props",
+    "difficulty": "intermediate",
+    "category": "data fetching",
+    "codeExample": "export async function getStaticProps() { return { props: { posts } } }",
+    "bestPractice": "Use getStaticProps for static content that can be generated at build time.",
+    "relatedConcepts": ["SSG", "Next.js"]
+  },
+  {
+    "word": "getServerSideProps",
+    "priority": 17,
+    "definitions": [
+      {
+        "meaning": "A Next.js function to fetch data on each request for SSR.",
+        "partOfSpeech": "function",
+        "example": "Use getServerSideProps for dynamic data."
+      }
+    ],
+    "synonyms": ["SSR data fetch"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "get server side props",
+    "difficulty": "intermediate",
+    "category": "data fetching",
+    "codeExample": "export async function getServerSideProps() { return { props: { user } } }",
+    "bestPractice": "Use getServerSideProps for pages that need fresh data on every request.",
+    "relatedConcepts": ["SSR", "Next.js"]
+  },
+  {
+    "word": "Link",
+    "priority": 18,
+    "definitions": [
+      {
+        "meaning": "A Next.js component for client-side navigation.",
+        "partOfSpeech": "component",
+        "example": "<Link href='/about'>About</Link>"
+      }
+    ],
+    "synonyms": ["router link", "navigation"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "lɪŋk",
+    "difficulty": "basic",
+    "category": "routing",
+    "codeExample": "<Link href='/about'>About</Link>",
+    "bestPractice": "Always use Link for internal navigation in Next.js.",
+    "relatedConcepts": ["router", "navigation"]
+  },
+  {
+    "word": "useRouter",
+    "priority": 19,
+    "definitions": [
+      {
+        "meaning": "A Next.js hook to access the router object.",
+        "partOfSpeech": "hook",
+        "example": "const router = useRouter();"
+      }
+    ],
+    "synonyms": ["router hook"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "juːs ˈraʊtər",
+    "difficulty": "intermediate",
+    "category": "routing",
+    "codeExample": "import { useRouter } from 'next/router';",
+    "bestPractice": "Use useRouter for programmatic navigation and route info.",
+    "relatedConcepts": ["router", "Link"]
+  },
+  {
+    "word": "app directory",
+    "priority": 20,
+    "definitions": [
+      {
+        "meaning": "A directory in Next.js 13+ for the new app router and layouts.",
+        "partOfSpeech": "noun",
+        "example": "Place your layout.tsx in the app directory."
+      }
+    ],
+    "synonyms": ["app folder"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "æp dɪˈrɛktəri",
+    "difficulty": "intermediate",
+    "category": "structure",
+    "codeExample": "app/layout.tsx",
+    "bestPractice": "Use the app directory for new projects to leverage Next.js 13+ features.",
+    "relatedConcepts": ["layout", "page"]
+  },
+  {
+    "word": "layout",
+    "priority": 21,
+    "definitions": [
+      {
+        "meaning": "A React component that wraps pages and provides shared UI.",
+        "partOfSpeech": "noun",
+        "example": "Use layout.tsx for consistent navigation."
+      }
+    ],
+    "synonyms": ["wrapper", "template"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˈleɪ.aʊt",
+    "difficulty": "intermediate",
+    "category": "structure",
+    "codeExample": "export default function Layout({ children }) { return <>{children}</>; }",
+    "bestPractice": "Use layouts to avoid code duplication across pages.",
+    "relatedConcepts": ["app directory", "page"]
+  },
+  {
+    "word": "fragment",
+    "priority": 22,
+    "definitions": [
+      {
+        "meaning": "A way to group multiple elements without adding extra nodes to the DOM.",
+        "partOfSpeech": "noun",
+        "example": "<>...</> is a fragment."
+      }
+    ],
+    "synonyms": ["group", "container"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "ˈfræɡmənt",
+    "difficulty": "intermediate",
+    "category": "syntax",
+    "codeExample": "return (<><h1>Hi</h1><p>Hello</p></>);",
+    "bestPractice": "Use fragments to group elements without extra markup.",
+    "relatedConcepts": ["JSX", "component"]
+  },
+  {
+    "word": "context",
+    "priority": 23,
+    "definitions": [
+      {
+        "meaning": "A way to pass data through the component tree without props.",
+        "partOfSpeech": "noun",
+        "example": "Use React Context for global state."
+      }
+    ],
+    "synonyms": ["global state", "shared data"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˈkɒntekst",
+    "difficulty": "intermediate",
+    "category": "state management",
+    "codeExample": "const MyContext = React.createContext();",
+    "bestPractice": "Use context for truly global data only.",
+    "relatedConcepts": ["provider", "consumer", "state"]
+  },
+  {
+    "word": "provider",
+    "priority": 24,
+    "definitions": [
+      {
+        "meaning": "A component that supplies context to its descendants.",
+        "partOfSpeech": "noun",
+        "example": "<ThemeProvider> provides theme context."
+      }
+    ],
+    "synonyms": ["supplier"],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "prəˈvaɪdər",
+    "difficulty": "intermediate",
+    "category": "state management",
+    "codeExample": "<MyContext.Provider value={value}>{children}</MyContext.Provider>",
+    "bestPractice": "Wrap your app with providers at the top level.",
+    "relatedConcepts": ["context", "consumer"]
+  },
+  {
+    "word": "consumer",
+    "priority": 25,
+    "definitions": [
+      {
+        "meaning": "A component that reads context from a provider.",
+        "partOfSpeech": "noun",
+        "example": "<ThemeConsumer> reads the theme context."
+      }
+    ],
+    "synonyms": ["user", "reader"],
+    "antonyms": ["provider"],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "kənˈsjuːmər",
+    "difficulty": "intermediate",
+    "category": "state management",
+    "codeExample": "<MyContext.Consumer>{value => <div>{value}</div>}</MyContext.Consumer>",
+    "bestPractice": "Use the useContext hook instead of Consumer when possible.",
+    "relatedConcepts": ["context", "provider"]
+  },
+  {
+    "word": "ref",
+    "priority": 26,
+    "definitions": [
+      {
+        "meaning": "A way to access a DOM node or React element directly.",
+        "partOfSpeech": "noun",
+        "example": "Use useRef to create a ref."
+      }
+    ],
+    "synonyms": ["reference", "pointer"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "rɛf",
+    "difficulty": "intermediate",
+    "category": "reference",
+    "codeExample": "const inputRef = useRef(null);",
+    "bestPractice": "Use refs for focus management and direct DOM access only.",
+    "relatedConcepts": ["useRef", "DOM"]
+  },
+  {
+    "word": "useRef",
+    "priority": 27,
+    "definitions": [
+      {
+        "meaning": "A React hook for creating mutable object references.",
+        "partOfSpeech": "function",
+        "example": "const ref = useRef(null);"
+      }
+    ],
+    "synonyms": ["ref hook"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "juːs rɛf",
+    "difficulty": "intermediate",
+    "category": "hook",
+    "codeExample": "const myRef = useRef(null);",
+    "bestPractice": "Use useRef to persist values across renders without causing re-renders.",
+    "relatedConcepts": ["ref", "hook"]
+  },
+  {
+    "word": "memo",
+    "priority": 28,
+    "definitions": [
+      {
+        "meaning": "A React function for memoizing components to avoid unnecessary re-renders.",
+        "partOfSpeech": "function",
+        "example": "export default React.memo(MyComponent);"
+      }
+    ],
+    "synonyms": ["memoization"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "ˈmiːmoʊ",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "codeExample": "const Memoized = React.memo(Component);",
+    "bestPractice": "Use memo to optimize performance with pure components.",
+    "relatedConcepts": ["useMemo", "performance"]
+  },
+  {
+    "word": "useMemo",
+    "priority": 29,
+    "definitions": [
+      {
+        "meaning": "A React hook for memoizing expensive calculations.",
+        "partOfSpeech": "function",
+        "example": "const value = useMemo(() => computeExpensiveValue(a, b), [a, b]);"
+      }
+    ],
+    "synonyms": ["memoization hook"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "juːs ˈmiːmoʊ",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "codeExample": "const memoized = useMemo(() => compute(), [dep]);",
+    "bestPractice": "Use useMemo for expensive calculations that depend on specific props or state.",
+    "relatedConcepts": ["memo", "performance"]
+  },
+  {
+    "word": "useCallback",
+    "priority": 30,
+    "definitions": [
+      {
+        "meaning": "A React hook for memoizing callback functions.",
+        "partOfSpeech": "function",
+        "example": "const handleClick = useCallback(() => setCount(count + 1), [count]);"
+      }
+    ],
+    "synonyms": ["callback hook"],
+    "antonyms": [],
+    "frequency": 70,
+    "etymology": "",
+    "pronunciation": "juːs ˈkɔːlˌbæk",
+    "difficulty": "intermediate",
+    "category": "performance",
+    "codeExample": "const memoizedCallback = useCallback(fn, [deps]);",
+    "bestPractice": "Use useCallback to prevent unnecessary re-renders of child components.",
+    "relatedConcepts": ["useMemo", "memo"]
+  },
+  {
+    "word": "getInitialProps",
+    "priority": 31,
+    "definitions": [
+      {
+        "meaning": "A legacy Next.js function to fetch data before rendering a page.",
+        "partOfSpeech": "function",
+        "example": "getInitialProps runs on both server and client."
+      }
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "get initial props",
+    "difficulty": "advanced",
+    "category": "data fetching",
+    "codeExample": "MyPage.getInitialProps = async (ctx) => { return { data: await fetchData() }; }",
+    "bestPractice": "Prefer getStaticProps or getServerSideProps in new projects.",
+    "relatedConcepts": ["getStaticProps", "getServerSideProps"]
+  },
+  {
+    "word": "ISR",
+    "priority": 32,
+    "definitions": [
+      {
+        "meaning": "Incremental Static Regeneration, updating static pages after deployment.",
+        "partOfSpeech": "noun",
+        "example": "ISR allows on-demand static page updates."
+      }
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "frequency": 80,
+    "etymology": "",
+    "pronunciation": "aɪ ɛs ɑːr",
+    "difficulty": "advanced",
+    "category": "rendering",
+    "codeExample": "revalidate: 10 // in getStaticProps",
+    "bestPractice": "Use ISR for content that updates infrequently but needs to stay fresh.",
+    "relatedConcepts": ["SSG", "getStaticProps"]
+  },
+  {
+    "word": "Image",
+    "priority": 33,
+    "definitions": [
+      {
+        "meaning": "A Next.js component for optimized images.",
+        "partOfSpeech": "component",
+        "example": "<Image src='/logo.png' width={100} height={100} />"
+      }
+    ],
+    "synonyms": ["img", "picture"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "ˈɪmɪdʒ",
+    "difficulty": "basic",
+    "category": "media",
+    "codeExample": "<Image src='/logo.png' width={100} height={100} alt='Logo' />",
+    "bestPractice": "Always set width, height, and alt for accessibility and performance.",
+    "relatedConcepts": ["media", "optimization"]
+  },
+  {
+    "word": "Head",
+    "priority": 34,
+    "definitions": [
+      {
+        "meaning": "A Next.js component for managing the document head.",
+        "partOfSpeech": "component",
+        "example": "<Head><title>Title</title></Head>"
+      }
+    ],
+    "synonyms": ["document head"],
+    "antonyms": [],
+    "frequency": 90,
+    "etymology": "",
+    "pronunciation": "hɛd",
+    "difficulty": "basic",
+    "category": "meta",
+    "codeExample": "<Head><title>My Page</title></Head>",
+    "bestPractice": "Use Head to set page titles and meta tags for SEO.",
+    "relatedConcepts": ["SEO", "meta tags"]
+  },
+  {
+    "word": "custom server",
+    "priority": 35,
+    "definitions": [
+      {
+        "meaning": "A Node.js server for advanced Next.js routing and middleware.",
+        "partOfSpeech": "noun",
+        "example": "Use a custom server for custom routing logic."
+      }
+    ],
+    "synonyms": ["node server"],
+    "antonyms": [],
+    "frequency": 60,
+    "etymology": "",
+    "pronunciation": "ˈkʌstəm ˈsɜːrvər",
+    "difficulty": "advanced",
+    "category": "server",
+    "codeExample": "const express = require('express');",
+    "bestPractice": "Use only for advanced needs; prefer built-in routing.",
+    "relatedConcepts": ["middleware", "routing"]
+  },
+  {
+    "word": "TypeScript",
+    "priority": 36,
+    "definitions": [
+      {
+        "meaning": "A strongly typed programming language that builds on JavaScript.",
+        "partOfSpeech": "language",
+        "example": "TypeScript helps catch errors at compile time."
+      }
+    ],
+    "synonyms": ["TS"],
+    "antonyms": [],
+    "frequency": 100,
+    "etymology": "",
+    "pronunciation": "taɪp skrɪpt",
+    "difficulty": "intermediate",
+    "category": "language",
+    "codeExample": "interface Props { title: string; }",
+    "bestPractice": "Use TypeScript for type safety and better developer experience.",
+    "relatedConcepts": ["JavaScript", "props", "interfaces"]
+  }
+]

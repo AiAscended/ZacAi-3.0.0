@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 361,
+      "word": "kill",
+      "part_of_speech": "verb",
+      "definition": "To cause the death of a person, animal, or living thing.",
+      "example": "He tried to kill the bug.",
+      "frequency_rank": 361,
+      "tags": ["verb", "high-frequency"],
+      "related": ["murder", "slay", "destroy"]
+    },
+    {
+      "priority": 362,
+      "word": "remain",
+      "part_of_speech": "verb",
+      "definition": "To continue to exist, especially after other similar people or things have ceased to do so.",
+      "example": "Only a few cookies remain.",
+      "frequency_rank": 362,
+      "tags": ["verb", "high-frequency"],
+      "related": ["stay", "persist", "continue"]
+    },
+    {
+      "priority": 363,
+      "word": "fine",
+      "part_of_speech": "adjective/noun",
+      "definition": "Of high quality; satisfactory; a sum of money exacted as a penalty.",
+      "example": "The weather is fine. He paid a fine for speeding.",
+      "frequency_rank": 363,
+      "tags": ["adjective", "noun", "quality", "high-frequency"],
+      "related": ["good", "excellent", "penalty"]
+    },
+    {
+      "priority": 364,
+      "word": "former",
+      "part_of_speech": "adjective",
+      "definition": "Having previously filled a particular role or been a particular thing.",
+      "example": "The former president gave a speech.",
+      "frequency_rank": 364,
+      "tags": ["adjective", "time", "high-frequency"],
+      "related": ["previous", "past", "ex-"]
+    },
+    {
+      "priority": 365,
+      "word": "major",
+      "part_of_speech": "adjective/noun",
+      "definition": "Important, serious, or significant; a military rank or a field of study.",
+      "example": "This is a major problem. She is a biology major.",
+      "frequency_rank": 365,
+      "tags": ["adjective", "noun", "importance", "high-frequency"],
+      "related": ["main", "chief", "primary"]
+    },
+    {
+      "priority": 366,
+      "word": "necessary",
+      "part_of_speech": "adjective",
+      "definition": "Required to be done, achieved, or present; needed; essential.",
+      "example": "Water is necessary for life.",
+      "frequency_rank": 366,
+      "tags": ["adjective", "requirement", "high-frequency"],
+      "related": ["essential", "needed", "required"]
+    },
+    {
+      "priority": 367,
+      "word": "send",
+      "part_of_speech": "verb",
+      "definition": "To cause to go or be taken to a particular destination.",
+      "example": "Send me an email.",
+      "frequency_rank": 367,
+      "tags": ["verb", "high-frequency"],
+      "related": ["dispatch", "mail", "transmit"]
+    },
+    {
+      "priority": 368,
+      "word": "expect",
+      "part_of_speech": "verb",
+      "definition": "To think or believe that something will happen or that someone will do something.",
+      "example": "I expect you to be on time.",
+      "frequency_rank": 368,
+      "tags": ["verb", "high-frequency"],
+      "related": ["anticipate", "hope", "await"]
+    },
+    {
+      "priority": 369,
+      "word": "sense",
+      "part_of_speech": "noun",
+      "definition": "A faculty by which the body perceives an external stimulus.",
+      "example": "She has a good sense of smell.",
+      "frequency_rank": 369,
+      "tags": ["noun", "perception", "high-frequency"],
+      "related": ["feeling", "awareness", "perceive"]
+    },
+    {
+      "priority": 370,
+      "word": "build",
+      "part_of_speech": "verb",
+      "definition": "To construct by putting parts or materials together.",
+      "example": "They will build a house.",
+      "frequency_rank": 370,
+      "tags": ["verb", "high-frequency"],
+      "related": ["construct", "make", "create"]
+    },
+    {
+      "priority": 371,
+      "word": "stay",
+      "part_of_speech": "verb",
+      "definition": "To remain in the same place.",
+      "example": "Please stay here.",
+      "frequency_rank": 371,
+      "tags": ["verb", "high-frequency"],
+      "related": ["remain", "wait", "continue"]
+    },
+    {
+      "priority": 372,
+      "word": "fall",
+      "part_of_speech": "verb/noun",
+      "definition": "To move downward, typically rapidly and freely without control; a decrease.",
+      "example": "Be careful not to fall. There was a fall in prices.",
+      "frequency_rank": 372,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["drop", "descend", "decline"]
+    },
+    {
+      "priority": 373,
+      "word": "oh",
+      "part_of_speech": "interjection",
+      "definition": "Used to express a range of emotions including surprise, realization, and disappointment.",
+      "example": "Oh, I didn't know that!",
+      "frequency_rank": 373,
+      "tags": ["interjection", "emotion", "high-frequency"],
+      "related": ["ah", "wow", "oops"]
+    },
+    {
+      "priority": 374,
+      "word": "nation",
+      "part_of_speech": "noun",
+      "definition": "A large body of people united by common descent, history, culture, or language, inhabiting a particular country or territory.",
+      "example": "Canada is a nation.",
+      "frequency_rank": 374,
+      "tags": ["noun", "country", "high-frequency"],
+      "related": ["country", "state", "people"]
+    },
+    {
+      "priority": 375,
+      "word": "plan",
+      "part_of_speech": "noun/verb",
+      "definition": "A detailed proposal for doing or achieving something; to decide on and arrange in advance.",
+      "example": "What's your plan for tomorrow? Plan your work carefully.",
+      "frequency_rank": 375,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["project", "scheme", "arrange"]
+    },
+    {
+      "priority": 376,
+      "word": "cut",
+      "part_of_speech": "verb",
+      "definition": "To make an opening, incision, or wound in something.",
+      "example": "Cut the paper with scissors.",
+      "frequency_rank": 376,
+      "tags": ["verb", "high-frequency"],
+      "related": ["slice", "trim", "reduce"]
+    },
+    {
+      "priority": 377,
+      "word": "college",
+      "part_of_speech": "noun",
+      "definition": "An educational institution or establishment, in particular one providing higher education or specialized professional or vocational training.",
+      "example": "She goes to college in New York.",
+      "frequency_rank": 377,
+      "tags": ["noun", "education", "high-frequency"],
+      "related": ["university", "school", "academy"]
+    },
+    {
+      "priority": 378,
+      "word": "interest",
+      "part_of_speech": "noun/verb",
+      "definition": "The feeling of wanting to know or learn about something; to attract the attention of.",
+      "example": "She has an interest in music. Does this interest you?",
+      "frequency_rank": 378,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["curiosity", "attention", "concern"]
+    },
+    {
+      "priority": 379,
+      "word": "death",
+      "part_of_speech": "noun",
+      "definition": "The end of the life of a person or organism.",
+      "example": "They mourned her death.",
+      "frequency_rank": 379,
+      "tags": ["noun", "life", "high-frequency"],
+      "related": ["die", "end", "passing"]
+    },
+    {
+      "priority": 380,
+      "word": "course",
+      "part_of_speech": "noun",
+      "definition": "A series of lessons or lectures in a particular subject; the route or direction followed by something.",
+      "example": "She is taking a math course.",
+      "frequency_rank": 380,
+      "tags": ["noun", "education", "direction", "high-frequency"],
+      "related": ["class", "path", "route"]
+    },
+    {
+      "priority": 381,
+      "word": "someone",
+      "part_of_speech": "pronoun",
+      "definition": "An unknown or unspecified person.",
+      "example": "Someone is at the door.",
+      "frequency_rank": 381,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["somebody", "anyone", "person"]
+    },
+    {
+      "priority": 382,
+      "word": "experience",
+      "part_of_speech": "noun/verb",
+      "definition": "Practical contact with and observation of facts or events; to encounter or undergo.",
+      "example": "She has a lot of experience. Experience the beauty of nature.",
+      "frequency_rank": 382,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["knowledge", "undergo", "encounter"]
+    },
+    {
+      "priority": 383,
+      "word": "behind",
+      "part_of_speech": "preposition/adverb",
+      "definition": "At or to the back of; in support of.",
+      "example": "The cat is behind the sofa.",
+      "frequency_rank": 383,
+      "tags": ["preposition", "adverb", "high-frequency"],
+      "related": ["after", "back", "rear"]
+    },
+    {
+      "priority": 384,
+      "word": "reach",
+      "part_of_speech": "verb",
+      "definition": "To arrive at; to stretch out an arm in a specified direction.",
+      "example": "Can you reach the shelf?",
+      "frequency_rank": 384,
+      "tags": ["verb", "high-frequency"],
+      "related": ["arrive", "extend", "attain"]
+    },
+    {
+      "priority": 385,
+      "word": "local",
+      "part_of_speech": "adjective",
+      "definition": "Relating to a particular area or neighborhood.",
+      "example": "Buy from local shops.",
+      "frequency_rank": 385,
+      "tags": ["adjective", "place", "high-frequency"],
+      "related": ["regional", "neighborhood", "community"]
+    },
+    {
+      "priority": 386,
+      "word": "five",
+      "part_of_speech": "number",
+      "definition": "The number 5.",
+      "example": "There are five apples.",
+      "frequency_rank": 386,
+      "tags": ["number", "high-frequency"],
+      "related": ["four", "six"]
+    },
+    {
+      "priority": 387,
+      "word": "serve",
+      "part_of_speech": "verb",
+      "definition": "To perform duties or services for another person or an organization.",
+      "example": "They serve lunch at noon.",
+      "frequency_rank": 387,
+      "tags": ["verb", "high-frequency"],
+      "related": ["help", "provide", "work"]
+    },
+    {
+      "priority": 388,
+      "word": "support",
+      "part_of_speech": "verb/noun",
+      "definition": "To bear all or part of the weight of; to give assistance to.",
+      "example": "I support your decision. The bridge needs support.",
+      "frequency_rank": 388,
+      "tags": ["verb", "noun", "help", "high-frequency"],
+      "related": ["help", "aid", "assist"]
+    },
+    {
+      "priority": 389,
+      "word": "event",
+      "part_of_speech": "noun",
+      "definition": "A thing that happens, especially one of importance.",
+      "example": "The event was a success.",
+      "frequency_rank": 389,
+      "tags": ["noun", "happening", "high-frequency"],
+      "related": ["occasion", "incident", "affair"]
+    },
+    {
+      "priority": 390,
+      "word": "official",
+      "part_of_speech": "adjective/noun",
+      "definition": "Relating to an authority or public body; a person holding public office.",
+      "example": "It's an official document. The official made an announcement.",
+      "frequency_rank": 390,
+      "tags": ["adjective", "noun", "authority", "high-frequency"],
+      "related": ["formal", "authorized", "administrator"]
+    },
+    {
+      "priority": 391,
+      "word": "whose",
+      "part_of_speech": "pronoun",
+      "definition": "Belonging to or associated with which person.",
+      "example": "Whose book is this?",
+      "frequency_rank": 391,
+      "tags": ["pronoun", "question", "high-frequency"],
+      "related": ["who", "whom"]
+    },
+    {
+      "priority": 392,
+      "word": "matter",
+      "part_of_speech": "noun/verb",
+      "definition": "A subject or situation under consideration; to be important.",
+      "example": "It's a serious matter. It doesn't matter.",
+      "frequency_rank": 392,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["issue", "concern", "count"]
+    },
+    {
+      "priority": 393,
+      "word": "everyone",
+      "part_of_speech": "pronoun",
+      "definition": "Every person.",
+      "example": "Everyone is welcome.",
+      "frequency_rank": 393,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["everybody", "all", "anyone"]
+    },
+    {
+      "priority": 394,
+      "word": "center",
+      "part_of_speech": "noun/verb",
+      "definition": "The middle point of something; to place in the middle.",
+      "example": "The table is in the center of the room. Center the text.",
+      "frequency_rank": 394,
+      "tags": ["noun", "verb", "place", "high-frequency"],
+      "related": ["middle", "core", "focus"]
+    },
+    {
+      "priority": 395,
+      "word": "couple",
+      "part_of_speech": "noun",
+      "definition": "Two individuals of the same sort considered together; two people who are married, engaged, or otherwise closely associated.",
+      "example": "A happy couple walked by.",
+      "frequency_rank": 395,
+      "tags": ["noun", "pair", "high-frequency"],
+      "related": ["pair", "two", "partners"]
+    },
+    {
+      "priority": 396,
+      "word": "site",
+      "part_of_speech": "noun",
+      "definition": "An area of ground on which a town, building, or monument is constructed.",
+      "example": "This is the site of the new school.",
+      "frequency_rank": 396,
+      "tags": ["noun", "place", "high-frequency"],
+      "related": ["location", "area", "spot"]
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-enterprise-logging",
+    "priority": 541,
+    "definitions": [
+      {
+        "meaning": "A pattern for centralized, structured, and secure logging in enterprise Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Send logs to Splunk, ELK, or Datadog Log Management."
+      }
+    ],
+    "syntax": "logger.info('event', { userId, action });",
+    "examples": [
+      "logger.error('error', { error, path });"
+    ],
+    "synonyms": ["enterprise logging"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɛntərˌpraɪz ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Mask PII and use log aggregation tools.",
+    "relatedConcepts": ["logging", "compliance"]
+  },
+  {
+    "word": "nextjs-enterprise-monitoring",
+    "priority": 542,
+    "definitions": [
+      {
+        "meaning": "A pattern for enterprise-grade monitoring with tools like Splunk, Datadog, or New Relic.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor all production systems and endpoints."
+      }
+    ],
+    "syntax": "// Integrate Datadog, Splunk, or New Relic SDK",
+    "examples": [
+      "datadogRum.init({ ... });"
+    ],
+    "synonyms": ["enterprise monitoring"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɛntərˌpraɪz ˈmɒnɪtərɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Monitor logs, metrics, and traces centrally.",
+    "relatedConcepts": ["monitoring", "observability"]
+  },
+  {
+    "word": "nextjs-enterprise-compliance",
+    "priority": 543,
+    "definitions": [
+      {
+        "meaning": "A pattern for ensuring compliance with standards (GDPR, HIPAA, SOC2) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Implement data retention, audit logging, and user rights."
+      }
+    ],
+    "syntax": "// Use compliance middleware and audits",
+    "examples": [
+      "auditLogger.log('user-access', ...)"
+    ],
+    "synonyms": ["compliance"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "kəmˈplaɪəns",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Automate compliance checks and reporting.",
+    "relatedConcepts": ["compliance", "security"]
+  },
+  {
+    "word": "nextjs-gdpr-data-erasure",
+    "priority": 544,
+    "definitions": [
+      {
+        "meaning": "A pattern for GDPR-compliant data erasure in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to request deletion of their data."
+      }
+    ],
+    "syntax": "// Implement /api/erase endpoint",
+    "examples": [
+      "await db.deleteUser(userId);"
+    ],
+    "synonyms": ["gdpr erasure", "right to be forgotten"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈiːreɪʒər",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Log and confirm all data erasure requests.",
+    "relatedConcepts": ["compliance", "privacy"]
+  },
+  {
+    "word": "nextjs-gdpr-data-portability",
+    "priority": 545,
+    "definitions": [
+      {
+        "meaning": "A pattern for GDPR-compliant data export in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to export their data in a portable format."
+      }
+    ],
+    "syntax": "// Implement /api/export endpoint",
+    "examples": [
+      "return res.json(userData);"
+    ],
+    "synonyms": ["gdpr export", "data portability"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "pɔːrtəˈbɪlɪti",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Provide data in common formats (CSV, JSON).",
+    "relatedConcepts": ["compliance", "privacy"]
+  },
+  {
+    "word": "nextjs-gdpr-consent-management",
+    "priority": 546,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing user consent for cookies and data processing.",
+        "partOfSpeech": "pattern",
+        "example": "Show consent banners and store preferences."
+      }
+    ],
+    "syntax": "<ConsentManager />",
+    "examples": [
+      "<Cookiebot />"
+    ],
+    "synonyms": ["consent management"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "kənˈsɛnt ˈmænɪdʒmənt",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Record and respect user consent choices.",
+    "relatedConcepts": ["compliance", "privacy"]
+  },
+  {
+    "word": "nextjs-hipaa-compliance",
+    "priority": 547,
+    "definitions": [
+      {
+        "meaning": "A pattern for HIPAA-compliant handling of health data in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Encrypt all PHI and audit access."
+      }
+    ],
+    "syntax": "// Encrypt PHI at rest and in transit",
+    "examples": [
+      "auditLogger.log('phi-access', ...)"
+    ],
+    "synonyms": ["hipaa compliance"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "hɪˈpɑː",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Sign BAAs and restrict PHI access.",
+    "relatedConcepts": ["compliance", "security"]
+  },
+  {
+    "word": "nextjs-soc2-compliance",
+    "priority": 548,
+    "definitions": [
+      {
+        "meaning": "A pattern for SOC2-compliant auditing and controls in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Log all access and changes for SOC2 audits."
+      }
+    ],
+    "syntax": "// Use audit logs and access controls",
+    "examples": [
+      "auditLogger.log('access', ...)"
+    ],
+    "synonyms": ["soc2 compliance"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈsɒk tuː",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Automate log review and alerting.",
+    "relatedConcepts": ["compliance", "audit"]
+  },
+  {
+    "word": "nextjs-cipaa-compliance",
+    "priority": 549,
+    "definitions": [
+      {
+        "meaning": "A pattern for China Internet Personal Information and Data Protection compliance.",
+        "partOfSpeech": "pattern",
+        "example": "Store and process Chinese user data within China."
+      }
+    ],
+    "syntax": "// Use region-specific storage and processing",
+    "examples": [
+      "if (user.region === 'CN') useChinaDataCenter();"
+    ],
+    "synonyms": ["cipaa", "china compliance"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "siː aɪ piː eɪ eɪ",
+    "difficulty": "advanced",
+    "category": "compliance",
+    "bestPractice": "Localize storage and audits for China users.",
+    "relatedConcepts": ["compliance", "privacy"]
+  },
+  {
+    "word": "nextjs-cookies-best-practices",
+    "priority": 550,
+    "definitions": [
+      {
+        "meaning": "A pattern for secure, privacy-compliant cookie handling in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Set cookies with SameSite, Secure, and httpOnly flags."
+      }
+    ],
+    "syntax": "cookie('token', value, { httpOnly: true, secure: true, sameSite: 'lax' })",
+    "examples": [
+      "res.setHeader('Set-Cookie', ...)"
+    ],
+    "synonyms": ["cookies", "cookie security"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈkʊkiz",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Review all cookies for compliance and security.",
+    "relatedConcepts": ["security", "compliance"]
+  },
+  {
+    "word": "nextjs-cdn-invalidation",
+    "priority": 551,
+    "definitions": [
+      {
+        "meaning": "A pattern for cache invalidation on CDNs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Purge CDN cache after deploys or updates."
+      }
+    ],
+    "syntax": "// Use CDN API to purge paths",
+    "examples": [
+      "cloudflare.purgeCache(['/index.html'])"
+    ],
+    "synonyms": ["cdn invalidation"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɪnvəˈleɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Automate cache invalidation after deployments.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-prefetch",
+    "priority": 552,
+    "definitions": [
+      {
+        "meaning": "A pattern for prefetching assets from CDN for faster load times.",
+        "partOfSpeech": "pattern",
+        "example": "Use <link rel='preload'> or <link rel='prefetch'> for CDN assets."
+      }
+    ],
+    "syntax": "<link rel='preload' href='...' />",
+    "examples": [
+      "<link rel='prefetch' href='...' />"
+    ],
+    "synonyms": ["cdn prefetch"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "priːˈfɛtʃ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Prefetch critical assets for perceived performance.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-cache-control",
+    "priority": 553,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting cache-control headers for CDN and browser caching.",
+        "partOfSpeech": "pattern",
+        "example": "Set max-age and immutable for static assets."
+      }
+    ],
+    "syntax": "res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');",
+    "examples": [
+      "Cache-Control: public, max-age=31536000, immutable"
+    ],
+    "synonyms": ["cdn cache-control"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "kæʃ kənˈtroʊl",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Set aggressive caching for versioned assets.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-image-optimization",
+    "priority": 554,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing images via CDN (e.g., AVIF, WebP, resizing).",
+        "partOfSpeech": "pattern",
+        "example": "Serve images in modern formats and sizes."
+      }
+    ],
+    "syntax": "<Image src='...' width={400} height={300} />",
+    "examples": [
+      "<img src='https://cdn.example.com/image.webp' />"
+    ],
+    "synonyms": ["cdn image optimization"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use CDN image resizing and format conversion.",
+    "relatedConcepts": ["cloud", "image"]
+  },
+  {
+    "word": "nextjs-cdn-video-optimization",
+    "priority": 555,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing video delivery via CDN (HLS, DASH, adaptive streaming).",
+        "partOfSpeech": "pattern",
+        "example": "Serve videos in adaptive formats for all devices."
+      }
+    ],
+    "syntax": "<video src='https://cdn.example.com/video.m3u8' controls />",
+    "examples": [
+      "<video src='https://cdn.example.com/video.mp4' controls />"
+    ],
+    "synonyms": ["cdn video optimization"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use adaptive streaming for performance and reliability.",
+    "relatedConcepts": ["cloud", "video"]
+  },
+  {
+    "word": "nextjs-cdn-font-optimization",
+    "priority": 556,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing web font delivery via CDN.",
+        "partOfSpeech": "pattern",
+        "example": "Serve fonts with preload, preconnect, and font-display: swap."
+      }
+    ],
+    "syntax": "<link rel='preload' href='/fonts/font.woff2' as='font' crossorigin />",
+    "examples": [
+      "<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />"
+    ],
+    "synonyms": ["cdn font optimization"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Preload and cache fonts for fast rendering.",
+    "relatedConcepts": ["cloud", "fonts"]
+  },
+  {
+    "word": "nextjs-cdn-js-optimization",
+    "priority": 557,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing JavaScript delivery via CDN (minification, compression, HTTP/2).",
+        "partOfSpeech": "pattern",
+        "example": "Serve JS bundles minified and gzipped."
+      }
+    ],
+    "syntax": "<script src='https://cdn.example.com/app.min.js'></script>",
+    "examples": [
+      "<script src='https://cdn.example.com/app.min.js'></script>"
+    ],
+    "synonyms": ["cdn js optimization"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use HTTP/2 and Brotli for JS delivery.",
+    "relatedConcepts": ["cloud", "javascript"]
+  },
+  {
+    "word": "nextjs-cdn-css-optimization",
+    "priority": 558,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing CSS delivery via CDN (minification, critical CSS, HTTP/2).",
+        "partOfSpeech": "pattern",
+        "example": "Serve CSS minified and inlined for critical path."
+      }
+    ],
+    "syntax": "<link rel='stylesheet' href='https://cdn.example.com/styles.min.css' />",
+    "examples": [
+      "<style>/* critical CSS */</style>"
+    ],
+    "synonyms": ["cdn css optimization"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Inline critical CSS and use HTTP/2 for delivery.",
+    "relatedConcepts": ["cloud", "css"]
+  },
+  {
+    "word": "nextjs-cdn-html-optimization",
+    "priority": 559,
+    "definitions": [
+      {
+        "meaning": "A pattern for optimizing HTML delivery via CDN (compression, edge rendering).",
+        "partOfSpeech": "pattern",
+        "example": "Serve HTML compressed and from edge locations."
+      }
+    ],
+    "syntax": "<meta http-equiv='Content-Encoding' content='gzip' />",
+    "examples": [
+      "<meta http-equiv='Content-Encoding' content='br' />"
+    ],
+    "synonyms": ["cdn html optimization"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌɒptɪmaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Compress and cache HTML at the edge.",
+    "relatedConcepts": ["cloud", "html"]
+  },
+  {
+    "word": "nextjs-cdn-asset-versioning",
+    "priority": 560,
+    "definitions": [
+      {
+        "meaning": "A pattern for versioning static assets for cache-busting via CDN.",
+        "partOfSpeech": "pattern",
+        "example": "Use content hashes in asset filenames."
+      }
+    ],
+    "syntax": "<img src='/static/logo.abc123.png' />",
+    "examples": [
+      "main.1a2b3c.js"
+    ],
+    "synonyms": ["cdn asset versioning"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˌvɜːrʒəˈnɪŋ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Automate versioning in build pipeline.",
+    "relatedConcepts": ["cloud", "assets"]
+  },
+  {
+    "word": "nextjs-cdn-dns-prefetch",
+    "priority": 561,
+    "definitions": [
+      {
+        "meaning": "A pattern for DNS prefetching CDN domains for faster connections.",
+        "partOfSpeech": "pattern",
+        "example": "Add <link rel='dns-prefetch'> for CDN domains."
+      }
+    ],
+    "syntax": "<link rel='dns-prefetch' href='//cdn.example.com' />",
+    "examples": [
+      "<link rel='dns-prefetch' href='//fonts.gstatic.com' />"
+    ],
+    "synonyms": ["cdn dns prefetch"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "diː ɛn ɛs ˈpriːˌfɛʧ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Prefetch DNS for all third-party CDNs.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-preconnect",
+    "priority": 562,
+    "definitions": [
+      {
+        "meaning": "A pattern for preconnecting to CDN origins for faster TLS handshakes.",
+        "partOfSpeech": "pattern",
+        "example": "Add <link rel='preconnect'> for CDN origins."
+      }
+    ],
+    "syntax": "<link rel='preconnect' href='https://cdn.example.com' crossorigin />",
+    "examples": [
+      "<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />"
+    ],
+    "synonyms": ["cdn preconnect"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "priːkəˈnɛkt",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Preconnect to all critical CDN domains.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-h2-push",
+    "priority": 563,
+    "definitions": [
+      {
+        "meaning": "A pattern for HTTP/2 server push of CDN assets.",
+        "partOfSpeech": "pattern",
+        "example": "Push CSS/JS to clients with HTTP/2 server push."
+      }
+    ],
+    "syntax": "res.push('/style.css', ...)",
+    "examples": [
+      "res.push('/main.js', ...)"
+    ],
+    "synonyms": ["cdn h2 push"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "eɪtʃ tuː pʊʃ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Push only critical assets to avoid congestion.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-origin-shield",
+    "priority": 564,
+    "definitions": [
+      {
+        "meaning": "A pattern for using CDN origin shield to reduce origin load and cache misses.",
+        "partOfSpeech": "pattern",
+        "example": "Configure a shield POP for your CDN."
+      }
+    ],
+    "syntax": "// Configure CDN with origin shield",
+    "examples": [
+      "cloudflare.setOriginShield('us-east-1')"
+    ],
+    "synonyms": ["cdn origin shield"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈɔːrɪdʒɪn ʃiːld",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use origin shield for large-scale, global apps.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-edge-functions",
+    "priority": 565,
+    "definitions": [
+      {
+        "meaning": "A pattern for running custom logic at the CDN edge (e.g., Vercel/Cloudflare Edge Functions).",
+        "partOfSpeech": "pattern",
+        "example": "Rewrite, redirect, or personalize at the edge."
+      }
+    ],
+    "syntax": "// Write edge middleware or functions",
+    "examples": [
+      "export const config = { runtime: 'edge' };"
+    ],
+    "synonyms": ["cdn edge functions"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ɛdʒ ˈfʌŋkʃənz",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use edge functions for geo, auth, or AB tests.",
+    "relatedConcepts": ["cloud", "edge"]
+  },
+  {
+    "word": "nextjs-cdn-geo-routing",
+    "priority": 566,
+    "definitions": [
+      {
+        "meaning": "A pattern for geo-based routing at the CDN edge.",
+        "partOfSpeech": "pattern",
+        "example": "Serve region-specific content based on user location."
+      }
+    ],
+    "syntax": "// Use edge middleware to check geo headers",
+    "examples": [
+      "if (req.geo?.country === 'DE') return NextResponse.redirect('/de');"
+    ],
+    "synonyms": ["cdn geo routing"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "dʒiː oʊ ˈraʊtɪŋ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Comply with legal and performance requirements.",
+    "relatedConcepts": ["cloud", "edge"]
+  },
+  {
+    "word": "nextjs-cdn-bot-management",
+    "priority": 567,
+    "definitions": [
+      {
+        "meaning": "A pattern for bot detection and management at the CDN edge.",
+        "partOfSpeech": "pattern",
+        "example": "Block or challenge bad bots at the edge."
+      }
+    ],
+    "syntax": "// Use CDN bot management features",
+    "examples": [
+      "cloudflare.enableBotManagement()"
+    ],
+    "synonyms": ["cdn bot management"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "bɒt ˈmænɪdʒmənt",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Allow good bots, block malicious ones.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-cdn-ddos-protection",
+    "priority": 568,
+    "definitions": [
+      {
+        "meaning": "A pattern for DDoS mitigation using CDN edge features.",
+        "partOfSpeech": "pattern",
+        "example": "Use CDN to absorb and mitigate DDoS attacks."
+      }
+    ],
+    "syntax": "// Enable DDoS protection in CDN dashboard",
+    "examples": [
+      "cloudflare.enableDdosProtection()"
+    ],
+    "synonyms": ["cdn ddos protection"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "diː diː oʊ ɛs",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Monitor for attacks and automate mitigation.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-cdn-waf",
+    "priority": 569,
+    "definitions": [
+      {
+        "meaning": "A pattern for using CDN-provided Web Application Firewall (WAF).",
+        "partOfSpeech": "pattern",
+        "example": "Block common web threats at the CDN edge."
+      }
+    ],
+    "syntax": "// Enable WAF rules in CDN settings",
+    "examples": [
+      "cloudflare.enableWaf()"
+    ],
+    "synonyms": ["cdn waf"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "wæf",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Enable OWASP rulesets for all sites.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-cdn-ssl-tls",
+    "priority": 570,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing SSL/TLS certificates via CDN.",
+        "partOfSpeech": "pattern",
+        "example": "Enable HTTPS for all CDN-served content."
+      }
+    ],
+    "syntax": "// Upload or auto-renew certificates in CDN dashboard",
+    "examples": [
+      "cloudflare.enableSslTls()"
+    ],
+    "synonyms": ["cdn ssl", "cdn tls"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ɛs ɛs ɛl / tiː ɛl ɛs",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Auto-renew and monitor certificate status.",
+    "relatedConcepts": ["cloud", "security"]
+  },
+  {
+    "word": "nextjs-cdn-custom-domains",
+    "priority": 571,
+    "definitions": [
+      {
+        "meaning": "A pattern for mapping custom domains to CDN endpoints.",
+        "partOfSpeech": "pattern",
+        "example": "Serve your app on a branded domain via CDN."
+      }
+    ],
+    "syntax": "// Configure DNS and CDN custom domain settings",
+    "examples": [
+      "cloudflare.addCustomDomain('www.example.com')"
+    ],
+    "synonyms": ["cdn custom domains"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈkʌstəm dəˈmeɪnz",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Verify and secure all custom domains.",
+    "relatedConcepts": ["cloud", "cdn"]
+  },
+  {
+    "word": "nextjs-cdn-redirects",
+    "priority": 572,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing HTTP redirects at the CDN edge.",
+        "partOfSpeech": "pattern",
+        "example": "Set up 301/302 redirects at the CDN layer."
+      }
+    ],
+    "syntax": "// Configure redirects in CDN dashboard",
+    "examples": [
+      "cloudflare.addRedirect('/old', '/new')"
+    ],
+    "synonyms": ["cdn redirects"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈriːdaɪrɛkts",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Handle all SEO-critical redirects at the edge.",
+    "relatedConcepts": ["cloud", "routing"]
+  },
+  {
+    "word": "nextjs-cdn-rewrites",
+    "priority": 573,
+    "definitions": [
+      {
+        "meaning": "A pattern for rewriting URLs at the CDN edge for routing or A/B tests.",
+        "partOfSpeech": "pattern",
+        "example": "Rewrite incoming URLs to different origins or paths."
+      }
+    ],
+    "syntax": "// Configure rewrites in CDN dashboard",
+    "examples": [
+      "cloudflare.addRewrite('/blog/*', '/news/*')"
+    ],
+    "synonyms": ["cdn rewrites"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈriːraɪts",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Use rewrites for canary and blue/green deployments.",
+    "relatedConcepts": ["cloud", "routing"]
+  },
+  {
+    "word": "nextjs-cdn-ab-testing",
+    "priority": 574,
+    "definitions": [
+      {
+        "meaning": "A pattern for running A/B or multivariate tests at the CDN edge.",
+        "partOfSpeech": "pattern",
+        "example": "Split traffic and serve variants at the edge."
+      }
+    ],
+    "syntax": "// Use edge middleware or CDN features for split testing",
+    "examples": [
+      "cloudflare.enableAbTesting()"
+    ],
+    "synonyms": ["cdn ab testing"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "eɪ biː ˈtɛstɪŋ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Log and analyze variant performance.",
+    "relatedConcepts": ["cloud", "ab testing"]
+  },
+  {
+    "word": "nextjs-cdn-personalization",
+    "priority": 575,
+    "definitions": [
+      {
+        "meaning": "A pattern for personalizing content at the CDN edge.",
+        "partOfSpeech": "pattern",
+        "example": "Serve personalized experiences using edge logic."
+      }
+    ],
+    "syntax": "// Use edge functions for personalization",
+    "examples": [
+      "if (user.segment === 'premium') showPremiumBanner();"
+    ],
+    "synonyms": ["cdn personalization"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˌpɜːrsənəlaɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Respect privacy and consent in personalization.",
+    "relatedConcepts": ["cloud", "personalization"]
+  },
+  {
+    "word": "nextjs-cdn-edge-auth",
+    "priority": 576,
+    "definitions": [
+      {
+        "meaning": "A pattern for authentication and authorization at the CDN edge.",
+        "partOfSpeech": "pattern",
+        "example": "Validate user sessions before serving content."
+      }
+    ],
+    "syntax": "// Use edge middleware for auth checks",
+    "examples": [
+      "if (!req.cookies.session) return NextResponse.redirect('/login');"
+    ],
+    "synonyms": ["cdn edge auth"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ɛdʒ ɔːθ",
+    "difficulty": "advanced",
+    "category": "cloud",
+    "bestPractice": "Handle auth at the edge for performance and security.",
+    "relatedConcepts": ["cloud", "authentication"]
+  }
+]

@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-feature-flags",
+    "priority": 217,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing feature flags in Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Toggle features on/off for users or environments."
+      }
+    ],
+    "syntax": "if (process.env.FEATURE_X_ENABLED === 'true') { ... }",
+    "examples": [
+      "if (process.env.FEATURE_X_ENABLED === 'true') {\n  // Show feature\n}"
+    ],
+    "synonyms": ["feature toggles"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈfiːtʃər flæɡz",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Use feature flags for safe rollouts and A/B testing.",
+    "relatedConcepts": ["A/B testing", "environment variable"]
+  },
+  {
+    "word": "nextjs-ab-testing",
+    "priority": 218,
+    "definitions": [
+      {
+        "meaning": "A pattern for running A/B tests in Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Serve different variants to users for experimentation."
+      }
+    ],
+    "syntax": "if (variant === 'A') { ... } else { ... }",
+    "examples": [
+      "const variant = Math.random() > 0.5 ? 'A' : 'B';"
+    ],
+    "synonyms": ["split testing"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "eɪ biː ˈtɛstɪŋ",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Randomize and log variant assignments for analysis.",
+    "relatedConcepts": ["feature flags", "analytics"]
+  },
+  {
+    "word": "nextjs-multitenancy",
+    "priority": 219,
+    "definitions": [
+      {
+        "meaning": "A pattern for building multi-tenant (multi-customer) Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Serve different content based on subdomain or path."
+      }
+    ],
+    "syntax": "if (subdomain === 'customer1') { ... }",
+    "examples": [
+      "const { host } = req.headers;\nconst subdomain = host.split('.')[0];"
+    ],
+    "synonyms": ["multi-tenant"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈmʌltiˌtɛnənsi",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Isolate tenant data and configuration.",
+    "relatedConcepts": ["architecture", "routing"]
+  },
+  {
+    "word": "nextjs-microfrontends",
+    "priority": 220,
+    "definitions": [
+      {
+        "meaning": "A pattern for composing a UI from independently deployable frontend apps.",
+        "partOfSpeech": "pattern",
+        "example": "Use microfrontends for large, modular projects."
+      }
+    ],
+    "syntax": "// Use Module Federation or iframe composition",
+    "examples": [
+      "// Use Webpack Module Federation to load remote components"
+    ],
+    "synonyms": ["micro frontends"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈmaɪkroʊ ˈfrʌntˌɛndz",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Decouple microfrontends for independent deployment.",
+    "relatedConcepts": ["architecture", "module federation"]
+  },
+  {
+    "word": "nextjs-module-federation",
+    "priority": 221,
+    "definitions": [
+      {
+        "meaning": "A pattern for sharing code and components across independently deployed apps.",
+        "partOfSpeech": "pattern",
+        "example": "Use Webpack Module Federation in Next.js monorepos."
+      }
+    ],
+    "syntax": "// Configure module federation in next.config.js",
+    "examples": [
+      "module.exports = { webpack: (config) => { /* module federation setup */ return config; } }"
+    ],
+    "synonyms": ["module federation"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈmɒdjuːl ˌfɛdəˈreɪʃən",
+    "difficulty": "advanced",
+    "category": "architecture",
+    "bestPractice": "Use module federation for shared libraries and microfrontends.",
+    "relatedConcepts": ["microfrontends", "monorepo"]
+  },
+  {
+    "word": "nextjs-feature-policy",
+    "priority": 222,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting browser feature policies via headers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Restrict browser features for security."
+      }
+    ],
+    "syntax": "res.setHeader('Feature-Policy', 'geolocation none');",
+    "examples": [
+      "res.setHeader('Feature-Policy', 'geolocation none');"
+    ],
+    "synonyms": ["feature policy"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈfiːtʃər ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set feature policies to limit risky browser APIs.",
+    "relatedConcepts": ["headers", "security"]
+  },
+  {
+    "word": "nextjs-csp",
+    "priority": 223,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Content Security Policy headers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent XSS by setting CSP headers."
+      }
+    ],
+    "syntax": "res.setHeader('Content-Security-Policy', \"default-src 'self'\");",
+    "examples": [
+      "res.setHeader('Content-Security-Policy', \"default-src 'self'\");"
+    ],
+    "synonyms": ["content security policy"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈkɒntɛnt sɪˈkjʊrɪti ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set strict CSP headers for all pages and APIs.",
+    "relatedConcepts": ["headers", "security"]
+  },
+  {
+    "word": "nextjs-helmet",
+    "priority": 224,
+    "definitions": [
+      {
+        "meaning": "A pattern for using Helmet.js to set HTTP headers for security.",
+        "partOfSpeech": "pattern",
+        "example": "Use Helmet in custom servers."
+      }
+    ],
+    "syntax": "import helmet from 'helmet';",
+    "examples": [
+      "app.use(helmet());"
+    ],
+    "synonyms": ["helmet integration"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈhɛlmɪt",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Use Helmet for security headers in custom servers.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-ssr-analytics",
+    "priority": 225,
+    "definitions": [
+      {
+        "meaning": "A pattern for collecting analytics data during SSR in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Send analytics events during SSR."
+      }
+    ],
+    "syntax": "// Send analytics in getServerSideProps",
+    "examples": [
+      "// Send event to analytics service in getServerSideProps"
+    ],
+    "synonyms": ["ssr analytics"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ɛs ɛs ɑːr əˈnælɪtɪks",
+    "difficulty": "advanced",
+    "category": "analytics",
+    "bestPractice": "Batch SSR analytics to avoid slowing down requests.",
+    "relatedConcepts": ["analytics", "SSR"]
+  },
+  {
+    "word": "nextjs-client-analytics",
+    "priority": 226,
+    "definitions": [
+      {
+        "meaning": "A pattern for collecting analytics data on the client side in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Send analytics events on route change."
+      }
+    ],
+    "syntax": "// Use router.events in _app.js",
+    "examples": [
+      "router.events.on('routeChangeComplete', (url) => { /* send analytics */ });"
+    ],
+    "synonyms": ["client analytics"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈklaɪənt əˈnælɪtɪks",
+    "difficulty": "advanced",
+    "category": "analytics",
+    "bestPractice": "Debounce analytics events to avoid flooding.",
+    "relatedConcepts": ["analytics", "router"]
+  },
+  {
+    "word": "nextjs-error-logging",
+    "priority": 227,
+    "definitions": [
+      {
+        "meaning": "A pattern for logging errors in Next.js apps.",
+        "partOfSpeech": "pattern",
+        "example": "Log errors to Sentry or console."
+      }
+    ],
+    "syntax": "console.error(error);",
+    "examples": [
+      "Sentry.captureException(error);"
+    ],
+    "synonyms": ["error logging"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈɛrər ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "error handling",
+    "bestPractice": "Log all errors in production for debugging.",
+    "relatedConcepts": ["error handling", "monitoring"]
+  },
+  {
+    "word": "nextjs-error-boundary-logging",
+    "priority": 228,
+    "definitions": [
+      {
+        "meaning": "A pattern for logging errors from Error Boundaries in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Log errors from ErrorBoundary to monitoring tools."
+      }
+    ],
+    "syntax": "componentDidCatch(error, info) { ... }",
+    "examples": [
+      "componentDidCatch(error, info) {\n  Sentry.captureException(error);\n}"
+    ],
+    "synonyms": ["error boundary logging"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈɛrər ˈbaʊndəri ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "error handling",
+    "bestPractice": "Log error boundaries for user-facing errors.",
+    "relatedConcepts": ["ErrorBoundary", "monitoring"]
+  },
+  {
+    "word": "nextjs-custom-serverless-handler",
+    "priority": 229,
+    "definitions": [
+      {
+        "meaning": "A pattern for custom serverless request handlers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Customize serverless logic for API routes."
+      }
+    ],
+    "syntax": "export default function handler(req, res) { ... }",
+    "examples": [
+      "export default function handler(req, res) { /* custom logic */ }"
+    ],
+    "synonyms": ["custom serverless"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈhændlər",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Keep serverless handlers stateless and fast.",
+    "relatedConcepts": ["serverless", "API route"]
+  },
+  {
+    "word": "nextjs-serverless-logging",
+    "priority": 230,
+    "definitions": [
+      {
+        "meaning": "A pattern for logging in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Log requests and errors in serverless handlers."
+      }
+    ],
+    "syntax": "console.log('Request:', req.url);",
+    "examples": [
+      "console.log('Request:', req.url);"
+    ],
+    "synonyms": ["serverless logging"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Log for debugging and monitoring in serverless.",
+    "relatedConcepts": ["serverless", "logging"]
+  },
+  {
+    "word": "nextjs-serverless-monitoring",
+    "priority": 231,
+    "definitions": [
+      {
+        "meaning": "A pattern for monitoring serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor serverless performance and errors."
+      }
+    ],
+    "syntax": "// Integrate with Datadog, Sentry, or Vercel Analytics",
+    "examples": [
+      "// Add monitoring hooks to serverless handler"
+    ],
+    "synonyms": ["serverless monitoring"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈmɒnɪtərɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Monitor serverless for cold starts and errors.",
+    "relatedConcepts": ["serverless", "monitoring"]
+  },
+  {
+    "word": "nextjs-serverless-caching",
+    "priority": 232,
+    "definitions": [
+      {
+        "meaning": "A pattern for caching in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Cache API responses in memory or edge."
+      }
+    ],
+    "syntax": "// Use in-memory or edge cache",
+    "examples": [
+      "const cache = new Map();"
+    ],
+    "synonyms": ["serverless caching"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈkæʃɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Cache expensive responses to reduce latency.",
+    "relatedConcepts": ["serverless", "caching"]
+  },
+  {
+    "word": "nextjs-serverless-auth",
+    "priority": 233,
+    "definitions": [
+      {
+        "meaning": "A pattern for authentication in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Authenticate users in API routes."
+      }
+    ],
+    "syntax": "const user = authenticate(req);",
+    "examples": [
+      "const user = authenticate(req);"
+    ],
+    "synonyms": ["serverless auth"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ɔːθ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Authenticate all sensitive serverless endpoints.",
+    "relatedConcepts": ["serverless", "authentication"]
+  },
+  {
+    "word": "nextjs-serverless-authorization",
+    "priority": 234,
+    "definitions": [
+      {
+        "meaning": "A pattern for authorization in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Authorize users for protected actions."
+      }
+    ],
+    "syntax": "if (user.role !== 'admin') { ... }",
+    "examples": [
+      "if (user.role !== 'admin') { return res.status(403).end('Forbidden'); }"
+    ],
+    "synonyms": ["serverless authorization"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˌɔːθəraɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Check authorization for all protected endpoints.",
+    "relatedConcepts": ["serverless", "authorization"]
+  },
+  {
+    "word": "nextjs-serverless-validation",
+    "priority": 235,
+    "definitions": [
+      {
+        "meaning": "A pattern for validating input in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Validate request bodies before processing."
+      }
+    ],
+    "syntax": "schema.parse(req.body);",
+    "examples": [
+      "const schema = z.object({ name: z.string() });\nschema.parse(req.body);"
+    ],
+    "synonyms": ["serverless validation"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˌvælɪˈdeɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Validate all input to prevent security issues.",
+    "relatedConcepts": ["serverless", "validation"]
+  },
+  {
+    "word": "nextjs-serverless-middleware",
+    "priority": 236,
+    "definitions": [
+      {
+        "meaning": "A pattern for using middleware in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Compose middleware for authentication and logging."
+      }
+    ],
+    "syntax": "export default nc().use(authMiddleware).get(handler);",
+    "examples": [
+      "export default nc().use(authMiddleware).get(handler);"
+    ],
+    "synonyms": ["serverless middleware"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈmɪdəlˌwɛər",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Compose middleware for maintainable serverless code.",
+    "relatedConcepts": ["serverless", "middleware"]
+  },
+  {
+    "word": "nextjs-serverless-rate-limiting",
+    "priority": 237,
+    "definitions": [
+      {
+        "meaning": "A pattern for rate limiting in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Limit requests per user/IP."
+      }
+    ],
+    "syntax": "// Use a rate limiter in handler",
+    "examples": [
+      "if (tooManyRequests) { res.status(429).end('Too Many Requests'); }"
+    ],
+    "synonyms": ["serverless rate limiting"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs reɪt ˈlɪmɪtɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Rate limit all sensitive endpoints.",
+    "relatedConcepts": ["serverless", "rate limiting"]
+  },
+  {
+    "word": "nextjs-serverless-cors",
+    "priority": 238,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting CORS headers in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Enable CORS for serverless APIs."
+      }
+    ],
+    "syntax": "res.setHeader('Access-Control-Allow-Origin', '*');",
+    "examples": [
+      "res.setHeader('Access-Control-Allow-Origin', '*');"
+    ],
+    "synonyms": ["serverless cors"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs kɔːrz",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Set CORS headers for all public serverless endpoints.",
+    "relatedConcepts": ["serverless", "cors"]
+  },
+  {
+    "word": "nextjs-serverless-error-handling",
+    "priority": 239,
+    "definitions": [
+      {
+        "meaning": "A pattern for error handling in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Return 400/500 for errors."
+      }
+    ],
+    "syntax": "try { ... } catch (error) { res.status(500).json({ error: error.message }); }",
+    "examples": [
+      "try { ... } catch (error) { res.status(500).json({ error: error.message }); }"
+    ],
+    "synonyms": ["serverless error handling"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈɛrər ˈhændlɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Return clear error messages and status codes.",
+    "relatedConcepts": ["serverless", "error handling"]
+  },
+  {
+    "word": "nextjs-serverless-validation-schema",
+    "priority": 240,
+    "definitions": [
+      {
+        "meaning": "A pattern for using schema validation in serverless functions in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Validate input with Zod or Yup."
+      }
+    ],
+    "syntax": "schema.parse(req.body);",
+    "examples": [
+      "const schema = z.object({ name: z.string() });\nschema.parse(req.body);"
+    ],
+    "synonyms": ["serverless schema validation"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈskiːmə ˌvælɪˈdeɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use schema validation for all input.",
+    "relatedConcepts": ["serverless", "validation"]
+  },
+  {
+    "word": "nextjs-serverless-file-upload",
+    "priority": 241,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling file uploads in serverless Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Handle file uploads with multer or formidable in serverless functions."
+      }
+    ],
+    "syntax": "import multer from 'multer';",
+    "examples": [
+      "const upload = multer({ dest: '/tmp' });"
+    ],
+    "synonyms": ["serverless file upload"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs faɪl ˈʌpˌloʊd",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Validate, limit, and sanitize uploaded files in serverless.",
+    "relatedConcepts": ["serverless", "file upload"]
+  },
+  {
+    "word": "nextjs-serverless-file-download",
+    "priority": 242,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving file downloads in serverless Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Serve files from serverless endpoints with correct headers."
+      }
+    ],
+    "syntax": "res.setHeader('Content-Disposition', 'attachment; filename=file.txt');",
+    "examples": [
+      "res.setHeader('Content-Disposition', 'attachment; filename=file.txt');\nres.send(fileBuffer);"
+    ],
+    "synonyms": ["serverless file download"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs faɪl ˈdaʊnˌloʊd",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Set correct headers for file downloads.",
+    "relatedConcepts": ["serverless", "file download"]
+  },
+  {
+    "word": "nextjs-serverless-webhooks",
+    "priority": 243,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling webhooks in serverless Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Receive webhook events in serverless endpoints."
+      }
+    ],
+    "syntax": "POST /api/webhook",
+    "examples": [
+      "export default function handler(req, res) {\n  if (req.method === 'POST') {\n    // handle webhook\n  }\n}"
+    ],
+    "synonyms": ["serverless webhooks"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈsɜːrvərləs ˈwɛbhʊks",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Verify webhook signatures for security.",
+    "relatedConcepts": ["serverless", "webhook"]
+  },
+  {
+    "word": "nextjs-serverless-cron",
+    "priority": 244,
+    "definitions": [
+      {
+        "meaning": "A pattern for running scheduled (cron) tasks in serverless Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Run periodic jobs with serverless scheduled functions."
+      }
+    ],
+    "syntax": "// Use Vercel or AWS scheduled functions",
+    "examples": [
+      "// Schedule a function to run every hour"
+    ],
+    "synonyms": ["serverless cron"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs krɒn",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use provider-native cron for reliability.",
+    "relatedConcepts": ["serverless", "cron"]
+  },
+  {
+    "word": "nextjs-serverless-graphql",
+    "priority": 245,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving GraphQL endpoints in serverless Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Serve GraphQL APIs from serverless endpoints."
+      }
+    ],
+    "syntax": "import { ApolloServer } from 'apollo-server-micro';",
+    "examples": [
+      "const server = new ApolloServer({ typeDefs, resolvers });"
+    ],
+    "synonyms": ["serverless graphql"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ˈɡræfˌkjuːˈɛl",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use Apollo Server or Yoga for GraphQL endpoints.",
+    "relatedConcepts": ["serverless", "graphql"]
+  },
+  {
+    "word": "nextjs-serverless-rest",
+    "priority": 246,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving REST endpoints in serverless Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Serve REST APIs from serverless endpoints."
+      }
+    ],
+    "syntax": "export default function handler(req, res) { ... }",
+    "examples": [
+      "export default function handler(req, res) { res.status(200).json({ message: 'ok' }); }"
+    ],
+    "synonyms": ["serverless rest"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs rɛst",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Follow REST conventions for endpoint design.",
+    "relatedConcepts": ["serverless", "rest"]
+  },
+  {
+    "word": "nextjs-serverless-middleware-stack",
+    "priority": 247,
+    "definitions": [
+      {
+        "meaning": "A pattern for composing middleware stacks in serverless Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Compose multiple middleware for authentication, logging, etc."
+      }
+    ],
+    "syntax": "export default nc().use(auth, log, validate).get(handler);",
+    "examples": [
+      "export default nc().use(auth, log, validate).get(handler);"
+    ],
+    "synonyms": ["serverless middleware stack"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ˈmɪdəlˌwɛər stæk",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Compose middleware for maintainable serverless code.",
+    "relatedConcepts": ["serverless", "middleware"]
+  },
+  {
+    "word": "nextjs-serverless-headers",
+    "priority": 248,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting HTTP headers in serverless Next.js routes.",
+        "partOfSpeech": "pattern",
+        "example": "Set security and caching headers in serverless endpoints."
+      }
+    ],
+    "syntax": "res.setHeader('X-Frame-Options', 'DENY');",
+    "examples": [
+      "res.setHeader('X-Frame-Options', 'DENY');"
+    ],
+    "synonyms": ["serverless headers"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ˈhɛdərz",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Set headers for security and caching.",
+    "relatedConcepts": ["serverless", "headers"]
+  },
+  {
+    "word": "nextjs-serverless-env",
+    "priority": 249,
+    "definitions": [
+      {
+        "meaning": "A pattern for using environment variables in serverless Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Access env variables in serverless functions."
+      }
+    ],
+    "syntax": "process.env.SECRET_KEY",
+    "examples": [
+      "const secret = process.env.SECRET_KEY;"
+    ],
+    "synonyms": ["serverless env"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ɛnv",
+    "difficulty": "advanced",
+    "category": "configuration",
+    "bestPractice": "Keep secrets in environment variables.",
+    "relatedConcepts": ["serverless", "env"]
+  },
+  {
+    "word": "nextjs-serverless-config",
+    "priority": 250,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing configuration in serverless Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Configure serverless endpoints with config files or env vars."
+      }
+    ],
+    "syntax": "module.exports = { api: { bodyParser: false } }",
+    "examples": [
+      "module.exports = { api: { bodyParser: false } }"
+    ],
+    "synonyms": ["serverless config"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ˈkɒnfɪɡ",
+    "difficulty": "advanced",
+    "category": "configuration",
+    "bestPractice": "Centralize config for maintainability.",
+    "relatedConcepts": ["serverless", "configuration"]
+  },
+  {
+    "word": "nextjs-serverless-logging-provider",
+    "priority": 251,
+    "definitions": [
+      {
+        "meaning": "A pattern for providing logging context to serverless Next.js endpoints.",
+        "partOfSpeech": "pattern",
+        "example": "Wrap handlers with a logging provider."
+      }
+    ],
+    "syntax": "<LoggingProvider>{children}</LoggingProvider>",
+    "examples": [
+      "<LoggingProvider><App /></LoggingProvider>"
+    ],
+    "synonyms": ["serverless logging provider"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ˈlɒɡɪŋ prəˈvaɪdər",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use providers for consistent logging.",
+    "relatedConcepts": ["serverless", "logging"]
+  },
+  {
+    "word": "nextjs-serverless-monitoring-provider",
+    "priority": 252,
+    "definitions": [
+      {
+        "meaning": "A pattern for providing monitoring context to serverless Next.js endpoints.",
+        "partOfSpeech": "pattern",
+        "example": "Wrap handlers with a monitoring provider."
+      }
+    ],
+    "syntax": "<MonitoringProvider>{children}</MonitoringProvider>",
+    "examples": [
+      "<MonitoringProvider><App /></MonitoringProvider>"
+    ],
+    "synonyms": ["serverless monitoring provider"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɜːrvərləs ˈmɒnɪtərɪŋ prəˈvaɪdər",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use providers for consistent monitoring.",
+    "relatedConcepts": ["serverless", "monitoring"]
+  }
+]

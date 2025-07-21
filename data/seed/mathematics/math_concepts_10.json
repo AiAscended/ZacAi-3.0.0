@@ -1,0 +1,472 @@
+{
+  "concepts": [
+    {
+      "priority": 325,
+      "concept": "Cohomology",
+      "category": "Algebraic Topology",
+      "definition": "A mathematical tool for associating algebraic invariants to topological spaces, dual to homology.",
+      "syntax": "H^n(X; G)",
+      "examples": [
+        "De Rham cohomology of a manifold."
+      ],
+      "explanation": "Cohomology provides finer invariants than homology and is central in modern geometry and physics[3].",
+      "tags": ["algebraic topology", "topology"],
+      "related": ["Homology", "Topology"]
+    },
+    {
+      "priority": 326,
+      "concept": "Exact Sequence",
+      "category": "Algebraic Topology",
+      "definition": "A sequence of algebraic objects and morphisms such that the image of one morphism equals the kernel of the next.",
+      "syntax": "A → B → C is exact if im(f) = ker(g)",
+      "examples": [
+        "Short exact sequence: 0 → A → B → C → 0"
+      ],
+      "explanation": "Exact sequences encode relationships between algebraic structures and are fundamental in topology and algebra.",
+      "tags": ["algebraic topology", "algebra"],
+      "related": ["Homology", "Cohomology"]
+    },
+    {
+      "priority": 327,
+      "concept": "Fundamental Group",
+      "category": "Algebraic Topology",
+      "definition": "The group of equivalence classes of loops based at a point in a topological space, under path composition.",
+      "syntax": "π₁(X, x₀)",
+      "examples": [
+        "π₁(S¹) = Z (the integers)."
+      ],
+      "explanation": "The fundamental group measures the basic shape (loops) of a space and is key in topology.",
+      "tags": ["algebraic topology", "group"],
+      "related": ["Homotopy", "Topology"]
+    },
+    {
+      "priority": 328,
+      "concept": "Covering Space",
+      "category": "Algebraic Topology",
+      "definition": "A topological space that maps onto another space such that locally it looks like a collection of disjoint copies.",
+      "syntax": "p: E → B, locally trivial",
+      "examples": [
+        "The real line covering the circle via the exponential map."
+      ],
+      "explanation": "Covering spaces are used to study fundamental groups and fiber bundles.",
+      "tags": ["algebraic topology", "topology"],
+      "related": ["Fundamental Group", "Topology"]
+    },
+    {
+      "priority": 329,
+      "concept": "Simplicial Complex",
+      "category": "Algebraic Topology",
+      "definition": "A set built from points, line segments, triangles, and their higher-dimensional counterparts.",
+      "syntax": "Collection of simplices glued together",
+      "examples": [
+        "Triangulation of a surface."
+      ],
+      "explanation": "Simplicial complexes are used in computational topology and data analysis.",
+      "tags": ["algebraic topology", "geometry"],
+      "related": ["Homology", "Topology"]
+    },
+    {
+      "priority": 330,
+      "concept": "Operations Research",
+      "category": "Optimization",
+      "definition": "The application of mathematical models and analytical methods to decision-making and optimization.",
+      "syntax": "Linear programming, integer programming, network flows",
+      "examples": [
+        "Optimizing supply chains, scheduling, resource allocation."
+      ],
+      "explanation": "Operations research is widely used in business, logistics, and engineering[3].",
+      "tags": ["optimization", "applied math"],
+      "related": ["Linear Programming", "Optimization"]
+    },
+    {
+      "priority": 331,
+      "concept": "Linear Programming",
+      "category": "Optimization",
+      "definition": "A method for optimizing a linear objective function subject to linear equality and inequality constraints.",
+      "syntax": "Maximize cᵗx subject to Ax ≤ b",
+      "examples": [
+        "Diet problem, transportation problem."
+      ],
+      "explanation": "Linear programming is foundational in optimization, economics, and AI[3].",
+      "tags": ["optimization", "linear algebra"],
+      "related": ["Operations Research", "Simplex Method"]
+    },
+    {
+      "priority": 332,
+      "concept": "Simplex Method",
+      "category": "Optimization",
+      "definition": "An algorithm for solving linear programming problems by moving along the edges of the feasible region.",
+      "syntax": "Iterative tableau updates",
+      "examples": [
+        "Solving maximize profit in a factory with constraints."
+      ],
+      "explanation": "The simplex method is a standard technique in operations research and optimization[3].",
+      "tags": ["optimization", "algorithms"],
+      "related": ["Linear Programming", "Operations Research"]
+    },
+    {
+      "priority": 333,
+      "concept": "Duality (Optimization)",
+      "category": "Optimization",
+      "definition": "Every linear programming problem has a dual problem with related solutions.",
+      "syntax": "Primal and dual formulations",
+      "examples": [
+        "Maximization and minimization problems."
+      ],
+      "explanation": "Duality theory provides insights into constraints and optimality in optimization.",
+      "tags": ["optimization", "linear programming"],
+      "related": ["Linear Programming", "Simplex Method"]
+    },
+    {
+      "priority": 334,
+      "concept": "Integer Programming",
+      "category": "Optimization",
+      "definition": "Optimization problems where some or all variables are constrained to be integers.",
+      "syntax": "Maximize cᵗx subject to Ax ≤ b, x ∈ Z^n",
+      "examples": [
+        "Scheduling, assignment, and routing problems."
+      ],
+      "explanation": "Integer programming is used in logistics, scheduling, and combinatorial optimization.",
+      "tags": ["optimization", "algorithms"],
+      "related": ["Linear Programming", "Combinatorics"]
+    },
+    {
+      "priority": 335,
+      "concept": "Nonlinear Programming",
+      "category": "Optimization",
+      "definition": "Optimization of a nonlinear objective function subject to constraints.",
+      "syntax": "Minimize f(x) subject to g_i(x) ≤ 0",
+      "examples": [
+        "Portfolio optimization with nonlinear risk."
+      ],
+      "explanation": "Nonlinear programming is key in economics, engineering, and machine learning.",
+      "tags": ["optimization", "algorithms"],
+      "related": ["Linear Programming", "Optimization"]
+    },
+    {
+      "priority": 336,
+      "concept": "Convex Set",
+      "category": "Optimization",
+      "definition": "A set where, for any two points, the line segment joining them lies entirely within the set.",
+      "syntax": "λx + (1-λ)y ∈ S for all x, y ∈ S, λ ∈ [0,1]",
+      "examples": [
+        "A circle, a polygon."
+      ],
+      "explanation": "Convex sets are foundational in optimization and convex analysis.",
+      "tags": ["optimization", "geometry"],
+      "related": ["Convex Function", "Linear Programming"]
+    },
+    {
+      "priority": 337,
+      "concept": "Convex Function",
+      "category": "Optimization",
+      "definition": "A function where the line segment between any two points on its graph lies above the graph.",
+      "syntax": "f(λx + (1-λ)y) ≤ λf(x) + (1-λ)f(y)",
+      "examples": [
+        "f(x) = x^2 is convex."
+      ],
+      "explanation": "Convex functions ensure global minima in optimization problems.",
+      "tags": ["optimization", "functions"],
+      "related": ["Convex Set", "Optimization"]
+    },
+    {
+      "priority": 338,
+      "concept": "Karush-Kuhn-Tucker (KKT) Conditions",
+      "category": "Optimization",
+      "definition": "Necessary conditions for a solution in nonlinear programming to be optimal, generalizing Lagrange multipliers.",
+      "syntax": "Stationarity, primal/dual feasibility, complementary slackness",
+      "examples": [
+        "Constrained optimization in economics."
+      ],
+      "explanation": "KKT conditions are used in advanced optimization and machine learning.",
+      "tags": ["optimization", "algorithms"],
+      "related": ["Nonlinear Programming", "Lagrange Multipliers"]
+    },
+    {
+      "priority": 339,
+      "concept": "Lagrange Multipliers",
+      "category": "Optimization",
+      "definition": "A strategy for finding the local maxima and minima of a function subject to equality constraints.",
+      "syntax": "∇f(x) = λ∇g(x)",
+      "examples": [
+        "Maximizing area with a fixed perimeter."
+      ],
+      "explanation": "Lagrange multipliers are fundamental in constrained optimization.",
+      "tags": ["optimization", "calculus"],
+      "related": ["KKT Conditions", "Optimization"]
+    },
+    {
+      "priority": 340,
+      "concept": "Calculus of Variations",
+      "category": "Analysis",
+      "definition": "A field studying functionals and finding functions that optimize them.",
+      "syntax": "δJ[y] = 0 for functional J[y]",
+      "examples": [
+        "Finding shortest path (geodesic) between two points."
+      ],
+      "explanation": "Calculus of variations underpins physics, engineering, and machine learning.",
+      "tags": ["analysis", "optimization"],
+      "related": ["Optimization", "Functional Analysis"]
+    },
+    {
+      "priority": 341,
+      "concept": "Euler-Lagrange Equation",
+      "category": "Calculus of Variations",
+      "definition": "A differential equation whose solution yields the extremals of a variational problem.",
+      "syntax": "d/dx (∂L/∂y') - ∂L/∂y = 0",
+      "examples": [
+        "Brachistochrone problem, geodesics."
+      ],
+      "explanation": "The Euler-Lagrange equation is central to physics and optimization.",
+      "tags": ["calculus", "optimization"],
+      "related": ["Calculus of Variations", "Lagrange Multipliers"]
+    },
+    {
+      "priority": 342,
+      "concept": "Hamiltonian Mechanics",
+      "category": "Mechanics",
+      "definition": "A reformulation of classical mechanics using Hamiltonian functions and canonical equations.",
+      "syntax": "H(q,p) = Σ p_i dq_i/dt - L",
+      "examples": [
+        "Describing planetary motion, quantum systems."
+      ],
+      "explanation": "Hamiltonian mechanics is foundational in physics and dynamical systems.",
+      "tags": ["mechanics", "physics"],
+      "related": ["Lagrangian Mechanics", "Differential Equations"]
+    },
+    {
+      "priority": 343,
+      "concept": "Lagrangian Mechanics",
+      "category": "Mechanics",
+      "definition": "A reformulation of classical mechanics using the principle of stationary action.",
+      "syntax": "L = T - V (kinetic minus potential energy)",
+      "examples": [
+        "Solving for motion using Euler-Lagrange equations."
+      ],
+      "explanation": "Lagrangian mechanics underpins physics, engineering, and optimization.",
+      "tags": ["mechanics", "physics"],
+      "related": ["Hamiltonian Mechanics", "Euler-Lagrange Equation"]
+    },
+    {
+      "priority": 344,
+      "concept": "Noether's Theorem",
+      "category": "Mechanics/Analysis",
+      "definition": "Every differentiable symmetry of the action of a physical system has a corresponding conservation law.",
+      "syntax": "Symmetry ⇒ Conservation Law",
+      "examples": [
+        "Time invariance ⇒ energy conservation."
+      ],
+      "explanation": "Noether's theorem links symmetry and conservation in physics and mathematics.",
+      "tags": ["mechanics", "theorem"],
+      "related": ["Lagrangian Mechanics", "Hamiltonian Mechanics"]
+    },
+    {
+      "priority": 345,
+      "concept": "Classical Mechanics",
+      "category": "Mechanics",
+      "definition": "The study of the motion of bodies under the influence of forces.",
+      "syntax": "Newton's laws, Lagrangian, Hamiltonian formulations",
+      "examples": [
+        "Projectile motion, planetary orbits."
+      ],
+      "explanation": "Classical mechanics is the foundation of physics and engineering.",
+      "tags": ["mechanics", "physics"],
+      "related": ["Lagrangian Mechanics", "Hamiltonian Mechanics"]
+    },
+    {
+      "priority": 346,
+      "concept": "Partial Fraction Decomposition",
+      "category": "Algebra/Calculus",
+      "definition": "Expressing a rational function as a sum of simpler fractions.",
+      "syntax": "A/(x-a) + B/(x-b) ...",
+      "examples": [
+        "1/(x^2-1) = 1/2(1/(x-1) - 1/(x+1))"
+      ],
+      "explanation": "Partial fractions are used in integration and solving differential equations.",
+      "tags": ["algebra", "calculus"],
+      "related": ["Integration", "Algebraic Manipulation"]
+    },
+    {
+      "priority": 347,
+      "concept": "Residue Calculus",
+      "category": "Complex Analysis",
+      "definition": "A technique for evaluating complex integrals using residues at poles.",
+      "syntax": "∮ f(z) dz = 2πi Σ Res(f, a_k)",
+      "examples": [
+        "Evaluating real integrals using contour integration."
+      ],
+      "explanation": "Residue calculus is essential in advanced integration and physics.",
+      "tags": ["complex analysis", "integration"],
+      "related": ["Residue Theorem", "Pole"]
+    },
+    {
+      "priority": 348,
+      "concept": "Galois Theory",
+      "category": "Abstract Algebra",
+      "definition": "A branch of algebra studying symmetries of roots of polynomials and field extensions.",
+      "syntax": "Galois group of a field extension",
+      "examples": [
+        "Solvability of polynomial equations by radicals."
+      ],
+      "explanation": "Galois theory explains why some equations cannot be solved by radicals and is central in algebra.",
+      "tags": ["algebra", "field theory"],
+      "related": ["Field", "Group"]
+    },
+    {
+      "priority": 349,
+      "concept": "Algebraic Number Theory",
+      "category": "Number Theory",
+      "definition": "The study of algebraic structures related to algebraic integers and field extensions.",
+      "syntax": "Number fields, ring of integers",
+      "examples": [
+        "Solving Diophantine equations."
+      ],
+      "explanation": "Algebraic number theory underpins modern cryptography and advanced mathematics.",
+      "tags": ["number theory", "algebra"],
+      "related": ["Field", "Ring"]
+    },
+    {
+      "priority": 350,
+      "concept": "Diophantine Equation",
+      "category": "Number Theory",
+      "definition": "An equation seeking integer solutions.",
+      "syntax": "ax + by = c, x, y ∈ Z",
+      "examples": [
+        "x^2 + y^2 = z^2 (Pythagorean triples)."
+      ],
+      "explanation": "Diophantine equations are central in number theory and cryptography.",
+      "tags": ["number theory", "equation"],
+      "related": ["Algebraic Number Theory", "Ring"]
+    },
+    {
+      "priority": 351,
+      "concept": "Transcendental Number",
+      "category": "Number Theory",
+      "definition": "A real or complex number that is not a root of any nonzero polynomial equation with integer coefficients.",
+      "syntax": "e, π are transcendental",
+      "examples": [
+        "π, e"
+      ],
+      "explanation": "Transcendental numbers are important in analysis and number theory.",
+      "tags": ["number theory", "analysis"],
+      "related": ["Algebraic Number", "Number Theory"]
+    },
+    {
+      "priority": 352,
+      "concept": "Algebraic Number",
+      "category": "Number Theory",
+      "definition": "A complex number that is a root of a nonzero polynomial equation with integer coefficients.",
+      "syntax": "√2, i",
+      "examples": [
+        "√2 is algebraic, π is not."
+      ],
+      "explanation": "Algebraic numbers are the foundation of algebraic number theory.",
+      "tags": ["number theory", "algebra"],
+      "related": ["Transcendental Number", "Number Theory"]
+    },
+    {
+      "priority": 353,
+      "concept": "Logic Programming",
+      "category": "Computational Mathematics",
+      "definition": "A programming paradigm based on formal logic, where programs are expressed in terms of relations and inference.",
+      "syntax": "Prolog: facts, rules, queries",
+      "examples": [
+        "Prolog program for family relationships."
+      ],
+      "explanation": "Logic programming is used in AI, databases, and knowledge representation.",
+      "tags": ["computational math", "logic"],
+      "related": ["Propositional Logic", "Predicate Logic"]
+    },
+    {
+      "priority": 354,
+      "concept": "Lambda Calculus",
+      "category": "Computational Mathematics",
+      "definition": "A formal system for expressing computation based on function abstraction and application.",
+      "syntax": "λx. x+1",
+      "examples": [
+        "λx. x^2 is a function mapping x to x squared."
+      ],
+      "explanation": "Lambda calculus underpins functional programming and theoretical computer science.",
+      "tags": ["computational math", "logic"],
+      "related": ["Combinatory Logic", "Functional Programming"]
+    },
+    {
+      "priority": 355,
+      "concept": "Combinatory Logic",
+      "category": "Computational Mathematics",
+      "definition": "A notation to eliminate the need for variables in mathematical logic.",
+      "syntax": "Combinators: S, K, I, etc.",
+      "examples": [
+        "SKI combinator calculus."
+      ],
+      "explanation": "Combinatory logic is foundational for computation theory and programming languages.",
+      "tags": ["computational math", "logic"],
+      "related": ["Lambda Calculus", "Logic Programming"]
+    },
+    {
+      "priority": 356,
+      "concept": "Turing Machine",
+      "category": "Computational Mathematics",
+      "definition": "An abstract computational model that manipulates symbols on a tape according to a set of rules.",
+      "syntax": "States, tape, transition function",
+      "examples": [
+        "Universal Turing machine."
+      ],
+      "explanation": "Turing machines formalize the concept of computation and decidability.",
+      "tags": ["computational math", "theory"],
+      "related": ["Lambda Calculus", "Computational Complexity"]
+    },
+    {
+      "priority": 357,
+      "concept": "Decidability",
+      "category": "Computational Mathematics",
+      "definition": "A property of a problem that can be algorithmically solved by a Turing machine.",
+      "syntax": "Problem is decidable if Turing machine halts for all inputs.",
+      "examples": [
+        "Primality testing is decidable; the halting problem is not."
+      ],
+      "explanation": "Decidability distinguishes solvable from unsolvable problems in computation.",
+      "tags": ["computational math", "theory"],
+      "related": ["Turing Machine", "Computational Complexity"]
+    },
+    {
+      "priority": 358,
+      "concept": "NP-Completeness",
+      "category": "Computational Mathematics",
+      "definition": "A class of decision problems for which a solution can be verified in polynomial time, and every problem in NP can be reduced to it.",
+      "syntax": "Cook-Levin theorem, P vs NP",
+      "examples": [
+        "Traveling salesman problem, Boolean satisfiability."
+      ],
+      "explanation": "NP-completeness is central to computational complexity and cryptography.",
+      "tags": ["computational math", "complexity"],
+      "related": ["Computational Complexity", "Turing Machine"]
+    },
+    {
+      "priority": 359,
+      "concept": "Cryptography",
+      "category": "Applied Mathematics",
+      "definition": "The study of secure communication techniques based on mathematical theory.",
+      "syntax": "Public key, private key, ciphers",
+      "examples": [
+        "RSA, AES, Diffie-Hellman."
+      ],
+      "explanation": "Cryptography is essential for cybersecurity, privacy, and secure communications.",
+      "tags": ["applied math", "security"],
+      "related": ["Number Theory", "Computational Complexity"]
+    },
+    {
+      "priority": 360,
+      "concept": "Quantum Computing",
+      "category": "Applied Mathematics",
+      "definition": "A model of computation using quantum-mechanical phenomena such as superposition and entanglement.",
+      "syntax": "Qubits, quantum gates, algorithms",
+      "examples": [
+        "Shor's algorithm for factoring, Grover's search."
+      ],
+      "explanation": "Quantum computing promises exponential speedups for certain problems and is a frontier in computation and mathematics.",
+      "tags": ["applied math", "computation"],
+      "related": ["Computational Mathematics", "Cryptography"]
+    }
+  ]
+}

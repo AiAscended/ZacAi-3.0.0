@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-sentry-monitoring",
+    "priority": 469,
+    "definitions": [
+      {
+        "meaning": "A pattern for error and performance monitoring with Sentry in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Capture runtime errors and performance bottlenecks."
+      }
+    ],
+    "syntax": "Sentry.init({ dsn: '...' });",
+    "examples": [
+      "Sentry.captureException(error);"
+    ],
+    "synonyms": ["sentry", "error monitoring"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈsɛntri ˈmɒnɪtərɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Integrate Sentry in both client and server code.",
+    "relatedConcepts": ["monitoring", "error tracking"]
+  },
+  {
+    "word": "nextjs-datadog-monitoring",
+    "priority": 470,
+    "definitions": [
+      {
+        "meaning": "A pattern for application monitoring and APM with Datadog in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Track performance and errors with Datadog."
+      }
+    ],
+    "syntax": "import { datadogRum } from '@datadog/browser-rum';",
+    "examples": [
+      "datadogRum.init({ applicationId: '...', clientToken: '...' });"
+    ],
+    "synonyms": ["datadog", "apm"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdeɪtə dɒɡ ˈmɒnɪtərɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Monitor both frontend and backend for full visibility.",
+    "relatedConcepts": ["monitoring", "apm"]
+  },
+  {
+    "word": "nextjs-newrelic-monitoring",
+    "priority": 471,
+    "definitions": [
+      {
+        "meaning": "A pattern for application monitoring and APM with New Relic in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor app health and transactions with New Relic."
+      }
+    ],
+    "syntax": "require('newrelic');",
+    "examples": [
+      "newrelic.noticeError(error);"
+    ],
+    "synonyms": ["new relic", "apm"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "njuː ˈrɛlɪk ˈmɒnɪtərɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Instrument both server and client for end-to-end tracing.",
+    "relatedConcepts": ["monitoring", "apm"]
+  },
+  {
+    "word": "nextjs-logrocket",
+    "priority": 472,
+    "definitions": [
+      {
+        "meaning": "A pattern for session replay and error monitoring with LogRocket in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Replay user sessions and capture errors."
+      }
+    ],
+    "syntax": "LogRocket.init('app/id');",
+    "examples": [
+      "LogRocket.identify('userId', { name: 'Jane' });"
+    ],
+    "synonyms": ["logrocket", "session replay"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈlɒɡˌrɒkɪt",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Use LogRocket for debugging complex UI issues.",
+    "relatedConcepts": ["monitoring", "session replay"]
+  },
+  {
+    "word": "nextjs-bugsnag",
+    "priority": 473,
+    "definitions": [
+      {
+        "meaning": "A pattern for error monitoring and reporting with Bugsnag in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Track and report JavaScript errors."
+      }
+    ],
+    "syntax": "Bugsnag.start({ apiKey: '...' });",
+    "examples": [
+      "Bugsnag.notify(error);"
+    ],
+    "synonyms": ["bugsnag", "error monitoring"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈbʌɡsnæɡ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Integrate Bugsnag for both build and runtime errors.",
+    "relatedConcepts": ["monitoring", "error tracking"]
+  },
+  {
+    "word": "nextjs-google-analytics",
+    "priority": 474,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Google Analytics for traffic and event tracking.",
+        "partOfSpeech": "pattern",
+        "example": "Track page views and custom events."
+      }
+    ],
+    "syntax": "gtag('config', 'GA_MEASUREMENT_ID');",
+    "examples": [
+      "gtag('event', 'login', { method: 'Google' });"
+    ],
+    "synonyms": ["google analytics", "analytics"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈɡuːɡl əˈnælɪtɪks",
+    "difficulty": "intermediate",
+    "category": "analytics",
+    "bestPractice": "Anonymize IP and respect user privacy settings.",
+    "relatedConcepts": ["analytics", "tracking"]
+  },
+  {
+    "word": "nextjs-matomo-analytics",
+    "priority": 475,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Matomo (open source analytics) with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Track visits and events with Matomo."
+      }
+    ],
+    "syntax": "_paq.push(['trackPageView']);",
+    "examples": [
+      "_paq.push(['trackEvent', 'Category', 'Action']);"
+    ],
+    "synonyms": ["matomo", "piwik", "analytics"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "məˈtoʊmoʊ",
+    "difficulty": "intermediate",
+    "category": "analytics",
+    "bestPractice": "Self-host Matomo for full data control.",
+    "relatedConcepts": ["analytics", "tracking"]
+  },
+  {
+    "word": "nextjs-mixpanel",
+    "priority": 476,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Mixpanel analytics with Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Track user events and funnels."
+      }
+    ],
+    "syntax": "mixpanel.track('Event Name');",
+    "examples": [
+      "mixpanel.identify('user123');"
+    ],
+    "synonyms": ["mixpanel", "analytics"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈmɪksˌpænəl",
+    "difficulty": "intermediate",
+    "category": "analytics",
+    "bestPractice": "Use Mixpanel for product analytics and retention.",
+    "relatedConcepts": ["analytics", "tracking"]
+  },
+  {
+    "word": "nextjs-segment",
+    "priority": 477,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrating Segment as a customer data platform.",
+        "partOfSpeech": "pattern",
+        "example": "Send analytics data to multiple destinations."
+      }
+    ],
+    "syntax": "analytics.track('Event', { ... });",
+    "examples": [
+      "analytics.identify('userId', { email: 'a@b.com' });"
+    ],
+    "synonyms": ["segment", "analytics"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈsɛɡmənt",
+    "difficulty": "intermediate",
+    "category": "analytics",
+    "bestPractice": "Centralize analytics and privacy controls.",
+    "relatedConcepts": ["analytics", "tracking"]
+  },
+  {
+    "word": "nextjs-fullstory",
+    "priority": 478,
+    "definitions": [
+      {
+        "meaning": "A pattern for session replay and analytics with FullStory in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Replay user sessions and analyze behavior."
+      }
+    ],
+    "syntax": "FS.init({ orgId: '...' });",
+    "examples": [
+      "FS.identify('userId', { displayName: 'Jane' });"
+    ],
+    "synonyms": ["fullstory", "session replay"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈfʊlˌstɔːri",
+    "difficulty": "advanced",
+    "category": "analytics",
+    "bestPractice": "Use FullStory for UX research and debugging.",
+    "relatedConcepts": ["analytics", "session replay"]
+  },
+  {
+    "word": "nextjs-hotjar",
+    "priority": 479,
+    "definitions": [
+      {
+        "meaning": "A pattern for heatmaps, session recordings, and surveys with Hotjar in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze user interactions with Hotjar."
+      }
+    ],
+    "syntax": "hj('trigger', 'survey');",
+    "examples": [
+      "hj('event', 'button_click');"
+    ],
+    "synonyms": ["hotjar", "heatmap"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈhɒtdʒɑːr",
+    "difficulty": "intermediate",
+    "category": "analytics",
+    "bestPractice": "Use Hotjar for feedback and conversion optimization.",
+    "relatedConcepts": ["analytics", "heatmap"]
+  },
+  {
+    "word": "nextjs-cookiebot",
+    "priority": 480,
+    "definitions": [
+      {
+        "meaning": "A pattern for cookie consent and compliance with Cookiebot in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Display cookie banners and manage consent."
+      }
+    ],
+    "syntax": "<script src='https://consent.cookiebot.com/uc.js' ... />",
+    "examples": [
+      "<Cookiebot />"
+    ],
+    "synonyms": ["cookiebot", "cookie consent"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈkʊki bɒt",
+    "difficulty": "intermediate",
+    "category": "compliance",
+    "bestPractice": "Block non-essential cookies until consent is given.",
+    "relatedConcepts": ["compliance", "privacy"]
+  },
+  {
+    "word": "nextjs-one-trust",
+    "priority": 481,
+    "definitions": [
+      {
+        "meaning": "A pattern for cookie consent and privacy management with OneTrust.",
+        "partOfSpeech": "pattern",
+        "example": "Manage cookie consent with OneTrust."
+      }
+    ],
+    "syntax": "<script src='https://cdn.cookielaw.org/consent.js' ... />",
+    "examples": [
+      "<OneTrust />"
+    ],
+    "synonyms": ["onetrust", "cookie consent"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "wʌn trʌst",
+    "difficulty": "intermediate",
+    "category": "compliance",
+    "bestPractice": "Integrate OneTrust for enterprise privacy compliance.",
+    "relatedConcepts": ["compliance", "privacy"]
+  },
+  {
+    "word": "nextjs-csp",
+    "priority": 482,
+    "definitions": [
+      {
+        "meaning": "A pattern for adding Content Security Policy (CSP) headers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent XSS by setting strict CSP headers."
+      }
+    ],
+    "syntax": "res.setHeader('Content-Security-Policy', \"default-src 'self'\");",
+    "examples": [
+      "Content-Security-Policy: default-src 'self';"
+    ],
+    "synonyms": ["csp", "security"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "siː ɛs piː",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set CSP in custom server or middleware.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet",
+    "priority": 483,
+    "definitions": [
+      {
+        "meaning": "A pattern for securing HTTP headers with Helmet in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use Helmet to set security-related HTTP headers."
+      }
+    ],
+    "syntax": "import helmet from 'helmet'; app.use(helmet());",
+    "examples": [
+      "app.use(helmet.contentSecurityPolicy());"
+    ],
+    "synonyms": ["helmet", "security headers"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈhɛlmɪt",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Use Helmet in custom Express servers.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-rate-limiting",
+    "priority": 484,
+    "definitions": [
+      {
+        "meaning": "A pattern for limiting request rates to APIs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent abuse by limiting API calls per user."
+      }
+    ],
+    "syntax": "rateLimit({ windowMs: 15*60*1000, max: 100 });",
+    "examples": [
+      "app.use('/api/', rateLimit(...));"
+    ],
+    "synonyms": ["rate limiting", "api protection"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "reɪt ˈlɪmɪtɪŋ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Apply rate limiting to all public APIs.",
+    "relatedConcepts": ["security", "api"]
+  },
+  {
+    "word": "nextjs-brute-force-protection",
+    "priority": 485,
+    "definitions": [
+      {
+        "meaning": "A pattern for protecting login and sensitive endpoints from brute-force attacks.",
+        "partOfSpeech": "pattern",
+        "example": "Block repeated failed login attempts."
+      }
+    ],
+    "syntax": "expressBrute.prevent",
+    "examples": [
+      "app.post('/login', expressBrute.prevent, loginHandler);"
+    ],
+    "synonyms": ["brute force protection"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "bruːt fɔːrs prəˈtɛkʃən",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Combine with rate limiting for strong protection.",
+    "relatedConcepts": ["security", "login"]
+  },
+  {
+    "word": "nextjs-cors",
+    "priority": 486,
+    "definitions": [
+      {
+        "meaning": "A pattern for configuring Cross-Origin Resource Sharing (CORS) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow or restrict cross-origin API requests."
+      }
+    ],
+    "syntax": "res.setHeader('Access-Control-Allow-Origin', '*');",
+    "examples": [
+      "app.use(cors({ origin: 'https://example.com' }));"
+    ],
+    "synonyms": ["cors", "cross-origin"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "kɔːrs",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Restrict CORS to trusted domains.",
+    "relatedConcepts": ["security", "api"]
+  },
+  {
+    "word": "nextjs-helmet-hsts",
+    "priority": 487,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing HTTP Strict Transport Security (HSTS) with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Force HTTPS with HSTS headers."
+      }
+    ],
+    "syntax": "helmet.hsts({ maxAge: 31536000 });",
+    "examples": [
+      "app.use(helmet.hsts());"
+    ],
+    "synonyms": ["hsts", "helmet"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "eɪtʃ ɛs tiː ɛs",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Enable HSTS for all production deployments.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-csp",
+    "priority": 488,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Content Security Policy (CSP) with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Use Helmet to set CSP headers."
+      }
+    ],
+    "syntax": "helmet.contentSecurityPolicy({ directives: ... })",
+    "examples": [
+      "app.use(helmet.contentSecurityPolicy({ directives: { defaultSrc: [\"'self'\"] } }));"
+    ],
+    "synonyms": ["helmet csp", "security"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "siː ɛs piː",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set strict CSP for all routes.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-xss-filter",
+    "priority": 489,
+    "definitions": [
+      {
+        "meaning": "A pattern for XSS protection with Helmet in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Set X-XSS-Protection header with Helmet."
+      }
+    ],
+    "syntax": "helmet.xssFilter()",
+    "examples": [
+      "app.use(helmet.xssFilter());"
+    ],
+    "synonyms": ["xss filter", "helmet"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ɛks ɛs ɛs ˈfɪltər",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Enable XSS filter for all responses.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-frameguard",
+    "priority": 490,
+    "definitions": [
+      {
+        "meaning": "A pattern for clickjacking protection with Helmet's frameguard.",
+        "partOfSpeech": "pattern",
+        "example": "Set X-Frame-Options header to prevent clickjacking."
+      }
+    ],
+    "syntax": "helmet.frameguard({ action: 'deny' })",
+    "examples": [
+      "app.use(helmet.frameguard({ action: 'sameorigin' }));"
+    ],
+    "synonyms": ["frameguard", "helmet"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈfreɪmˌɡɑːrd",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set frameguard to 'deny' or 'sameorigin' for all pages.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-nosniff",
+    "priority": 491,
+    "definitions": [
+      {
+        "meaning": "A pattern for MIME type sniffing protection with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Set X-Content-Type-Options header to nosniff."
+      }
+    ],
+    "syntax": "helmet.noSniff()",
+    "examples": [
+      "app.use(helmet.noSniff());"
+    ],
+    "synonyms": ["nosniff", "helmet"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "noʊ snɪf",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Enable nosniff for all responses.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-referrer-policy",
+    "priority": 492,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Referrer-Policy header with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Control what referrer information is sent."
+      }
+    ],
+    "syntax": "helmet.referrerPolicy({ policy: 'same-origin' })",
+    "examples": [
+      "app.use(helmet.referrerPolicy({ policy: 'no-referrer' }));"
+    ],
+    "synonyms": ["referrer policy", "helmet"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "rɪˈfɛrər ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set strict referrer policy for privacy.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-permitted-cross-domain-policies",
+    "priority": 493,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting cross-domain policy headers with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Control Adobe Flash and Acrobat cross-domain requests."
+      }
+    ],
+    "syntax": "helmet.permittedCrossDomainPolicies()",
+    "examples": [
+      "app.use(helmet.permittedCrossDomainPolicies());"
+    ],
+    "synonyms": ["cross-domain policy", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "krɒs dəˈmeɪn ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Restrict cross-domain policies for security.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-hide-powered-by",
+    "priority": 494,
+    "definitions": [
+      {
+        "meaning": "A pattern for hiding the X-Powered-By header with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Remove X-Powered-By header for security."
+      }
+    ],
+    "syntax": "helmet.hidePoweredBy()",
+    "examples": [
+      "app.use(helmet.hidePoweredBy());"
+    ],
+    "synonyms": ["hide powered by", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "haɪd ˈpaʊərd baɪ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Always hide X-Powered-By in production.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-dns-prefetch-control",
+    "priority": 495,
+    "definitions": [
+      {
+        "meaning": "A pattern for controlling DNS prefetching with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Set X-DNS-Prefetch-Control header."
+      }
+    ],
+    "syntax": "helmet.dnsPrefetchControl({ allow: false })",
+    "examples": [
+      "app.use(helmet.dnsPrefetchControl());"
+    ],
+    "synonyms": ["dns prefetch", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "diː ɛn ɛs ˈpriːˌfɛʧ",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Disable DNS prefetch unless needed.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-ie-no-open",
+    "priority": 496,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting X-Download-Options header for IE with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent IE from executing downloads in site's context."
+      }
+    ],
+    "syntax": "helmet.ieNoOpen()",
+    "examples": [
+      "app.use(helmet.ieNoOpen());"
+    ],
+    "synonyms": ["ie no open", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "aɪ iː noʊ oʊpən",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Enable for all downloads.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-cross-origin-embedder-policy",
+    "priority": 497,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Cross-Origin-Embedder-Policy header with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Control cross-origin resource embedding."
+      }
+    ],
+    "syntax": "helmet.crossOriginEmbedderPolicy({ policy: 'require-corp' })",
+    "examples": [
+      "app.use(helmet.crossOriginEmbedderPolicy());"
+    ],
+    "synonyms": ["embedder policy", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "krɒs ˈɔːrɪdʒɪn ɛmˈbɛdər ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set for all production deployments.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-cross-origin-opener-policy",
+    "priority": 498,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Cross-Origin-Opener-Policy header with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Control cross-origin window interactions."
+      }
+    ],
+    "syntax": "helmet.crossOriginOpenerPolicy({ policy: 'same-origin' })",
+    "examples": [
+      "app.use(helmet.crossOriginOpenerPolicy());"
+    ],
+    "synonyms": ["opener policy", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "krɒs ˈɔːrɪdʒɪn ˈoʊpənər ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set for all production deployments.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-cross-origin-resource-policy",
+    "priority": 499,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Cross-Origin-Resource-Policy header with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Control cross-origin resource loading."
+      }
+    ],
+    "syntax": "helmet.crossOriginResourcePolicy({ policy: 'same-origin' })",
+    "examples": [
+      "app.use(helmet.crossOriginResourcePolicy());"
+    ],
+    "synonyms": ["resource policy", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "krɒs ˈɔːrɪdʒɪn rɪˈsɔːrs ˈpɒlɪsi",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Set for all production deployments.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-helmet-origin-agent-cluster",
+    "priority": 500,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting Origin-Agent-Cluster header with Helmet.",
+        "partOfSpeech": "pattern",
+        "example": "Isolate origins for security."
+      }
+    ],
+    "syntax": "helmet.originAgentCluster()",
+    "examples": [
+      "app.use(helmet.originAgentCluster());"
+    ],
+    "synonyms": ["origin agent cluster", "helmet"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈɔːrɪdʒɪn ˈeɪdʒənt ˈklʌstər",
+    "difficulty": "advanced",
+    "category": "security",
+    "bestPractice": "Enable for all production deployments.",
+    "relatedConcepts": ["security", "headers"]
+  },
+  {
+    "word": "nextjs-production-logging",
+    "priority": 501,
+    "definitions": [
+      {
+        "meaning": "A pattern for structured and secure logging in production environments.",
+        "partOfSpeech": "pattern",
+        "example": "Log errors and events in production."
+      }
+    ],
+    "syntax": "logger.info('message');",
+    "examples": [
+      "logger.error('error', { err });"
+    ],
+    "synonyms": ["production logging"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "prəˈdʌkʃən ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Mask sensitive data and use log rotation.",
+    "relatedConcepts": ["logging", "monitoring"]
+  },
+  {
+    "word": "nextjs-production-error-boundary",
+    "priority": 502,
+    "definitions": [
+      {
+        "meaning": "A pattern for robust error boundaries in production.",
+        "partOfSpeech": "pattern",
+        "example": "Catch and report errors gracefully in production."
+      }
+    ],
+    "syntax": "<ErrorBoundary>{children}</ErrorBoundary>",
+    "examples": [
+      "<ErrorBoundary fallback={<ErrorPage />} />"
+    ],
+    "synonyms": ["error boundary", "production error"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɛrər ˈbaʊndəri",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Log errors and show user-friendly error pages.",
+    "relatedConcepts": ["monitoring", "error handling"]
+  },
+  {
+    "word": "nextjs-production-health-check",
+    "priority": 503,
+    "definitions": [
+      {
+        "meaning": "A pattern for health check endpoints for production monitoring.",
+        "partOfSpeech": "pattern",
+        "example": "Expose /api/healthz for uptime monitoring."
+      }
+    ],
+    "syntax": "export default function handler(req, res) { res.status(200).send('OK'); }",
+    "examples": [
+      "GET /api/healthz returns 200 OK"
+    ],
+    "synonyms": ["health check", "production health"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "hɛlθ tʃɛk",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Integrate health checks with cloud monitoring.",
+    "relatedConcepts": ["monitoring", "health check"]
+  },
+  {
+    "word": "nextjs-production-maintenance-mode",
+    "priority": 504,
+    "definitions": [
+      {
+        "meaning": "A pattern for maintenance mode in production deployments.",
+        "partOfSpeech": "pattern",
+        "example": "Show a maintenance page during updates."
+      }
+    ],
+    "syntax": "if (isMaintenance) return <MaintenancePage />;",
+    "examples": [
+      "return <MaintenancePage />;"
+    ],
+    "synonyms": ["maintenance mode", "production maintenance"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈmeɪntənəns moʊd",
+    "difficulty": "advanced",
+    "category": "monitoring",
+    "bestPractice": "Notify users and set HTTP 503 during maintenance.",
+    "relatedConcepts": ["monitoring", "maintenance"]
+  }
+]
