@@ -1,6 +1,6 @@
 {
   "name": "Next.js AI App",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",         // Use latest stable Node.js image if possible
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",         // Use latest stable Node.js image if possible
   "features": {
     // Add database or other tools here if needed, e.g. with devcontainer Features
   },
