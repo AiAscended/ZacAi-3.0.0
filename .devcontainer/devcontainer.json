@@ -13,11 +13,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "dbaeumer.vscode-eslint",            // ESLint integration
-        "esbenp.prettier-vscode",            // Prettier formatting
-        "dsznajder.es7-react-js-snippets",   // React snippets productivity
-        "bradlc.vscode-tailwindcss",         // Tailwind CSS intellisense support
-        "orta.vscode-jest"                   // Jest test explorer and running support
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "dsznajder.es7-react-js-snippets",
+        "bradlc.vscode-tailwindcss",
+        "orta.vscode-jest"
       ],
       "settings": {
         "editor.formatOnSave": true,
