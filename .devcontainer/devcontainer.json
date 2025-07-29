@@ -1,25 +1,28 @@
 {
-  "name": "Next.js AI App",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",         // Use latest stable Node.js image if possible
-  "features": {
-    // Add database or other tools here if needed, e.g. with devcontainer Features
-  },
+  "name": "ZacAI Next.js AI App Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
   "postCreateCommand": "npm install",
+  "updateContentCommand": "npm install",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js App",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
-        "dsznajder.es7-react-js-snippets",
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "bradlc.vscode-tailwindcss"           // If using Tailwind
-      ]
-    }
-  },
-  "forwardPorts": [3000],
-  "updateContentCommand": "npm install",      // Auto-install deps if dependencies change
-  "portsAttributes": {
-    "3000": {
-      "onAutoForward": "openPreview"
+        "dbaeumer.vscode-eslint",            // ESLint integration
+        "esbenp.prettier-vscode",            // Prettier formatting
+        "dsznajder.es7-react-js-snippets",   // React snippets productivity
+        "bradlc.vscode-tailwindcss",         // Tailwind CSS intellisense support
+        "orta.vscode-jest"                   // Jest test explorer and running support
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "eslint.run": "onSave"
+      }
     }
   }
 }
