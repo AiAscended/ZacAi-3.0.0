@@ -16,9 +16,9 @@
     "next": "^15.0.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
-    "lucide-react": "^0.268.0",                // Icon library used in your UI
-    "zod": "^3.22.4",                          // For form validation (recommended)
-    "swr": "^2.2.0"                           // React data fetching with caching & revalidation
+    "lucide-react": "^0.268.0",
+    "zod": "^3.22.4",
+    "swr": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
