@@ -1,0 +1,11 @@
+{
+  "seed_events": [
+    {
+      "event_id": "seed-20250707-001",
+      "timestamp": "2025-07-07T19:40:00+10:00",
+      "action": "Initial core_config.json loaded",
+      "user": "UltimateAI Team"
+    }
+    // Add more events as seeding occurs
+  ]
+}

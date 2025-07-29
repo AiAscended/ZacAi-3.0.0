@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "component_id": "comp-001",
+      "name": "API Gateway",
+      "type": "REST",
+      "status": "active",
+      "created_at": "2025-07-07T19:40:00+10:00",
+      "config": {
+        "host": "api.ultimateai.com",
+        "port": 443,
+        "auth_method": "OAuth2"
+      },
+      "tags": ["core", "network", "public"]
+    },
+    {
+      "component_id": "comp-002",
+      "name": "KnowledgeGraphDB",
+      "type": "GraphDB",
+      "status": "active",
+      "config": {
+        "engine": "Neo4j",
+        "replicas": 3,
+        "backup": true
+      },
+      "tags": ["storage", "core", "persistent"]
+    },
+    {
+      "component_id": "comp-003",
+      "name": "NLP Engine",
+      "type": "AI",
+      "status": "active",
+      "config": {
+        "model": "UltimateAI-v5",
+        "language_support": ["en", "es", "zh"],
+        "max_tokens": 8192
+      },
+      "tags": ["ai", "language", "core"]
+    }
+    // Add up to 36 core components here; if more, create components_core2.json, etc.
+  ]
+}

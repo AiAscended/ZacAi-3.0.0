@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 325,
+      "word": "guy",
+      "part_of_speech": "noun",
+      "definition": "An informal term for a man or person.",
+      "example": "That guy is my friend.",
+      "frequency_rank": 325,
+      "tags": ["noun", "person", "informal", "high-frequency"],
+      "related": ["man", "person", "boy"]
+    },
+    {
+      "priority": 326,
+      "word": "early",
+      "part_of_speech": "adjective/adverb",
+      "definition": "Happening or done before the usual or expected time.",
+      "example": "She arrived early.",
+      "frequency_rank": 326,
+      "tags": ["adjective", "adverb", "time", "high-frequency"],
+      "related": ["late", "soon", "before"]
+    },
+    {
+      "priority": 327,
+      "word": "food",
+      "part_of_speech": "noun",
+      "definition": "Any nutritious substance that people or animals eat or drink.",
+      "example": "Food is essential for life.",
+      "frequency_rank": 327,
+      "tags": ["noun", "nutrition", "high-frequency"],
+      "related": ["meal", "eat", "diet"]
+    },
+    {
+      "priority": 328,
+      "word": "moment",
+      "part_of_speech": "noun",
+      "definition": "A very brief period of time.",
+      "example": "Wait a moment, please.",
+      "frequency_rank": 328,
+      "tags": ["noun", "time", "high-frequency"],
+      "related": ["minute", "instant", "second"]
+    },
+    {
+      "priority": 329,
+      "word": "himself",
+      "part_of_speech": "pronoun",
+      "definition": "Reflexive form of 'he'.",
+      "example": "He did it himself.",
+      "frequency_rank": 329,
+      "tags": ["pronoun", "reflexive", "high-frequency"],
+      "related": ["him", "yourself", "herself"]
+    },
+    {
+      "priority": 330,
+      "word": "air",
+      "part_of_speech": "noun",
+      "definition": "The invisible gaseous substance surrounding the earth.",
+      "example": "We need air to breathe.",
+      "frequency_rank": 330,
+      "tags": ["noun", "nature", "high-frequency"],
+      "related": ["oxygen", "atmosphere", "wind"]
+    },
+    {
+      "priority": 331,
+      "word": "teacher",
+      "part_of_speech": "noun",
+      "definition": "A person who teaches, especially in a school.",
+      "example": "My teacher is very kind.",
+      "frequency_rank": 331,
+      "tags": ["noun", "person", "education", "high-frequency"],
+      "related": ["instructor", "educator", "professor"]
+    },
+    {
+      "priority": 332,
+      "word": "force",
+      "part_of_speech": "noun/verb",
+      "definition": "Physical power or strength; to make someone do something against their will.",
+      "example": "The force of the wind was strong. Don't force him to go.",
+      "frequency_rank": 332,
+      "tags": ["noun", "verb", "power", "high-frequency"],
+      "related": ["strength", "compel", "energy"]
+    },
+    {
+      "priority": 333,
+      "word": "offer",
+      "part_of_speech": "verb/noun",
+      "definition": "To present or proffer something for someone to accept or reject; a proposal.",
+      "example": "She offered him a job. That's a good offer.",
+      "frequency_rank": 333,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["propose", "suggest", "give"]
+    },
+    {
+      "priority": 334,
+      "word": "enough",
+      "part_of_speech": "adjective/adverb",
+      "definition": "As much or as many as required.",
+      "example": "Do you have enough money?",
+      "frequency_rank": 334,
+      "tags": ["adjective", "adverb", "high-frequency"],
+      "related": ["sufficient", "adequate", "plenty"]
+    },
+    {
+      "priority": 335,
+      "word": "education",
+      "part_of_speech": "noun",
+      "definition": "The process of receiving or giving systematic instruction.",
+      "example": "Education is important for everyone.",
+      "frequency_rank": 335,
+      "tags": ["noun", "learning", "high-frequency"],
+      "related": ["teaching", "school", "study"]
+    },
+    {
+      "priority": 336,
+      "word": "across",
+      "part_of_speech": "preposition/adverb",
+      "definition": "From one side to the other of something.",
+      "example": "She walked across the street.",
+      "frequency_rank": 336,
+      "tags": ["preposition", "adverb", "high-frequency"],
+      "related": ["through", "over", "beyond"]
+    },
+    {
+      "priority": 337,
+      "word": "although",
+      "part_of_speech": "conjunction",
+      "definition": "In spite of the fact that; even though.",
+      "example": "Although it was raining, we went outside.",
+      "frequency_rank": 337,
+      "tags": ["conjunction", "contrast", "high-frequency"],
+      "related": ["though", "even though", "however"]
+    },
+    {
+      "priority": 338,
+      "word": "remember",
+      "part_of_speech": "verb",
+      "definition": "To have in or be able to bring to one's mind an awareness of someone or something from the past.",
+      "example": "Do you remember my name?",
+      "frequency_rank": 338,
+      "tags": ["verb", "memory", "high-frequency"],
+      "related": ["recall", "recollect", "forget"]
+    },
+    {
+      "priority": 339,
+      "word": "foot",
+      "part_of_speech": "noun",
+      "definition": "The lower extremity of the leg below the ankle, on which a person stands or walks.",
+      "example": "My foot hurts.",
+      "frequency_rank": 339,
+      "tags": ["noun", "body", "high-frequency"],
+      "related": ["feet", "leg", "toe"]
+    },
+    {
+      "priority": 340,
+      "word": "second",
+      "part_of_speech": "number/noun",
+      "definition": "Coming after the first in time or order; a unit of time equal to one sixtieth of a minute.",
+      "example": "She finished in second place. Wait a second.",
+      "frequency_rank": 340,
+      "tags": ["number", "noun", "time", "high-frequency"],
+      "related": ["first", "minute", "next"]
+    },
+    {
+      "priority": 341,
+      "word": "boy",
+      "part_of_speech": "noun",
+      "definition": "A male child.",
+      "example": "The boy is playing soccer.",
+      "frequency_rank": 341,
+      "tags": ["noun", "person", "high-frequency"],
+      "related": ["girl", "child", "son"]
+    },
+    {
+      "priority": 342,
+      "word": "maybe",
+      "part_of_speech": "adverb",
+      "definition": "Perhaps; possibly.",
+      "example": "Maybe we can go tomorrow.",
+      "frequency_rank": 342,
+      "tags": ["adverb", "possibility", "high-frequency"],
+      "related": ["perhaps", "possibly", "might"]
+    },
+    {
+      "priority": 343,
+      "word": "toward",
+      "part_of_speech": "preposition",
+      "definition": "In the direction of.",
+      "example": "He walked toward the door.",
+      "frequency_rank": 343,
+      "tags": ["preposition", "direction", "high-frequency"],
+      "related": ["to", "at", "for"]
+    },
+    {
+      "priority": 344,
+      "word": "able",
+      "part_of_speech": "adjective",
+      "definition": "Having the power, skill, or means to do something.",
+      "example": "She is able to swim.",
+      "frequency_rank": 344,
+      "tags": ["adjective", "ability", "high-frequency"],
+      "related": ["can", "capable", "competent"]
+    },
+    {
+      "priority": 345,
+      "word": "age",
+      "part_of_speech": "noun",
+      "definition": "The length of time that a person has lived or a thing has existed.",
+      "example": "What is your age?",
+      "frequency_rank": 345,
+      "tags": ["noun", "time", "high-frequency"],
+      "related": ["year", "old", "young"]
+    },
+    {
+      "priority": 346,
+      "word": "policy",
+      "part_of_speech": "noun",
+      "definition": "A course or principle of action adopted or proposed by an organization or individual.",
+      "example": "The company has a strict policy.",
+      "frequency_rank": 346,
+      "tags": ["noun", "rule", "high-frequency"],
+      "related": ["rule", "guideline", "plan"]
+    },
+    {
+      "priority": 347,
+      "word": "everything",
+      "part_of_speech": "pronoun",
+      "definition": "All things; all that exists.",
+      "example": "He lost everything.",
+      "frequency_rank": 347,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["all", "anything", "nothing"]
+    },
+    {
+      "priority": 348,
+      "word": "process",
+      "part_of_speech": "noun/verb",
+      "definition": "A series of actions or steps taken to achieve an end; to perform a series of mechanical or chemical operations.",
+      "example": "Learning is a process. Process the data.",
+      "frequency_rank": 348,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["procedure", "method", "handle"]
+    },
+    {
+      "priority": 349,
+      "word": "music",
+      "part_of_speech": "noun",
+      "definition": "Vocal or instrumental sounds combined to produce harmony and expression of emotion.",
+      "example": "She loves listening to music.",
+      "frequency_rank": 349,
+      "tags": ["noun", "art", "high-frequency"],
+      "related": ["song", "melody", "tune"]
+    },
+    {
+      "priority": 350,
+      "word": "market",
+      "part_of_speech": "noun/verb",
+      "definition": "A place where people buy and sell goods; to advertise or promote.",
+      "example": "I bought fruit at the market. They market their products online.",
+      "frequency_rank": 350,
+      "tags": ["noun", "verb", "economy", "high-frequency"],
+      "related": ["store", "shop", "sell"]
+    },
+    {
+      "priority": 351,
+      "word": "sense",
+      "part_of_speech": "noun/verb",
+      "definition": "A faculty by which the body perceives an external stimulus; to perceive.",
+      "example": "He has a good sense of humor. I sense danger.",
+      "frequency_rank": 351,
+      "tags": ["noun", "verb", "perception", "high-frequency"],
+      "related": ["feeling", "perceive", "awareness"]
+    },
+    {
+      "priority": 352,
+      "word": "serve",
+      "part_of_speech": "verb",
+      "definition": "To perform duties or services for another person or an organization.",
+      "example": "They serve lunch at noon.",
+      "frequency_rank": 352,
+      "tags": ["verb", "high-frequency"],
+      "related": ["help", "provide", "work"]
+    },
+    {
+      "priority": 353,
+      "word": "expect",
+      "part_of_speech": "verb",
+      "definition": "To regard something as likely to happen.",
+      "example": "I expect to see you tomorrow.",
+      "frequency_rank": 353,
+      "tags": ["verb", "high-frequency"],
+      "related": ["anticipate", "hope", "wait"]
+    },
+    {
+      "priority": 354,
+      "word": "build",
+      "part_of_speech": "verb",
+      "definition": "To construct by putting parts or materials together.",
+      "example": "They will build a new bridge.",
+      "frequency_rank": 354,
+      "tags": ["verb", "high-frequency"],
+      "related": ["construct", "make", "create"]
+    },
+    {
+      "priority": 355,
+      "word": "stay",
+      "part_of_speech": "verb/noun",
+      "definition": "To remain in the same place; a period of staying somewhere.",
+      "example": "Please stay here. Enjoy your stay.",
+      "frequency_rank": 355,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["remain", "wait", "visit"]
+    },
+    {
+      "priority": 356,
+      "word": "wait",
+      "part_of_speech": "verb/noun",
+      "definition": "To stay where one is or delay action until a particular time or event.",
+      "example": "Wait for me. It was a long wait.",
+      "frequency_rank": 356,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["stay", "delay", "pause"]
+    },
+    {
+      "priority": 357,
+      "word": "fall",
+      "part_of_speech": "verb/noun",
+      "definition": "To move downward, typically rapidly and freely without control; a decrease or drop.",
+      "example": "Be careful not to fall. There was a fall in prices.",
+      "frequency_rank": 357,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["drop", "descend", "decline"]
+    },
+    {
+      "priority": 358,
+      "word": "cut",
+      "part_of_speech": "verb/noun",
+      "definition": "To make an opening, incision, or wound in something; a reduction.",
+      "example": "Cut the paper. There was a cut in funding.",
+      "frequency_rank": 358,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["slice", "trim", "reduce"]
+    },
+    {
+      "priority": 359,
+      "word": "reach",
+      "part_of_speech": "verb/noun",
+      "definition": "To arrive at; to stretch out an arm in a specified direction.",
+      "example": "Can you reach the shelf?",
+      "frequency_rank": 359,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["arrive", "extend", "attain"]
+    },
+    {
+      "priority": 360,
+      "word": "local",
+      "part_of_speech": "adjective/noun",
+      "definition": "Relating to a particular area or neighborhood; a local person.",
+      "example": "Buy from local shops. Ask a local for directions.",
+      "frequency_rank": 360,
+      "tags": ["adjective", "noun", "place", "high-frequency"],
+      "related": ["regional", "neighborhood", "community"]
+    }
+  ]
+}

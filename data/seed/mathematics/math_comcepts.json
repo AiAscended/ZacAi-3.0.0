@@ -1,0 +1,472 @@
+{
+  "concepts": [
+    {
+      "priority": 1,
+      "concept": "Addition",
+      "category": "Arithmetic",
+      "definition": "Combining two or more numbers to get their total.",
+      "syntax": "a + b = c",
+      "examples": [
+        "3 + 5 = 8"
+      ],
+      "explanation": "Addition is the most basic arithmetic operation and forms the foundation for all higher mathematics.",
+      "tags": ["arithmetic", "basic operations"],
+      "related": ["Subtraction", "Multiplication"]
+    },
+    {
+      "priority": 2,
+      "concept": "Subtraction",
+      "category": "Arithmetic",
+      "definition": "Finding the difference between two numbers by removing the value of one from another.",
+      "syntax": "a - b = c",
+      "examples": [
+        "9 - 4 = 5"
+      ],
+      "explanation": "Subtraction is used to determine how much one number differs from another.",
+      "tags": ["arithmetic", "basic operations"],
+      "related": ["Addition", "Multiplication"]
+    },
+    {
+      "priority": 3,
+      "concept": "Multiplication",
+      "category": "Arithmetic",
+      "definition": "Calculating the total of one number taken multiple times.",
+      "syntax": "a × b = c",
+      "examples": [
+        "6 × 7 = 42"
+      ],
+      "explanation": "Multiplication is repeated addition and is fundamental to algebra and higher math.",
+      "tags": ["arithmetic", "basic operations"],
+      "related": ["Addition", "Division"]
+    },
+    {
+      "priority": 4,
+      "concept": "Division",
+      "category": "Arithmetic",
+      "definition": "Splitting a number into equal parts.",
+      "syntax": "a ÷ b = c",
+      "examples": [
+        "20 ÷ 4 = 5"
+      ],
+      "explanation": "Division is the inverse of multiplication and is used to distribute or partition quantities.",
+      "tags": ["arithmetic", "basic operations"],
+      "related": ["Multiplication", "Subtraction"]
+    },
+    {
+      "priority": 5,
+      "concept": "Exponentiation",
+      "category": "Arithmetic",
+      "definition": "Raising a number to the power of another number.",
+      "syntax": "a^b = c",
+      "examples": [
+        "2^3 = 8"
+      ],
+      "explanation": "Exponentiation is repeated multiplication and is foundational in algebra and calculus.",
+      "tags": ["arithmetic", "powers"],
+      "related": ["Multiplication", "Roots"]
+    },
+    {
+      "priority": 6,
+      "concept": "Roots",
+      "category": "Arithmetic",
+      "definition": "Finding a number that, when raised to a given power, equals another number.",
+      "syntax": "√a = b, b^2 = a",
+      "examples": [
+        "√9 = 3"
+      ],
+      "explanation": "Roots are the inverse of exponentiation and are important for solving equations.",
+      "tags": ["arithmetic", "inverse operations"],
+      "related": ["Exponentiation", "Multiplication"]
+    },
+    {
+      "priority": 7,
+      "concept": "Order of Operations",
+      "category": "Arithmetic",
+      "definition": "A set of rules that defines the correct sequence to evaluate a mathematical expression.",
+      "syntax": "PEMDAS/BODMAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction",
+      "examples": [
+        "3 + 2 × 5 = 3 + 10 = 13"
+      ],
+      "explanation": "Order of operations ensures consistent results in complex calculations.",
+      "tags": ["arithmetic", "rules"],
+      "related": ["Addition", "Multiplication"]
+    },
+    {
+      "priority": 8,
+      "concept": "Fractions",
+      "category": "Arithmetic",
+      "definition": "A way to represent parts of a whole using a numerator and denominator.",
+      "syntax": "a/b",
+      "examples": [
+        "3/4"
+      ],
+      "explanation": "Fractions express division and are used in ratios, proportions, and probability.",
+      "tags": ["arithmetic", "ratios"],
+      "related": ["Decimals", "Percentages"]
+    },
+    {
+      "priority": 9,
+      "concept": "Decimals",
+      "category": "Arithmetic",
+      "definition": "A way to represent fractions using powers of ten.",
+      "syntax": "0.75",
+      "examples": [
+        "0.5 = 1/2"
+      ],
+      "explanation": "Decimals are used for precise calculations and measurements.",
+      "tags": ["arithmetic", "representation"],
+      "related": ["Fractions", "Percentages"]
+    },
+    {
+      "priority": 10,
+      "concept": "Percentages",
+      "category": "Arithmetic",
+      "definition": "A way to express a number as a fraction of 100.",
+      "syntax": "a%",
+      "examples": [
+        "25% = 0.25 = 1/4"
+      ],
+      "explanation": "Percentages are widely used in statistics, finance, and everyday calculations.",
+      "tags": ["arithmetic", "ratios"],
+      "related": ["Fractions", "Decimals"]
+    },
+    {
+      "priority": 11,
+      "concept": "Absolute Value",
+      "category": "Arithmetic",
+      "definition": "The distance of a number from zero on the number line.",
+      "syntax": "|a|",
+      "examples": [
+        "|-7| = 7"
+      ],
+      "explanation": "Absolute value is used in distance, magnitude, and error calculations.",
+      "tags": ["arithmetic", "magnitude"],
+      "related": ["Addition", "Subtraction"]
+    },
+    {
+      "priority": 12,
+      "concept": "Inequalities",
+      "category": "Algebra",
+      "definition": "Mathematical statements that compare two values using greater than, less than, or equal to.",
+      "syntax": "a > b, a < b, a ≥ b, a ≤ b",
+      "examples": [
+        "x > 3"
+      ],
+      "explanation": "Inequalities are used in optimization, constraints, and real-world problem solving.",
+      "tags": ["algebra", "comparison"],
+      "related": ["Equations", "Absolute Value"]
+    },
+    {
+      "priority": 13,
+      "concept": "Variables",
+      "category": "Algebra",
+      "definition": "Symbols used to represent unknown or changeable values.",
+      "syntax": "x, y, z",
+      "examples": [
+        "x + 2 = 5"
+      ],
+      "explanation": "Variables are foundational to algebra and all higher mathematics.",
+      "tags": ["algebra", "symbols"],
+      "related": ["Equations", "Functions"]
+    },
+    {
+      "priority": 14,
+      "concept": "Equations",
+      "category": "Algebra",
+      "definition": "Mathematical statements asserting the equality of two expressions.",
+      "syntax": "ax + b = c",
+      "examples": [
+        "2x + 3 = 7"
+      ],
+      "explanation": "Equations are solved to find the values of variables.",
+      "tags": ["algebra", "statements"],
+      "related": ["Variables", "Inequalities"]
+    },
+    {
+      "priority": 15,
+      "concept": "Linear Equations",
+      "category": "Algebra",
+      "definition": "Equations where the highest power of the variable is one.",
+      "syntax": "ax + b = c",
+      "examples": [
+        "3x + 2 = 11"
+      ],
+      "explanation": "Linear equations model relationships with constant rates of change.",
+      "tags": ["algebra", "linear"],
+      "related": ["Equations", "Systems of Equations"]
+    },
+    {
+      "priority": 16,
+      "concept": "Quadratic Equations",
+      "category": "Algebra",
+      "definition": "Equations where the highest power of the variable is two.",
+      "syntax": "ax^2 + bx + c = 0",
+      "examples": [
+        "x^2 - 5x + 6 = 0"
+      ],
+      "explanation": "Quadratic equations model parabolic relationships and appear in physics and engineering.",
+      "tags": ["algebra", "quadratic"],
+      "related": ["Equations", "Roots"]
+    },
+    {
+      "priority": 17,
+      "concept": "Polynomials",
+      "category": "Algebra",
+      "definition": "Expressions consisting of variables and coefficients combined using addition, subtraction, and multiplication.",
+      "syntax": "a_nx^n + ... + a_1x + a_0",
+      "examples": [
+        "2x^3 - x^2 + 4"
+      ],
+      "explanation": "Polynomials generalize linear and quadratic equations and are used in modeling and approximation.",
+      "tags": ["algebra", "expressions"],
+      "related": ["Equations", "Functions"]
+    },
+    {
+      "priority": 18,
+      "concept": "Factoring",
+      "category": "Algebra",
+      "definition": "Rewriting an expression as a product of its factors.",
+      "syntax": "ax^2 + bx + c = (dx + e)(fx + g)",
+      "examples": [
+        "x^2 - 9 = (x + 3)(x - 3)"
+      ],
+      "explanation": "Factoring simplifies expressions and solves equations.",
+      "tags": ["algebra", "simplification"],
+      "related": ["Polynomials", "Quadratic Equations"]
+    },
+    {
+      "priority": 19,
+      "concept": "Functions",
+      "category": "Algebra",
+      "definition": "A relationship that assigns exactly one output to each input.",
+      "syntax": "f(x) = y",
+      "examples": [
+        "f(x) = 2x + 1"
+      ],
+      "explanation": "Functions model relationships and are foundational to calculus and data science.",
+      "tags": ["algebra", "mapping"],
+      "related": ["Variables", "Equations"]
+    },
+    {
+      "priority": 20,
+      "concept": "Domain and Range",
+      "category": "Algebra",
+      "definition": "The set of all possible inputs (domain) and outputs (range) for a function.",
+      "syntax": "Domain: x ∈ R, Range: f(x) ∈ R",
+      "examples": [
+        "For f(x) = x^2, domain: all real x, range: x ≥ 0"
+      ],
+      "explanation": "Understanding domain and range is crucial for function analysis and graphing.",
+      "tags": ["algebra", "functions"],
+      "related": ["Functions", "Graphing"]
+    },
+    {
+      "priority": 21,
+      "concept": "Graphing",
+      "category": "Algebra",
+      "definition": "Visual representation of equations or functions on a coordinate plane.",
+      "syntax": "Plot y = f(x) on (x, y) axes",
+      "examples": [
+        "Graph of y = x^2 is a parabola"
+      ],
+      "explanation": "Graphing helps visualize relationships and analyze function behavior.",
+      "tags": ["algebra", "visualization"],
+      "related": ["Functions", "Domain and Range"]
+    },
+    {
+      "priority": 22,
+      "concept": "Slope",
+      "category": "Algebra",
+      "definition": "A measure of the steepness of a line, calculated as the ratio of vertical change to horizontal change.",
+      "syntax": "m = (y2 - y1) / (x2 - x1)",
+      "examples": [
+        "Slope between (1,2) and (3,6) is (6-2)/(3-1) = 2"
+      ],
+      "explanation": "Slope is used to describe linear relationships and rates of change.",
+      "tags": ["algebra", "linear"],
+      "related": ["Linear Equations", "Graphing"]
+    },
+    {
+      "priority": 23,
+      "concept": "Intercepts",
+      "category": "Algebra",
+      "definition": "Points where a graph crosses the axes: x-intercept (y=0), y-intercept (x=0).",
+      "syntax": "For y = mx + b, y-intercept is b",
+      "examples": [
+        "For y = 2x + 3, y-intercept is 3"
+      ],
+      "explanation": "Intercepts help in graphing and understanding function behavior.",
+      "tags": ["algebra", "graphing"],
+      "related": ["Graphing", "Slope"]
+    },
+    {
+      "priority": 24,
+      "concept": "Systems of Equations",
+      "category": "Algebra",
+      "definition": "A set of two or more equations with the same variables, solved simultaneously.",
+      "syntax": "ax + by = c; dx + ey = f",
+      "examples": [
+        "x + y = 5; x - y = 1"
+      ],
+      "explanation": "Systems of equations model scenarios with multiple constraints.",
+      "tags": ["algebra", "systems"],
+      "related": ["Linear Equations", "Matrices"]
+    },
+    {
+      "priority": 25,
+      "concept": "Matrices",
+      "category": "Linear Algebra",
+      "definition": "Rectangular arrays of numbers used to represent and solve systems of equations and transformations.",
+      "syntax": "[[a, b], [c, d]]",
+      "examples": [
+        "[[1, 2], [3, 4]]"
+      ],
+      "explanation": "Matrices are foundational in linear algebra, AI, and computer graphics.",
+      "tags": ["linear algebra", "arrays"],
+      "related": ["Matrix Multiplication", "Determinant"]
+    },
+    {
+      "priority": 26,
+      "concept": "Matrix Multiplication",
+      "category": "Linear Algebra",
+      "definition": "Combining two matrices to produce a third matrix, where each element is a sum of products.",
+      "syntax": "C = AB, C[i][j] = Σ_k A[i][k] * B[k][j]",
+      "examples": [
+        "Multiplying a 2x3 matrix by a 3x2 matrix yields a 2x2 matrix"
+      ],
+      "explanation": "Matrix multiplication is used in neural networks, transformations, and data science.",
+      "tags": ["linear algebra", "multiplication"],
+      "related": ["Matrices", "Dot Product"]
+    },
+    {
+      "priority": 27,
+      "concept": "Determinant",
+      "category": "Linear Algebra",
+      "definition": "A scalar value that can be computed from a square matrix, indicating invertibility and transformation properties.",
+      "syntax": "det(A) for matrix A",
+      "examples": [
+        "For [[a, b], [c, d]], det = ad - bc"
+      ],
+      "explanation": "Determinants are used to solve systems and analyze matrix properties.",
+      "tags": ["linear algebra", "scalar"],
+      "related": ["Matrices", "Inverse Matrix"]
+    },
+    {
+      "priority": 28,
+      "concept": "Inverse Matrix",
+      "category": "Linear Algebra",
+      "definition": "A matrix that, when multiplied by the original matrix, yields the identity matrix.",
+      "syntax": "A * A^{-1} = I",
+      "examples": [
+        "For [[a, b], [c, d]], inverse exists if det ≠ 0"
+      ],
+      "explanation": "Inverse matrices are used to solve systems of equations and in cryptography.",
+      "tags": ["linear algebra", "inverse"],
+      "related": ["Matrices", "Determinant"]
+    },
+    {
+      "priority": 29,
+      "concept": "Transpose",
+      "category": "Linear Algebra",
+      "definition": "Switching the rows and columns of a matrix.",
+      "syntax": "A^T",
+      "examples": [
+        "Transpose of [[1, 2], [3, 4]] is [[1, 3], [2, 4]]"
+      ],
+      "explanation": "Transposing is used in matrix algebra and data manipulation.",
+      "tags": ["linear algebra", "operation"],
+      "related": ["Matrices", "Matrix Multiplication"]
+    },
+    {
+      "priority": 30,
+      "concept": "Dot Product",
+      "category": "Linear Algebra",
+      "definition": "A scalar product of two vectors, found by multiplying corresponding components and summing.",
+      "syntax": "a · b = Σ a_i b_i",
+      "examples": [
+        "[1,2] · [3,4] = 1*3 + 2*4 = 11"
+      ],
+      "explanation": "Dot products are used in projections, similarity, and neural networks.",
+      "tags": ["linear algebra", "vectors"],
+      "related": ["Vectors", "Matrix Multiplication"]
+    },
+    {
+      "priority": 31,
+      "concept": "Vectors",
+      "category": "Linear Algebra",
+      "definition": "Quantities with both magnitude and direction, represented as ordered lists of numbers.",
+      "syntax": "[a, b, c]",
+      "examples": [
+        "[3, 4] is a 2D vector"
+      ],
+      "explanation": "Vectors are used to represent points, forces, and data in space.",
+      "tags": ["linear algebra", "geometry"],
+      "related": ["Dot Product", "Matrices"]
+    },
+    {
+      "priority": 32,
+      "concept": "Magnitude of a Vector",
+      "category": "Linear Algebra",
+      "definition": "The length of a vector, calculated using the Pythagorean theorem.",
+      "syntax": "|v| = sqrt(a^2 + b^2 + ...)",
+      "examples": [
+        "For [3, 4], magnitude = sqrt(3^2 + 4^2) = 5"
+      ],
+      "explanation": "Magnitude is used in physics, geometry, and data normalization.",
+      "tags": ["linear algebra", "vectors"],
+      "related": ["Vectors", "Dot Product"]
+    },
+    {
+      "priority": 33,
+      "concept": "Unit Vector",
+      "category": "Linear Algebra",
+      "definition": "A vector with magnitude 1, indicating direction only.",
+      "syntax": "u = v / |v|",
+      "examples": [
+        "For [3, 4], unit vector = [3/5, 4/5]"
+      ],
+      "explanation": "Unit vectors are used to specify direction in space.",
+      "tags": ["linear algebra", "vectors"],
+      "related": ["Vectors", "Magnitude of a Vector"]
+    },
+    {
+      "priority": 34,
+      "concept": "Orthogonality",
+      "category": "Linear Algebra",
+      "definition": "Two vectors are orthogonal if their dot product is zero.",
+      "syntax": "a · b = 0",
+      "examples": [
+        "[1, 0] and [0, 1] are orthogonal"
+      ],
+      "explanation": "Orthogonality is key in geometry, projections, and data science.",
+      "tags": ["linear algebra", "vectors"],
+      "related": ["Dot Product", "Vectors"]
+    },
+    {
+      "priority": 35,
+      "concept": "Eigenvalues",
+      "category": "Linear Algebra",
+      "definition": "Scalars λ such that Av = λv for some nonzero vector v and square matrix A.",
+      "syntax": "det(A - λI) = 0",
+      "examples": [
+        "For A = [[2,0],[0,3]], eigenvalues are 2 and 3"
+      ],
+      "explanation": "Eigenvalues are used in stability analysis, PCA, and quantum mechanics.",
+      "tags": ["linear algebra", "matrices"],
+      "related": ["Eigenvectors", "Determinant"]
+    },
+    {
+      "priority": 36,
+      "concept": "Eigenvectors",
+      "category": "Linear Algebra",
+      "definition": "Nonzero vectors v such that Av = λv for some scalar λ and square matrix A.",
+      "syntax": "Av = λv",
+      "examples": [
+        "For A = [[2,0],[0,3]], eigenvectors are [1,0] and [0,1]"
+      ],
+      "explanation": "Eigenvectors are used in dimensionality reduction, stability, and physics.",
+      "tags": ["linear algebra", "matrices"],
+      "related": ["Eigenvalues", "Matrices"]
+    }
+  ]
+}

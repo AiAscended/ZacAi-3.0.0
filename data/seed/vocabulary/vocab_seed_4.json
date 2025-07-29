@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 109,
+      "word": "child",
+      "part_of_speech": "noun",
+      "definition": "A young human being below the age of puberty.",
+      "example": "The child is playing outside.",
+      "frequency_rank": 109,
+      "tags": ["noun", "person", "high-frequency"],
+      "related": ["kid", "boy", "girl"]
+    },
+    {
+      "priority": 110,
+      "word": "work",
+      "part_of_speech": "verb/noun",
+      "definition": "To perform a job or task; employment or effort.",
+      "example": "She works at a hospital. His work is important.",
+      "frequency_rank": 110,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["job", "labor", "task"]
+    },
+    {
+      "priority": 111,
+      "word": "life",
+      "part_of_speech": "noun",
+      "definition": "The existence of an individual human being or animal.",
+      "example": "Life is beautiful.",
+      "frequency_rank": 111,
+      "tags": ["noun", "high-frequency"],
+      "related": ["living", "existence"]
+    },
+    {
+      "priority": 112,
+      "word": "down",
+      "part_of_speech": "adverb/preposition",
+      "definition": "Toward or in a lower place or position.",
+      "example": "Sit down, please.",
+      "frequency_rank": 112,
+      "tags": ["adverb", "preposition", "high-frequency"],
+      "related": ["up", "below"]
+    },
+    {
+      "priority": 113,
+      "word": "may",
+      "part_of_speech": "modal verb",
+      "definition": "Expressing possibility or permission.",
+      "example": "You may leave now.",
+      "frequency_rank": 113,
+      "tags": ["modal verb", "possibility", "high-frequency"],
+      "related": ["can", "might"]
+    },
+    {
+      "priority": 114,
+      "word": "after",
+      "part_of_speech": "preposition/conjunction",
+      "definition": "In the time following an event or another period.",
+      "example": "We went home after the movie.",
+      "frequency_rank": 114,
+      "tags": ["preposition", "conjunction", "high-frequency"],
+      "related": ["before", "then"]
+    },
+    {
+      "priority": 115,
+      "word": "should",
+      "part_of_speech": "modal verb",
+      "definition": "Used to indicate obligation, duty, or correctness.",
+      "example": "You should study more.",
+      "frequency_rank": 115,
+      "tags": ["modal verb", "obligation", "high-frequency"],
+      "related": ["must", "ought"]
+    },
+    {
+      "priority": 116,
+      "word": "call",
+      "part_of_speech": "verb/noun",
+      "definition": "To give someone or something a name; to telephone.",
+      "example": "Call me tomorrow.",
+      "frequency_rank": 116,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["phone", "name"]
+    },
+    {
+      "priority": 117,
+      "word": "world",
+      "part_of_speech": "noun",
+      "definition": "The earth, together with all of its countries and peoples.",
+      "example": "The world is round.",
+      "frequency_rank": 117,
+      "tags": ["noun", "place", "high-frequency"],
+      "related": ["earth", "planet"]
+    },
+    {
+      "priority": 118,
+      "word": "over",
+      "part_of_speech": "preposition/adverb",
+      "definition": "Extending directly upward from; above.",
+      "example": "The lamp hangs over the table.",
+      "frequency_rank": 118,
+      "tags": ["preposition", "adverb", "high-frequency"],
+      "related": ["above", "across"]
+    },
+    {
+      "priority": 119,
+      "word": "school",
+      "part_of_speech": "noun",
+      "definition": "A place where children go to learn.",
+      "example": "She goes to school every day.",
+      "frequency_rank": 119,
+      "tags": ["noun", "education", "high-frequency"],
+      "related": ["class", "university"]
+    },
+    {
+      "priority": 120,
+      "word": "still",
+      "part_of_speech": "adverb/adjective",
+      "definition": "Continuing until now; not moving.",
+      "example": "He is still working. Stand still.",
+      "frequency_rank": 120,
+      "tags": ["adverb", "adjective", "high-frequency"],
+      "related": ["yet", "motionless"]
+    },
+    {
+      "priority": 121,
+      "word": "try",
+      "part_of_speech": "verb",
+      "definition": "To make an attempt or effort to do something.",
+      "example": "Try to do your best.",
+      "frequency_rank": 121,
+      "tags": ["verb", "high-frequency"],
+      "related": ["attempt", "test"]
+    },
+    {
+      "priority": 122,
+      "word": "in",
+      "part_of_speech": "adverb",
+      "definition": "To or toward the inside.",
+      "example": "Come in, please.",
+      "frequency_rank": 122,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["inside", "enter"]
+    },
+    {
+      "priority": 123,
+      "word": "as",
+      "part_of_speech": "pronoun",
+      "definition": "Used in comparisons to refer to the degree or amount of something.",
+      "example": "As many as you want.",
+      "frequency_rank": 123,
+      "tags": ["pronoun", "comparison", "high-frequency"],
+      "related": ["like", "such"]
+    },
+    {
+      "priority": 124,
+      "word": "last",
+      "part_of_speech": "adjective/adverb",
+      "definition": "Coming after all others in time or order.",
+      "example": "This is the last page.",
+      "frequency_rank": 124,
+      "tags": ["adjective", "adverb", "order", "high-frequency"],
+      "related": ["first", "final", "next"]
+    },
+    {
+      "priority": 125,
+      "word": "ask",
+      "part_of_speech": "verb",
+      "definition": "To say or write something in the form of a question.",
+      "example": "Ask your teacher for help.",
+      "frequency_rank": 125,
+      "tags": ["verb", "question", "high-frequency"],
+      "related": ["question", "inquire"]
+    },
+    {
+      "priority": 126,
+      "word": "need",
+      "part_of_speech": "verb/noun",
+      "definition": "To require something because it is essential or very important.",
+      "example": "I need some water.",
+      "frequency_rank": 126,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["require", "want"]
+    },
+    {
+      "priority": 127,
+      "word": "too",
+      "part_of_speech": "adverb",
+      "definition": "In addition; also; more than is desirable.",
+      "example": "I want some too. It's too hot.",
+      "frequency_rank": 127,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["also", "as well"]
+    },
+    {
+      "priority": 128,
+      "word": "feel",
+      "part_of_speech": "verb",
+      "definition": "To experience an emotion or physical sensation.",
+      "example": "I feel happy.",
+      "frequency_rank": 128,
+      "tags": ["verb", "high-frequency"],
+      "related": ["sense", "experience"]
+    },
+    {
+      "priority": 129,
+      "word": "three",
+      "part_of_speech": "number",
+      "definition": "The number 3.",
+      "example": "They have three children.",
+      "frequency_rank": 129,
+      "tags": ["number", "high-frequency"],
+      "related": ["one", "two", "four"]
+    },
+    {
+      "priority": 130,
+      "word": "state",
+      "part_of_speech": "noun/verb",
+      "definition": "A nation or territory; to express something in speech or writing.",
+      "example": "The state of Texas. Please state your name.",
+      "frequency_rank": 130,
+      "tags": ["noun", "verb", "high-frequency"],
+      "related": ["country", "say"]
+    },
+    {
+      "priority": 131,
+      "word": "never",
+      "part_of_speech": "adverb",
+      "definition": "At no time in the past or future; not ever.",
+      "example": "I have never been to Paris.",
+      "frequency_rank": 131,
+      "tags": ["adverb", "negation", "high-frequency"],
+      "related": ["not", "ever"]
+    },
+    {
+      "priority": 132,
+      "word": "become",
+      "part_of_speech": "verb",
+      "definition": "To begin to be; to grow to be.",
+      "example": "She wants to become a doctor.",
+      "frequency_rank": 132,
+      "tags": ["verb", "high-frequency"],
+      "related": ["turn", "grow"]
+    },
+    {
+      "priority": 133,
+      "word": "between",
+      "part_of_speech": "preposition",
+      "definition": "At, into, or across the space separating two objects or regions.",
+      "example": "The ball is between the boxes.",
+      "frequency_rank": 133,
+      "tags": ["preposition", "high-frequency"],
+      "related": ["among", "amid"]
+    },
+    {
+      "priority": 134,
+      "word": "high",
+      "part_of_speech": "adjective",
+      "definition": "Of great vertical extent.",
+      "example": "The mountain is high.",
+      "frequency_rank": 134,
+      "tags": ["adjective", "high-frequency"],
+      "related": ["tall", "elevated"]
+    },
+    {
+      "priority": 135,
+      "word": "really",
+      "part_of_speech": "adverb",
+      "definition": "In actual fact, as opposed to what is said or imagined to be true.",
+      "example": "Do you really mean it?",
+      "frequency_rank": 135,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["truly", "actually"]
+    },
+    {
+      "priority": 136,
+      "word": "something",
+      "part_of_speech": "pronoun",
+      "definition": "A thing that is unspecified or unknown.",
+      "example": "I heard something outside.",
+      "frequency_rank": 136,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["anything", "thing"]
+    },
+    {
+      "priority": 137,
+      "word": "most",
+      "part_of_speech": "adverb/adjective",
+      "definition": "To the greatest extent; the majority of.",
+      "example": "Most people agree.",
+      "frequency_rank": 137,
+      "tags": ["adverb", "adjective", "high-frequency"],
+      "related": ["least", "more"]
+    },
+    {
+      "priority": 138,
+      "word": "another",
+      "part_of_speech": "pronoun/adjective",
+      "definition": "One more person or thing or an additional one.",
+      "example": "Can I have another piece?",
+      "frequency_rank": 138,
+      "tags": ["pronoun", "adjective", "high-frequency"],
+      "related": ["other", "more"]
+    },
+    {
+      "priority": 139,
+      "word": "much",
+      "part_of_speech": "adjective/adverb",
+      "definition": "A large amount or extent.",
+      "example": "Thank you very much.",
+      "frequency_rank": 139,
+      "tags": ["adjective", "adverb", "high-frequency"],
+      "related": ["many", "a lot"]
+    },
+    {
+      "priority": 140,
+      "word": "family",
+      "part_of_speech": "noun",
+      "definition": "A group consisting of parents and their children.",
+      "example": "My family is very important to me.",
+      "frequency_rank": 140,
+      "tags": ["noun", "people", "high-frequency"],
+      "related": ["parents", "children"]
+    },
+    {
+      "priority": 141,
+      "word": "own",
+      "part_of_speech": "adjective/verb",
+      "definition": "Belonging to oneself; to possess.",
+      "example": "He has his own car.",
+      "frequency_rank": 141,
+      "tags": ["adjective", "verb", "high-frequency"],
+      "related": ["possess", "have"]
+    },
+    {
+      "priority": 142,
+      "word": "leave",
+      "part_of_speech": "verb",
+      "definition": "To go away from.",
+      "example": "Please leave the room.",
+      "frequency_rank": 142,
+      "tags": ["verb", "high-frequency"],
+      "related": ["depart", "exit"]
+    },
+    {
+      "priority": 143,
+      "word": "put",
+      "part_of_speech": "verb",
+      "definition": "To move or place something in a particular position.",
+      "example": "Put the keys on the table.",
+      "frequency_rank": 143,
+      "tags": ["verb", "high-frequency"],
+      "related": ["place", "set"]
+    },
+    {
+      "priority": 144,
+      "word": "old",
+      "part_of_speech": "adjective",
+      "definition": "Having lived for a specified period of time; not new.",
+      "example": "He is an old man.",
+      "frequency_rank": 144,
+      "tags": ["adjective", "high-frequency"],
+      "related": ["young", "new"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "zacai-seed-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ZacAI structured seed data and runtime app",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=11.4.2"
+  },
+  "keywords": ["zacai", "nextjs", "react", "seed", "ai"],
+  "author": "Your Name or Org",
+  "license": "MIT"
+}

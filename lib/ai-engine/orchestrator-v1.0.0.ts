@@ -1,6 +1,6 @@
 /**
  * ==========================================================
- * File: /lib/ai-engine/orchestrator.ts
+ * File: /lib/orchestrator/core.ts
  * Project: ZacAI 3.0
  * Role: Universal Multimodal AI Orchestrator
  * Description:

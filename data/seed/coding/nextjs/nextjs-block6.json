@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-heroku",
+    "priority": 181,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js apps to Heroku.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js to Heroku using a custom server."
+      }
+    ],
+    "syntax": "heroku create && git push heroku main",
+    "examples": [
+      "heroku create my-next-app\nheroku config:set NODE_ENV=production"
+    ],
+    "synonyms": ["heroku deployment"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "hɛˈroʊkuː",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use a custom server for Heroku deployments.",
+    "relatedConcepts": ["deployment", "custom server"]
+  },
+  {
+    "word": "nextjs-netlify",
+    "priority": 182,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js apps to Netlify.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js to Netlify for static and SSR hosting."
+      }
+    ],
+    "syntax": "netlify deploy",
+    "examples": [
+      "netlify init\nnetlify deploy --prod"
+    ],
+    "synonyms": ["netlify deployment"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ˈnɛtlɪfaɪ",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use Netlify adapter for SSR support.",
+    "relatedConcepts": ["deployment", "static export"]
+  },
+  {
+    "word": "nextjs-aws",
+    "priority": 183,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js apps to AWS services (Lambda, S3, Amplify).",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js with serverless framework on AWS Lambda."
+      }
+    ],
+    "syntax": "// Use serverless-next.js or Amplify",
+    "examples": [
+      "amplify add hosting\namplify publish"
+    ],
+    "synonyms": ["aws deployment"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "eɪ dʌbəljuː ɛs",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use serverless-next.js for Lambda, Amplify for static hosting.",
+    "relatedConcepts": ["deployment", "serverless"]
+  },
+  {
+    "word": "nextjs-docker",
+    "priority": 184,
+    "definitions": [
+      {
+        "meaning": "A pattern for containerizing Next.js apps with Docker.",
+        "partOfSpeech": "pattern",
+        "example": "Use Docker for consistent deployments."
+      }
+    ],
+    "syntax": "docker build -t my-next-app .",
+    "examples": [
+      "docker build -t my-next-app .\ndocker run -p 3000:3000 my-next-app"
+    ],
+    "synonyms": ["docker deployment"],
+    "antonyms": [],
+    "frequency": 40,
+    "pronunciation": "ˈdɒkər",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use multi-stage builds for smaller images.",
+    "relatedConcepts": ["deployment", "container"]
+  },
+  {
+    "word": "nextjs-nginx",
+    "priority": 185,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving Next.js apps behind an NGINX reverse proxy.",
+        "partOfSpeech": "pattern",
+        "example": "Use NGINX for SSL and static file serving."
+      }
+    ],
+    "syntax": "server {\n  location / {\n    proxy_pass http://localhost:3000;\n  }\n}",
+    "examples": [
+      "location / {\n  proxy_pass http://localhost:3000;\n}"
+    ],
+    "synonyms": ["nginx proxy"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ɛnˈdʒɪnˌɛks",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use NGINX for SSL termination and caching.",
+    "relatedConcepts": ["deployment", "reverse proxy"]
+  },
+  {
+    "word": "nextjs-cloudflare",
+    "priority": 186,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js with Cloudflare Pages or Workers.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js to Cloudflare for edge performance."
+      }
+    ],
+    "syntax": "npx wrangler pages publish ./out",
+    "examples": [
+      "npx wrangler pages publish ./out"
+    ],
+    "synonyms": ["cloudflare deployment"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈklaʊdflɛər",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use static export for Cloudflare Pages.",
+    "relatedConcepts": ["deployment", "static export"]
+  },
+  {
+    "word": "nextjs-vercel-serverless",
+    "priority": 187,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js serverless functions on Vercel.",
+        "partOfSpeech": "pattern",
+        "example": "Use Vercel for serverless API routes and SSR."
+      }
+    ],
+    "syntax": "vercel --prod",
+    "examples": [
+      "vercel --prod"
+    ],
+    "synonyms": ["vercel serverless"],
+    "antonyms": [],
+    "frequency": 40,
+    "pronunciation": "ˈvɜːrsəl ˈsɜːrvərləs",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use Vercel for best-in-class serverless deployments.",
+    "relatedConcepts": ["deployment", "serverless"]
+  },
+  {
+    "word": "nextjs-azure",
+    "priority": 188,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js apps to Microsoft Azure.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js to Azure Static Web Apps."
+      }
+    ],
+    "syntax": "az webapp up --name my-next-app",
+    "examples": [
+      "az webapp up --name my-next-app"
+    ],
+    "synonyms": ["azure deployment"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈæʒər",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use Azure Static Web Apps for SSG/SSR.",
+    "relatedConcepts": ["deployment", "static export"]
+  },
+  {
+    "word": "nextjs-google-cloud",
+    "priority": 189,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying Next.js apps to Google Cloud Platform.",
+        "partOfSpeech": "pattern",
+        "example": "Deploy Next.js with Cloud Run or App Engine."
+      }
+    ],
+    "syntax": "gcloud app deploy",
+    "examples": [
+      "gcloud app deploy"
+    ],
+    "synonyms": ["gcp deployment"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈɡuːɡl klaʊd",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use Cloud Run for serverless Next.js hosting.",
+    "relatedConcepts": ["deployment", "serverless"]
+  },
+  {
+    "word": "nextjs-firebase-hosting",
+    "priority": 190,
+    "definitions": [
+      {
+        "meaning": "A pattern for deploying static Next.js sites to Firebase Hosting.",
+        "partOfSpeech": "pattern",
+        "example": "Use next export and firebase deploy."
+      }
+    ],
+    "syntax": "firebase deploy",
+    "examples": [
+      "firebase init hosting\nfirebase deploy"
+    ],
+    "synonyms": ["firebase hosting"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈfaɪərˌbeɪs ˈhoʊstɪŋ",
+    "difficulty": "advanced",
+    "category": "deployment",
+    "bestPractice": "Use static export for Firebase Hosting.",
+    "relatedConcepts": ["deployment", "static export"]
+  },
+  {
+    "word": "nextjs-ssr-cache",
+    "priority": 191,
+    "definitions": [
+      {
+        "meaning": "A pattern for caching SSR responses in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Cache SSR pages for performance."
+      }
+    ],
+    "syntax": "// Use LRU cache in getServerSideProps",
+    "examples": [
+      "const cache = new LRU({ max: 100 });"
+    ],
+    "synonyms": ["ssr cache"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ɛs ɛs ɑːr kæʃ",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Cache SSR pages for frequently accessed routes.",
+    "relatedConcepts": ["SSR", "performance"]
+  },
+  {
+    "word": "nextjs-edge-functions",
+    "priority": 192,
+    "definitions": [
+      {
+        "meaning": "A pattern for running Next.js logic at the edge (CDN).",
+        "partOfSpeech": "pattern",
+        "example": "Use edge functions for low-latency SSR."
+      }
+    ],
+    "syntax": "export const config = { runtime: 'edge' };",
+    "examples": [
+      "export const config = { runtime: 'edge' };"
+    ],
+    "synonyms": ["edge runtime"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ɛdʒ ˈfʌŋkʃənz",
+    "difficulty": "advanced",
+    "category": "performance",
+    "bestPractice": "Use edge functions for geo-aware and fast SSR.",
+    "relatedConcepts": ["SSR", "performance"]
+  },
+  {
+    "word": "nextjs-middleware-redirect",
+    "priority": 193,
+    "definitions": [
+      {
+        "meaning": "A pattern for using middleware to redirect requests in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Redirect users based on authentication."
+      }
+    ],
+    "syntax": "import { NextResponse } from 'next/server';",
+    "examples": [
+      "export function middleware(req) {\n  if (!req.cookies.token) {\n    return NextResponse.redirect('/login');\n  }\n}"
+    ],
+    "synonyms": ["middleware redirect"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ˈmɪdəlˌwɛər rɪˈdɪrɛkt",
+    "difficulty": "advanced",
+    "category": "routing",
+    "bestPractice": "Use middleware for authentication and geo-redirects.",
+    "relatedConcepts": ["middleware", "redirect"]
+  },
+  {
+    "word": "nextjs-middleware-rewrite",
+    "priority": 194,
+    "definitions": [
+      {
+        "meaning": "A pattern for using middleware to rewrite URLs in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Rewrite URLs for A/B testing."
+      }
+    ],
+    "syntax": "export function middleware(req) { return NextResponse.rewrite('/new-url'); }",
+    "examples": [
+      "export function middleware(req) {\n  return NextResponse.rewrite('/new-url');\n}"
+    ],
+    "synonyms": ["middleware rewrite"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ˈmɪdəlˌwɛər rɪˈraɪt",
+    "difficulty": "advanced",
+    "category": "routing",
+    "bestPractice": "Use rewrites for A/B testing and localization.",
+    "relatedConcepts": ["middleware", "rewrite"]
+  },
+  {
+    "word": "nextjs-middleware-headers",
+    "priority": 195,
+    "definitions": [
+      {
+        "meaning": "A pattern for using middleware to set HTTP headers in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Set security headers in middleware."
+      }
+    ],
+    "syntax": "export function middleware(req) { return NextResponse.next({ headers: { ... } }); }",
+    "examples": [
+      "export function middleware(req) {\n  return NextResponse.next({ headers: { 'X-Frame-Options': 'DENY' } });\n}"
+    ],
+    "synonyms": ["middleware headers"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ˈmɪdəlˌwɛər ˈhɛdərz",
+    "difficulty": "advanced",
+    "category": "routing",
+    "bestPractice": "Set security and caching headers in middleware.",
+    "relatedConcepts": ["middleware", "headers"]
+  },
+  {
+    "word": "nextjs-rate-limiting",
+    "priority": 196,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing rate limiting in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Limit API requests per user."
+      }
+    ],
+    "syntax": "// Use a rate limiter in API handler",
+    "examples": [
+      "if (tooManyRequests) { res.status(429).end('Too Many Requests'); }"
+    ],
+    "synonyms": ["rate limiting"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "reɪt ˈlɪmɪtɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Rate limit sensitive API endpoints.",
+    "relatedConcepts": ["api", "middleware"]
+  },
+  {
+    "word": "nextjs-cors",
+    "priority": 197,
+    "definitions": [
+      {
+        "meaning": "A pattern for setting CORS headers in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Enable CORS for cross-origin requests."
+      }
+    ],
+    "syntax": "res.setHeader('Access-Control-Allow-Origin', '*');",
+    "examples": [
+      "res.setHeader('Access-Control-Allow-Origin', '*');"
+    ],
+    "synonyms": ["cors headers"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "kɔːrz",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Set CORS headers for APIs accessed from browsers.",
+    "relatedConcepts": ["api", "headers"]
+  },
+  {
+    "word": "nextjs-api-validation",
+    "priority": 198,
+    "definitions": [
+      {
+        "meaning": "A pattern for validating API request bodies in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Validate POST body with Zod or Yup."
+      }
+    ],
+    "syntax": "schema.parse(req.body);",
+    "examples": [
+      "const schema = z.object({ name: z.string() });\nschema.parse(req.body);"
+    ],
+    "synonyms": ["api validation"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˌvælɪˈdeɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Validate all incoming API data.",
+    "relatedConcepts": ["api", "validation"]
+  },
+  {
+    "word": "nextjs-api-error-handling",
+    "priority": 199,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling errors in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Return 400 or 500 status codes on error."
+      }
+    ],
+    "syntax": "try { ... } catch (error) { res.status(500).json({ error: error.message }); }",
+    "examples": [
+      "try { ... } catch (error) { res.status(500).json({ error: error.message }); }"
+    ],
+    "synonyms": ["api error handling"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈɛrər ˈhændlɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Return clear error messages and status codes.",
+    "relatedConcepts": ["api", "error handling"]
+  },
+  {
+    "word": "nextjs-api-pagination",
+    "priority": 200,
+    "definitions": [
+      {
+        "meaning": "A pattern for paginating API responses in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Return paginated data from API routes."
+      }
+    ],
+    "syntax": "GET /api/items?page=2&limit=10",
+    "examples": [
+      "const { page = 1, limit = 10 } = req.query;"
+    ],
+    "synonyms": ["api pagination"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˌpædʒɪˈneɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Paginate large API responses for efficiency.",
+    "relatedConcepts": ["api", "pagination"]
+  },
+  {
+    "word": "nextjs-api-filtering",
+    "priority": 201,
+    "definitions": [
+      {
+        "meaning": "A pattern for filtering API results in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Filter data with query parameters."
+      }
+    ],
+    "syntax": "GET /api/items?category=books",
+    "examples": [
+      "const { category } = req.query;"
+    ],
+    "synonyms": ["api filtering"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈfɪltərɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Filter API results for flexible data access.",
+    "relatedConcepts": ["api", "filtering"]
+  },
+  {
+    "word": "nextjs-api-sorting",
+    "priority": 202,
+    "definitions": [
+      {
+        "meaning": "A pattern for sorting API results in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Sort data with query parameters."
+      }
+    ],
+    "syntax": "GET /api/items?sort=asc",
+    "examples": [
+      "const { sort = 'asc' } = req.query;"
+    ],
+    "synonyms": ["api sorting"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈsɔːrtɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Allow sorting for user-friendly APIs.",
+    "relatedConcepts": ["api", "sorting"]
+  },
+  {
+    "word": "nextjs-api-authentication",
+    "priority": 203,
+    "definitions": [
+      {
+        "meaning": "A pattern for authenticating API requests in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Authenticate users with tokens or cookies."
+      }
+    ],
+    "syntax": "req.headers.authorization",
+    "examples": [
+      "const token = req.headers.authorization?.split(' ')[1];"
+    ],
+    "synonyms": ["api authentication"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ˈeɪ piː aɪ ɔːˌθɛntɪˈkeɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Authenticate all sensitive API routes.",
+    "relatedConcepts": ["api", "authentication"]
+  },
+  {
+    "word": "nextjs-api-authorization",
+    "priority": 204,
+    "definitions": [
+      {
+        "meaning": "A pattern for authorizing API requests in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Check user roles before serving data."
+      }
+    ],
+    "syntax": "if (user.role !== 'admin') { ... }",
+    "examples": [
+      "if (user.role !== 'admin') { res.status(403).end('Forbidden'); }"
+    ],
+    "synonyms": ["api authorization"],
+    "antonyms": [],
+    "frequency": 30,
+    "pronunciation": "ˈeɪ piː aɪ ˌɔːθəraɪˈzeɪʃən",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Check authorization for all protected API routes.",
+    "relatedConcepts": ["api", "authorization"]
+  },
+  {
+    "word": "nextjs-api-logging",
+    "priority": 205,
+    "definitions": [
+      {
+        "meaning": "A pattern for logging API requests and responses in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Log all API requests for monitoring."
+      }
+    ],
+    "syntax": "console.log(req.method, req.url);",
+    "examples": [
+      "console.log(req.method, req.url);"
+    ],
+    "synonyms": ["api logging"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈlɒɡɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Log requests for debugging and auditing.",
+    "relatedConcepts": ["api", "logging"]
+  },
+  {
+    "word": "nextjs-api-monitoring",
+    "priority": 206,
+    "definitions": [
+      {
+        "meaning": "A pattern for monitoring API performance and errors in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor API latency and errors."
+      }
+    ],
+    "syntax": "// Integrate with Sentry or Datadog",
+    "examples": [
+      "Sentry.captureException(error);"
+    ],
+    "synonyms": ["api monitoring"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈmɒnɪtərɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Monitor APIs for uptime and error rates.",
+    "relatedConcepts": ["api", "monitoring"]
+  },
+  {
+    "word": "nextjs-api-throttling",
+    "priority": 207,
+    "definitions": [
+      {
+        "meaning": "A pattern for throttling API requests in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Throttle requests to prevent abuse."
+      }
+    ],
+    "syntax": "// Use a throttle middleware",
+    "examples": [
+      "if (tooManyRequests) { res.status(429).end('Too Many Requests'); }"
+    ],
+    "synonyms": ["api throttling"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈθrɒtlɪŋ",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Throttle expensive or sensitive API endpoints.",
+    "relatedConcepts": ["api", "throttling"]
+  },
+  {
+    "word": "nextjs-api-upload",
+    "priority": 208,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling file uploads in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Handle file uploads with multer or formidable."
+      }
+    ],
+    "syntax": "import multer from 'multer';",
+    "examples": [
+      "const upload = multer({ dest: '/tmp' });"
+    ],
+    "synonyms": ["api upload"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈʌpˌloʊd",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Validate and sanitize uploaded files.",
+    "relatedConcepts": ["api", "upload"]
+  },
+  {
+    "word": "nextjs-api-download",
+    "priority": 209,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving file downloads in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Serve files with correct headers."
+      }
+    ],
+    "syntax": "res.setHeader('Content-Disposition', 'attachment; filename=file.txt');",
+    "examples": [
+      "res.setHeader('Content-Disposition', 'attachment; filename=file.txt');\nres.send(fileBuffer);"
+    ],
+    "synonyms": ["api download"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈdaʊnˌloʊd",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Set correct headers for file downloads.",
+    "relatedConcepts": ["api", "download"]
+  },
+  {
+    "word": "nextjs-api-webhooks",
+    "priority": 210,
+    "definitions": [
+      {
+        "meaning": "A pattern for handling webhooks in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Receive webhook events from Stripe or GitHub."
+      }
+    ],
+    "syntax": "POST /api/webhook",
+    "examples": [
+      "export default function handler(req, res) {\n  if (req.method === 'POST') {\n    // handle webhook\n  }\n}"
+    ],
+    "synonyms": ["api webhooks"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈwɛbhʊks",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Verify webhook signatures for security.",
+    "relatedConcepts": ["api", "webhook"]
+  },
+  {
+    "word": "nextjs-api-cron",
+    "priority": 211,
+    "definitions": [
+      {
+        "meaning": "A pattern for running scheduled tasks (cron jobs) in Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Run periodic jobs with serverless functions."
+      }
+    ],
+    "syntax": "// Use a scheduled serverless function",
+    "examples": [
+      "// Use Vercel or AWS scheduled functions"
+    ],
+    "synonyms": ["api cron"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "krɒn",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use provider-native cron for reliability.",
+    "relatedConcepts": ["api", "cron"]
+  },
+  {
+    "word": "nextjs-api-graphql",
+    "priority": 212,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving GraphQL endpoints in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Serve GraphQL APIs from /api/graphql."
+      }
+    ],
+    "syntax": "import { ApolloServer } from 'apollo-server-micro';",
+    "examples": [
+      "const server = new ApolloServer({ typeDefs, resolvers });"
+    ],
+    "synonyms": ["api graphql"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈɡræfˌkjuːˈɛl",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use Apollo Server or Yoga for GraphQL endpoints.",
+    "relatedConcepts": ["api", "graphql"]
+  },
+  {
+    "word": "nextjs-api-rest",
+    "priority": 213,
+    "definitions": [
+      {
+        "meaning": "A pattern for serving REST endpoints in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Serve REST APIs from /api/*."
+      }
+    ],
+    "syntax": "export default function handler(req, res) { ... }",
+    "examples": [
+      "export default function handler(req, res) { res.status(200).json({ message: 'ok' }); }"
+    ],
+    "synonyms": ["api rest"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ rɛst",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Follow REST conventions for endpoint design.",
+    "relatedConcepts": ["api", "rest"]
+  },
+  {
+    "word": "nextjs-api-middleware",
+    "priority": 214,
+    "definitions": [
+      {
+        "meaning": "A pattern for using middleware in Next.js API routes.",
+        "partOfSpeech": "pattern",
+        "example": "Use middleware for authentication and logging."
+      }
+    ],
+    "syntax": "import nc from 'next-connect';",
+    "examples": [
+      "export default nc().use(authMiddleware).get(handler);"
+    ],
+    "synonyms": ["api middleware"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ˈmɪdəlˌwɛər",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Compose middleware for reusable logic.",
+    "relatedConcepts": ["api", "middleware"]
+  },
+  {
+    "word": "nextjs-api-ssr",
+    "priority": 215,
+    "definitions": [
+      {
+        "meaning": "A pattern for using API routes to support SSR data fetching.",
+        "partOfSpeech": "pattern",
+        "example": "Fetch data from API routes in getServerSideProps."
+      }
+    ],
+    "syntax": "const res = await fetch('http://localhost:3000/api/data');",
+    "examples": [
+      "const res = await fetch('http://localhost:3000/api/data');\nconst data = await res.json();"
+    ],
+    "synonyms": ["api ssr"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ɛs ɛs ɑːr",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use API routes for SSR data fetching to separate logic.",
+    "relatedConcepts": ["api", "SSR"]
+  },
+  {
+    "word": "nextjs-api-ssg",
+    "priority": 216,
+    "definitions": [
+      {
+        "meaning": "A pattern for using API routes to support SSG data fetching.",
+        "partOfSpeech": "pattern",
+        "example": "Fetch data from API routes in getStaticProps."
+      }
+    ],
+    "syntax": "const res = await fetch('http://localhost:3000/api/data');",
+    "examples": [
+      "const res = await fetch('http://localhost:3000/api/data');\nconst data = await res.json();"
+    ],
+    "synonyms": ["api ssg"],
+    "antonyms": [],
+    "frequency": 20,
+    "pronunciation": "ˈeɪ piː aɪ ɛs ɛs dʒiː",
+    "difficulty": "advanced",
+    "category": "api",
+    "bestPractice": "Use API routes for SSG data fetching to keep logic modular.",
+    "relatedConcepts": ["api", "SSG"]
+  }
+]

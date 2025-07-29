@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 433,
+      "word": "patient",
+      "part_of_speech": "noun/adjective",
+      "definition": "A person receiving medical care; able to accept or tolerate delays, problems, or suffering without becoming annoyed or anxious.",
+      "example": "The patient is recovering. Be patient while you wait.",
+      "frequency_rank": 433,
+      "tags": ["noun", "adjective", "health", "high-frequency"],
+      "related": ["sufferer", "tolerant", "enduring"]
+    },
+    {
+      "priority": 434,
+      "word": "worker",
+      "part_of_speech": "noun",
+      "definition": "A person who works, especially one employed in a particular field or activity.",
+      "example": "She is a factory worker.",
+      "frequency_rank": 434,
+      "tags": ["noun", "person", "employment", "high-frequency"],
+      "related": ["employee", "laborer", "staff"]
+    },
+    {
+      "priority": 435,
+      "word": "news",
+      "part_of_speech": "noun",
+      "definition": "Newly received or noteworthy information, especially about recent events.",
+      "example": "Did you hear the news?",
+      "frequency_rank": 435,
+      "tags": ["noun", "information", "high-frequency"],
+      "related": ["report", "update", "media"]
+    },
+    {
+      "priority": 436,
+      "word": "test",
+      "part_of_speech": "noun/verb",
+      "definition": "A procedure intended to establish the quality, performance, or reliability of something; to take measures to check the quality, performance, or reliability of something.",
+      "example": "The math test was hard. Test the new software.",
+      "frequency_rank": 436,
+      "tags": ["noun", "verb", "assessment", "high-frequency"],
+      "related": ["exam", "trial", "check"]
+    },
+    {
+      "priority": 437,
+      "word": "movie",
+      "part_of_speech": "noun",
+      "definition": "A story or event recorded by a camera as a set of moving images and shown in a theater or on television.",
+      "example": "Let's watch a movie tonight.",
+      "frequency_rank": 437,
+      "tags": ["noun", "entertainment", "high-frequency"],
+      "related": ["film", "cinema", "show"]
+    },
+    {
+      "priority": 438,
+      "word": "certain",
+      "part_of_speech": "adjective",
+      "definition": "Known for sure; established beyond doubt.",
+      "example": "I am certain about my answer.",
+      "frequency_rank": 438,
+      "tags": ["adjective", "certainty", "high-frequency"],
+      "related": ["sure", "definite", "positive"]
+    },
+    {
+      "priority": 439,
+      "word": "north",
+      "part_of_speech": "noun/adjective/adverb",
+      "definition": "The direction in which a compass needle normally points; situated in or directed toward the north.",
+      "example": "Canada is north of the United States.",
+      "frequency_rank": 439,
+      "tags": ["noun", "adjective", "adverb", "direction", "high-frequency"],
+      "related": ["south", "east", "west"]
+    },
+    {
+      "priority": 440,
+      "word": "love",
+      "part_of_speech": "noun/verb",
+      "definition": "An intense feeling of deep affection; to feel deep affection for someone.",
+      "example": "Love is important. I love my family.",
+      "frequency_rank": 440,
+      "tags": ["noun", "verb", "emotion", "high-frequency"],
+      "related": ["like", "affection", "adore"]
+    },
+    {
+      "priority": 441,
+      "word": "personal",
+      "part_of_speech": "adjective",
+      "definition": "Belonging to or affecting a particular person rather than anyone else.",
+      "example": "This is my personal opinion.",
+      "frequency_rank": 441,
+      "tags": ["adjective", "individual", "high-frequency"],
+      "related": ["private", "individual", "own"]
+    },
+    {
+      "priority": 442,
+      "word": "simply",
+      "part_of_speech": "adverb",
+      "definition": "In a straightforward or plain manner.",
+      "example": "Just simply do it.",
+      "frequency_rank": 442,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["just", "plainly", "easily"]
+    },
+    {
+      "priority": 443,
+      "word": "technology",
+      "part_of_speech": "noun",
+      "definition": "The application of scientific knowledge for practical purposes.",
+      "example": "Technology is changing rapidly.",
+      "frequency_rank": 443,
+      "tags": ["noun", "science", "high-frequency"],
+      "related": ["science", "innovation", "device"]
+    },
+    {
+      "priority": 444,
+      "word": "catch",
+      "part_of_speech": "verb/noun",
+      "definition": "To capture or seize, especially after a chase; the act of catching.",
+      "example": "Catch the ball. That was a great catch.",
+      "frequency_rank": 444,
+      "tags": ["verb", "noun", "high-frequency"],
+      "related": ["grab", "seize", "capture"]
+    },
+    {
+      "priority": 445,
+      "word": "step",
+      "part_of_speech": "noun/verb",
+      "definition": "An act or movement of putting one leg in front of the other; to move by lifting your foot and putting it down in a different place.",
+      "example": "Take a step forward. Be careful where you step.",
+      "frequency_rank": 445,
+      "tags": ["noun", "verb", "movement", "high-frequency"],
+      "related": ["stride", "walk", "move"]
+    },
+    {
+      "priority": 446,
+      "word": "south",
+      "part_of_speech": "noun/adjective/adverb",
+      "definition": "The direction toward the point of the horizon 90° clockwise from east; situated in or directed toward the south.",
+      "example": "Mexico is south of the United States.",
+      "frequency_rank": 446,
+      "tags": ["noun", "adjective", "adverb", "direction", "high-frequency"],
+      "related": ["north", "east", "west"]
+    },
+    {
+      "priority": 447,
+      "word": "yourself",
+      "part_of_speech": "pronoun",
+      "definition": "Reflexive form of 'you'.",
+      "example": "Take care of yourself.",
+      "frequency_rank": 447,
+      "tags": ["pronoun", "reflexive", "high-frequency"],
+      "related": ["you", "myself", "himself"]
+    },
+    {
+      "priority": 448,
+      "word": "report",
+      "part_of_speech": "noun/verb",
+      "definition": "A spoken or written account of something; to give a spoken or written account of something.",
+      "example": "Write a report about the project. Please report the incident.",
+      "frequency_rank": 448,
+      "tags": ["noun", "verb", "information", "high-frequency"],
+      "related": ["record", "account", "describe"]
+    },
+    {
+      "priority": 449,
+      "word": "pull",
+      "part_of_speech": "verb/noun",
+      "definition": "To exert force on someone or something so as to cause movement toward oneself; an act of pulling.",
+      "example": "Pull the door open. Give the rope a pull.",
+      "frequency_rank": 449,
+      "tags": ["verb", "noun", "movement", "high-frequency"],
+      "related": ["drag", "draw", "tug"]
+    },
+    {
+      "priority": 450,
+      "word": "condition",
+      "part_of_speech": "noun/verb",
+      "definition": "The state of something with regard to its appearance, quality, or working order; to have a significant influence on or determine.",
+      "example": "The car is in good condition. The weather will condition our plans.",
+      "frequency_rank": 450,
+      "tags": ["noun", "verb", "state", "high-frequency"],
+      "related": ["state", "situation", "influence"]
+    },
+    {
+      "priority": 451,
+      "word": "choice",
+      "part_of_speech": "noun",
+      "definition": "An act of selecting or making a decision when faced with two or more possibilities.",
+      "example": "You have a choice between tea and coffee.",
+      "frequency_rank": 451,
+      "tags": ["noun", "decision", "high-frequency"],
+      "related": ["option", "selection", "pick"]
+    },
+    {
+      "priority": 452,
+      "word": "single",
+      "part_of_speech": "adjective/noun",
+      "definition": "Only one; not one of several; unmarried.",
+      "example": "She is a single mother. A single rose.",
+      "frequency_rank": 452,
+      "tags": ["adjective", "noun", "number", "high-frequency"],
+      "related": ["one", "individual", "alone"]
+    },
+    {
+      "priority": 453,
+      "word": "rule",
+      "part_of_speech": "noun/verb",
+      "definition": "One of a set of explicit or understood regulations or principles; to exercise ultimate power or authority over.",
+      "example": "Follow the rules. The king will rule the land.",
+      "frequency_rank": 453,
+      "tags": ["noun", "verb", "law", "high-frequency"],
+      "related": ["regulation", "govern", "control"]
+    },
+    {
+      "priority": 454,
+      "word": "daughter",
+      "part_of_speech": "noun",
+      "definition": "A female child in relation to her parents.",
+      "example": "Their daughter is five years old.",
+      "frequency_rank": 454,
+      "tags": ["noun", "family", "high-frequency"],
+      "related": ["son", "child", "girl"]
+    },
+    {
+      "priority": 455,
+      "word": "administration",
+      "part_of_speech": "noun",
+      "definition": "The process or activity of running a business, organization, etc.",
+      "example": "She works in the school administration.",
+      "frequency_rank": 455,
+      "tags": ["noun", "organization", "high-frequency"],
+      "related": ["management", "government", "executive"]
+    },
+    {
+      "priority": 456,
+      "word": "south",
+      "part_of_speech": "adjective",
+      "definition": "Situated in or directed toward the south.",
+      "example": "The south entrance is closed.",
+      "frequency_rank": 456,
+      "tags": ["adjective", "direction", "high-frequency"],
+      "related": ["north", "east", "west"]
+    },
+    {
+      "priority": 457,
+      "word": "husband",
+      "part_of_speech": "noun",
+      "definition": "A married man considered in relation to his spouse.",
+      "example": "Her husband is a doctor.",
+      "frequency_rank": 457,
+      "tags": ["noun", "family", "high-frequency"],
+      "related": ["wife", "spouse", "partner"]
+    },
+    {
+      "priority": 458,
+      "word": "Congress",
+      "part_of_speech": "noun",
+      "definition": "The national legislative body of a country, especially that of the US.",
+      "example": "Congress passed a new law.",
+      "frequency_rank": 458,
+      "tags": ["noun", "government", "high-frequency"],
+      "related": ["parliament", "legislature", "senate"]
+    },
+    {
+      "priority": 459,
+      "word": "floor",
+      "part_of_speech": "noun",
+      "definition": "The lower surface of a room, on which one may walk.",
+      "example": "The floor is clean.",
+      "frequency_rank": 459,
+      "tags": ["noun", "place", "high-frequency"],
+      "related": ["ground", "level", "surface"]
+    },
+    {
+      "priority": 460,
+      "word": "campaign",
+      "part_of_speech": "noun/verb",
+      "definition": "An organized course of action to achieve a goal; to work in an organized and active way toward a goal.",
+      "example": "He led a successful campaign. They campaign for better schools.",
+      "frequency_rank": 460,
+      "tags": ["noun", "verb", "action", "high-frequency"],
+      "related": ["movement", "drive", "push"]
+    },
+    {
+      "priority": 461,
+      "word": "material",
+      "part_of_speech": "noun/adjective",
+      "definition": "The matter from which a thing is or can be made; relating to physical objects rather than the mind or spirit.",
+      "example": "The dress is made of soft material. Material wealth is not everything.",
+      "frequency_rank": 461,
+      "tags": ["noun", "adjective", "substance", "high-frequency"],
+      "related": ["substance", "fabric", "physical"]
+    },
+    {
+      "priority": 462,
+      "word": "population",
+      "part_of_speech": "noun",
+      "definition": "All the inhabitants of a particular town, area, or country.",
+      "example": "The population of the city is growing.",
+      "frequency_rank": 462,
+      "tags": ["noun", "people", "high-frequency"],
+      "related": ["inhabitants", "residents", "citizens"]
+    },
+    {
+      "priority": 463,
+      "word": "well",
+      "part_of_speech": "noun",
+      "definition": "A deep hole or shaft dug or drilled to obtain water, oil, gas, or brine.",
+      "example": "The village has a water well.",
+      "frequency_rank": 463,
+      "tags": ["noun", "water", "high-frequency"],
+      "related": ["spring", "source", "hole"]
+    },
+    {
+      "priority": 464,
+      "word": "call",
+      "part_of_speech": "noun",
+      "definition": "A telephone conversation; a cry made as a summons or to attract someone's attention.",
+      "example": "I received a call from my friend.",
+      "frequency_rank": 464,
+      "tags": ["noun", "communication", "high-frequency"],
+      "related": ["phone", "shout", "summon"]
+    },
+    {
+      "priority": 465,
+      "word": "economy",
+      "part_of_speech": "noun",
+      "definition": "The wealth and resources of a country or region, especially in terms of the production and consumption of goods and services.",
+      "example": "The economy is improving.",
+      "frequency_rank": 465,
+      "tags": ["noun", "finance", "high-frequency"],
+      "related": ["market", "finance", "system"]
+    },
+    {
+      "priority": 466,
+      "word": "medical",
+      "part_of_speech": "adjective",
+      "definition": "Relating to the science or practice of medicine.",
+      "example": "He needs medical attention.",
+      "frequency_rank": 466,
+      "tags": ["adjective", "health", "high-frequency"],
+      "related": ["health", "clinical", "doctor"]
+    },
+    {
+      "priority": 467,
+      "word": "hospital",
+      "part_of_speech": "noun",
+      "definition": "An institution providing medical and surgical treatment and nursing care for sick or injured people.",
+      "example": "She works at the hospital.",
+      "frequency_rank": 467,
+      "tags": ["noun", "health", "high-frequency"],
+      "related": ["clinic", "healthcare", "doctor"]
+    },
+    {
+      "priority": 468,
+      "word": "church",
+      "part_of_speech": "noun",
+      "definition": "A building used for public Christian worship.",
+      "example": "They go to church every Sunday.",
+      "frequency_rank": 468,
+      "tags": ["noun", "religion", "high-frequency"],
+      "related": ["cathedral", "chapel", "temple"]
+    }
+  ]
+}

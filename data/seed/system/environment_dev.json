@@ -1,0 +1,8 @@
+{
+  "environment": "development",
+  "overrides": {
+    "db_host": "localhost",
+    "api_host": "localhost",
+    "debug_mode": true
+  }
+}

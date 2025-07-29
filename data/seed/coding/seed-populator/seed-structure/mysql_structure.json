@@ -1,0 +1,50 @@
+{
+  "mysql": {
+    "basics": [
+      "database-creation",
+      "table-creation",
+      "insert",
+      "select",
+      "update",
+      "delete"
+    ],
+    "joins": [
+      "inner-join",
+      "left-join",
+      "right-join",
+      "full-join"
+    ],
+    "clauses": [
+      "where",
+      "group-by",
+      "order-by",
+      "having",
+      "limit"
+    ],
+    "data-types": [
+      "int",
+      "varchar",
+      "date",
+      "boolean",
+      "text",
+      "float"
+    ],
+    "indexes": [
+      "primary-key",
+      "unique",
+      "index",
+      "foreign-key"
+    ],
+    "transactions": [
+      "start-transaction",
+      "commit",
+      "rollback"
+    ],
+    "best-practices": [
+      "normalization",
+      "security",
+      "backup",
+      "performance"
+    ]
+  }
+}

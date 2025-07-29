@@ -10,7 +10,9 @@ export default function TrainingPanel() {
           <CardTitle>Training</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-600">Upcoming features for training and model management.</p>
+          <p className="text-gray-600">
+            This section is reserved for training and model improvement features. More coming soon!
+          </p>
         </CardContent>
       </Card>
     </div>

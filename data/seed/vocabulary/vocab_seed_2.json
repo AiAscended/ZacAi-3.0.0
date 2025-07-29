@@ -1,0 +1,364 @@
+{
+  "words": [
+    {
+      "priority": 37,
+      "word": "who",
+      "part_of_speech": "pronoun",
+      "definition": "Used to ask about or refer to a person.",
+      "example": "Who is coming to dinner?",
+      "frequency_rank": 37,
+      "tags": ["pronoun", "question", "high-frequency"],
+      "related": ["whom", "whose", "what"]
+    },
+    {
+      "priority": 38,
+      "word": "get",
+      "part_of_speech": "verb",
+      "definition": "To obtain, receive, or become.",
+      "example": "Did you get my message?",
+      "frequency_rank": 38,
+      "tags": ["verb", "high-frequency"],
+      "related": ["receive", "obtain", "become"]
+    },
+    {
+      "priority": 39,
+      "word": "if",
+      "part_of_speech": "conjunction",
+      "definition": "Used to introduce a conditional clause.",
+      "example": "If it rains, we’ll stay inside.",
+      "frequency_rank": 39,
+      "tags": ["conjunction", "conditional", "high-frequency"],
+      "related": ["unless", "when"]
+    },
+    {
+      "priority": 40,
+      "word": "would",
+      "part_of_speech": "modal verb",
+      "definition": "Indicates a conditional or future-in-the-past action.",
+      "example": "I would go if I could.",
+      "frequency_rank": 40,
+      "tags": ["modal verb", "conditional", "high-frequency"],
+      "related": ["will", "should", "could"]
+    },
+    {
+      "priority": 41,
+      "word": "her",
+      "part_of_speech": "pronoun/possessive",
+      "definition": "Belonging to or associated with a female person or animal.",
+      "example": "Her car is red.",
+      "frequency_rank": 41,
+      "tags": ["pronoun", "possessive", "high-frequency"],
+      "related": ["she", "hers"]
+    },
+    {
+      "priority": 42,
+      "word": "all",
+      "part_of_speech": "determiner/pronoun",
+      "definition": "The whole quantity or extent of a particular group or thing.",
+      "example": "All students must attend.",
+      "frequency_rank": 42,
+      "tags": ["determiner", "pronoun", "high-frequency"],
+      "related": ["every", "each"]
+    },
+    {
+      "priority": 43,
+      "word": "my",
+      "part_of_speech": "pronoun/possessive",
+      "definition": "Belonging to the speaker.",
+      "example": "My phone is missing.",
+      "frequency_rank": 43,
+      "tags": ["pronoun", "possessive", "high-frequency"],
+      "related": ["I", "mine"]
+    },
+    {
+      "priority": 44,
+      "word": "make",
+      "part_of_speech": "verb",
+      "definition": "To create or produce something.",
+      "example": "Can you make a cake?",
+      "frequency_rank": 44,
+      "tags": ["verb", "high-frequency"],
+      "related": ["create", "build", "produce"]
+    },
+    {
+      "priority": 45,
+      "word": "about",
+      "part_of_speech": "preposition",
+      "definition": "On the subject of; concerning.",
+      "example": "We talked about the movie.",
+      "frequency_rank": 45,
+      "tags": ["preposition", "high-frequency"],
+      "related": ["regarding", "concerning"]
+    },
+    {
+      "priority": 46,
+      "word": "know",
+      "part_of_speech": "verb",
+      "definition": "To be aware of through observation, inquiry, or information.",
+      "example": "Do you know her name?",
+      "frequency_rank": 46,
+      "tags": ["verb", "high-frequency"],
+      "related": ["understand", "learn"]
+    },
+    {
+      "priority": 47,
+      "word": "will",
+      "part_of_speech": "modal verb",
+      "definition": "Expresses future tense or intention.",
+      "example": "I will call you tomorrow.",
+      "frequency_rank": 47,
+      "tags": ["modal verb", "future", "high-frequency"],
+      "related": ["shall", "would"]
+    },
+    {
+      "priority": 48,
+      "word": "as",
+      "part_of_speech": "adverb/conjunction",
+      "definition": "Used to indicate comparison or simultaneous action.",
+      "example": "As she walked, she talked.",
+      "frequency_rank": 48,
+      "tags": ["adverb", "conjunction", "comparison", "high-frequency"],
+      "related": ["while", "like"]
+    },
+    {
+      "priority": 49,
+      "word": "up",
+      "part_of_speech": "adverb/preposition",
+      "definition": "Toward a higher place or position.",
+      "example": "He climbed up the hill.",
+      "frequency_rank": 49,
+      "tags": ["adverb", "preposition", "high-frequency"],
+      "related": ["down", "above"]
+    },
+    {
+      "priority": 50,
+      "word": "one",
+      "part_of_speech": "number/pronoun",
+      "definition": "The number 1; a single person or thing.",
+      "example": "One of the books is missing.",
+      "frequency_rank": 50,
+      "tags": ["number", "pronoun", "high-frequency"],
+      "related": ["two", "single"]
+    },
+    {
+      "priority": 51,
+      "word": "time",
+      "part_of_speech": "noun",
+      "definition": "The indefinite continued progress of existence and events.",
+      "example": "What time is it?",
+      "frequency_rank": 51,
+      "tags": ["noun", "high-frequency"],
+      "related": ["hour", "moment"]
+    },
+    {
+      "priority": 52,
+      "word": "there",
+      "part_of_speech": "adverb/pronoun",
+      "definition": "In, at, or to that place or position.",
+      "example": "She is there.",
+      "frequency_rank": 52,
+      "tags": ["adverb", "pronoun", "high-frequency"],
+      "related": ["here", "where"]
+    },
+    {
+      "priority": 53,
+      "word": "year",
+      "part_of_speech": "noun",
+      "definition": "A period of 12 months.",
+      "example": "She graduated last year.",
+      "frequency_rank": 53,
+      "tags": ["noun", "time", "high-frequency"],
+      "related": ["month", "day"]
+    },
+    {
+      "priority": 54,
+      "word": "so",
+      "part_of_speech": "conjunction/adverb",
+      "definition": "To such a great extent; therefore.",
+      "example": "It was raining, so we stayed inside.",
+      "frequency_rank": 54,
+      "tags": ["conjunction", "adverb", "high-frequency"],
+      "related": ["thus", "therefore"]
+    },
+    {
+      "priority": 55,
+      "word": "think",
+      "part_of_speech": "verb",
+      "definition": "To have a particular opinion or belief.",
+      "example": "I think it will rain.",
+      "frequency_rank": 55,
+      "tags": ["verb", "high-frequency"],
+      "related": ["believe", "consider"]
+    },
+    {
+      "priority": 56,
+      "word": "when",
+      "part_of_speech": "adverb/conjunction",
+      "definition": "At what time; at or during the time that.",
+      "example": "When will you arrive?",
+      "frequency_rank": 56,
+      "tags": ["adverb", "conjunction", "question", "high-frequency"],
+      "related": ["where", "while"]
+    },
+    {
+      "priority": 57,
+      "word": "which",
+      "part_of_speech": "pronoun/determiner",
+      "definition": "Used to ask or talk about one or more members of a group.",
+      "example": "Which color do you prefer?",
+      "frequency_rank": 57,
+      "tags": ["pronoun", "determiner", "question", "high-frequency"],
+      "related": ["what", "who"]
+    },
+    {
+      "priority": 58,
+      "word": "them",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to two or more people or things previously mentioned.",
+      "example": "Give them the keys.",
+      "frequency_rank": 58,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["they", "their"]
+    },
+    {
+      "priority": 59,
+      "word": "some",
+      "part_of_speech": "determiner/pronoun",
+      "definition": "An unspecified amount or number of.",
+      "example": "I need some help.",
+      "frequency_rank": 59,
+      "tags": ["determiner", "pronoun", "high-frequency"],
+      "related": ["any", "several"]
+    },
+    {
+      "priority": 60,
+      "word": "me",
+      "part_of_speech": "pronoun",
+      "definition": "Used by a speaker to refer to himself or herself as the object of a verb or preposition.",
+      "example": "Give me the book.",
+      "frequency_rank": 60,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["I", "my"]
+    },
+    {
+      "priority": 61,
+      "word": "people",
+      "part_of_speech": "noun",
+      "definition": "Human beings in general or considered collectively.",
+      "example": "Many people attended the concert.",
+      "frequency_rank": 61,
+      "tags": ["noun", "high-frequency"],
+      "related": ["person", "group"]
+    },
+    {
+      "priority": 62,
+      "word": "take",
+      "part_of_speech": "verb",
+      "definition": "To get into one's possession by force, skill, or artifice.",
+      "example": "Take a seat.",
+      "frequency_rank": 62,
+      "tags": ["verb", "high-frequency"],
+      "related": ["grab", "get"]
+    },
+    {
+      "priority": 63,
+      "word": "out",
+      "part_of_speech": "adverb/preposition",
+      "definition": "Moving or appearing to move away from a particular place.",
+      "example": "Go out the door.",
+      "frequency_rank": 63,
+      "tags": ["adverb", "preposition", "high-frequency"],
+      "related": ["in", "outside"]
+    },
+    {
+      "priority": 64,
+      "word": "into",
+      "part_of_speech": "preposition",
+      "definition": "Expressing movement or action with the result that someone or something becomes enclosed or surrounded.",
+      "example": "He walked into the room.",
+      "frequency_rank": 64,
+      "tags": ["preposition", "high-frequency"],
+      "related": ["in", "inside"]
+    },
+    {
+      "priority": 65,
+      "word": "just",
+      "part_of_speech": "adverb",
+      "definition": "Exactly; only a moment ago.",
+      "example": "I just saw her.",
+      "frequency_rank": 65,
+      "tags": ["adverb", "high-frequency"],
+      "related": ["only", "simply"]
+    },
+    {
+      "priority": 66,
+      "word": "see",
+      "part_of_speech": "verb",
+      "definition": "To perceive with the eyes.",
+      "example": "Can you see the stars?",
+      "frequency_rank": 66,
+      "tags": ["verb", "high-frequency"],
+      "related": ["look", "watch"]
+    },
+    {
+      "priority": 67,
+      "word": "him",
+      "part_of_speech": "pronoun",
+      "definition": "Used to refer to a male person or animal previously mentioned.",
+      "example": "Give him the message.",
+      "frequency_rank": 67,
+      "tags": ["pronoun", "high-frequency"],
+      "related": ["he", "his"]
+    },
+    {
+      "priority": 68,
+      "word": "your",
+      "part_of_speech": "pronoun/possessive",
+      "definition": "Belonging to or associated with the person or people being addressed.",
+      "example": "Is this your bag?",
+      "frequency_rank": 68,
+      "tags": ["pronoun", "possessive", "high-frequency"],
+      "related": ["you", "yours"]
+    },
+    {
+      "priority": 69,
+      "word": "come",
+      "part_of_speech": "verb",
+      "definition": "To move or travel towards or into a place thought of as near or familiar to the speaker.",
+      "example": "Come here, please.",
+      "frequency_rank": 69,
+      "tags": ["verb", "high-frequency"],
+      "related": ["arrive", "go"]
+    },
+    {
+      "priority": 70,
+      "word": "could",
+      "part_of_speech": "modal verb",
+      "definition": "Used to indicate possibility or past ability.",
+      "example": "I could swim when I was five.",
+      "frequency_rank": 70,
+      "tags": ["modal verb", "possibility", "high-frequency"],
+      "related": ["can", "would"]
+    },
+    {
+      "priority": 71,
+      "word": "now",
+      "part_of_speech": "adverb",
+      "definition": "At the present moment.",
+      "example": "I am busy now.",
+      "frequency_rank": 71,
+      "tags": ["adverb", "time", "high-frequency"],
+      "related": ["then", "present"]
+    },
+    {
+      "priority": 72,
+      "word": "than",
+      "part_of_speech": "conjunction",
+      "definition": "Used to introduce the second element in a comparison.",
+      "example": "She is taller than me.",
+      "frequency_rank": 72,
+      "tags": ["conjunction", "comparison", "high-frequency"],
+      "related": ["as", "compared"]
+    }
+  ]
+}

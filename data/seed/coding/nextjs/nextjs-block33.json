@@ -1,0 +1,650 @@
+[
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-rollback",
+    "priority": 1153,
+    "definitions": [
+      {
+        "meaning": "A pattern for rolling back to a previous archive snapshot version at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Rollback to a stable version after a failed deployment."
+      }
+    ],
+    "syntax": "// Rollback archive snapshot version",
+    "examples": [
+      "rollbackArchiveSnapshotVersion(tenantId, version)"
+    ],
+    "synonyms": ["archive version rollback"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-diff",
+    "priority": 1154,
+    "definitions": [
+      {
+        "meaning": "A pattern for diffing two archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Compare two versions to identify changes."
+      }
+    ],
+    "syntax": "// Diff archive snapshot versions",
+    "examples": [
+      "diffArchiveSnapshotVersions(tenantId, versionA, versionB)"
+    ],
+    "synonyms": ["archive version diff"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-merge",
+    "priority": 1155,
+    "definitions": [
+      {
+        "meaning": "A pattern for merging archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Merge changes from two versions into a new one."
+      }
+    ],
+    "syntax": "// Merge archive snapshot versions",
+    "examples": [
+      "mergeArchiveSnapshotVersions(tenantId, baseVersion, otherVersion)"
+    ],
+    "synonyms": ["archive version merge"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-branching",
+    "priority": 1156,
+    "definitions": [
+      {
+        "meaning": "A pattern for branching archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Create a new branch for experimental changes."
+      }
+    ],
+    "syntax": "// Branch archive snapshot version",
+    "examples": [
+      "branchArchiveSnapshotVersion(tenantId, baseVersion, branchName)"
+    ],
+    "synonyms": ["archive version branching"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-tagging",
+    "priority": 1157,
+    "definitions": [
+      {
+        "meaning": "A pattern for tagging archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Tag a version as 'stable', 'release', or 'experimental'."
+      }
+    ],
+    "syntax": "// Tag archive snapshot version",
+    "examples": [
+      "tagArchiveSnapshotVersion(tenantId, version, tag)"
+    ],
+    "synonyms": ["archive version tagging"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-metadata",
+    "priority": 1158,
+    "definitions": [
+      {
+        "meaning": "A pattern for managing metadata for archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Attach metadata such as author, timestamp, and description."
+      }
+    ],
+    "syntax": "// Add metadata to archive snapshot version",
+    "examples": [
+      "addArchiveSnapshotVersionMetadata(tenantId, version, metadata)"
+    ],
+    "synonyms": ["archive version metadata"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-immutability",
+    "priority": 1159,
+    "definitions": [
+      {
+        "meaning": "A pattern for enforcing immutability of archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Prevent changes to a version once it is tagged as immutable."
+      }
+    ],
+    "syntax": "// Set archive snapshot version as immutable",
+    "examples": [
+      "setArchiveSnapshotVersionImmutable(tenantId, version)"
+    ],
+    "synonyms": ["archive version immutability"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-signing",
+    "priority": 1160,
+    "definitions": [
+      {
+        "meaning": "A pattern for signing archive snapshot versions at the edge for authenticity.",
+        "partOfSpeech": "pattern",
+        "example": "Digitally sign a version for audit and compliance."
+      }
+    ],
+    "syntax": "// Sign archive snapshot version",
+    "examples": [
+      "signArchiveSnapshotVersion(tenantId, version, privateKey)"
+    ],
+    "synonyms": ["archive version signing"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-verification",
+    "priority": 1161,
+    "definitions": [
+      {
+        "meaning": "A pattern for verifying the signature of archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Verify authenticity and integrity of a version."
+      }
+    ],
+    "syntax": "// Verify archive snapshot version signature",
+    "examples": [
+      "verifyArchiveSnapshotVersionSignature(tenantId, version, publicKey)"
+    ],
+    "synonyms": ["archive version verification"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-encryption",
+    "priority": 1162,
+    "definitions": [
+      {
+        "meaning": "A pattern for encrypting archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Encrypt a version before storage for security."
+      }
+    ],
+    "syntax": "// Encrypt archive snapshot version",
+    "examples": [
+      "encryptArchiveSnapshotVersion(tenantId, version, encryptionKey)"
+    ],
+    "synonyms": ["archive version encryption"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-decryption",
+    "priority": 1163,
+    "definitions": [
+      {
+        "meaning": "A pattern for decrypting archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Decrypt a version for access or restore."
+      }
+    ],
+    "syntax": "// Decrypt archive snapshot version",
+    "examples": [
+      "decryptArchiveSnapshotVersion(tenantId, version, decryptionKey)"
+    ],
+    "synonyms": ["archive version decryption"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-export",
+    "priority": 1164,
+    "definitions": [
+      {
+        "meaning": "A pattern for exporting archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Export a version for external backup or migration."
+      }
+    ],
+    "syntax": "// Export archive snapshot version",
+    "examples": [
+      "exportArchiveSnapshotVersion(tenantId, version, format)"
+    ],
+    "synonyms": ["archive version export"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-import",
+    "priority": 1165,
+    "definitions": [
+      {
+        "meaning": "A pattern for importing archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Import a version from external backup or migration."
+      }
+    ],
+    "syntax": "// Import archive snapshot version",
+    "examples": [
+      "importArchiveSnapshotVersion(tenantId, versionData, format)"
+    ],
+    "synonyms": ["archive version import"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-audit-trail",
+    "priority": 1166,
+    "definitions": [
+      {
+        "meaning": "A pattern for maintaining an audit trail of archive snapshot version changes at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Track all changes, access, and operations on versions."
+      }
+    ],
+    "syntax": "// Archive snapshot version audit trail",
+    "examples": [
+      "getArchiveSnapshotVersionAuditTrail(tenantId, version)"
+    ],
+    "synonyms": ["archive version audit trail"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-access-logging",
+    "priority": 1167,
+    "definitions": [
+      {
+        "meaning": "A pattern for logging access to archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Log every access to a version for compliance."
+      }
+    ],
+    "syntax": "// Log archive snapshot version access",
+    "examples": [
+      "logArchiveSnapshotVersionAccess(tenantId, version, userId)"
+    ],
+    "synonyms": ["archive version access logging"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-integrity-check",
+    "priority": 1168,
+    "definitions": [
+      {
+        "meaning": "A pattern for integrity checking of archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Verify checksums or hashes to detect corruption."
+      }
+    ],
+    "syntax": "// Integrity check for archive snapshot version",
+    "examples": [
+      "checkArchiveSnapshotVersionIntegrity(tenantId, version)"
+    ],
+    "synonyms": ["archive version integrity check"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-health-monitoring",
+    "priority": 1169,
+    "definitions": [
+      {
+        "meaning": "A pattern for health monitoring of archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Monitor version health and alert on anomalies."
+      }
+    ],
+    "syntax": "// Health monitor for archive snapshot version",
+    "examples": [
+      "monitorArchiveSnapshotVersionHealth(tenantId, version)"
+    ],
+    "synonyms": ["archive version health monitoring"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-point",
+    "priority": 1170,
+    "definitions": [
+      {
+        "meaning": "A pattern for creating restore points from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Create a restore point before major changes."
+      }
+    ],
+    "syntax": "// Create restore point from archive snapshot version",
+    "examples": [
+      "createArchiveSnapshotVersionRestorePoint(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore point"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-validation",
+    "priority": 1171,
+    "definitions": [
+      {
+        "meaning": "A pattern for validating restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Validate data integrity and completeness after restore."
+      }
+    ],
+    "syntax": "// Validate restore from archive snapshot version",
+    "examples": [
+      "validateArchiveSnapshotVersionRestore(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore validation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-automation",
+    "priority": 1172,
+    "definitions": [
+      {
+        "meaning": "A pattern for automating restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Automate restore workflows for rapid recovery."
+      }
+    ],
+    "syntax": "// Automate restore from archive snapshot version",
+    "examples": [
+      "automateArchiveSnapshotVersionRestore(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore automation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-orchestration",
+    "priority": 1173,
+    "definitions": [
+      {
+        "meaning": "A pattern for orchestrating restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Coordinate multi-step restores across systems."
+      }
+    ],
+    "syntax": "// Orchestrate restore from archive snapshot version",
+    "examples": [
+      "orchestrateArchiveSnapshotVersionRestore(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore orchestration"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-incident-response",
+    "priority": 1174,
+    "definitions": [
+      {
+        "meaning": "A pattern for incident response during restores from archive snapshot versions at the edge.",
+        "partOfSpeech": "pattern",
+        "example": "Trigger alerts and mitigation during restore failures."
+      }
+    ],
+    "syntax": "// Incident response for restore from archive snapshot version",
+    "examples": [
+      "triggerRestoreIncidentResponse(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore incident response"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-postmortem",
+    "priority": 1175,
+    "definitions": [
+      {
+        "meaning": "A pattern for postmortem analysis after restore incidents from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze root cause and improve restore processes."
+      }
+    ],
+    "syntax": "// Conduct restore postmortem",
+    "examples": [
+      "conductRestorePostmortem(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore postmortem"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-closure",
+    "priority": 1176,
+    "definitions": [
+      {
+        "meaning": "A pattern for formally closing restore incidents from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Mark restore incidents as resolved and update records."
+      }
+    ],
+    "syntax": "// Close restore incident",
+    "examples": [
+      "closeRestoreIncident(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore closure"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-lessons-learned",
+    "priority": 1177,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting lessons learned from restore incidents of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share lessons learned after restore failures."
+      }
+    ],
+    "syntax": "// Document restore lessons learned",
+    "examples": [
+      "logRestoreLessonsLearned(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore lessons learned"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-tabletop-exercise",
+    "priority": 1178,
+    "definitions": [
+      {
+        "meaning": "A pattern for running tabletop exercises for restore failures from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Simulate restore failure scenarios and test response."
+      }
+    ],
+    "syntax": "// Run restore tabletop exercises",
+    "examples": [
+      "runRestoreTabletopExercise(tenantId, version, scenario)"
+    ],
+    "synonyms": ["archive version restore tabletop exercise"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-drill",
+    "priority": 1179,
+    "definitions": [
+      {
+        "meaning": "A pattern for running drills for restore failures from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Conduct live drills to test restore and recovery processes."
+      }
+    ],
+    "syntax": "// Run restore drills",
+    "examples": [
+      "runRestoreDrill(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore drill"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-simulation",
+    "priority": 1180,
+    "definitions": [
+      {
+        "meaning": "A pattern for simulating restore failures and recovery from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Test detection and response with restore failure simulations."
+      }
+    ],
+    "syntax": "// Simulate restore failures in test environments",
+    "examples": [
+      "simulateRestoreFailure(tenantId, version, type)"
+    ],
+    "synonyms": ["archive version restore simulation"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-automation-advanced",
+    "priority": 1181,
+    "definitions": [
+      {
+        "meaning": "A pattern for automating advanced restore workflows from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Automate complex, multi-step restore processes."
+      }
+    ],
+    "syntax": "// Automate advanced restore from archive snapshot version",
+    "examples": [
+      "automateAdvancedRestore(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore automation advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-orchestration-advanced",
+    "priority": 1182,
+    "definitions": [
+      {
+        "meaning": "A pattern for orchestrating advanced restore operations from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Coordinate advanced, multi-system restore workflows."
+      }
+    ],
+    "syntax": "// Orchestrate advanced restore from archive snapshot version",
+    "examples": [
+      "orchestrateAdvancedRestore(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore orchestration advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-incident-response-advanced",
+    "priority": 1183,
+    "definitions": [
+      {
+        "meaning": "A pattern for advanced incident response during restores from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Trigger advanced alerts and mitigation during restore failures."
+      }
+    ],
+    "syntax": "// Advanced incident response for restore failures",
+    "examples": [
+      "triggerAdvancedRestoreIncidentResponse(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore incident response advanced"],
+    "difficulty": "advanced",
+    "category": "monitoring"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-postmortem-advanced",
+    "priority": 1184,
+    "definitions": [
+      {
+        "meaning": "A pattern for advanced postmortem analysis after restore incidents from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Analyze advanced root cause and improve restore processes."
+      }
+    ],
+    "syntax": "// Conduct advanced restore postmortem",
+    "examples": [
+      "conductAdvancedRestorePostmortem(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore postmortem advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-closure-advanced",
+    "priority": 1185,
+    "definitions": [
+      {
+        "meaning": "A pattern for formally closing advanced restore incidents from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Mark advanced restore incidents as resolved and update records."
+      }
+    ],
+    "syntax": "// Close advanced restore incident",
+    "examples": [
+      "closeAdvancedRestoreIncident(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore closure advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-lessons-learned-advanced",
+    "priority": 1186,
+    "definitions": [
+      {
+        "meaning": "A pattern for documenting advanced lessons learned from restore incidents of archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Record and share advanced lessons learned after restore failures."
+      }
+    ],
+    "syntax": "// Document advanced restore lessons learned",
+    "examples": [
+      "logAdvancedRestoreLessonsLearned(tenantId, version, incident)"
+    ],
+    "synonyms": ["archive version restore lessons learned advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-tabletop-exercise-advanced",
+    "priority": 1187,
+    "definitions": [
+      {
+        "meaning": "A pattern for running advanced tabletop exercises for restore failures from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Simulate advanced restore failure scenarios and test response."
+      }
+    ],
+    "syntax": "// Run advanced restore tabletop exercises",
+    "examples": [
+      "runAdvancedRestoreTabletopExercise(tenantId, version, scenario)"
+    ],
+    "synonyms": ["archive version restore tabletop exercise advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  },
+  {
+    "word": "nextjs-edge-tenant-data-search-cache-snapshot-archive-version-restore-drill-advanced",
+    "priority": 1188,
+    "definitions": [
+      {
+        "meaning": "A pattern for running advanced drills for restore failures from archive snapshot versions.",
+        "partOfSpeech": "pattern",
+        "example": "Conduct live advanced drills to test restore and recovery processes."
+      }
+    ],
+    "syntax": "// Run advanced restore drills",
+    "examples": [
+      "runAdvancedRestoreDrill(tenantId, version)"
+    ],
+    "synonyms": ["archive version restore drill advanced"],
+    "difficulty": "advanced",
+    "category": "cloud"
+  }
+]

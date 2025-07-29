@@ -1,0 +1,14 @@
+{
+  "name": "seed-populator",
+  "version": "1.0.0",
+  "description": "Automated seed data generator for code knowledge base",
+  "main": "scripts/autoPopulateSeedData.js",
+  "scripts": {
+    "populate": "node scripts/autoPopulateSeedData.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "ajv": "^8.0.0"
+  }
+}

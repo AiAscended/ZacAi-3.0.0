@@ -1,0 +1,472 @@
+{
+  "concepts": [
+    {
+      "priority": 37,
+      "concept": "Scalar",
+      "category": "Linear Algebra",
+      "definition": "A single numerical value, often used to scale vectors or matrices.",
+      "syntax": "c (where c is a real number)",
+      "examples": [
+        "3 is a scalar; multiplying vector [1,2] by 3 gives [3,6]"
+      ],
+      "explanation": "Scalars are the simplest mathematical objects and are used throughout all areas of mathematics.",
+      "tags": ["linear algebra", "basic"],
+      "related": ["Vectors", "Matrices"]
+    },
+    {
+      "priority": 38,
+      "concept": "Span",
+      "category": "Linear Algebra",
+      "definition": "The set of all possible linear combinations of a set of vectors.",
+      "syntax": "span{v1, v2, ..., vn}",
+      "examples": [
+        "span{[1,0], [0,1]} is all of R^2"
+      ],
+      "explanation": "Span describes the space that a set of vectors covers and is foundational for understanding vector spaces.",
+      "tags": ["linear algebra", "vector spaces"],
+      "related": ["Vectors", "Basis"]
+    },
+    {
+      "priority": 39,
+      "concept": "Basis",
+      "category": "Linear Algebra",
+      "definition": "A set of linearly independent vectors that span a vector space.",
+      "syntax": "{v1, v2, ..., vn} such that any vector in the space can be written as a linear combination of these.",
+      "examples": [
+        "{[1,0], [0,1]} is a basis for R^2"
+      ],
+      "explanation": "A basis provides the building blocks for a vector space.",
+      "tags": ["linear algebra", "vector spaces"],
+      "related": ["Span", "Dimension"]
+    },
+    {
+      "priority": 40,
+      "concept": "Dimension",
+      "category": "Linear Algebra",
+      "definition": "The number of vectors in a basis for a vector space.",
+      "syntax": "dim(V) = n",
+      "examples": [
+        "R^3 has dimension 3"
+      ],
+      "explanation": "Dimension tells you how many coordinates are needed to specify a point in the space.",
+      "tags": ["linear algebra", "vector spaces"],
+      "related": ["Basis", "Span"]
+    },
+    {
+      "priority": 41,
+      "concept": "Rank",
+      "category": "Linear Algebra",
+      "definition": "The maximum number of linearly independent rows or columns in a matrix.",
+      "syntax": "rank(A)",
+      "examples": [
+        "A 3x3 identity matrix has rank 3"
+      ],
+      "explanation": "Rank is used to determine the solvability of systems of equations and invertibility of matrices.",
+      "tags": ["linear algebra", "matrices"],
+      "related": ["Matrices", "Determinant"]
+    },
+    {
+      "priority": 42,
+      "concept": "Row Echelon Form",
+      "category": "Linear Algebra",
+      "definition": "A matrix form where all nonzero rows are above any rows of all zeros, and each leading entry is to the right of the one above it.",
+      "syntax": "Matrix with zeros below leading ones",
+      "examples": [
+        "[[1,2,3],[0,1,4],[0,0,1]]"
+      ],
+      "explanation": "Row echelon form is used in solving linear systems via Gaussian elimination.",
+      "tags": ["linear algebra", "matrices"],
+      "related": ["Rank", "Gaussian Elimination"]
+    },
+    {
+      "priority": 43,
+      "concept": "Gaussian Elimination",
+      "category": "Linear Algebra",
+      "definition": "A method for solving systems of linear equations by transforming the system's matrix to row echelon form.",
+      "syntax": "Apply row operations to matrix",
+      "examples": [
+        "Solving 2x + 3y = 8, x - y = 2 via elimination"
+      ],
+      "explanation": "Gaussian elimination is foundational for linear algebra and computational mathematics.",
+      "tags": ["linear algebra", "systems"],
+      "related": ["Row Echelon Form", "Rank"]
+    },
+    {
+      "priority": 44,
+      "concept": "Linear Transformation",
+      "category": "Linear Algebra",
+      "definition": "A function between vector spaces that preserves vector addition and scalar multiplication.",
+      "syntax": "T(v) = Av",
+      "examples": [
+        "Rotation or scaling in R^2"
+      ],
+      "explanation": "Linear transformations model changes of basis, rotations, and more in data science and graphics.",
+      "tags": ["linear algebra", "functions"],
+      "related": ["Matrices", "Vectors"]
+    },
+    {
+      "priority": 45,
+      "concept": "Projection",
+      "category": "Linear Algebra",
+      "definition": "Mapping a vector onto another vector or subspace, often to reduce dimensionality.",
+      "syntax": "proj_v(u) = (u·v / v·v) v",
+      "examples": [
+        "Projecting [3,4] onto [1,0] gives [3,0]"
+      ],
+      "explanation": "Projections are used in dimensionality reduction and principal component analysis (PCA).",
+      "tags": ["linear algebra", "vectors"],
+      "related": ["Dot Product", "Linear Transformation"]
+    },
+    {
+      "priority": 46,
+      "concept": "Norm",
+      "category": "Linear Algebra",
+      "definition": "A function that assigns a non-negative length or size to a vector.",
+      "syntax": "||v|| = sqrt(v1^2 + v2^2 + ...)",
+      "examples": [
+        "||[3,4]|| = 5"
+      ],
+      "explanation": "Norms are used to measure distance, magnitude, and for regularization in machine learning.",
+      "tags": ["linear algebra", "vectors"],
+      "related": ["Magnitude of a Vector", "Unit Vector"]
+    },
+    {
+      "priority": 47,
+      "concept": "Orthogonal Projection",
+      "category": "Linear Algebra",
+      "definition": "The projection of a vector onto a subspace such that the error vector is orthogonal to the subspace.",
+      "syntax": "P = A(A^T A)^{-1}A^T y",
+      "examples": [
+        "Projecting a point onto a line in least squares regression"
+      ],
+      "explanation": "Orthogonal projections are used in regression and dimensionality reduction.",
+      "tags": ["linear algebra", "projections"],
+      "related": ["Projection", "Orthogonality"]
+    },
+    {
+      "priority": 48,
+      "concept": "Gradient",
+      "category": "Calculus",
+      "definition": "A vector of partial derivatives indicating the direction of steepest ascent of a function.",
+      "syntax": "∇f(x) = [∂f/∂x1, ∂f/∂x2, ...]",
+      "examples": [
+        "For f(x, y) = x^2 + y^2, ∇f = [2x, 2y]"
+      ],
+      "explanation": "Gradients are essential for optimization and training machine learning models.",
+      "tags": ["calculus", "optimization"],
+      "related": ["Partial Derivative", "Gradient Descent"]
+    },
+    {
+      "priority": 49,
+      "concept": "Partial Derivative",
+      "category": "Calculus",
+      "definition": "The derivative of a multivariable function with respect to one variable, holding others constant.",
+      "syntax": "∂f/∂x",
+      "examples": [
+        "For f(x, y) = x^2y, ∂f/∂x = 2xy"
+      ],
+      "explanation": "Partial derivatives are used in gradients, optimization, and machine learning.",
+      "tags": ["calculus", "derivatives"],
+      "related": ["Gradient", "Derivative"]
+    },
+    {
+      "priority": 50,
+      "concept": "Derivative",
+      "category": "Calculus",
+      "definition": "A measure of how a function changes as its input changes.",
+      "syntax": "f'(x) = lim_{h→0} (f(x+h) - f(x))/h",
+      "examples": [
+        "If f(x) = x^2, then f'(x) = 2x"
+      ],
+      "explanation": "Derivatives are used to find rates of change, slopes, and optimize functions.",
+      "tags": ["calculus", "change"],
+      "related": ["Integral", "Gradient"]
+    },
+    {
+      "priority": 51,
+      "concept": "Chain Rule",
+      "category": "Calculus",
+      "definition": "A rule for computing the derivative of the composition of two or more functions.",
+      "syntax": "d/dx f(g(x)) = f'(g(x)) * g'(x)",
+      "examples": [
+        "If y = (3x + 2)^5, then dy/dx = 5(3x + 2)^4 * 3"
+      ],
+      "explanation": "The chain rule is essential for backpropagation in neural networks.",
+      "tags": ["calculus", "derivatives"],
+      "related": ["Derivative", "Gradient"]
+    },
+    {
+      "priority": 52,
+      "concept": "Product Rule",
+      "category": "Calculus",
+      "definition": "A rule for differentiating the product of two functions.",
+      "syntax": "d/dx [u(x)v(x)] = u'(x)v(x) + u(x)v'(x)",
+      "examples": [
+        "If f(x) = x^2 * sin(x), then f'(x) = 2x*sin(x) + x^2*cos(x)"
+      ],
+      "explanation": "The product rule is used in calculus to differentiate products of functions.",
+      "tags": ["calculus", "derivatives"],
+      "related": ["Derivative", "Chain Rule"]
+    },
+    {
+      "priority": 53,
+      "concept": "Quotient Rule",
+      "category": "Calculus",
+      "definition": "A rule for differentiating the quotient of two functions.",
+      "syntax": "d/dx [u(x)/v(x)] = (u'(x)v(x) - u(x)v'(x)) / [v(x)]^2",
+      "examples": [
+        "If f(x) = x / (x+1), then f'(x) = 1/(x+1) - x/(x+1)^2"
+      ],
+      "explanation": "The quotient rule is used to differentiate ratios of functions.",
+      "tags": ["calculus", "derivatives"],
+      "related": ["Derivative", "Product Rule"]
+    },
+    {
+      "priority": 54,
+      "concept": "Integral",
+      "category": "Calculus",
+      "definition": "A mathematical operation that accumulates the area under a curve.",
+      "syntax": "∫ f(x) dx",
+      "examples": [
+        "∫ x dx = (1/2)x^2 + C"
+      ],
+      "explanation": "Integrals are used to compute areas, volumes, and in probability theory.",
+      "tags": ["calculus", "area"],
+      "related": ["Derivative", "Definite Integral"]
+    },
+    {
+      "priority": 55,
+      "concept": "Definite Integral",
+      "category": "Calculus",
+      "definition": "The integral of a function over a specific interval, giving the net area under the curve.",
+      "syntax": "∫_a^b f(x) dx",
+      "examples": [
+        "∫_0^2 x dx = 2"
+      ],
+      "explanation": "Definite integrals are used to calculate total quantities and probabilities.",
+      "tags": ["calculus", "area"],
+      "related": ["Integral", "Indefinite Integral"]
+    },
+    {
+      "priority": 56,
+      "concept": "Indefinite Integral",
+      "category": "Calculus",
+      "definition": "The general form of the integral of a function, representing a family of functions.",
+      "syntax": "∫ f(x) dx = F(x) + C",
+      "examples": [
+        "∫ x^2 dx = (1/3)x^3 + C"
+      ],
+      "explanation": "Indefinite integrals are used to find antiderivatives.",
+      "tags": ["calculus", "antiderivative"],
+      "related": ["Integral", "Definite Integral"]
+    },
+    {
+      "priority": 57,
+      "concept": "Fundamental Theorem of Calculus",
+      "category": "Calculus",
+      "definition": "Connects differentiation and integration, showing that they are inverse operations.",
+      "syntax": "∫_a^b f(x) dx = F(b) - F(a), where F'(x) = f(x)",
+      "examples": [
+        "If f(x) = 2x, then ∫_0^2 2x dx = (2^2) - (0^2) = 4"
+      ],
+      "explanation": "This theorem underpins most practical uses of calculus.",
+      "tags": ["calculus", "theorem"],
+      "related": ["Integral", "Derivative"]
+    },
+    {
+      "priority": 58,
+      "concept": "Limits",
+      "category": "Calculus",
+      "definition": "The value that a function approaches as the input approaches a specific point.",
+      "syntax": "lim_{x→a} f(x)",
+      "examples": [
+        "lim_{x→0} sin(x)/x = 1"
+      ],
+      "explanation": "Limits are foundational for calculus, continuity, and derivatives.",
+      "tags": ["calculus", "foundations"],
+      "related": ["Derivative", "Continuity"]
+    },
+    {
+      "priority": 59,
+      "concept": "Continuity",
+      "category": "Calculus",
+      "definition": "A function is continuous if there are no breaks, jumps, or holes in its graph.",
+      "syntax": "f is continuous at x=a if lim_{x→a} f(x) = f(a)",
+      "examples": [
+        "f(x) = x^2 is continuous everywhere"
+      ],
+      "explanation": "Continuity is required for many calculus theorems and applications.",
+      "tags": ["calculus", "functions"],
+      "related": ["Limits", "Derivative"]
+    },
+    {
+      "priority": 60,
+      "concept": "Critical Points",
+      "category": "Calculus",
+      "definition": "Points where the derivative is zero or undefined, indicating potential maxima, minima, or inflection points.",
+      "syntax": "f'(x) = 0 or undefined",
+      "examples": [
+        "For f(x) = x^2, critical point at x = 0"
+      ],
+      "explanation": "Critical points are used in optimization and curve analysis.",
+      "tags": ["calculus", "optimization"],
+      "related": ["Derivative", "Optimization"]
+    },
+    {
+      "priority": 61,
+      "concept": "Optimization",
+      "category": "Calculus",
+      "definition": "The process of finding the maximum or minimum values of a function.",
+      "syntax": "Set f'(x) = 0 and check endpoints or second derivative",
+      "examples": [
+        "Maximize f(x) = -x^2 + 4x"
+      ],
+      "explanation": "Optimization is essential in machine learning, economics, and engineering.",
+      "tags": ["calculus", "optimization"],
+      "related": ["Critical Points", "Gradient"]
+    },
+    {
+      "priority": 62,
+      "concept": "Gradient Descent",
+      "category": "Optimization",
+      "definition": "An iterative optimization algorithm that moves in the direction of the negative gradient to find minima.",
+      "syntax": "x_{n+1} = x_n - η∇f(x_n)",
+      "examples": [
+        "Used to minimize loss functions in neural networks"
+      ],
+      "explanation": "Gradient descent is the backbone of modern machine learning optimization.",
+      "tags": ["optimization", "machine learning"],
+      "related": ["Gradient", "Optimization"]
+    },
+    {
+      "priority": 63,
+      "concept": "Probability",
+      "category": "Probability",
+      "definition": "A measure of the likelihood that an event will occur, ranging from 0 to 1.",
+      "syntax": "P(A)",
+      "examples": [
+        "P(rolling a 6 on a die) = 1/6"
+      ],
+      "explanation": "Probability is the foundation of statistics and predictive modeling.",
+      "tags": ["probability", "statistics"],
+      "related": ["Random Variable", "Probability Distribution"]
+    },
+    {
+      "priority": 64,
+      "concept": "Random Variable",
+      "category": "Probability",
+      "definition": "A variable that takes on values determined by the outcome of a random event.",
+      "syntax": "X: Ω → R",
+      "examples": [
+        "X = number of heads in 3 coin tosses"
+      ],
+      "explanation": "Random variables are used to model uncertainty in data science.",
+      "tags": ["probability", "statistics"],
+      "related": ["Probability", "Probability Distribution"]
+    },
+    {
+      "priority": 65,
+      "concept": "Probability Distribution",
+      "category": "Probability",
+      "definition": "A function that describes the likelihood of all possible values of a random variable.",
+      "syntax": "P(X = x)",
+      "examples": [
+        "Binomial, Poisson, Normal distributions"
+      ],
+      "explanation": "Distributions are used to model and analyze real-world phenomena.",
+      "tags": ["probability", "distribution"],
+      "related": ["Random Variable", "Probability"]
+    },
+    {
+      "priority": 66,
+      "concept": "Discrete Probability Distribution",
+      "category": "Probability",
+      "definition": "A distribution where the random variable can take only specific, separate values.",
+      "syntax": "P(X = x_i)",
+      "examples": [
+        "Binomial distribution for coin tosses"
+      ],
+      "explanation": "Discrete distributions model countable events like dice rolls or survey responses.",
+      "tags": ["probability", "discrete"],
+      "related": ["Probability Distribution", "Random Variable"]
+    },
+    {
+      "priority": 67,
+      "concept": "Continuous Probability Distribution",
+      "category": "Probability",
+      "definition": "A distribution where the random variable can take any value within an interval.",
+      "syntax": "P(a ≤ X ≤ b)",
+      "examples": [
+        "Normal distribution for heights"
+      ],
+      "explanation": "Continuous distributions model measurements like weight or temperature.",
+      "tags": ["probability", "continuous"],
+      "related": ["Probability Distribution", "Random Variable"]
+    },
+    {
+      "priority": 68,
+      "concept": "Probability Mass Function (PMF)",
+      "category": "Probability",
+      "definition": "A function that gives the probability that a discrete random variable is exactly equal to some value.",
+      "syntax": "P(X = x)",
+      "examples": [
+        "P(X = 2) = 0.25"
+      ],
+      "explanation": "PMFs are used for discrete random variables.",
+      "tags": ["probability", "pmf"],
+      "related": ["Discrete Probability Distribution", "Probability Distribution"]
+    },
+    {
+      "priority": 69,
+      "concept": "Probability Density Function (PDF)",
+      "category": "Probability",
+      "definition": "A function that describes the relative likelihood for a continuous random variable to take on a given value.",
+      "syntax": "f(x), P(a ≤ X ≤ b) = ∫_a^b f(x) dx",
+      "examples": [
+        "PDF of standard normal: f(x) = (1/√(2π))e^{-x^2/2}"
+      ],
+      "explanation": "PDFs are used for continuous random variables.",
+      "tags": ["probability", "pdf"],
+      "related": ["Continuous Probability Distribution", "Probability Distribution"]
+    },
+    {
+      "priority": 70,
+      "concept": "Cumulative Distribution Function (CDF)",
+      "category": "Probability",
+      "definition": "A function giving the probability that a random variable is less than or equal to a certain value.",
+      "syntax": "F(x) = P(X ≤ x)",
+      "examples": [
+        "CDF of standard normal at x=0 is 0.5"
+      ],
+      "explanation": "CDFs are used to compute probabilities and quantiles.",
+      "tags": ["probability", "cdf"],
+      "related": ["Probability Distribution", "PDF"]
+    },
+    {
+      "priority": 71,
+      "concept": "Expected Value",
+      "category": "Probability",
+      "definition": "The mean or average value of a random variable, weighted by probability.",
+      "syntax": "E[X] = Σ x_i P(x_i) or ∫ x f(x) dx",
+      "examples": [
+        "Expected value of a die roll is 3.5"
+      ],
+      "explanation": "Expected value is used in decision theory and statistics.",
+      "tags": ["probability", "statistics"],
+      "related": ["Probability Distribution", "Variance"]
+    },
+    {
+      "priority": 72,
+      "concept": "Variance",
+      "category": "Probability",
+      "definition": "A measure of how much values of a random variable differ from the mean.",
+      "syntax": "Var(X) = E[(X - E[X])^2]",
+      "examples": [
+        "Variance of a fair die is 35/12"
+      ],
+      "explanation": "Variance measures spread in data and is essential for risk analysis and statistics.",
+      "tags": ["probability", "statistics"],
+      "related": ["Expected Value", "Standard Deviation"]
+    }
+  ]
+}

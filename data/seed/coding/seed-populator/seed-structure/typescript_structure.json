@@ -1,0 +1,46 @@
+{
+  "typescript": {
+    "basics": [
+      "types",
+      "interfaces",
+      "type-aliases",
+      "enums",
+      "generics",
+      "type-guards",
+      "literal-types",
+      "union-types",
+      "intersection-types",
+      "tuples",
+      "never-type",
+      "any-type",
+      "unknown-type",
+      "void-type"
+    ],
+    "advanced": [
+      "mapped-types",
+      "conditional-types",
+      "utility-types",
+      "declaration-merging",
+      "module-augmentation",
+      "decorators"
+    ],
+    "tooling": [
+      "tsconfig",
+      "compiler-options",
+      "linting",
+      "type-checking",
+      "typescript-eslint"
+    ],
+    "integration": [
+      "typescript-with-react",
+      "typescript-with-nextjs",
+      "typescript-with-node"
+    ],
+    "best-practices": [
+      "strict-mode",
+      "type-inference",
+      "avoid-any",
+      "code-organization"
+    ]
+  }
+}

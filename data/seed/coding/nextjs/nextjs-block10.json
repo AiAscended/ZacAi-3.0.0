@@ -1,0 +1,830 @@
+[
+  {
+    "word": "nextjs-carousel",
+    "priority": 325,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing image or content carousels in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Display a carousel of images or cards."
+      }
+    ],
+    "syntax": "<Carousel items={items} />",
+    "examples": [
+      "<Carousel items={[{ src: '/img1.jpg' }, { src: '/img2.jpg' }]} />"
+    ],
+    "synonyms": ["carousel", "slider"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈkærəsɛl",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Provide keyboard navigation and ARIA roles for accessibility.",
+    "relatedConcepts": ["ui", "slider"]
+  },
+  {
+    "word": "nextjs-slider",
+    "priority": 326,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing sliders for images, content, or values.",
+        "partOfSpeech": "pattern",
+        "example": "Use sliders for image galleries or input ranges."
+      }
+    ],
+    "syntax": "<Slider value={value} onChange={setValue} />",
+    "examples": [
+      "<Slider min={0} max={100} value={50} onChange={fn} />"
+    ],
+    "synonyms": ["slider", "carousel"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈslaɪdər",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Make sliders accessible and provide labels.",
+    "relatedConcepts": ["ui", "carousel"]
+  },
+  {
+    "word": "nextjs-rating",
+    "priority": 327,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing rating components (stars, thumbs up/down) in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users rate products or content."
+      }
+    ],
+    "syntax": "<Rating value={3} max={5} onChange={setRating} />",
+    "examples": [
+      "<Rating value={4} max={5} onChange={fn} />"
+    ],
+    "synonyms": ["rating", "stars"],
+    "antonyms": [],
+    "frequency": 10,
+    "pronunciation": "ˈreɪtɪŋ",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Use ARIA attributes for accessible ratings.",
+    "relatedConcepts": ["ui", "input"]
+  },
+  {
+    "word": "nextjs-stepper",
+    "priority": 328,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing stepper components for multi-step forms or processes.",
+        "partOfSpeech": "pattern",
+        "example": "Guide users through a multi-step process."
+      }
+    ],
+    "syntax": "<Stepper steps={steps} activeStep={step} />",
+    "examples": [
+      "<Stepper steps={['Info', 'Details', 'Confirm']} activeStep={1} />"
+    ],
+    "synonyms": ["stepper", "wizard"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈstɛpər",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Show progress and allow navigation between steps.",
+    "relatedConcepts": ["ui", "form"]
+  },
+  {
+    "word": "nextjs-wizard",
+    "priority": 329,
+    "definitions": [
+      {
+        "meaning": "A pattern for wizard-style multi-step forms in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Use wizards for onboarding or checkout flows."
+      }
+    ],
+    "syntax": "<Wizard steps={steps} />",
+    "examples": [
+      "<Wizard steps={[<Step1 />, <Step2 />, <Step3 />]} />"
+    ],
+    "synonyms": ["wizard", "stepper"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈwɪzərd",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Validate each step before progressing.",
+    "relatedConcepts": ["ui", "form", "stepper"]
+  },
+  {
+    "word": "nextjs-timeline",
+    "priority": 330,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing events or data on a timeline in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Display order history or project milestones."
+      }
+    ],
+    "syntax": "<Timeline events={events} />",
+    "examples": [
+      "<Timeline events={[{ date: '2025-07-12', label: 'Started' }]} />"
+    ],
+    "synonyms": ["timeline"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈtaɪmlaɪn",
+    "difficulty": "intermediate",
+    "category": "ui",
+    "bestPractice": "Order events chronologically and clearly.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-treeview",
+    "priority": 331,
+    "definitions": [
+      {
+        "meaning": "A pattern for displaying hierarchical tree data in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show file systems or categories as a tree."
+      }
+    ],
+    "syntax": "<TreeView data={treeData} />",
+    "examples": [
+      "<TreeView data={[{ label: 'Root', children: [{ label: 'Child' }] }]} />"
+    ],
+    "synonyms": ["treeview", "tree"],
+    "antonyms": [],
+    "frequency": 5,
+    "pronunciation": "ˈtriːvjuː",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Support expand/collapse and keyboard navigation.",
+    "relatedConcepts": ["ui", "data display"]
+  },
+  {
+    "word": "nextjs-code-editor",
+    "priority": 332,
+    "definitions": [
+      {
+        "meaning": "A pattern for embedding a code editor in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Embed Monaco or CodeMirror for code editing."
+      }
+    ],
+    "syntax": "<CodeEditor value={code} onChange={setCode} />",
+    "examples": [
+      "<CodeEditor value={code} onChange={fn} />"
+    ],
+    "synonyms": ["code editor"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "koʊd ˈɛdɪtər",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use lazy loading for heavy code editor libraries.",
+    "relatedConcepts": ["ui", "input"]
+  },
+  {
+    "word": "nextjs-rich-text-editor",
+    "priority": 333,
+    "definitions": [
+      {
+        "meaning": "A pattern for embedding a rich text (WYSIWYG) editor in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to format text with a rich editor."
+      }
+    ],
+    "syntax": "<RichTextEditor value={value} onChange={setValue} />",
+    "examples": [
+      "<RichTextEditor value={text} onChange={fn} />"
+    ],
+    "synonyms": ["rich text editor", "wysiwyg"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "rɪtʃ tɛkst ˈɛdɪtər",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Sanitize output to prevent XSS.",
+    "relatedConcepts": ["ui", "input"]
+  },
+  {
+    "word": "nextjs-markdown-editor",
+    "priority": 334,
+    "definitions": [
+      {
+        "meaning": "A pattern for editing markdown in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users write and preview markdown."
+      }
+    ],
+    "syntax": "<MarkdownEditor value={markdown} onChange={setMarkdown} />",
+    "examples": [
+      "<MarkdownEditor value={md} onChange={fn} />"
+    ],
+    "synonyms": ["markdown editor"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈmɑːrkdaʊn ˈɛdɪtər",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Preview markdown as the user types.",
+    "relatedConcepts": ["ui", "input"]
+  },
+  {
+    "word": "nextjs-diff-viewer",
+    "priority": 335,
+    "definitions": [
+      {
+        "meaning": "A pattern for showing differences between text or code in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show diffs for version control or content review."
+      }
+    ],
+    "syntax": "<DiffViewer oldValue={oldText} newValue={newText} />",
+    "examples": [
+      "<DiffViewer oldValue='foo' newValue='bar' />"
+    ],
+    "synonyms": ["diff viewer"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "dɪf ˈvjuːər",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Highlight changes clearly for easy review.",
+    "relatedConcepts": ["ui", "code editor"]
+  },
+  {
+    "word": "nextjs-data-grid",
+    "priority": 336,
+    "definitions": [
+      {
+        "meaning": "A pattern for displaying editable data grids in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show tabular data with sorting and editing."
+      }
+    ],
+    "syntax": "<DataGrid columns={cols} rows={rows} />",
+    "examples": [
+      "<DataGrid columns={[{ field: 'name' }]} rows={data} />"
+    ],
+    "synonyms": ["data grid"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdeɪtə ɡrɪd",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use virtualization for large grids.",
+    "relatedConcepts": ["ui", "table"]
+  },
+  {
+    "word": "nextjs-kanban-board",
+    "priority": 337,
+    "definitions": [
+      {
+        "meaning": "A pattern for implementing Kanban boards in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Visualize tasks in columns for workflow."
+      }
+    ],
+    "syntax": "<KanbanBoard columns={columns} tasks={tasks} />",
+    "examples": [
+      "<KanbanBoard columns={['Todo', 'Doing', 'Done']} tasks={tasks} />"
+    ],
+    "synonyms": ["kanban board"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈkɑːnbæn bɔːrd",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Allow drag-and-drop between columns.",
+    "relatedConcepts": ["ui", "drag and drop"]
+  },
+  {
+    "word": "nextjs-gantt-chart",
+    "priority": 338,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering Gantt charts in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Visualize project timelines with Gantt charts."
+      }
+    ],
+    "syntax": "<GanttChart tasks={tasks} />",
+    "examples": [
+      "<GanttChart tasks={projectTasks} />"
+    ],
+    "synonyms": ["gantt chart"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ɡænt tʃɑːrt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use libraries like frappe-gantt for visualization.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-org-chart",
+    "priority": 339,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering organization charts in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show company structure as an org chart."
+      }
+    ],
+    "syntax": "<OrgChart data={orgData} />",
+    "examples": [
+      "<OrgChart data={orgTree} />"
+    ],
+    "synonyms": ["org chart"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ɔːrɡ tʃɑːrt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Allow expand/collapse for large orgs.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-flowchart",
+    "priority": 340,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering flowcharts in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Visualize processes with flowcharts."
+      }
+    ],
+    "syntax": "<FlowChart nodes={nodes} edges={edges} />",
+    "examples": [
+      "<FlowChart nodes={nodes} edges={edges} />"
+    ],
+    "synonyms": ["flowchart"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈfloʊˌtʃɑːrt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use libraries like react-flow-renderer.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-mindmap",
+    "priority": 341,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering mind maps in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show ideas and relationships as a mind map."
+      }
+    ],
+    "syntax": "<MindMap data={mindMapData} />",
+    "examples": [
+      "<MindMap data={ideas} />"
+    ],
+    "synonyms": ["mind map"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "maɪnd mæp",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use mind maps for brainstorming and planning.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-heatmap",
+    "priority": 342,
+    "definitions": [
+      {
+        "meaning": "A pattern for rendering heatmaps in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Visualize data density with heatmaps."
+      }
+    ],
+    "syntax": "<Heatmap data={heatmapData} />",
+    "examples": [
+      "<Heatmap data={heatData} />"
+    ],
+    "synonyms": ["heatmap"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈhiːtˌmæp",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use color scales for clear data representation.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-timeline-gantt",
+    "priority": 343,
+    "definitions": [
+      {
+        "meaning": "A pattern for combining timelines and Gantt charts in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show project tasks on a timeline Gantt chart."
+      }
+    ],
+    "syntax": "<TimelineGantt tasks={tasks} />",
+    "examples": [
+      "<TimelineGantt tasks={tasks} />"
+    ],
+    "synonyms": ["timeline gantt"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈtaɪmlaɪn ɡænt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Synchronize timeline and Gantt data for accuracy.",
+    "relatedConcepts": ["ui", "data visualization"]
+  },
+  {
+    "word": "nextjs-calendar-scheduler",
+    "priority": 344,
+    "definitions": [
+      {
+        "meaning": "A pattern for advanced calendar scheduling in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to schedule and manage events."
+      }
+    ],
+    "syntax": "<CalendarScheduler events={events} />",
+    "examples": [
+      "<CalendarScheduler events={events} />"
+    ],
+    "synonyms": ["calendar scheduler"],
+    "antonyms": [],
+    "frequency": 1,
+    "pronunciation": "ˈkælɪndər ˈskɛdjuːlər",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Support drag-and-drop and recurring events.",
+    "relatedConcepts": ["calendar", "ui"]
+  },
+  {
+    "word": "nextjs-data-export-ui",
+    "priority": 345,
+    "definitions": [
+      {
+        "meaning": "A pattern for exporting data from UI components in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users export tables or charts as CSV or images."
+      }
+    ],
+    "syntax": "<ExportButton onClick={exportData} />",
+    "examples": [
+      "<ExportButton onClick={fn} />"
+    ],
+    "synonyms": ["data export"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdeɪtə ˈɛkspɔːrt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Export in standard formats (CSV, PNG, PDF).",
+    "relatedConcepts": ["ui", "data"]
+  },
+  {
+    "word": "nextjs-data-import-ui",
+    "priority": 346,
+    "definitions": [
+      {
+        "meaning": "A pattern for importing data into UI components in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users import CSV or JSON data."
+      }
+    ],
+    "syntax": "<ImportButton onClick={importData} />",
+    "examples": [
+      "<ImportButton onClick={fn} />"
+    ],
+    "synonyms": ["data import"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdeɪtə ˈɪmpɔːrt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Validate imported data and handle errors gracefully.",
+    "relatedConcepts": ["ui", "data"]
+  },
+  {
+    "word": "nextjs-data-print-ui",
+    "priority": 347,
+    "definitions": [
+      {
+        "meaning": "A pattern for printing UI components or data in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to print tables or reports."
+      }
+    ],
+    "syntax": "<PrintButton onClick={printData} />",
+    "examples": [
+      "<PrintButton onClick={fn} />"
+    ],
+    "synonyms": ["data print"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "prɪnt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Format printed output for readability.",
+    "relatedConcepts": ["ui", "data"]
+  },
+  {
+    "word": "nextjs-data-copy-ui",
+    "priority": 348,
+    "definitions": [
+      {
+        "meaning": "A pattern for copying data from UI components in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Allow users to copy code or data to clipboard."
+      }
+    ],
+    "syntax": "<CopyButton value={value} />",
+    "examples": [
+      "<CopyButton value={text} />"
+    ],
+    "synonyms": ["copy to clipboard"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈkɒpi",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Provide feedback after copy action.",
+    "relatedConcepts": ["ui", "clipboard"]
+  },
+  {
+    "word": "nextjs-data-share-ui",
+    "priority": 349,
+    "definitions": [
+      {
+        "meaning": "A pattern for sharing data or content from UI components in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users share content via social or system share."
+      }
+    ],
+    "syntax": "<ShareButton url={url} />",
+    "examples": [
+      "<ShareButton url='https://example.com' />"
+    ],
+    "synonyms": ["share"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ʃɛr",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use Web Share API when available.",
+    "relatedConcepts": ["ui", "share"]
+  },
+  {
+    "word": "nextjs-data-clipboard-ui",
+    "priority": 350,
+    "definitions": [
+      {
+        "meaning": "A pattern for clipboard interactions in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Copy and paste data using the clipboard."
+      }
+    ],
+    "syntax": "navigator.clipboard.writeText(value);",
+    "examples": [
+      "navigator.clipboard.writeText('Hello');"
+    ],
+    "synonyms": ["clipboard"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈklɪpbɔːrd",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Handle clipboard permissions and errors.",
+    "relatedConcepts": ["ui", "copy"]
+  },
+  {
+    "word": "nextjs-data-download-ui",
+    "priority": 351,
+    "definitions": [
+      {
+        "meaning": "A pattern for downloading data from UI components in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users download files or reports."
+      }
+    ],
+    "syntax": "<DownloadButton file={file} />",
+    "examples": [
+      "<DownloadButton file={csvFile} />"
+    ],
+    "synonyms": ["download"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈdaʊnˌloʊd",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Set correct file type and name for downloads.",
+    "relatedConcepts": ["ui", "download"]
+  },
+  {
+    "word": "nextjs-data-upload-ui",
+    "priority": 352,
+    "definitions": [
+      {
+        "meaning": "A pattern for uploading data from UI components in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Let users upload CSV or image files."
+      }
+    ],
+    "syntax": "<UploadButton onUpload={handleUpload} />",
+    "examples": [
+      "<UploadButton onUpload={fn} />"
+    ],
+    "synonyms": ["upload"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈʌpˌloʊd",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Validate uploaded files and show progress.",
+    "relatedConcepts": ["ui", "upload"]
+  },
+  {
+    "word": "nextjs-data-sync-ui",
+    "priority": 353,
+    "definitions": [
+      {
+        "meaning": "A pattern for syncing data between client and server in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Sync local changes with the backend."
+      }
+    ],
+    "syntax": "// Use SWR or React Query for sync",
+    "examples": [
+      "useSWR('/api/data', fetcher, { revalidateOnFocus: true });"
+    ],
+    "synonyms": ["data sync"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "sɪŋk",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Handle conflicts and offline sync gracefully.",
+    "relatedConcepts": ["ui", "data fetching"]
+  },
+  {
+    "word": "nextjs-data-realtime-ui",
+    "priority": 354,
+    "definitions": [
+      {
+        "meaning": "A pattern for real-time data updates in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Show live updates using WebSockets or polling."
+      }
+    ],
+    "syntax": "// Use WebSocket or SSE for real-time updates",
+    "examples": [
+      "const ws = new WebSocket('wss://example.com');"
+    ],
+    "synonyms": ["realtime"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈriːl taɪm",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Show status indicators for real-time connections.",
+    "relatedConcepts": ["ui", "websocket"]
+  },
+  {
+    "word": "nextjs-data-websocket-ui",
+    "priority": 355,
+    "definitions": [
+      {
+        "meaning": "A pattern for WebSocket-based UI updates in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Update UI in real time with WebSockets."
+      }
+    ],
+    "syntax": "const ws = new WebSocket('wss://example.com');",
+    "examples": [
+      "ws.onmessage = (event) => update(event.data);"
+    ],
+    "synonyms": ["websocket"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈwɛbˌsɒkɪt",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Reconnect on disconnect and handle errors.",
+    "relatedConcepts": ["ui", "realtime"]
+  },
+  {
+    "word": "nextjs-data-sse-ui",
+    "priority": 356,
+    "definitions": [
+      {
+        "meaning": "A pattern for Server-Sent Events (SSE) UI updates in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Update UI with server-sent events."
+      }
+    ],
+    "syntax": "const evtSource = new EventSource('/api/stream');",
+    "examples": [
+      "evtSource.onmessage = (event) => update(event.data);"
+    ],
+    "synonyms": ["sse", "server-sent events"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈsɜːrvər sɛnt ɪˈvɛnts",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Handle reconnection and fallback for SSE.",
+    "relatedConcepts": ["ui", "realtime"]
+  },
+  {
+    "word": "nextjs-data-polling-ui",
+    "priority": 357,
+    "definitions": [
+      {
+        "meaning": "A pattern for polling data updates in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Poll API for updates at intervals."
+      }
+    ],
+    "syntax": "setInterval(fetchData, 5000);",
+    "examples": [
+      "setInterval(() => fetch('/api/data'), 5000);"
+    ],
+    "synonyms": ["polling"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈpɒlɪŋ",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Clear intervals on component unmount.",
+    "relatedConcepts": ["ui", "realtime"]
+  },
+  {
+    "word": "nextjs-data-offline-ui",
+    "priority": 358,
+    "definitions": [
+      {
+        "meaning": "A pattern for offline data handling in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Cache data for offline use."
+      }
+    ],
+    "syntax": "// Use IndexedDB or localStorage for offline data",
+    "examples": [
+      "localStorage.setItem('data', JSON.stringify(data));"
+    ],
+    "synonyms": ["offline"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɒfˌlaɪn",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Sync offline changes when connection restores.",
+    "relatedConcepts": ["ui", "pwa"]
+  },
+  {
+    "word": "nextjs-data-localstorage-ui",
+    "priority": 359,
+    "definitions": [
+      {
+        "meaning": "A pattern for using localStorage for data persistence in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Persist data in localStorage for offline use."
+      }
+    ],
+    "syntax": "localStorage.setItem('key', value);",
+    "examples": [
+      "localStorage.getItem('key');"
+    ],
+    "synonyms": ["localstorage"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈloʊkəlˌstɔːrɪdʒ",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Handle JSON serialization and errors.",
+    "relatedConcepts": ["ui", "offline"]
+  },
+  {
+    "word": "nextjs-data-indexeddb-ui",
+    "priority": 360,
+    "definitions": [
+      {
+        "meaning": "A pattern for using IndexedDB for data storage in React/Next.js.",
+        "partOfSpeech": "pattern",
+        "example": "Store large or structured data offline."
+      }
+    ],
+    "syntax": "const db = indexedDB.open('mydb', 1);",
+    "examples": [
+      "const request = indexedDB.open('mydb', 1);"
+    ],
+    "synonyms": ["indexeddb"],
+    "antonyms": [],
+    "frequency": 2,
+    "pronunciation": "ˈɪndɛkst diː biː",
+    "difficulty": "advanced",
+    "category": "ui",
+    "bestPractice": "Use IndexedDB for large, complex offline data.",
+    "relatedConcepts": ["ui", "offline"]
+  }
+]

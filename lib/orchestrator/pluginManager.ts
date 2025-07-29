@@ -1,6 +1,6 @@
 /**
  * ==========================================================
- * File: /lib/ai-engine/plugin-manager.ts
+ * File: /lib/orchestrator/pluginManager.ts
  * Project: ZacAI 3.0
  * Role: AI-Engine Plugin System
  * Description:
