@@ -8,7 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Badge } from "@/components/ui/badge"
 import { Calculator } from "lucide-react"
 import * as mathsMgr from "@/lib/mathematics/tools/mathematicsLearntManager"
-import { mathematicsModule } from "@/modules/mathematics"
+import { mathematicsModule } from "@/lib/mathematics/mathmaticsSeedLoader"
 import { ConfirmDialog } from "@/components/ui/ConfirmDialog"
 import { useAuth } from "@/contexts/AuthContext"
 
