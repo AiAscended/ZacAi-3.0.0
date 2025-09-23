@@ -1,6 +1,0 @@
-{
-  "description": "This directory contains data related to the Retrieval Augmented Generation (RAG) system.",
-  "status": "Ready for initial knowledge indexing.",
-  "last_updated": "YYYY-MM-DDTHH:MM:SSZ",
-  "notes": "Actual RAG data might reside in external vector databases (e.g., Pinecone, Weaviate, Milvus) or be represented by subfolders containing indexed document chunks and their embeddings."
-}
