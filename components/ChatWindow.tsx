@@ -8,7 +8,7 @@ import { Separator } from "./ui/separator"
 import { Brain, Settings, MessageSquare } from "lucide-react"
 import MessageList from "./MessageList"
 import ChatInput from "./ChatInput"
-import { useAIChat } from "@/hooks/useAIChat"
+import { useAIChat } from "./hooks/useAIChat"
 import { AdminDashboard } from "./AdminDashboard/AdminDashboard"
 
 export default function ChatWindow() {
