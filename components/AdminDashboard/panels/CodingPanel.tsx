@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import * as codeMgr from "@/lib/coding/tools/codingLearntManager"
+import * as codeMgr from "@/lib/coding/tools/coding-learnt-manager"
 import { ConfirmDialog } from "@/components/ui/ConfirmDialog"
 import { useAuth } from "@/contexts/AuthContext"
 
