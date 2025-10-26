@@ -1,25 +1,20 @@
 {
-  "name": "Next.js AI App",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",         // Use latest stable Node.js image if possible
-  "features": {
-    // Add database or other tools here if needed, e.g. with devcontainer Features
-  },
-  "postCreateCommand": "npm install",
+  "name": "ai-hybrid-dev",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "postCreateCommand": "npm install -g npm@11.6.2 && npm ci",
+  "updateContentCommand": "npm ci",
   "customizations": {
     "vscode": {
       "extensions": [
         "dsznajder.es7-react-js-snippets",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "bradlc.vscode-tailwindcss"           // If using Tailwind
+        "bradlc.vscode-tailwindcss"
       ]
     }
   },
   "forwardPorts": [3000],
-  "updateContentCommand": "npm install",      // Auto-install deps if dependencies change
   "portsAttributes": {
-    "3000": {
-      "onAutoForward": "openPreview"
-    }
+    "3000": { "onAutoForward": "openPreview" }
   }
 }
