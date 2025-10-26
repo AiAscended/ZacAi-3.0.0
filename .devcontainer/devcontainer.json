@@ -1,5 +1,5 @@
 {
-  "name": "ai-hybrid-dev",
+  "name": "ZacAi-3.0.0-dev",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
   "postCreateCommand": "npm install -g npm@11.6.2 && npm ci",
   "updateContentCommand": "npm ci",
